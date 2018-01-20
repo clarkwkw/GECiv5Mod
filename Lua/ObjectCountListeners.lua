@@ -50,32 +50,3 @@ function UnitCountListenerFactory(untiClass, identifier, count, heading, msg)
 		end
 	return listener
 end
-
---- Combines all listener functions that need to be added into a single listener function
-
-function TurnStartListenerFactory()
-	local listeners = {
-		BuildingCountListenerFactory(
-			GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace
-			"NOTIFICATION_PALACE_BUILT", 
-			1, 
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_TITLE"),
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_MSG")
-		),
-		UnitCountListenerFactory(
-			GameInfo.UnitClasses.UNITCLASS_SETTLER.ID, --- SETTLER
-			"NOTIFICATION_SETTLER_BUILT", 
-			1,
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE"),
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_SETTLER_MSG")
-		)
-	}
-
-	listener = function()
-		for _, sub_listener in pairs(listeners) do
-			sub_listener()
-		end
-	end
-
-	return listener
-end
