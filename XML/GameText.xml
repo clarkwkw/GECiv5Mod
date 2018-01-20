@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/20/2018 2:14:03 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
+			<Text>Progress: Settler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
+			<Text>Try to use the settler unit to found a new city</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
+			<Text>Progress: Found Capitial City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
+			<Text>Congrats! You have just found the capitial city!</Text>
+		</Row>
+	</Language_en_US>
+	
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
+			<Text>進度: 開拓者</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
+			<Text>嘗試利用開拓者創建新城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
+			<Text>進度: 已建立首都</Text>
+		</Row>
+			<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
+			<Text>恭喜! 你已成功建立首都!</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+</GameData>
