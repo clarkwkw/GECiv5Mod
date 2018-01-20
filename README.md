@@ -10,3 +10,6 @@ Creating a Mod for Civilization V for general education
 6. The mod should be activiated in the game
 
 Note: If you want to check the debugging message / lua console log, launch FireTuner before launching the game in Steam.
+
+## Known Issues
+1. `Events.ActivePlayerTurnStart` does not trigger any listener in the first turn of every player.
