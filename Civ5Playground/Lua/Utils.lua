@@ -12,6 +12,10 @@ GameEvents.PlayerDoTurn.Add(
 	end
 )
 
+
+--- Helper functions to help cache save data
+--- such that unncessary save/load can be avoided
+--- Example usage: check GetPlayerProperty and SetPlayerProperty
 function GetPersistentProperty(name)
     if not g_Properties[name] then
         g_Properties[name] = g_SaveData.GetValue(name)
@@ -27,6 +31,9 @@ function SetPersistentProperty(name, value)
 	return value
 end
 
+
+
+--- Retrieve and save customized attributes to the save data (exclusive to this mod)
 function GetPlayerProperty(player_id, identifier)
 	return GetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier)
 end
@@ -34,6 +41,8 @@ end
 function SetPlayerProperty(player_id, identifier, value)
 	SetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier, value)
 end
+
+
 
 --- Retrieve the current active human player
 --- Return nil if the current player is not a human
@@ -51,6 +60,14 @@ function GetCurrentPlayer()
 	return Players[iPlayerID];
 end
 
+--[[
+	advisor_type: int, which of the 4 types of advisors should be shown
+ 				e.g. AdvisorTypes.NO_ADVISOR_TYPE
+ 				AdvisorTypes.ADVISOR_MILITARY, 
+ 				AdvisorTypes.ADVISOR_ECONOMIC, 
+ 				AdvisorTypes.ADVISOR_FOREIGN, 
+ 				AdvisorTypes.ADVISOR_SCIENCE
+--]]
 function GenerateAdvisorPopUp(advisor_type, title, body)
 	local advisorEventInfo =
 	{
