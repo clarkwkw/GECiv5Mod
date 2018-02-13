@@ -2,6 +2,8 @@
 -- Author: clark
 -- DateCreated: 1/19/2018 7:00:40 PM
 --------------------------------------------------------------
+include("AdvisorManager.lua")
+
 i_TurnPlayer = -1
 g_SaveData = Modding.OpenSaveData("UGFN", 1)
 g_Properties = {}
@@ -11,7 +13,6 @@ GameEvents.PlayerDoTurn.Add(
 		i_TurnPlayer = iPlayer
 	end
 )
-
 
 --- Helper functions to help cache save data
 --- such that unncessary save/load can be avoided
@@ -31,9 +32,7 @@ function SetPersistentProperty(name, value)
 	return value
 end
 
-
-
---- Retrieve and save customized attributes to the save data (exclusive to this mod)
+--- Retrieve and save customized attributes of a player to the save data (exclusive to this mod)
 function GetPlayerProperty(player_id, identifier)
 	return GetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier)
 end
@@ -42,6 +41,14 @@ function SetPlayerProperty(player_id, identifier, value)
 	SetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier, value)
 end
 
+--- Retrieve and save customized attributes of the game to the save data (exclusive to this mod)
+function GetGlobalProperty(identifier)
+	return GetPersistentProperty("GLOBAL_" .. identifier)
+end
+
+function SetGlobalProperty(identifier, value)
+	SetPersistentProperty("GLOBAL_" .. identifier, value)
+end
 
 
 --- Retrieve the current active human player
@@ -60,26 +67,29 @@ function GetCurrentPlayer()
 	return Players[iPlayerID];
 end
 
---[[
-	advisor_type: int, which of the 4 types of advisors should be shown
- 				e.g. AdvisorTypes.NO_ADVISOR_TYPE
- 				AdvisorTypes.ADVISOR_MILITARY, 
- 				AdvisorTypes.ADVISOR_ECONOMIC, 
- 				AdvisorTypes.ADVISOR_FOREIGN, 
- 				AdvisorTypes.ADVISOR_SCIENCE
---]]
-function GenerateAdvisorPopUp(advisor_type, title, body)
-	local advisorEventInfo =
-	{
-		Advisor = advisor_type,
-		TitleText = title,
-		BodyText = body,
-		---ActivateButtonText = buttonText,
-		
-		---Concept1 = "CONCEPT_UNITS",
-		---Concept2 = tutorial.Concept2,
-		---Concept3 = tutorial.Concept3,
-		Modal = false;
-	};
-	Events.AdvisorDisplayShow(advisorEventInfo)
+function GenerateCheckString()
+	if not GetGlobalProperty("STARTTIME")  then
+		SetGlobalProperty("STARTTIME", GetCurrentTime())
+	end
+end
+
+function PopDebugMsg()
+	print("DEBUG MODE: "..GameDefines.UGFN_DEBUG_MODE)
+	if GameDefines.UGFN_DEBUG_MODE == 1 then
+		GenerateAdvisorPopUp(
+			AdvisorTypes.ADVISOR_MILITARY, 
+			"Debug Messages",
+			"Start time: "..GetGlobalProperty("STARTTIME")
+		)
+	end
+	return false
+end
+
+function GetCurrentTime()
+	local date_table = os.date("*t")
+	local ms = string.match(tostring(os.clock()), "%d%.(%d+)")
+	local hour, minute, second = date_table.hour, date_table.min, date_table.sec
+	local year, month, day = date_table.year, date_table.month, date_table.wday
+	local result = string.format("%d-%d-%d %d:%d:%d:%s", year, month, day, hour, minute, second, ms)
+	return result
 end

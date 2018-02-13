@@ -7,32 +7,45 @@ print("Hello world from Civ5Playground!!!!!!!!!!!!!!!!!!!!!")
 
 include("Utils.lua")
 include("ObjectCountListeners.lua")
+include("ListenerManager.lua")
 
+GenerateCheckString()
 print("Adding listeners..")
 
+AddTurnStartListeners(
+	"NOTIFICATION_DEBUG_MSG",
+	PopDebugMsg
+)
+
 --- Monitoring no. of Palace Built
-Events.ActivePlayerTurnStart.Add(
+AddTurnStartListeners(
+	"NOTIFICATION_PALACE_BUILT",
 	BuildingCountListenerFactory(
-		GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace
-		"NOTIFICATION_PALACE_BUILT", 
+		GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace 
 		1, 
 		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_TITLE"),
 		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_MSG"),
 		true
 	)
+
 )
 
 --- Monitoring no. of Settler Built
-Events.ActivePlayerTurnStart.Add(
-	UnitCountListenerFactory(
+AddTurnStartListeners(
+	"NOTIFICATION_SETTLER_BUILT",
+	BuildingCountListenerFactory(
 		GameInfo.UnitClasses.UNITCLASS_SETTLER.ID, --- SETTLER
-		"NOTIFICATION_SETTLER_BUILT", 
 		1, 
 		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE"),
 		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_SETTLER_MSG"),
 		true
 	)
+
 )
+
+Events.ActivePlayerTurnStart.Add(ExecuteTurnStartListeners)
+Events.ActivePlayerTurnStart.Add(TriggerOnePopUp)
+Events.AdvisorDisplayHide.Add(TriggerOnePopUp)
 
 --[[
 Events.ActivePlayerTurnStart.Add(
