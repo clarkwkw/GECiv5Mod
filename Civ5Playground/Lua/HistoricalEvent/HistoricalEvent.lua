@@ -15,7 +15,6 @@ HistoricalEventManager.InitEvents = function()
 		if not Utils.GetGlobalProperty("HISTEVENT_"..row.EventID) then
 			eventInfo[row.EventID] = {}
 			for key, value in pairs(row) do
-				print("Got "..key)
 				eventInfo[row.EventID][key] = value
 			end
 			eventInfo[row.EventID]["Leaders"] = {}
@@ -47,6 +46,15 @@ HistoricalEventManager.InitEvents = function()
 	end
 end
 
+HistoricalEventManager.AddToQueue = function(event)
+	table.insert(eventQueue, event)
+end
+
+HistoricalEventManager.GetCurrentYear = function()
+	return currentYear
+end
+
+
 HistoricalEventManager.TriggerEvents = function()
 	local newQueue = {}
 	currentYear = Game.GetGameTurnYear()
@@ -70,8 +78,8 @@ HistoricalEventManager.TriggerEvents = function()
 end
 
 function HistoricalEvent:New(o)
-	local required_fields = {"EventID", "Leaders", "OccurYear", "Compensation", "AdvisorType"}
-	local optional_fields = {"AdvisorHeading", "AdvisorBody"}
+	local required_fields = {"EventID", "Leaders", "OccurYear", "Compensation"}
+	local optional_fields = {"AdvisorType", "AdvisorHeading", "AdvisorBody"}
 
 	for i, key in ipairs(required_fields) do
 		if not o[key] then
@@ -100,8 +108,9 @@ function HistoricalEvent:CheckCondition()
 	return 0
 end
 
-function HistoricalEvent:Trigger()
-	local isShowAdvisor = self.AdvisorType ~= "" and self.AdvisorHeading ~= nil and self.AdvisorBody ~= nil
+function HistoricalEvent:Trigger(skipSave)
+	skipSave = skipSave or false
+	local isShowAdvisor = self.AdvisorType ~= nil and self.AdvisorHeading ~= nil and self.AdvisorBody ~= nil
 	local eventPlayers = {}
 	if self.Leaders == "all" then
 		eventPlayers = Players
@@ -141,7 +150,9 @@ function HistoricalEvent:Trigger()
 			end 			
 		end
 	end
-	print("Removing event "..self.EventID)
-	Utils.SetGlobalProperty("HISTEVENT_"..self.EventID, true)
+	if not skipSave then
+		print("Removing event "..self.EventID)
+		Utils.SetGlobalProperty("HISTEVENT_"..self.EventID, true)
+	end
 	self.isDispose = true
 end

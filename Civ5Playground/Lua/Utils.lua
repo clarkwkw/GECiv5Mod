@@ -99,13 +99,13 @@ Utils.GetCurrentTime = function()
 	return result
 end
 
-Utils.GetPlayerByLeaderType = function(leaderType)
+Utils.GetPlayerByLeaderType = function(leaderTypeTxt)
 	if #g_leader_player == 0 then
-		for i, player in ipairs(Players) do
+		for key, player in pairs(Players) do
 			g_leader_player[player:GetLeaderType()] = player
 		end
 	end
-	return g_leader_player[leaderType]
+	return g_leader_player[GameInfoTypes[leaderTypeTxt]]
 end
 
 Utils.AddFreeUnits = function(player, unitTypeID, locationX, locationY, nunit)

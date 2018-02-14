@@ -1,10 +1,15 @@
 <GameData>
     <Table name="EventHistorical">
 		<Column name="EventID" type="text" notnull="true" unique="true"/>
-		<Column name="AdvisorType" type="text" default=""/>
+		<!-- 
+			The identifier of the advisor, including
+			ADVISOR_MILITARY, ADVISOR_ECONOMIC, ADVISOR_FOREIGN, ADVISOR_SCIENCE
+			an empty string means not having advisor popup
+		-->
+		<Column name="AdvisorType" type="text"/>
 		<Column name="AdvisorHeading" type="text"/>
 		<Column name="AdvisorBody" type="text"/>
-		<Column name="OccurYear" type="integer" notnull="true"/>
+		<Column name="OccurYear" type="integer" default="NULL"/>
     </Table>
 
     <Table name="EventHistoricalLeaders">
@@ -25,7 +30,7 @@
 			Refer to http://modiki.civfanatics.com/index.php?title=UnitType_(Civ5_Type) 
 			it can also be set to "gold" / "tech" to grant golds/free techs
 		-->
-		<Column name="UnitTypeID" type="string" notnull="true"/>
+		<Column name="UnitTypeID" type="text" notnull="true"/>
 		<Column name="Count" type="int" notnull="true"/>
 	</Table>
 

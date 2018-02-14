@@ -10,9 +10,11 @@ include("ObjectCountListeners.lua")
 include("ListenerManager.lua")
 include("AdvisorManager.lua")
 include("HistoricalEvent.lua")
+include("BerserkEnermy.lua")
 
 Utils.GenerateCheckString()
 HistoricalEventManager.InitEvents()
+BerserkEnermyEventManager.InitEvents()
 print("Adding listeners..")
 
 ListenerManager.AddTurnStartListeners(
@@ -49,6 +51,11 @@ ListenerManager.AddTurnStartListeners(
 ListenerManager.AddTurnStartListeners(
 	"HISTORICAL_EVENTS",
 	HistoricalEventManager.TriggerEvents
+)
+
+ListenerManager.AddTurnStartListeners(
+	"BERSERK_ENERMY",
+	BerserkEnermyEventManager.TriggerEvents
 )
 
 Events.ActivePlayerTurnStart.Add(ListenerManager.ExecuteTurnStartListeners)

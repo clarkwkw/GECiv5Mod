@@ -1,0 +1,82 @@
+<GameData>
+	
+	<EventBerserkEnermy>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<DefenseAdvisorType>ADVISOR_MILITARY</DefenseAdvisorType>
+			<DefenseAdvisorHeading>TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD</DefenseAdvisorHeading>
+			<DefenseAdvisorBody>TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY</DefenseAdvisorBody>
+			<OccurYear>-3950</OccurYear>
+		</Row>
+	</EventBerserkEnermy>
+
+	<EventBerserkEnermyOffense>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<LeaderType>LEADER_BARBARIAN</LeaderType>
+		</Row>
+	</EventBerserkEnermyOffense>
+
+	<EventBerserkEnermyDefense>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<LeaderType>allhuman</LeaderType>
+		</Row>
+	</EventBerserkEnermyDefense>
+
+	<EventBerserkEnermyOffenseTroops>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<UnitTypeID>UNIT_WARRIOR</UnitTypeID>
+			<Count>2</Count>
+		</Row>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<UnitTypeID>UNIT_ARCHER</UnitTypeID>
+			<Count>1</Count>
+		</Row>
+	</EventBerserkEnermyOffenseTroops>
+
+	<EventBerserkEnermyOffenseCompensation>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<UnitTypeID>gold</UnitTypeID>
+			<Count>300</Count>
+		</Row>
+	</EventBerserkEnermyOffenseCompensation>
+
+	<EventBerserkEnermyDefenseCompensation>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<UnitTypeID>UNIT_WARRIOR</UnitTypeID>
+			<Count>2</Count>
+		</Row>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<UnitTypeID>UNIT_ARCHER</UnitTypeID>
+			<Count>2</Count>
+		</Row>
+		<Row>
+			<EventID>BerserkBarbarian</EventID>
+			<UnitTypeID>gold</UnitTypeID>
+			<Count>200</Count>
+		</Row>
+	</EventBerserkEnermyDefenseCompensation>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
+			<Text>Berserk Enermy: Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY">
+			<Text>The angry Barbarians are approaching your capital, watch out!</Text>
+		</Row>
+	</Language_en_US>
+	
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
+			<Text>狂怒之敵:蠻族</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY">
+			<Text>慣怒的蠻族正接近你的苜都，小心!</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+</GameData>
