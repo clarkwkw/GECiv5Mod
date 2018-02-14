@@ -8,17 +8,20 @@ print("Hello world from Civ5Playground!!!!!!!!!!!!!!!!!!!!!")
 include("Utils.lua")
 include("ObjectCountListeners.lua")
 include("ListenerManager.lua")
+include("AdvisorManager.lua")
+include("HistoricalEvent.lua")
 
-GenerateCheckString()
+Utils.GenerateCheckString()
+HistoricalEventManager.InitEvents()
 print("Adding listeners..")
 
-AddTurnStartListeners(
+ListenerManager.AddTurnStartListeners(
 	"NOTIFICATION_DEBUG_MSG",
-	PopDebugMsg
+	Utils.PopDebugMsg
 )
 
 --- Monitoring no. of Palace Built
-AddTurnStartListeners(
+ListenerManager.AddTurnStartListeners(
 	"NOTIFICATION_PALACE_BUILT",
 	BuildingCountListenerFactory(
 		GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace 
@@ -31,7 +34,7 @@ AddTurnStartListeners(
 )
 
 --- Monitoring no. of Settler Built
-AddTurnStartListeners(
+ListenerManager.AddTurnStartListeners(
 	"NOTIFICATION_SETTLER_BUILT",
 	BuildingCountListenerFactory(
 		GameInfo.UnitClasses.UNITCLASS_SETTLER.ID, --- SETTLER
@@ -43,9 +46,14 @@ AddTurnStartListeners(
 
 )
 
-Events.ActivePlayerTurnStart.Add(ExecuteTurnStartListeners)
-Events.ActivePlayerTurnStart.Add(TriggerOnePopUp)
-Events.AdvisorDisplayHide.Add(TriggerOnePopUp)
+ListenerManager.AddTurnStartListeners(
+	"HISTORICAL_EVENTS",
+	HistoricalEventManager.TriggerEvents
+)
+
+Events.ActivePlayerTurnStart.Add(ListenerManager.ExecuteTurnStartListeners)
+Events.ActivePlayerTurnStart.Add(AdvisorManager.TriggerOnePopUp)
+Events.AdvisorDisplayHide.Add(AdvisorManager.TriggerOnePopUp)
 
 --[[
 Events.ActivePlayerTurnStart.Add(

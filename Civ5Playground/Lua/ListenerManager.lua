@@ -1,9 +1,10 @@
 --- active_turn_start_listeners: 	{playerID:{listener_id: listener}}
 --- default_turn_start_listeners: 	{listener_id: listener}
 
-active_turn_start_listeners = {}
-default_turn_start_listeners = {}
+local active_turn_start_listeners = {}
+local default_turn_start_listeners = {}
 
+ListenerManager = {}
 --[[
 	The listener manager maintains the state of each listener for each player,
 	and triggers each listener at the start of a turn.
@@ -18,7 +19,7 @@ default_turn_start_listeners = {}
 			should return true if the listener function no longer needs to be triggered for the player
 --]]
 
-function AddTurnStartListeners(listener_id, listener)
+ListenerManager.AddTurnStartListeners = function (listener_id, listener)
 	default_turn_start_listeners[listener_id] = listener
 end
 
@@ -26,14 +27,14 @@ end
 	This function should be registered to Events.ActivePlayerTurnStart.Add
 --]]
 
-function ExecuteTurnStartListeners()
+ListenerManager.ExecuteTurnStartListeners = function()
 	local iPlayerID = Game.GetActivePlayer()
 
 	-- copy a set of listeners for the player on initialization
 	if not active_turn_start_listeners[iPlayerID] then
 		copy_table = {}
 		for listener_id, listener in pairs(default_turn_start_listeners) do
-			notified = GetPlayerProperty(iPlayerID, listener_id)
+			notified = Utils.GetPlayerProperty(iPlayerID, listener_id)
 			if not notified then
 				copy_table[listener_id] = listener
 			end
@@ -49,7 +50,7 @@ function ExecuteTurnStartListeners()
 		if result then
 			print("Deregistering "..listener_id.." listener for player "..iPlayerID)
 			active_turn_start_listeners[iPlayerID][listener_id] = nil
-			SetPlayerProperty(iPlayerID, listener_id, true)
+			Utils.SetPlayerProperty(iPlayerID, listener_id, true)
 		end
 	end
 

@@ -4,9 +4,10 @@
 --------------------------------------------------------------
 include("AdvisorManager.lua")
 
-i_TurnPlayer = -1
-g_SaveData = Modding.OpenSaveData("UGFN", 1)
-g_Properties = {}
+local i_TurnPlayer = -1
+local g_SaveData = Modding.OpenSaveData("UGFN", 1)
+local g_Properties = {}
+local g_leader_player = {}
 
 GameEvents.PlayerDoTurn.Add(
 	function(iPlayer)
@@ -14,18 +15,20 @@ GameEvents.PlayerDoTurn.Add(
 	end
 )
 
+Utils = {}
+
 --- Helper functions to help cache save data
 --- such that unncessary save/load can be avoided
 --- Example usage: check GetPlayerProperty and SetPlayerProperty
-function GetPersistentProperty(name)
+Utils.GetPersistentProperty = function(name)
     if not g_Properties[name] then
         g_Properties[name] = g_SaveData.GetValue(name)
     end
     return g_Properties[name]
 end
 
-function SetPersistentProperty(name, value)
-    if not(GetPersistentProperty(name) == value) then
+Utils.SetPersistentProperty = function(name, value)
+    if not(Utils.GetPersistentProperty(name) == value) then
 		g_SaveData.SetValue(name, value)
 		g_Properties[name] = value
 	end
@@ -33,28 +36,28 @@ function SetPersistentProperty(name, value)
 end
 
 --- Retrieve and save customized attributes of a player to the save data (exclusive to this mod)
-function GetPlayerProperty(player_id, identifier)
-	return GetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier)
+Utils.GetPlayerProperty = function(player_id, identifier)
+	return Utils.GetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier)
 end
 
-function SetPlayerProperty(player_id, identifier, value)
-	SetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier, value)
+Utils.SetPlayerProperty = function(player_id, identifier, value)
+	Utils.SetPersistentProperty("PLAYER_DATA_".. player_id .. "_" .. identifier, value)
 end
 
 --- Retrieve and save customized attributes of the game to the save data (exclusive to this mod)
-function GetGlobalProperty(identifier)
-	return GetPersistentProperty("GLOBAL_" .. identifier)
+Utils.GetGlobalProperty = function(identifier)
+	return Utils.GetPersistentProperty("GLOBAL_" .. identifier)
 end
 
-function SetGlobalProperty(identifier, value)
-	SetPersistentProperty("GLOBAL_" .. identifier, value)
+Utils.SetGlobalProperty = function(identifier, value)
+	Utils.SetPersistentProperty("GLOBAL_" .. identifier, value)
 end
 
 
 --- Retrieve the current active human player
 --- Return nil if the current player is not a human
-function GetCurrentPlayer()
-	local iPlayerID = Game.GetActivePlayer();
+Utils.GetCurrentPlayer = function()
+	local iPlayerID = Game.GetActivePlayer()
 	if (iPlayerID < 0) then
 		dprint("Error - player index not correct");
 		return nil;
@@ -64,32 +67,53 @@ function GetCurrentPlayer()
 		return nil;
 	end
 
-	return Players[iPlayerID];
+	return Players[iPlayerID]
 end
 
-function GenerateCheckString()
-	if not GetGlobalProperty("STARTTIME")  then
-		SetGlobalProperty("STARTTIME", GetCurrentTime())
+Utils.GenerateCheckString = function()
+	if not Utils.GetGlobalProperty("STARTTIME")  then
+		Utils.SetGlobalProperty("STARTTIME", Utils.GetCurrentTime())
 	end
 end
 
-function PopDebugMsg()
+Utils.PopDebugMsg = function()
 	print("DEBUG MODE: "..GameDefines.UGFN_DEBUG_MODE)
 	if GameDefines.UGFN_DEBUG_MODE == 1 then
-		GenerateAdvisorPopUp(
+		AdvisorManager.GenerateAdvisorPopUp(
+			Game.GetActivePlayer(),
 			AdvisorTypes.ADVISOR_MILITARY, 
 			"Debug Messages",
-			"Start time: "..GetGlobalProperty("STARTTIME")
+			"Start time: "..Utils.GetGlobalProperty("STARTTIME").."[NEWLINE]"..
+			"Year: "..Game.GetGameTurnYear()
 		)
 	end
 	return false
 end
 
-function GetCurrentTime()
+Utils.GetCurrentTime = function()
 	local date_table = os.date("*t")
 	local ms = string.match(tostring(os.clock()), "%d%.(%d+)")
 	local hour, minute, second = date_table.hour, date_table.min, date_table.sec
-	local year, month, day = date_table.year, date_table.month, date_table.wday
+	local year, month, day = date_table.year, date_table.month, date_table.day
 	local result = string.format("%d-%d-%d %d:%d:%d:%s", year, month, day, hour, minute, second, ms)
 	return result
+end
+
+Utils.GetPlayerByLeaderType = function(leaderType)
+	if #g_leader_player == 0 then
+		for i, player in ipairs(Players) do
+			g_leader_player[player:GetLeaderType()] = player
+		end
+	end
+	return g_leader_player[leaderType]
+end
+
+Utils.AddFreeUnits = function(player, unitTypeID, locationX, locationY, nunit)
+	local units = {}
+	for i = 1, nunit do
+		local unit = player:InitUnit(unitTypeID, locationX, locationY, UNITAI_DEFENSE,  DirectionTypes.DIRECTION_WEST)
+		unit:JumpToNearestValidPlot()
+		table.insert(units, unit)
+	end
+	return units
 end

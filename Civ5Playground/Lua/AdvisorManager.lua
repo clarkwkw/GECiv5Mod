@@ -1,5 +1,6 @@
-g_advisorPopupQueue = {}
+local g_advisorPopupQueue = {}
 
+AdvisorManager = {}
 --[[
 	Generates an advisor popup and insert into the popup queue, the popups in the queue will be triggered sequentially
 	You should NOT use Events.AdvisorDisplayShow directly, 
@@ -13,7 +14,7 @@ g_advisorPopupQueue = {}
  				AdvisorTypes.ADVISOR_SCIENCE
 --]]
 
-function GenerateAdvisorPopUp(advisor_type, title, body)
+AdvisorManager.GenerateAdvisorPopUp = function(player_id, advisor_type, title, body)
 	local advisorEventInfo =
 	{
 		Advisor = advisor_type,
@@ -25,7 +26,10 @@ function GenerateAdvisorPopUp(advisor_type, title, body)
 		Concept3 = "",
 		Modal = false;
 	};
-	table.insert(g_advisorPopupQueue, advisorEventInfo)
+	if not g_advisorPopupQueue[player_id] then
+		g_advisorPopupQueue[player_id] = {}
+	end
+	table.insert(g_advisorPopupQueue[player_id], advisorEventInfo)
 end
 
 
@@ -45,10 +49,16 @@ end
 	-> There is no more popup in the queue
 --]]
 
-function TriggerOnePopUp()
-	if #g_advisorPopupQueue > 0 then
-		print(g_advisorPopupQueue[#g_advisorPopupQueue].ActivateButtonText)
-		Events.AdvisorDisplayShow(g_advisorPopupQueue[#g_advisorPopupQueue])
-		table.remove(g_advisorPopupQueue)
+AdvisorManager.TriggerOnePopUp = function()
+	local player_id = Game.GetActivePlayer()
+	if not g_advisorPopupQueue[player_id] then
+		g_advisorPopupQueue[player_id] = {}
 	end
+
+	local queue = g_advisorPopupQueue[player_id]
+	if #queue > 0 then
+		Events.AdvisorDisplayShow(queue[#queue])
+		table.remove(queue)
+	end
+	
 end

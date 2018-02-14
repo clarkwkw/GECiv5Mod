@@ -2,8 +2,6 @@
 -- Author: clark
 -- DateCreated: 1/20/2018 9:12:22 AM
 --------------------------------------------------------------
-include("AdvisorManager.lua")
-include("Utils.lua")
 
 
 --- Creates a listener function to the no. of building of a player
@@ -15,7 +13,7 @@ include("Utils.lua")
 function BuildingCountListenerFactory(buildingClass, count, heading, msg, onAdvisor)
 	listener = 
 		function()
-			local player = GetCurrentPlayer()
+			local player = Utils.GetCurrentPlayer()
 			if player == nil then
 				return
 			end
@@ -24,7 +22,7 @@ function BuildingCountListenerFactory(buildingClass, count, heading, msg, onAdvi
 				if not onAdvisor then
 					player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, msg, heading)
 				else
-					GenerateAdvisorPopUp(AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
+					AdvisorManager.GenerateAdvisorPopUp(Game.GetActivePlayer(), AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
 				end
 				return true
 			end
@@ -41,7 +39,7 @@ end
 function UnitCountListenerFactory(untiClass, count, heading, msg, onAdvisor)
 	listener = 
 		function()
-			local player = GetCurrentPlayer()
+			local player = Utils.GetCurrentPlayer()
 			if player == nil then
 				return
 			end
@@ -50,7 +48,7 @@ function UnitCountListenerFactory(untiClass, count, heading, msg, onAdvisor)
 				if not onAdvisor then
 					player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, msg, heading)
 				else
-					GenerateAdvisorPopUp(AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
+					AdvisorManager.GenerateAdvisorPopUp(Game.GetActivePlayer(), AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
 				end
 				return true
 			end

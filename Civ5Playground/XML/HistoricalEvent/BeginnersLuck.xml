@@ -1,0 +1,65 @@
+<GameData>
+	<EventHistorical>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<AdvisorType>ADVISOR_ECONOMIC</AdvisorType>
+			<AdvisorHeading>TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD</AdvisorHeading>
+			<AdvisorBody>TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVBODY</AdvisorBody>
+			<OccurYear>-3999</OccurYear>
+		</Row>
+	</EventHistorical>
+
+	<EventHistoricalLeaders>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<LeaderType>allhuman</LeaderType>
+		</Row>
+	</EventHistoricalLeaders>
+
+	<EventHistoricalCompensation>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>UNIT_WORKER</UnitTypeID>
+			<Count>1</Count>
+		</Row>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>UNIT_ARCHER</UnitTypeID>
+			<Count>1</Count>
+		</Row>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>UNIT_SCIENTIST</UnitTypeID>
+			<Count>1</Count>
+		</Row>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>gold</UnitTypeID>
+			<Count>123</Count>
+		</Row>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>tech</UnitTypeID>
+			<Count>2</Count>
+		</Row>
+	</EventHistoricalCompensation>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD">
+			<Text>Historical Event: Beginner's Luck</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVBODY">
+			<Text>The god saw you suffering, and sent you a little gift</Text>
+		</Row>
+	</Language_en_US>
+	
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD">
+			<Text>歷史事件: 新手上路</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVBODY">
+			<Text>創造者不忍子民受苦，賜與禮物</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+
+</GameData>

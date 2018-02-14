@@ -1,0 +1,32 @@
+<GameData>
+    <Table name="EventHistorical">
+		<Column name="EventID" type="text" notnull="true" unique="true"/>
+		<Column name="AdvisorType" type="text" default=""/>
+		<Column name="AdvisorHeading" type="text"/>
+		<Column name="AdvisorBody" type="text"/>
+		<Column name="OccurYear" type="integer" notnull="true"/>
+    </Table>
+
+    <Table name="EventHistoricalLeaders">
+		<Column name="EventID" type="text" reference="EventHistorical(EventID)"/>
+
+		<!-- 
+			The identifier of a leader, refer to 
+			\Steam\steamapps\common\Sid Meier's Civilization V\Assets\Gameplay\XML\Leaders
+			for leader type, e.g. Leader_Alexander, Leader_Askia, ...
+			if there is one row with LeaderType = "all"/"allhuman", other rows will be ignored and the event will be triggered for all players
+		-->
+		<Column name="LeaderType" type="text" notnull="true"/>
+    </Table>
+
+    <Table name="EventHistoricalCompensation">
+		<Column name="EventID" type="text" reference="EventHistorical(EventID)"/>
+		<!-- 
+			Refer to http://modiki.civfanatics.com/index.php?title=UnitType_(Civ5_Type) 
+			it can also be set to "gold" / "tech" to grant golds/free techs
+		-->
+		<Column name="UnitTypeID" type="string" notnull="true"/>
+		<Column name="Count" type="int" notnull="true"/>
+	</Table>
+
+</GameData>
