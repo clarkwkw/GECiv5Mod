@@ -67,7 +67,7 @@ BerserkEnermyEventManager.InitEvents = function()
 end
 
 function BerserkEnermyEvent:New(o)
-	local required_fields = {"EventID", "OffenseLeaders", "DefenseLeaders", "OccurYear", "OffenseCompensation", "DefenseCompensation", "OffenseTroops"}
+	local required_fields = {"EventID", "OffenseLeaders", "DefenseLeaders", "OccurYear", "OffenseCompensation", "DefenseCompensation", "OffenseTroops", "OffenseTroopsSpawnMinDist", "OffenseTroopsSpawnMaxDist"}
 	local optional_fields = {"OffenseAdvisorType", "DefenseAdvisorType", "OffenseAdvisorHeading", "OffenseAdvisorBody", "DefenseAdvisorHeading", "DefenseAdvisorBody"}
 
 	for i, key in ipairs(required_fields) do
@@ -163,14 +163,13 @@ function BerserkEnermyEvent:Trigger()
 				if defensePlayer:GetCapitalCity() ~= nil then
 					local capitalPlot = defensePlayer:GetCapitalCity():Plot()
 					for unitTypeID, count in pairs(self.OffenseTroops) do
-						local locationX = capitalPlot:GetX() + math.random(1, 3)
-						local locationY = capitalPlot:GetY() + math.random(1, 3)
+						local dx, dy = Utils.GeneratePositionOffset(self.OffenseTroopsSpawnMinDist, self.OffenseTroopsSpawnMaxDist)
 						print(self.EventID..": Spawning "..count.." "..unitTypeID.." for player "..offensePlayer:GetID().." at the capital of player "..defensePlayer:GetID())
 						Utils.AddFreeUnits(
 							offensePlayer,
 							GameInfo.Units[unitTypeID].ID,
-							locationX,
-							locationY, 
+							capitalPlot:GetX() + dx,
+							capitalPlot:GetY() + dy, 
 							count
 						)
 					end

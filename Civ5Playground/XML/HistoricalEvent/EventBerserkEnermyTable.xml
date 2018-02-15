@@ -11,6 +11,8 @@
 		<Column name="DefenseAdvisorType" type="text"/>
 		<Column name="DefenseAdvisorHeading" type="text"/>
 		<Column name="DefenseAdvisorBody" type="text"/>
+		<Column name="OffenseTroopsSpawnMinDist" type="int" default="1"/>
+		<Column name="OffenseTroopsSpawnMaxDist" type="int" default="3"/>
 		<Column name="OccurYear" type="integer" notnull="true"/>
     </Table>
 
