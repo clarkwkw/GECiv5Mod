@@ -3,6 +3,7 @@
 	<EventBerserkEnermy>
 		<Row>
 			<EventID>BerserkBarbarian</EventID>
+			<EventName>TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME</EventName>
 			<DefenseAdvisorType>ADVISOR_MILITARY</DefenseAdvisorType>
 			<DefenseAdvisorHeading>TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD</DefenseAdvisorHeading>
 			<DefenseAdvisorBody>TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY</DefenseAdvisorBody>
@@ -63,6 +64,9 @@
 		</Row>
 	</EventBerserkEnermyDefenseCompensation>
 	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME">
+			<Text>Berserk Enermy: Barbarian</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
 			<Text>Berserk Enermy: Barbarian</Text>
 		</Row>
@@ -72,6 +76,9 @@
 	</Language_en_US>
 	
 	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME">
+			<Text>狂怒之敵:蠻族</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
 			<Text>狂怒之敵:蠻族</Text>
 		</Row>

@@ -1,6 +1,7 @@
 <GameData>
     <Table name="EventBerserkEnermy">
 		<Column name="EventID" type="text" primarykey="true"/>
+		<Column name="EventName" type="text" notnull="true"/>
 		<!-- 
 			The identifier of the advisor, including
 			ADVISOR_MILITARY, ADVISOR_ECONOMIC, ADVISOR_FOREIGN, ADVISOR_SCIENCE

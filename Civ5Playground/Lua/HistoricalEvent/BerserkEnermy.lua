@@ -67,7 +67,7 @@ BerserkEnermyEventManager.InitEvents = function()
 end
 
 function BerserkEnermyEvent:New(o)
-	local required_fields = {"EventID", "OffenseLeaders", "DefenseLeaders", "OccurYear", "OffenseCompensation", "DefenseCompensation", "OffenseTroops", "OffenseTroopsSpawnMinDist", "OffenseTroopsSpawnMaxDist"}
+	local required_fields = {"EventID", "EventName", "OffenseLeaders", "DefenseLeaders", "OccurYear", "OffenseCompensation", "DefenseCompensation", "OffenseTroops", "OffenseTroopsSpawnMinDist", "OffenseTroopsSpawnMaxDist"}
 	local optional_fields = {"OffenseAdvisorType", "DefenseAdvisorType", "OffenseAdvisorHeading", "OffenseAdvisorBody", "DefenseAdvisorHeading", "DefenseAdvisorBody"}
 
 	for i, key in ipairs(required_fields) do
@@ -100,6 +100,7 @@ end
 function BerserkEnermyEvent:Trigger()
 	local defenseEvent = HistoricalEvent:New({
 		EventID = self.EventID,
+		EventName = self.EventName,
 		Leaders = self.DefenseLeaders,
 		OccurYear = self.OccurYear,
 		Compensation = self.DefenseCompensation,
@@ -110,6 +111,7 @@ function BerserkEnermyEvent:Trigger()
 
 	local offenseEvent = HistoricalEvent:New({
 		EventID = self.EventID,
+		EventName = self.EventName,
 		Leaders = self.OffenseLeaders,
 		OccurYear = self.OccurYear,
 		Compensation = self.OffenseCompensation,

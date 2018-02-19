@@ -2,6 +2,7 @@
 	<EventHistorical>
 		<Row>
 			<EventID>BeginnersLuck</EventID>
+			<EventName>TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_NAME</EventName>
 			<AdvisorType>ADVISOR_ECONOMIC</AdvisorType>
 			<AdvisorHeading>TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD</AdvisorHeading>
 			<AdvisorBody>TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVBODY</AdvisorBody>
@@ -45,6 +46,9 @@
 	</EventHistoricalCompensation>
 
 	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_NAME">
+			<Text>Beginner's Luck</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD">
 			<Text>Historical Event: Beginner's Luck</Text>
 		</Row>
@@ -54,6 +58,9 @@
 	</Language_en_US>
 	
 	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_NAME">
+			<Text>新手上路</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD">
 			<Text>歷史事件: 新手上路</Text>
 		</Row>

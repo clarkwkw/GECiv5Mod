@@ -14,6 +14,9 @@
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
 			<Text>Congrats! You have just found the capitial city!</Text>
 		</Row>
+		<Row Tag="TXT_KEY_UGFN_FREETECH">
+			<Text>You are granted free techs, click here to choose..</Text>
+		</Row>
 	</Language_en_US>
 	
 	<Language_zh_Hant_HK>
@@ -28,6 +31,9 @@
 		</Row>
 			<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
 			<Text>恭喜! 你已成功建立首都!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FREETECH">
+			<Text>你被贈予免費科技，點此揀選..</Text>
 		</Row>
 	</Language_zh_Hant_HK>
 </GameData>

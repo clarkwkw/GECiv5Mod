@@ -78,7 +78,7 @@ HistoricalEventManager.TriggerEvents = function()
 end
 
 function HistoricalEvent:New(o)
-	local required_fields = {"EventID", "Leaders", "OccurYear", "Compensation"}
+	local required_fields = {"EventID", "EventName", "Leaders", "OccurYear", "Compensation"}
 	local optional_fields = {"AdvisorType", "AdvisorHeading", "AdvisorBody"}
 
 	for i, key in ipairs(required_fields) do
@@ -143,6 +143,9 @@ function HistoricalEvent:Trigger(skipSave)
 					player:ChangeGold(count)
 				elseif unitTypeID:lower() == "tech" then
 					player:SetNumFreeTechs(player:GetNumFreeTechs() + count)
+					if player:IsHuman() then
+						player:AddNotification(NotificationTypes.NOTIFICATION_FREE_TECH,  Locale.Lookup("TXT_KEY_UGFN_FREETECH"), Locale.Lookup(self.EventName))
+					end
 				end
 			end
 			if player:IsHuman() and isShowAdvisor then
