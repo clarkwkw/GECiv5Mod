@@ -120,7 +120,7 @@ end
 
 Utils.GeneratePositionOffset = function(mindist, maxdist)
 	local totalDist = math.random(mindist, maxdist)
-	local dx = math.random(mindist, totalDist)
+	local dx = math.random(1, totalDist)
 	local dy = totalDist - dx
 
 	if math.random() < 0.5 then
