@@ -1,6 +1,11 @@
 local g_advisorPopupQueue = {}
 
 AdvisorManager = {}
+
+AdvisorManager.Dominate = function()
+	MapModData.UGFNAdvisorWorking = true
+end
+
 --[[
 	Generates an advisor popup and insert into the popup queue, the popups in the queue will be triggered sequentially
 	You should NOT use Events.AdvisorDisplayShow directly, 
@@ -59,6 +64,8 @@ AdvisorManager.TriggerOnePopUp = function()
 	if #queue > 0 then
 		Events.AdvisorDisplayShow(queue[#queue])
 		table.remove(queue)
+	else
+		MapModData.UGFNAdvisorWorking = false
 	end
 	
 end

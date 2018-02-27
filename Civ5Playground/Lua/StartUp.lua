@@ -60,6 +60,7 @@ ListenerManager.AddTurnStartListeners(
 
 Events.ActivePlayerTurnStart.Add(ListenerManager.ExecuteTurnStartListeners)
 Events.ActivePlayerTurnStart.Add(AdvisorManager.TriggerOnePopUp)
+Events.ActivePlayerTurnEnd.Add(AdvisorManager.Dominate)
 Events.AdvisorDisplayHide.Add(AdvisorManager.TriggerOnePopUp)
 
 --[[
