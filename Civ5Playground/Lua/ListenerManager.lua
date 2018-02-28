@@ -2,7 +2,9 @@
 --- default_turn_start_listeners: 	{listener_id: listener}
 
 local active_turn_start_listeners = {}
-local default_turn_start_listeners = {}
+local individual_turn_start_listeners = {}
+local global_turn_start_listeners = {}
+local last_executed = Utils.GetGlobalProperty("ListenerManagerLastExecuted") or -1000000
 
 ListenerManager = {}
 --[[
@@ -19,8 +21,14 @@ ListenerManager = {}
 			should return true if the listener function no longer needs to be triggered for the player
 --]]
 
-ListenerManager.AddTurnStartListeners = function (listener_id, listener)
-	default_turn_start_listeners[listener_id] = listener
+ListenerManager.AddIndividualTurnStartListener = function (listener_id, listener)
+	individual_turn_start_listeners[listener_id] = listener
+end
+
+ListenerManager.AddGlobalTurnStartListener = function (listener_id, listener)
+	if not Utils.GetGlobalProperty("ListenerGlobal_"..listener_id) then
+		global_turn_start_listeners[listener_id] = listener
+	end
 end
 
 --[[
@@ -29,11 +37,12 @@ end
 
 ListenerManager.ExecuteTurnStartListeners = function()
 	local iPlayerID = Game.GetActivePlayer()
+	local curYear = Game.GetGameTurnYear()
 
 	-- copy a set of listeners for the player on initialization
 	if not active_turn_start_listeners[iPlayerID] then
 		copy_table = {}
-		for listener_id, listener in pairs(default_turn_start_listeners) do
+		for listener_id, listener in pairs(individual_turn_start_listeners) do
 			notified = Utils.GetPlayerProperty(iPlayerID, listener_id)
 			if not notified then
 				copy_table[listener_id] = listener
@@ -43,7 +52,21 @@ ListenerManager.ExecuteTurnStartListeners = function()
 		active_turn_start_listeners[iPlayerID] = copy_table
 	end
 
-	-- trigger listeners
+	if curYear > last_executed then
+		last_executed = curYear
+		Utils.SetGlobalProperty("ListenerManagerLastExecuted", curYear)
+		for listener_id, listener in pairs(global_turn_start_listeners) do
+			print("Triggering global listener "..listener_id)
+			result = listener()
+			if result then
+				print("Deregistering "..listener_id.." global listener"..iPlayerID)
+				global_turn_start_listeners[listener_id] = nil
+				Utils.SetGlobalProperty("ListenerGlobal_"..listener_id, true)
+			end
+		end
+	end
+
+	-- trigger indiviudal listeners
 	for listener_id, listener in pairs(active_turn_start_listeners[iPlayerID]) do
 		print("Triggering listener for player " ..iPlayerID .. " on " ..listener_id)
 		result = listener()

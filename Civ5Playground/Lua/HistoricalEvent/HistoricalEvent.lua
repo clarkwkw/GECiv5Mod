@@ -2,7 +2,7 @@
 
 HistoricalEventManager  = {}
 HistoricalEvent = {}
-local lastInvoked = -999999
+local lastInvoked = Utils.GetGlobalProperty("HistoricalEventManagerLastInvoked") or -999999
 local currentYear = -999999
 local eventQueue = {}
 
@@ -60,6 +60,7 @@ HistoricalEventManager.TriggerEvents = function()
 	currentYear = Game.GetGameTurnYear()
 	if lastInvoked < currentYear then
 		currentYear = Game.GetGameTurnYear()
+		Utils.SetGlobalProperty("HistoricalEventManagerLastInvoked", currentYear)
 		for i, event in ipairs(eventQueue) do
 			print("Checking event "..event.EventID)
 			local status = event:CheckCondition()

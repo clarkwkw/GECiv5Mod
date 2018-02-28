@@ -17,13 +17,13 @@ HistoricalEventManager.InitEvents()
 BerserkEnermyEventManager.InitEvents()
 print("Adding listeners..")
 
-ListenerManager.AddTurnStartListeners(
+ListenerManager.AddIndividualTurnStartListener(
 	"NOTIFICATION_DEBUG_MSG",
 	Utils.PopDebugMsg
 )
 
 --- Monitoring no. of Palace Built
-ListenerManager.AddTurnStartListeners(
+ListenerManager.AddIndividualTurnStartListener(
 	"NOTIFICATION_PALACE_BUILT",
 	BuildingCountListenerFactory(
 		GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace 
@@ -36,7 +36,7 @@ ListenerManager.AddTurnStartListeners(
 )
 
 --- Monitoring no. of Settler Built
-ListenerManager.AddTurnStartListeners(
+ListenerManager.AddIndividualTurnStartListener(
 	"NOTIFICATION_SETTLER_BUILT",
 	BuildingCountListenerFactory(
 		GameInfo.UnitClasses.UNITCLASS_SETTLER.ID, --- SETTLER
@@ -48,12 +48,12 @@ ListenerManager.AddTurnStartListeners(
 
 )
 
-ListenerManager.AddTurnStartListeners(
+ListenerManager.AddGlobalTurnStartListener(
 	"HISTORICAL_EVENTS",
 	HistoricalEventManager.TriggerEvents
 )
 
-ListenerManager.AddTurnStartListeners(
+ListenerManager.AddGlobalTurnStartListener(
 	"BERSERK_ENERMY",
 	BerserkEnermyEventManager.TriggerEvents
 )
