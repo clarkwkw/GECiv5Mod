@@ -78,6 +78,25 @@ function DisasterEvent:Trigger()
 					end
 				end
 			end
+			if self.Loss["PillageTiles"] ~= nil then
+				local range = self.Loss["PillageTiles"]["Range"]
+				local prob = self.Loss["PillageTiles"]["Prob"]
+				for city in player:Cities() do
+					local cityX = city:Plot():GetX()
+					local cityY = city:Plot():GetY()
+					for x = cityX - range, cityY+range do 
+						for y = cityY - range, cityY + range do
+							local plot = Map.GetPlot(x, y)
+							if plot:GetImprovementType() ~= -1 then
+								randompt = math.random()
+								if randompt < prob then
+									plot:SetImprovementPillaged(true)
+								end
+							end
+						end
+					end
+				end
+			end
 			if player:IsHuman() then
 				if unitKilled then
 					player:AddNotification(NotificationTypes.NOTIFICATION_UNIT_DIED,  Locale.Lookup("TXT_KEY_UGFN_DISASTER_UNIT_DIED"), Locale.Lookup(self.EventName))

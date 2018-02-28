@@ -17,6 +17,10 @@ DisasterEvent:New({
 	ObsoleteCondition = BlackDeathObsoleteCondition,
 	Loss = {
 		Population = 0.1,
-		UnitHP = 50
+		UnitHP = 50,
+		PillageTiles = {
+			Range = 2,
+			Prob = 1.0
+		}
 	}
 })
