@@ -109,21 +109,23 @@ function HistoricalEvent:CheckCondition()
 	return 0
 end
 
-function HistoricalEvent:Trigger(skipSave)
+function HistoricalEvent:Trigger(skipSave, playersOverride)
 	skipSave = skipSave or false
 	local isShowAdvisor = self.AdvisorType ~= nil and self.AdvisorHeading ~= nil and self.AdvisorBody ~= nil
-	local eventPlayers = {}
-	if self.Leaders == "all" then
-		eventPlayers = Players
-	elseif self.Leaders == "allhuman" then
-		for key, player in pairs(Players) do
-			if player:IsHuman() then
-				table.insert(eventPlayers, player)
+	local eventPlayers = playersOverride or {}
+	if playersOverride  == nil then
+		if self.Leaders == "all" then
+			eventPlayers = Players
+		elseif self.Leaders == "allhuman" then
+			for key, player in pairs(Players) do
+				if player:IsHuman() then
+					table.insert(eventPlayers, player)
+				end
 			end
-		end
-	else
-		for key, leader in pairs(self.Leaders) do
-			table.insert(eventPlayers, Utils.GetPlayerByLeaderType(leader))
+		else
+			for key, leader in pairs(self.Leaders) do
+				table.insert(eventPlayers, Utils.GetPlayerByLeaderType(leader))
+			end
 		end
 	end
 	for key, player in pairs(eventPlayers) do

@@ -70,6 +70,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/Buildings.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Achievements.xml</FileName>
+      </Action>
     </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -84,6 +89,14 @@
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Lua\Achievements\Achievement.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Achievements\AchievementsList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Lua\AdvisorManager.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -119,6 +132,10 @@
     <Content Include="Lua\Utils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Achievements.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\Buildings.xml">
       <SubType>Lua</SubType>
@@ -156,6 +173,7 @@
   <ItemGroup>
     <Folder Include="Lua" />
     <Folder Include="Lua\Events" />
+    <Folder Include="Lua\Achievements" />
     <Folder Include="XML" />
     <Folder Include="XML\Events" />
   </ItemGroup>

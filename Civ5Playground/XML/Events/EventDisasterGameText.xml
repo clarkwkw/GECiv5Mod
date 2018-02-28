@@ -12,7 +12,7 @@
 			<Text>Disaster: Black Death</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_BODY">
-			<Text>Your country is suffering from black death - a severe and mysterious disease[NEWLINE]Building more [COLOR_BUILDING_TEXT]hospitals[ENDCOLOR] helps reduce the chance of getting the disease[NEWLINE]
+			<Text>Your country is suffering from black death - a severe and mysterious disease. Building more [COLOR_BUILDING_TEXT]hospitals[ENDCOLOR] helps reduce the chance of getting the disease。
 			</Text>
 		</Row>
 	</Language_en_US>
@@ -28,7 +28,7 @@
 			<Text>災害: 黑死病</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_BODY">
-			<Text>黑死病 - 一種高危而神秘的疾病，正在你的國家肆虐[NEWLINE]興建更多[COLOR_BUILDING_TEXT]醫院[ENDCOLOR]有助降低國民患病風險[NEWLINE]</Text>
+			<Text>黑死病 - 一種高危而神秘的疾病，正在你的國家肆虐。興建更多[COLOR_BUILDING_TEXT]醫院[ENDCOLOR]有助降低國民患病風險。</Text>
 		</Row>
 	</Language_zh_Hant_HK>
 </GameData>

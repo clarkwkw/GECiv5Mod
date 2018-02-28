@@ -12,6 +12,7 @@ include("AdvisorManager.lua")
 include("HistoricalEvent.lua")
 include("BerserkEnermy.lua")
 include("Disaster.lua")
+include("Achievement.lua")
 
 Utils.GenerateCheckString()
 HistoricalEventManager.InitEvents()

@@ -21,14 +21,14 @@ Utils = {}
 --- such that unncessary save/load can be avoided
 --- Example usage: check GetPlayerProperty and SetPlayerProperty
 Utils.GetPersistentProperty = function(name)
-    if not g_Properties[name] then
-        g_Properties[name] = g_SaveData.GetValue(name)
-    end
-    return g_Properties[name]
+	 if not g_Properties[name] then
+		  g_Properties[name] = g_SaveData.GetValue(name)
+	 end
+	 return g_Properties[name]
 end
 
 Utils.SetPersistentProperty = function(name, value)
-    if not(Utils.GetPersistentProperty(name) == value) then
+	 if not(Utils.GetPersistentProperty(name) == value) then
 		g_SaveData.SetValue(name, value)
 		g_Properties[name] = value
 	end
@@ -131,4 +131,23 @@ Utils.GeneratePositionOffset = function(mindist, maxdist)
 	end
 
 	return dx, dy
+end
+
+Utils.ToLuaCode = function (item, left)
+	if type(item) == "nil" then return "nil" end
+	if type(item) == "boolean" then return tostring(item) end
+	if type(item) == "number" then return tostring(item) end
+	if type(item) == "string" then return "'"..item.."'" end
+	if type(item) ~= "table" then error("could not serialize an element of type "..type(item)) end
+	
+	local str = "{"
+	for k, v in pairs(item) do
+		 str = str  .."[".. Utils.ToLuaCode(k, true) .. "] = " .. Utils.ToLuaCode(v) .. ", "
+	end
+	return str.."}"
+end
+
+Utils.FromLuaCode = function (code)
+	local func =  loadstring("return "..code)
+	return func()
 end

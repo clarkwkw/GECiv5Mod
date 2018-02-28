@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/20/2018 2:14:03 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_NAME">
+			<Text>First in Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_ADVHEAD">
+			<Text>Achievement: First in Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_BODY">
+			<Text>Your civilization is the first to research [COLOR_TECH_TEXT]Sailing[ENDCOLOR], and inspired a citizen to become a [COLOR_GREAT_PEOPLE_STORED]Great Admiral[ENDCOLOR].</Text>
+		</Row>
+	</Language_en_US>
+	
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_NAME">
+			<Text>首名下水</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_ADVHEAD">
+			<Text>成就:首名下水</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_BODY">
+			<Text>你是首個研發出[COLOR_TECH_TEXT]航海[ENDCOLOR]的文明，啟發了一位市民成為[COLOR_GREAT_PEOPLE_STORED]海軍統帥[ENDCOLOR]。</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+</GameData>
