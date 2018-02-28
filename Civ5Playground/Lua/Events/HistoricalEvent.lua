@@ -128,7 +128,8 @@ function HistoricalEvent:Trigger(skipSave)
 	end
 	for key, player in pairs(eventPlayers) do
 		if player and player:IsAlive() and player:GetCapitalCity() ~= nil then
-			local capitalPlot = player:GetCapitalCity():Plot()
+			local capitalCity = player:GetCapitalCity()
+			local capitalPlot = capitalCity:Plot()
 
 			for unitTypeID, count in pairs(self.Compensation) do
 				if GameInfo.Units[unitTypeID] ~= nil then
@@ -143,9 +144,12 @@ function HistoricalEvent:Trigger(skipSave)
 				elseif unitTypeID:lower() == "gold" then
 					player:ChangeGold(count)
 				elseif unitTypeID:lower() == "tech" then
-					player:SetNumFreeTechs(player:GetNumFreeTechs() + count)
 					if player:IsHuman() then
+						player:SetNumFreeTechs(player:GetNumFreeTechs() + count)
 						player:AddNotification(NotificationTypes.NOTIFICATION_FREE_TECH,  Locale.Lookup("TXT_KEY_UGFN_FREETECH"), Locale.Lookup(self.EventName))
+					else
+						local freeTechGranted = capitalCity:GetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"])
+						capitalCity:SetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"], freeTechGranted + count)
 					end
 				end
 			end

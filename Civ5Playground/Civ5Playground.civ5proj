@@ -65,6 +65,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/Events/EventDisasterGameText.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Buildings.xml</FileName>
+      </Action>
     </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -114,6 +119,10 @@
     <Content Include="Lua\Utils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Buildings.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\Events\EventDisasterGameText.xml">
       <SubType>Lua</SubType>

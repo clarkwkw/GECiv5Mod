@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_DUMFREETECH</Type>
+			<DefaultBuilding>BUILDING_DUMFREETECH</DefaultBuilding>
+			<Description>TXT_KEY_UGFN_BUILDING_DUMFREETECH</Description>
+			<NoLimit>true</NoLimit>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_DUMFREETECH</Type>
+			<BuildingClass>BUILDINGCLASS_DUMFREETECH</BuildingClass>
+			<Cost>-1</Cost>
+			<FaithCost>-1</FaithCost>
+			<ArtDefineTag>NONE</ArtDefineTag>
+			<PrereqTech>NULL</PrereqTech>
+			<GreatWorkCount>-1</GreatWorkCount>
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<NeverCapture>true</NeverCapture>
+			<NukeImmune>true</NukeImmune>
+			<PortraitIndex>19</PortraitIndex>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<FreeTechs>1</FreeTechs>
+			<Description>TXT_KEY_UGFN_BUILDING_DUMFREETECH</Description>
+		</Row>
+	</Buildings>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_BUILDING_DUMFREETECH">
+			<Text>A Dummy Building for a Free Tech</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

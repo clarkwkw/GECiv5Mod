@@ -32,7 +32,6 @@ function DisasterEvent:CheckCondition()
 end
 
 function DisasterEvent:Trigger()
-	skipSave = skipSave or false
 	local isShowAdvisor = self.AdvisorType ~= nil and self.AdvisorHeading ~= nil and self.AdvisorBody ~= nil
 	local eventPlayers = {}
 	if self.Leaders == "all" then

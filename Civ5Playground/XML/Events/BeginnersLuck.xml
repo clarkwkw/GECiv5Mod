@@ -13,7 +13,7 @@
 	<EventHistoricalLeaders>
 		<Row>
 			<EventID>BeginnersLuck</EventID>
-			<LeaderType>allhuman</LeaderType>
+			<LeaderType>all</LeaderType>
 		</Row>
 	</EventHistoricalLeaders>
 
@@ -26,11 +26,6 @@
 		<Row>
 			<EventID>BeginnersLuck</EventID>
 			<UnitTypeID>UNIT_ARCHER</UnitTypeID>
-			<Count>1</Count>
-		</Row>
-		<Row>
-			<EventID>BeginnersLuck</EventID>
-			<UnitTypeID>UNIT_SCIENTIST</UnitTypeID>
 			<Count>1</Count>
 		</Row>
 		<Row>
