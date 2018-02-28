@@ -11,7 +11,6 @@ BerserkEnermyEventManager.InitEvents = function()
 			eventInfo[row.EventID] = {}
 			for key, value in pairs(row) do
 				eventInfo[row.EventID][key] = value
-				print("Getting "..key)
 			end
 			eventInfo[row.EventID]["OffenseLeaders"] = {}
 			eventInfo[row.EventID]["DefenseLeaders"] = {}

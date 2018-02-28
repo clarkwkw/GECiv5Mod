@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/20/2018 2:14:03 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_UNIT_DIED">
+			<Text>Units died because of the disaster</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_NAME">
+			<Text>Black Death</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_ADVHEAD">
+			<Text>Disaster: Black Death</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_BODY">
+			<Text>Your country is suffering from black death - a severe and mysterious disease[NEWLINE]Building more [COLOR_BUILDING_TEXT]hospitals[ENDCOLOR] helps reduce the chance of getting the disease[NEWLINE]
+			</Text>
+		</Row>
+	</Language_en_US>
+	
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_UNIT_DIED">
+			<Text>有單位因為災害死亡</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_NAME">
+			<Text>黑死病</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_ADVHEAD">
+			<Text>災害: 黑死病</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_BODY">
+			<Text>黑死病 - 一種高危而神秘的疾病，正在你的國家肆虐[NEWLINE]興建更多[COLOR_BUILDING_TEXT]醫院[ENDCOLOR]有助降低國民患病風險[NEWLINE]</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+</GameData>

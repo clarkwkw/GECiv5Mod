@@ -43,22 +43,27 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/HistoricalEvent/EventHistoricalTable.xml</FileName>
+        <FileName>XML/Events/EventHistoricalTable.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/HistoricalEvent/EventBerserkEnermyTable.xml</FileName>
+        <FileName>XML/Events/EventBerserkEnermyTable.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/HistoricalEvent/BeginnersLuck.xml</FileName>
+        <FileName>XML/Events/BeginnersLuck.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/HistoricalEvent/BerserkBarbarian.xml</FileName>
+        <FileName>XML/Events/BerserkBarbarian.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Events/EventDisasterGameText.xml</FileName>
       </Action>
     </ModActions>
   </PropertyGroup>
@@ -78,11 +83,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\HistoricalEvent\BerserkEnermy.lua">
+    <Content Include="Lua\Events\BerserkEnermy.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\HistoricalEvent\HistoricalEvent.lua">
+    <Content Include="Lua\Events\Disaster.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Events\DisastersList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Events\HistoricalEvent.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -102,6 +115,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="XML\Events\EventDisasterGameText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="XML\GameText.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -110,28 +127,28 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\HistoricalEvent\BeginnersLuck.xml">
+    <Content Include="XML\Events\BeginnersLuck.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\HistoricalEvent\BerserkBarbarian.xml">
+    <Content Include="XML\Events\BerserkBarbarian.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\HistoricalEvent\EventBerserkEnermyTable.xml">
+    <Content Include="XML\Events\EventBerserkEnermyTable.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\HistoricalEvent\EventHistoricalTable.xml">
+    <Content Include="XML\Events\EventHistoricalTable.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Lua" />
-    <Folder Include="Lua\HistoricalEvent" />
+    <Folder Include="Lua\Events" />
     <Folder Include="XML" />
-    <Folder Include="XML\HistoricalEvent" />
+    <Folder Include="XML\Events" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
