@@ -153,6 +153,10 @@ function HistoricalEvent:Trigger(skipSave, playersOverride)
 						local freeTechGranted = capitalCity:GetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"])
 						capitalCity:SetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"], freeTechGranted + count)
 					end
+				elseif unitTypeID:lower() == "culture" then
+					player:ChangeJONSCulture(count)
+				elseif unitTypeID:lower() == "faith" then
+					player:ChangeFaith(count)
 				end
 			end
 			if player:IsHuman() and isShowAdvisor then

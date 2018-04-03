@@ -43,6 +43,16 @@
 			<UnitTypeID>tech</UnitTypeID>
 			<Count>2</Count>
 		</Row>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>culture</UnitTypeID>
+			<Count>1000</Count>
+		</Row>
+		<Row>
+			<EventID>BeginnersLuck</EventID>
+			<UnitTypeID>faith</UnitTypeID>
+			<Count>200</Count>
+		</Row>
 	</EventHistoricalCompensation>
 
 	<Language_en_US>

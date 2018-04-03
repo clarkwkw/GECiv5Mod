@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified policies based on Assets\DLC\Expansion2\Gameplay\XML\GameInfo\CIV5Policies.xml-->
+<GameData>
+	<!--
+	<Policy_PrereqPolicies>
+		<Delete>
+	</Policy_PrereqPolicies>
+	-->
+	<PolicyBranchTypes>
+		<Update>
+			<Set>
+				<EraPrereq>NULL</EraPrereq>
+			</Set>
+		</Update>
+	</PolicyBranchTypes>
+	<Policies>
+		<Update>
+			<Set>
+				<TechPrereq>TECH_EDUCATION</TechPrereq>
+			</Set>
+			<Where>
+				<PolicyBranchType>POLICY_BRANCH_RATIONALISM</PolicyBranchType>
+			</Where>
+		</Update>
+	</Policies>
+</GameData>

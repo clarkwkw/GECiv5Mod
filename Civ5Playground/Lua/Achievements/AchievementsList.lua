@@ -12,7 +12,8 @@ Achievement:New({
 	Leaders = "allhuman",
 	Quota = 1,
 	Reward = {
-		UNIT_GREAT_ADMIRAL = 1
+		UNIT_GREAT_ADMIRAL = 1,
+		UNIT_PROPHET = 1
 	},
 	Condition = FirstInWaterCondition,
 	ObsoleteCondition = FirstInWaterObsoleteCondition,

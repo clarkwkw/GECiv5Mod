@@ -29,7 +29,7 @@
 		<Column name="EventID" type="text" reference="EventHistorical(EventID)"/>
 		<!-- 
 			Refer to http://modiki.civfanatics.com/index.php?title=UnitType_(Civ5_Type) 
-			it can also be set to "gold" / "tech" to grant golds/free techs
+			it can also be set to "gold" / "tech" / "culture" / "faith" to grant golds/free techs/culture points/faith points
 		-->
 		<Column name="UnitTypeID" type="text" notnull="true"/>
 		<Column name="Count" type="int" notnull="true"/>
