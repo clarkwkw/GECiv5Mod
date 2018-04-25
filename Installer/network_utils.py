@@ -1,11 +1,12 @@
 import json
+import os
 import platform
 import shutil
 import tempfile
 import zipfile
+import io_utils
 from urllib import request
 from urllib.error import HTTPError, URLError
-from io_utils import make_sure_path_exists
 
 VERSIONS_LIST_URL = "https://clarkwkw.github.io/civ5-versions.html"
 TMP_SUBDIR = "GECiv5Mod"
@@ -33,6 +34,7 @@ def download_mod(url, tmp_directory = None):
 		tmpdir = "/tmp" if platform.system() == "Darwin" else tempfile.gettempdir()
 	else:
 		tmpdir = tmp_directory
+		io_utils.make_sure_path_exists(tmpdir)
 
 	tmpdir = tmpdir.rstrip("/") + "/"
 	zipdir = tmpdir + TMP_SUBDIR + ".zip"
@@ -46,13 +48,11 @@ def download_mod(url, tmp_directory = None):
 		raise Exception("Temporary directory is not accessible")
 
 	try:
+		if os.path.exists(tmpdir + TMP_SUBDIR):
+			shutil.rmtree(tmpdir + TMP_SUBDIR)
 		with zipfile.ZipFile(zipdir, "r") as zip_ref:
 			zip_ref.extractall(tmpdir + TMP_SUBDIR)
 	except zipfile.BadZipFile:
 		raise Exception("Downloaded mod content is corrupted")
-		
-if __name__ == "__main__":
-	version_json = get_versions()
-	cur_version = version_json["current_version"]
-	mod_url = version_json["versions"][cur_version]["url"]
-	download_mod(mod_url, "./")
+
+	return tmpdir + TMP_SUBDIR

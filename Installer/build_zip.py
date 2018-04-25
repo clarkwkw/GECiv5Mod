@@ -5,6 +5,8 @@ Prerequisite:
 2. Configure the civ5 installation path and other settings in below
 '''
 
+# ------------------ Settings ------------------ #
+
 # Installation Path of Civ5
 CIV5_ROOT_DIR = "C:/Program Files (x86)/Steam/steamapps/common/Sid Meier's Civilization V"
 
@@ -18,9 +20,15 @@ FROM_LOCAL_DIR = [
 	"../Builtin"
 ]
 
-ZIP_NAME = "GECiv5Mod.zip"
-
 TMP_DIR = "./tmp"
+
+MODINFO_PATH = "Assets/DLC/MP_MODSPACK/modinfo.json"
+
+# ---------- End of Settings Section ---------- #
+
+VERSION_NUMBER = input("Version number [e.g. v0.3]: ")
+
+ZIP_NAME = str(VERSION_NUMBER) + ".zip"
 
 import zipfile
 import io_utils
@@ -28,6 +36,7 @@ from distutils.dir_util import copy_tree
 import shutil
 import os
 from os.path import dirname
+import json
 
 if __name__ == "__main__":
 
@@ -36,6 +45,9 @@ if __name__ == "__main__":
 		print("Cannot detect civ5 installation in the specified path, abort")
 		exit(-1)
 
+	if os.path.exists(TMP_DIR):
+		shutil.rmtree(TMP_DIR)
+
 	io_utils.make_sure_path_exists(TMP_DIR)
 	for dir_path in FROM_CIV5_DIR:
 		src_dir = CIV5_ROOT_DIR + "/" + dir_path
@@ -43,12 +55,14 @@ if __name__ == "__main__":
 		copy_tree(src_dir, target_dir)
 
 	for dir_path in FROM_LOCAL_DIR:
-		for item in os.listdir(dir_path):
-			src = os.path.join(dir_path, item)
-			target = os.path.join(TMP_DIR, item)
-			if os.path.isdir(src):
-				copy_tree(src, target)
-			else:
-				shutil.copy2(src, target)
+		io_utils.merge_dir(dir_path, TMP_DIR)
+
+	with open(TMP_DIR + "/" + MODINFO_PATH, "w") as f:
+		modinfo = {
+			"version": VERSION_NUMBER
+		}
+		json.dump(modinfo, f)
 
 	io_utils.zipdir(TMP_DIR, ZIP_NAME)
+	shutil.rmtree(TMP_DIR)
+	print("Done")

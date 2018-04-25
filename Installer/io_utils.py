@@ -2,6 +2,9 @@ import os
 import errno
 import platform
 import zipfile
+import shutil
+from distutils.dir_util import copy_tree
+import json
 
 POSSIBLE_INSTALLATION_PATHS = {
 	"windows": [
@@ -43,6 +46,21 @@ def verify_civ5_installation_path(path):
 			return False
 	return True
 
+def check_mod_version(civ5_path):
+	MODINFO_PATH = "Assets/DLC/MP_MODSPACK/modinfo.json"
+	if not verify_civ5_installation_path(civ5_path):
+		return None
+
+	modinfo_full_path = civ5_path.rstrip("/") + "/" + MODINFO_PATH
+	if not os.path.isfile(modinfo_full_path):
+		return None
+
+	with open(modinfo_full_path, "r") as f:
+		modinfo = json.load(f)
+		version = modinfo["version"]
+
+	return version
+
 # adopted from https://stackoverflow.com/questions/1855095/how-to-create-a-zip-archive-of-a-directory
 def zipdir(path, zipname):
 	ziph = zipfile.ZipFile(zipname, 'w', zipfile.ZIP_DEFLATED)
@@ -52,6 +70,11 @@ def zipdir(path, zipname):
 			ziph.write(file_path, file_path.lstrip(path))
 	ziph.close()
 
-if __name__ == "__main__":
-	print(suggest_civ5_installation_path())
-	print(verify_civ5_installation_path("./"))
+def merge_dir(src_dir, target_dir):
+	for item in os.listdir(src_dir):
+		item_src_path = os.path.join(src_dir, item)
+		item_target_path = os.path.join(target_dir, item)
+		if os.path.isdir(item_src_path):
+			copy_tree(item_src_path, item_target_path)
+		else:
+			shutil.copy2(item_src_path, item_target_path)
