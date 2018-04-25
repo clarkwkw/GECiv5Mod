@@ -1,4 +1,6 @@
-import io_utils, network_utils, shutil
+import io_utils, network_utils
+import shutil
+import platform
 
 version_json = network_utils.get_versions()
 latest_version = version_json["current_version"]
@@ -28,6 +30,9 @@ if decision:
 	print("Downloading...")
 	downloaded_dir = network_utils.download_mod(mod_url, "./tmp")
 	print("Patching...")
-	io_utils.merge_dir(downloaded_dir, civ5_path)
+
+	install_path = civ5_path + "/" + io_utils.CIV5_ROOT_OFFSET[platform.system().lower()]
+
+	io_utils.merge_dir(downloaded_dir, install_path)
 	shutil.rmtree("./tmp")
 	print("Done")

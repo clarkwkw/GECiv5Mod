@@ -12,8 +12,14 @@ POSSIBLE_INSTALLATION_PATHS = {
 		"D:/Program Files (x86)/Steam/steamapps/common/Sid Meier's Civilization V"
 	],
 	"darwin": [
-		"~/Libraries/Application Support/Steam/SteamApps/common/Sid Meier's Civilization V"
+		os.path.expanduser("~/Library/Application Support/Steam/steamapps/common/Sid Meier's Civilization V")
 	]
+}
+
+# On some system, e.g. MacOS, the game content is placed in a subdirectory under civ5 installation path
+CIV5_ROOT_OFFSET = {
+	"windows": "",
+	"darwin": "Civilization V.app/Contents/Home"
 }
 
 CIV5_LANDMARKS = {
@@ -21,6 +27,7 @@ CIV5_LANDMARKS = {
 		"Launcher.exe"
 	],
 	"darwin": [
+		"Civilization V.app"
 	]
 }
 
@@ -41,17 +48,21 @@ def suggest_civ5_installation_path():
 def verify_civ5_installation_path(path):
 	os_type = platform.system().lower()
 
+	if len(CIV5_LANDMARKS[os_type]) == 0:
+		return False
+
 	for filename in CIV5_LANDMARKS[os_type]:
-		if not os.path.isfile(path.rstrip("/") + "/" + filename):
+		if not os.path.exists(path.rstrip("/") + "/" + filename):
 			return False
 	return True
 
 def check_mod_version(civ5_path):
-	MODINFO_PATH = "Assets/DLC/MP_MODSPACK/modinfo.json"
+	os_type = platform.system().lower()
+	MODINFO_PATH = CIV5_ROOT_OFFSET[os_type] + "/" "Assets/DLC/MP_MODSPACK/modinfo.json"
 	if not verify_civ5_installation_path(civ5_path):
 		return None
 
-	modinfo_full_path = civ5_path.rstrip("/") + "/" + MODINFO_PATH
+	modinfo_full_path = civ5_path.rstrip("/") + "/" + MODINFO_PATH.lstrip("/")
 	if not os.path.isfile(modinfo_full_path):
 		return None
 

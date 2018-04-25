@@ -4,3 +4,4 @@ Installer/tmp
 Installer/*.zip
 __pycache__
 *.pyc
+.DS_Store
