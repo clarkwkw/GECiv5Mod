@@ -2,6 +2,49 @@
 <!-- Created by ModBuddy on 1/20/2018 2:14:03 PM -->
 <GameData>
 	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_BUILDING_DUMFREETECH">
+			<Text>A Dummy Building for a Free Tech</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_UNIT_DIED">
+			<Text>Units died because of the disaster</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_NAME">
+			<Text>Black Death</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_ADVHEAD">
+			<Text>Disaster: Black Death</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_BODY">
+			<Text>Your country is suffering from black death - a severe and mysterious disease. Building more [COLOR_BUILDING_TEXT]hospitals[ENDCOLOR] helps reduce the chance of getting the disease。
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_NAME">
+			<Text>Beginner's Luck</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD">
+			<Text>Historical Event: Beginner's Luck</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVBODY">
+			<Text>The god saw you suffering, and sent you a little gift</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME">
+			<Text>Berserk Enermy: Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
+			<Text>Berserk Enermy: Barbarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY">
+			<Text>The angry Barbarians are approaching your capital, watch out!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_NAME">
+			<Text>First in Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_ADVHEAD">
+			<Text>Achievement: First in Water</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_BODY">
+			<Text>Your civilization is the first to research [COLOR_TECH_TEXT]Sailing[ENDCOLOR], and inspired a citizen to become a [COLOR_GREAT_PEOPLE_STORED]Great Admiral[ENDCOLOR].</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>Progress: Settler</Text>
 		</Row>
@@ -17,9 +60,49 @@
 		<Row Tag="TXT_KEY_UGFN_FREETECH">
 			<Text>You are granted free techs, click here to choose..</Text>
 		</Row>
+
 	</Language_en_US>
 	
 	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_UNIT_DIED">
+			<Text>有單位因為災害死亡</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_NAME">
+			<Text>黑死病</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_ADVHEAD">
+			<Text>災害: 黑死病</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_DISASTER_BLACKDEATH_BODY">
+			<Text>黑死病 - 一種高危而神秘的疾病，正在你的國家肆虐。興建更多[COLOR_BUILDING_TEXT]醫院[ENDCOLOR]有助降低國民患病風險。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_NAME">
+			<Text>新手上路</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVHEAD">
+			<Text>歷史事件: 新手上路</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BEGINNERS_LUCK_ADVBODY">
+			<Text>創造者不忍子民受苦，賜與禮物</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME">
+			<Text>狂怒之敵:蠻族</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
+			<Text>狂怒之敵:蠻族</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY">
+			<Text>慣怒的蠻族正接近你的苜都，小心!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_NAME">
+			<Text>首名下水</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_ADVHEAD">
+			<Text>成就:首名下水</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_BODY">
+			<Text>你是首個研發出[COLOR_TECH_TEXT]航海[ENDCOLOR]的文明，啟發了一位市民成為[COLOR_GREAT_PEOPLE_STORED]海軍統帥[ENDCOLOR]。</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>進度: 開拓者</Text>
 		</Row>

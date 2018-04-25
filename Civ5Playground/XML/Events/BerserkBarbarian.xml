@@ -63,27 +63,4 @@
 			<Count>200</Count>
 		</Row>
 	</EventBerserkEnermyDefenseCompensation>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME">
-			<Text>Berserk Enermy: Barbarian</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
-			<Text>Berserk Enermy: Barbarian</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY">
-			<Text>The angry Barbarians are approaching your capital, watch out!</Text>
-		</Row>
-	</Language_en_US>
-	
-	<Language_zh_Hant_HK>
-		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARIAN_NAME">
-			<Text>狂怒之敵:蠻族</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVHEAD">
-			<Text>狂怒之敵:蠻族</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_EVENT_BERSERKBARBARIAN_ADVBODY">
-			<Text>慣怒的蠻族正接近你的苜都，小心!</Text>
-		</Row>
-	</Language_zh_Hant_HK>
 </GameData>

@@ -1,2 +1,6 @@
 Build/
 Packages/
+Installer/tmp
+Installer/*.zip
+__pycache__
+*.pyc

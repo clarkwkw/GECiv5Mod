@@ -27,9 +27,4 @@
 			<Description>TXT_KEY_UGFN_BUILDING_DUMFREETECH</Description>
 		</Row>
 	</Buildings>
-	<Language_en_US>
-		<Row Tag="TXT_KEY_UGFN_BUILDING_DUMFREETECH">
-			<Text>A Dummy Building for a Free Tech</Text>
-		</Row>
-	</Language_en_US>
 </GameData>

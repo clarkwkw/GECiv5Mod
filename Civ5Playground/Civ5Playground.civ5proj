@@ -28,6 +28,30 @@
         <Description>Registers event listeners</Description>
         <FileName>Lua/StartUp.lua</FileName>
       </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>The Earth</Name>
+        <Description>The Earth Map for Epic speed.</Description>
+        <FileName>Map/Play The World Extended BNW EPIC.Civ5Map</FileName>
+      </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>The Earth</Name>
+        <Description>The Earth Map for Marathon speed.</Description>
+        <FileName>Map/Play The World Extended BNW MARATHON.Civ5Map</FileName>
+      </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>The Earth</Name>
+        <Description>The Earth Map for Quick Speed.</Description>
+        <FileName>Map/Play The World Extended BNW QUICK.Civ5Map</FileName>
+      </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>The Earth</Name>
+        <Description>The Earth Map for Standard speed.</Description>
+        <FileName>Map/Play The World Extended BNW STANDARD.Civ5Map</FileName>
+      </Content>
     </ModContent>
     <ModActions>
       <Action>
@@ -63,17 +87,7 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/Events/EventDisasterGameText.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>XML/Buildings.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/Achievements.xml</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -143,15 +157,23 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="XML\Achievements.xml">
+    <Content Include="Map\Play The World Extended BNW EPIC.Civ5Map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Map\Play The World Extended BNW MARATHON.Civ5Map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Map\Play The World Extended BNW QUICK.Civ5Map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Map\Play The World Extended BNW STANDARD.Civ5Map">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\Buildings.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="XML\Events\EventDisasterGameText.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -192,6 +214,7 @@
     <Folder Include="Lua" />
     <Folder Include="Lua\Events" />
     <Folder Include="Lua\Achievements" />
+    <Folder Include="Map" />
     <Folder Include="XML" />
     <Folder Include="XML\Events" />
   </ItemGroup>
