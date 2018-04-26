@@ -295,5 +295,6 @@ def select_all_callback(event):
 
 if __name__ == "__main__":
 	installer = ModInstaller()
+	installer.resizable(False, False)
 	installer.mainloop()
 
