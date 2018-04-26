@@ -58,14 +58,14 @@ if __name__ == "__main__":
 		src_dir = os.path.join(CIV5_ROOT_DIR, io_utils.CIV5_ROOT_OFFSET[os_version], dir_path)
 		target_dir = os.path.join(TMP_DIR , dir_path)
 		copy_tree(src_dir, target_dir)
-		files_copied.append(dir_path)
+		files_copied.append(dir_path.replace("\\", "/"))
 
 	for dir_path in DIR_REPLACE:
 		io_utils.merge_dir(dir_path, TMP_DIR)
 		
 		for root, subdirs, files in os.walk(dir_path):
 			for file in files:
-				files_replaced.append(os.path.relpath(os.path.join(root, file), dir_path))
+				files_replaced.append(os.path.relpath(os.path.join(root, file), dir_path).replace("\\", "/"))
 
 	with open(os.path.join(TMP_DIR, MODINFO_PATH), "w") as f:
 		files

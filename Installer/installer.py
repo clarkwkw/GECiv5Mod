@@ -14,6 +14,76 @@ VERSION_DICT = {}
 queue = Queue()
 RGX = re.compile('[_ ]')
 
+
+def install_helper(civ5_path, chosen_ver, version_dict, queue):
+	if not io_utils.verify_civ5_installation_path(civ5_path):
+		queue.put(("Cannot detect Civ5 installation, please check installation path.", True))
+		return
+
+	os_ver = platform.system().lower()
+	if chosen_ver not in version_dict["versions"]:
+		queue.put(("Invalid version config.", True))
+	else:
+		try:
+			mod_url = version_dict["versions"][chosen_ver]["url"]
+			queue.put(("Downloading...", ))
+			downloaded_dir = network_utils.download_mod(mod_url)
+
+			queue.put(("Backing up files...", ))
+			with open(os.path.join(downloaded_dir, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
+				modinfo = json.load(f)
+
+			for file in modinfo["files_replaced"]:
+				try:
+					full_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[os_ver], file)
+					os.rename(full_path, full_path + ".bak")
+				except IOError as e:
+					pass
+
+			queue.put(("Installing...", ))
+			install_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[platform.system().lower()])
+			io_utils.merge_dir(downloaded_dir, install_path)
+
+			queue.put(("Removing temporary files...", ))
+			shutil.rmtree(downloaded_dir)
+			os.remove(downloaded_dir + ".zip")
+
+			queue.put(("Installed.", ))
+
+		except Exception as e:
+			queue.put((str(e), True))
+
+def uninstall_helper(civ5_path, queue):
+	os_ver = platform.system().lower()
+	civ5_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[os_ver])
+
+	queue.put(("Removing files...", ))
+
+	with open(os.path.join(civ5_path, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
+		modinfo = json.load(f)
+
+	for path in modinfo["files_copied"]:
+		full_path = os.path.join(civ5_path, path)
+		try:
+			if os.path.isdir(full_path):
+				shutil.rmtree(full_path)
+			else:
+				os.remove(full_path)
+		except (IOError, FileNotFoundError):
+			pass
+
+	queue.put(("Restoring files...", ))
+
+	for file in modinfo["files_replaced"]:
+		try:
+			full_path = os.path.join(civ5_path, file)
+			os.remove(full_path)
+			os.rename(full_path + ".bak", full_path)
+		except IOError as e:
+			pass
+
+	queue.put(("Uninstalled.", ))
+
 class ModInstaller(tk.Tk):
 	def __init_vars(self):
 		self.var_civ5_path = tk.StringVar("")
@@ -34,9 +104,12 @@ class ModInstaller(tk.Tk):
 			self.update_label_modver()
 
 	def update_version_menu(self, options):
+		def switch_version_helper(version):
+			self.var_chosen_ver.set(version)
+
 		self.version_menu["menu"].delete(0, "end")
 		for version in options:
-			self.version_menu["menu"].add_command(label = version)
+			self.version_menu["menu"].add_command(label = version, command = lambda: switch_version_helper(version))
 
 	def update_label_civstatus(self):
 		civ5_path = self.var_civ5_path.get()
@@ -98,99 +171,32 @@ class ModInstaller(tk.Tk):
 		self.var_civ5_path.set("" if civ5_path is None else civ5_path)
 
 	def install(self):
-		def install_helper(queue):
-			civ5_path = self.var_civ5_path.get()
-			if not io_utils.verify_civ5_installation_path(civ5_path):
-				self.update_status_msg("Cannot detect Civ5 installation, please check installation path.", True)
-				return
-
-			chosen_ver = self.var_chosen_ver.get()
-			os_ver = platform.system().lower()
-			if chosen_ver not in VERSION_DICT["versions"]:
-				queue.put(("Invalid version config.", True))
-			else:
-				try:
-					mod_url = VERSION_DICT["versions"][chosen_ver]["url"]
-					queue.put(("Downloading...", ))
-					downloaded_dir = network_utils.download_mod(mod_url)
-
-					queue.put(("Backing up files...", ))
-					with open(os.path.join(downloaded_dir, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
-						modinfo = json.load(f)
-
-					for file in modinfo["files_replaced"]:
-						try:
-							full_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[os_ver], file)
-							os.rename(full_path, full_path + ".bak")
-						except IOError as e:
-							pass
-
-					queue.put(("Installing...", ))
-					install_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[platform.system().lower()])
-					io_utils.merge_dir(downloaded_dir, install_path)
-
-					queue.put(("Removing temporary files...", ))
-					shutil.rmtree(downloaded_dir)
-					os.remove(downloaded_dir + ".zip")
-
-					queue.put(("Installed.", ))
-
-				except Exception as e:
-					queue.put((str(e), True))
-
 		if io_utils.check_mod_version(self.var_civ5_path.get()) is not None:
 			self.uninstall()
 			return
 
 		self.install_button.config(state = tk.DISABLED)
 		self.update_status_msg("")
-		self.install_process = Process(target = install_helper, args = (queue, ))
+		self.install_process = Process(target = install_helper, args = (
+														self.var_civ5_path.get(), 
+														self.var_chosen_ver.get(), 
+														VERSION_DICT,
+														queue))
 		self.install_process.start()
 		self.after(20, self.update_status_tracker)
 
 	def uninstall(self):
-		
-		def uninstall_helper(queue):
-			os_ver = platform.system().lower()
-			civ5_dir = os.path.join(self.var_civ5_path.get(), io_utils.CIV5_ROOT_OFFSET[os_ver])
-
-			queue.put(("Removing files...", ))
-
-			with open(os.path.join(civ5_dir, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
-				modinfo = json.load(f)
-
-			for path in modinfo["files_copied"]:
-				full_path = os.path.join(civ5_dir, path)
-				try:
-					if os.path.isdir(full_path):
-						shutil.rmtree(full_path)
-					else:
-						os.remove(full_path)
-				except (IOError, FileNotFoundError):
-					pass
-
-			queue.put(("Restoring files...", ))
-
-			for file in modinfo["files_replaced"]:
-				try:
-					full_path = os.path.join(civ5_dir, file)
-					os.rename(full_path + ".bak", full_path)
-				except IOError:
-					pass
-
-			queue.put(("Uninstalled.", ))
-
 		self.install_button.config(state = tk.DISABLED)
 		self.update_status_msg("")
-		self.install_process = Process(target = uninstall_helper, args = (queue, ))
+		self.install_process = Process(target = uninstall_helper, args = (self.var_civ5_path.get(), queue))
 		self.install_process.start()
 		self.after(20, self.update_status_tracker)
 
 	def download_mod_version_dict(self):
 		self.update_status_msg("Retrieving available versions..")
 		self.install_button.config(state = tk.DISABLED)
-		global VERSION_DICT
 		try:
+			global VERSION_DICT
 			VERSION_DICT = network_utils.get_versions()
 			self.update_version_menu(list(VERSION_DICT["versions"].keys()))
 			self.var_chosen_ver.set(VERSION_DICT["current_version"])
@@ -248,7 +254,7 @@ class ModInstaller(tk.Tk):
 		version_label = tk.Label(self.win, text = "Latest Version", font = "Helvetica 13 bold")
 		version_label.grid(column = 0, row = 4, sticky = "w")
 
-		self.version_menu = tk.OptionMenu(self.win, self.var_chosen_ver, [])
+		self.version_menu = tk.OptionMenu(self.win, self.var_chosen_ver, *[""])
 		self.version_menu.configure(justify = "center")
 		self.version_menu.grid(column = 1, row = 4, sticky = "ew")
 		self.version_menu.grid_remove()
@@ -264,8 +270,8 @@ class ModInstaller(tk.Tk):
 		self.install_button = tk.Button(self.win, textvariable = self.var_button_text, command = self.install)
 		self.install_button.grid(column = 1, row = 6, sticky = "ew")
 
-		retrieve_modver_therad = Thread(target = self.download_mod_version_dict)
-		retrieve_modver_therad.start()
+		retrieve_modver_thread = Thread(target = self.download_mod_version_dict)
+		retrieve_modver_thread.start()
 		
 		civ5_path = io_utils.suggest_civ5_installation_path()
 		if civ5_path is not None:
