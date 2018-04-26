@@ -2,8 +2,8 @@ import tkinter as tk
 from tkinter import filedialog
 import io_utils, network_utils
 import platform
-import shutil, os
-from multiprocessing import Process, Manager, Queue
+import shutil, os, sys
+from multiprocessing import Process, Manager, Queue, freeze_support
 from threading import Thread
 from queue import Empty
 import json
@@ -16,11 +16,15 @@ RGX = re.compile('[_ ]')
 
 
 def install_helper(civ5_path, chosen_ver, version_dict, queue):
+	os_ver = platform.system().lower()
+	if os_ver == "windows":
+		sys.stdout = open(os.devnull, 'w')
+		sys.stderr = open(os.devnull, 'w')
+
 	if not io_utils.verify_civ5_installation_path(civ5_path):
 		queue.put(("Cannot detect Civ5 installation, please check installation path.", True))
 		return
-
-	os_ver = platform.system().lower()
+	
 	if chosen_ver not in version_dict["versions"]:
 		queue.put(("Invalid version config.", True))
 	else:
@@ -55,6 +59,9 @@ def install_helper(civ5_path, chosen_ver, version_dict, queue):
 
 def uninstall_helper(civ5_path, queue):
 	os_ver = platform.system().lower()
+	if os_ver == "windows":
+		sys.stdout = open(os.devnull, 'w')
+		sys.stderr = open(os.devnull, 'w')
 	civ5_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[os_ver])
 
 	queue.put(("Removing files...", ))
@@ -182,6 +189,7 @@ class ModInstaller(tk.Tk):
 														self.var_chosen_ver.get(), 
 														VERSION_DICT,
 														queue))
+		self.install_process.daemon = True
 		self.install_process.start()
 		self.after(20, self.update_status_tracker)
 
@@ -189,6 +197,7 @@ class ModInstaller(tk.Tk):
 		self.install_button.config(state = tk.DISABLED)
 		self.update_status_msg("")
 		self.install_process = Process(target = uninstall_helper, args = (self.var_civ5_path.get(), queue))
+		self.install_process.daemon = True
 		self.install_process.start()
 		self.after(20, self.update_status_tracker)
 
@@ -294,6 +303,7 @@ def select_all_callback(event):
 	event.widget.icursor('end')
 
 if __name__ == "__main__":
+	freeze_support()
 	installer = ModInstaller()
 	installer.resizable(False, False)
 	installer.mainloop()
