@@ -4,11 +4,15 @@ import io_utils, network_utils
 import platform
 import shutil, os
 from multiprocessing import Process, Manager, Queue
+from threading import Thread
 from queue import Empty
+import json
+import re
 
 TEST_MODE = True
 VERSION_DICT = {}
 queue = Queue()
+RGX = re.compile('[_ ]')
 
 class ModInstaller(tk.Tk):
 	def __init_vars(self):
@@ -17,6 +21,9 @@ class ModInstaller(tk.Tk):
 		self.var_civ_status = tk.StringVar("")
 		self.var_installed_mod_ver = tk.StringVar("")
 		self.var_status_msg = tk.StringVar("")
+		self.var_button_text = tk.StringVar("")
+
+		self.var_civ5_path.trace('w', self.check_test_mode)
 
 	def browse_button(self):
 		initialdir = self.var_civ5_path.get() if self.var_civ5_path.get() is not None else None
@@ -50,9 +57,11 @@ class ModInstaller(tk.Tk):
 		if modver is not None:
 			self.modver_val.config(fg = "green")
 			self.var_installed_mod_ver.set(modver)
+			self.var_button_text.set("Uninstall")
 		else:
 			self.modver_val.config(fg = "red")
 			self.var_installed_mod_ver.set("Not detected")
+			self.var_button_text.set("Install")
 
 	def update_status_msg(self, msg = "", is_err = False):
 		if is_err:
@@ -60,6 +69,33 @@ class ModInstaller(tk.Tk):
 		else:
 			self.status_label.config(fg = "grey")
 		self.var_status_msg.set(msg)
+
+	def update_status_tracker(self):
+		try:
+			args = queue.get(block = False)
+			self.update_status_msg(*args)
+		except Empty:
+			pass
+
+		if self.install_process.is_alive() or not queue.empty():
+			self.after(20, self.update_status_tracker)
+		else:
+			self.install_button.config(state = tk.NORMAL)
+			self.update_label_modver()
+
+	def check_test_mode(self, a, b, c):
+		parsed_cmd = RGX.sub('', self.var_civ5_path.get().lower())
+		if parsed_cmd == "testmode=true":
+			self.version_menu.grid()
+			self.version_val.grid_remove()
+		elif parsed_cmd == "testmode=false":
+			self.version_menu.grid_remove()
+			self.version_val.grid()
+		else:
+			return
+
+		civ5_path = io_utils.suggest_civ5_installation_path()
+		self.var_civ5_path.set("" if civ5_path is None else civ5_path)
 
 	def install(self):
 		def install_helper(queue):
@@ -69,6 +105,7 @@ class ModInstaller(tk.Tk):
 				return
 
 			chosen_ver = self.var_chosen_ver.get()
+			os_ver = platform.system().lower()
 			if chosen_ver not in VERSION_DICT["versions"]:
 				queue.put(("Invalid version config.", True))
 			else:
@@ -77,37 +114,90 @@ class ModInstaller(tk.Tk):
 					queue.put(("Downloading...", ))
 					downloaded_dir = network_utils.download_mod(mod_url)
 
+					queue.put(("Backing up files...", ))
+					with open(os.path.join(downloaded_dir, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
+						modinfo = json.load(f)
+
+					for file in modinfo["files_replaced"]:
+						try:
+							full_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[os_ver], file)
+							os.rename(full_path, full_path + ".bak")
+						except IOError as e:
+							pass
+
 					queue.put(("Installing...", ))
-					install_path = civ5_path + "/" + io_utils.CIV5_ROOT_OFFSET[platform.system().lower()]
+					install_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[platform.system().lower()])
 					io_utils.merge_dir(downloaded_dir, install_path)
 
 					queue.put(("Removing temporary files...", ))
 					shutil.rmtree(downloaded_dir)
 					os.remove(downloaded_dir + ".zip")
 
-					queue.put(("Done.", ))
+					queue.put(("Installed.", ))
 
 				except Exception as e:
 					queue.put((str(e), True))
 
-		def update_status_helper():
-			try:
-				while True:
-					args = queue.get(block = False)
-					self.update_status_msg(*args)
-			except Empty:
-				pass
-
-			if self.install_process.is_alive():
-				self.after(20, update_status_helper)
-			else:
-				self.install_button.config(state = tk.NORMAL)
+		if io_utils.check_mod_version(self.var_civ5_path.get()) is not None:
+			self.uninstall()
+			return
 
 		self.install_button.config(state = tk.DISABLED)
 		self.update_status_msg("")
 		self.install_process = Process(target = install_helper, args = (queue, ))
 		self.install_process.start()
-		self.after(20, update_status_helper)
+		self.after(20, self.update_status_tracker)
+
+	def uninstall(self):
+		
+		def uninstall_helper(queue):
+			os_ver = platform.system().lower()
+			civ5_dir = os.path.join(self.var_civ5_path.get(), io_utils.CIV5_ROOT_OFFSET[os_ver])
+
+			queue.put(("Removing files...", ))
+
+			with open(os.path.join(civ5_dir, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
+				modinfo = json.load(f)
+
+			for path in modinfo["files_copied"]:
+				full_path = os.path.join(civ5_dir, path)
+				try:
+					if os.path.isdir(full_path):
+						shutil.rmtree(full_path)
+					else:
+						os.remove(full_path)
+				except (IOError, FileNotFoundError):
+					pass
+
+			queue.put(("Restoring files...", ))
+
+			for file in modinfo["files_replaced"]:
+				try:
+					full_path = os.path.join(civ5_dir, file)
+					os.rename(full_path + ".bak", full_path)
+				except IOError:
+					pass
+
+			queue.put(("Uninstalled.", ))
+
+		self.install_button.config(state = tk.DISABLED)
+		self.update_status_msg("")
+		self.install_process = Process(target = uninstall_helper, args = (queue, ))
+		self.install_process.start()
+		self.after(20, self.update_status_tracker)
+
+	def download_mod_version_dict(self):
+		self.update_status_msg("Retrieving available versions..")
+		self.install_button.config(state = tk.DISABLED)
+		global VERSION_DICT
+		try:
+			VERSION_DICT = network_utils.get_versions()
+			self.update_version_menu(list(VERSION_DICT["versions"].keys()))
+			self.var_chosen_ver.set(VERSION_DICT["current_version"])
+			self.install_button.config(state = tk.NORMAL)
+			self.update_status_msg("Retrieved.")
+		except Exception as e:
+			self.update_status_msg(str(e), True)		
 
 	def clearup(self):
 		if self.install_process is not None and self.install_process.is_alive():
@@ -134,6 +224,8 @@ class ModInstaller(tk.Tk):
 
 		path_input = tk.Entry(self.win, textvariable = self.var_civ5_path)
 		path_input.grid(column = 1, row = 1)
+		path_input.bind("<Control-KeyRelease-a>", select_all_callback)
+		path_input.bind("<Command-KeyRelease-a>", select_all_callback)
 
 		path_button = tk.Button(self.win, text = "Browse", command = self.browse_button)
 		path_button.grid(column = 2, row = 1)
@@ -156,32 +248,25 @@ class ModInstaller(tk.Tk):
 		version_label = tk.Label(self.win, text = "Latest Version", font = "Helvetica 13 bold")
 		version_label.grid(column = 0, row = 4, sticky = "w")
 
-		global version_menu
 		self.version_menu = tk.OptionMenu(self.win, self.var_chosen_ver, [])
 		self.version_menu.configure(justify = "center")
-		version_val = tk.Label(self.win, textvariable = self.var_chosen_ver)
-		if TEST_MODE:
-			self.version_menu.grid(column = 1, row = 4, sticky = "ew")
-		else:
-			version_val.grid(column = 1, row = 4)
+		self.version_menu.grid(column = 1, row = 4, sticky = "ew")
+		self.version_menu.grid_remove()
+
+		self.version_val = tk.Label(self.win, textvariable = self.var_chosen_ver)
+		self.version_val.grid(column = 1, row = 4)
 
 		# Status message label
 		self.status_label = tk.Label(self.win, textvariable = self.var_status_msg)
 		self.status_label.grid(column = 0, row = 5, columnspan = 3, sticky = "w")
 
 		# Buttons
-		self.install_button = tk.Button(self.win, text = "Install", command = self.install)
+		self.install_button = tk.Button(self.win, textvariable = self.var_button_text, command = self.install)
 		self.install_button.grid(column = 1, row = 6, sticky = "ew")
 
-		global VERSION_DICT
-		try:
-			VERSION_DICT = network_utils.get_versions()
-			self.update_version_menu(list(VERSION_DICT["versions"].keys()))
-			self.var_chosen_ver.set(VERSION_DICT["current_version"])
-		except Exception as e:
-			self.update_status_msg(str(e), True)
-			self.install_button.config(state = tk.DISABLED)
-
+		retrieve_modver_therad = Thread(target = self.download_mod_version_dict)
+		retrieve_modver_therad.start()
+		
 		civ5_path = io_utils.suggest_civ5_installation_path()
 		if civ5_path is not None:
 			self.var_civ5_path.set(civ5_path)
@@ -196,14 +281,13 @@ class ModInstaller(tk.Tk):
 
 		self.win.grid_columnconfigure(0, minsize = 110)
 		self.win.grid_columnconfigure(2, minsize = 110)
-			
+
+# Adapt from: https://stackoverflow.com/questions/41477428/ctrl-a-select-all-in-entry-widget-tkinter-python
+def select_all_callback(event):
+	event.widget.select_range(0, 'end')
+	event.widget.icursor('end')
 
 if __name__ == "__main__":
-	try:
-		with open("civ5_test_mode.txt", "r") as f:
-			pass
-		TEST_MODE = True
-	except:
-		TEST_MODE = False
 	installer = ModInstaller()
 	installer.mainloop()
+

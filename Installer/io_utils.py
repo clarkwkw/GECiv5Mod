@@ -52,17 +52,17 @@ def verify_civ5_installation_path(path):
 		return False
 
 	for filename in CIV5_LANDMARKS[os_type]:
-		if not os.path.exists(path.rstrip("/") + "/" + filename):
+		if not os.path.exists(os.path.join(path, filename)):
 			return False
 	return True
 
 def check_mod_version(civ5_path):
 	os_type = platform.system().lower()
-	MODINFO_PATH = CIV5_ROOT_OFFSET[os_type] + "/" "Assets/DLC/MP_MODSPACK/modinfo.json"
+	MODINFO_PATH = os.path.join(CIV5_ROOT_OFFSET[os_type], "Assets/DLC/MP_MODSPACK/modinfo.json")
 	if not verify_civ5_installation_path(civ5_path):
 		return None
 
-	modinfo_full_path = civ5_path.rstrip("/") + "/" + MODINFO_PATH.lstrip("/")
+	modinfo_full_path = os.path.join(civ5_path, MODINFO_PATH)
 	if not os.path.isfile(modinfo_full_path):
 		return None
 

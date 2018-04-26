@@ -36,8 +36,7 @@ def download_mod(url, tmp_directory = None):
 		tmpdir = tmp_directory
 		io_utils.make_sure_path_exists(tmpdir)
 
-	tmpdir = tmpdir.rstrip("/") + "/"
-	zipdir = tmpdir + TMP_SUBDIR + ".zip"
+	zipdir = os.path.join(tmpdir, TMP_SUBDIR + ".zip")
 	try:
 		with request.urlopen(url) as response, open(zipdir, "wb") as out_file:
 			shutil.copyfileobj(response, out_file)
@@ -48,11 +47,11 @@ def download_mod(url, tmp_directory = None):
 		raise Exception("Temporary directory is not accessible")
 
 	try:
-		if os.path.exists(tmpdir + TMP_SUBDIR):
-			shutil.rmtree(tmpdir + TMP_SUBDIR)
+		if os.path.exists(os.path.join(tmpdir, TMP_SUBDIR)):
+			shutil.rmtree(os.path.join(tmpdir, TMP_SUBDIR))
 		with zipfile.ZipFile(zipdir, "r") as zip_ref:
-			zip_ref.extractall(tmpdir + TMP_SUBDIR)
+			zip_ref.extractall(os.path.join(tmpdir, TMP_SUBDIR))
 	except zipfile.BadZipFile:
 		raise Exception("Downloaded mod content is corrupted")
 
-	return tmpdir + TMP_SUBDIR
+	return os.path.join(tmpdir, TMP_SUBDIR)
