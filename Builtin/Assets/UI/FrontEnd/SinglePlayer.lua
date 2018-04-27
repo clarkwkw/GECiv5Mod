@@ -23,6 +23,8 @@ function ShowHideHandler( bIsHide, bIsInit )
 		PreGame.ResetGameOptions();
 		PreGame.ResetMapOptions();
 		PreGame.LoadPreGameSettings();
+        PreGame.SetMapScript("Assets/Maps/Play The World Extended BNW QUICK.Civ5Map");
+        PreGame.SetRandomMapScript(false);
 		    
         Controls.Civ5Logo:SetTexture( "CivilzationV_Logo.dds" );
         
