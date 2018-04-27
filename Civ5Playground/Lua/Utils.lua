@@ -119,14 +119,14 @@ Utils.AddFreeUnits = function(player, unitTypeID, locationX, locationY, nunit)
 end
 
 Utils.GeneratePositionOffset = function(mindist, maxdist)
-	local totalDist = math.random(mindist, maxdist)
-	local dx = math.random(1, totalDist)
+	local totalDist = Game.rand(maxdist - mindist + 1, "Generate position offset (totalDist)") + mindist
+	local dx = Game.rand(totalDist, "Generate position offset (dx)") + 1
 	local dy = totalDist - dx
 
-	if math.random() < 0.5 then
+	if Game.rand(10, "Generate position offset (x direction)") < 5 then
 		dx = -1*dx
 	end
-	if math.random() < 0.5 then
+	if Game.rand(10, "Generate position offset (y direction)") < 5 then
 		dy = -1*dy
 	end
 

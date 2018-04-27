@@ -82,9 +82,13 @@ def uninstall_helper(civ5_path, queue):
 	queue.put(("Restoring files...", ))
 
 	for file in modinfo["files_replaced"]:
+		full_path = os.path.join(civ5_path, file)
 		try:
-			full_path = os.path.join(civ5_path, file)
 			os.remove(full_path)
+		except IOError as e:
+			pass
+
+		try:
 			os.rename(full_path + ".bak", full_path)
 		except IOError as e:
 			pass
