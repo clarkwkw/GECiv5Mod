@@ -50,7 +50,7 @@ function DisasterEvent:Trigger()
 
 	for key, player in pairs(eventPlayers) do
 		local threshold = self.OccurProb(player)
-		local randompt =  math.random()
+		local randompt =  Game.rand(101, "random diaster")/100.0
 		local unitKilled = false
 		if player and player:IsAlive() and player:GetCapitalCity() ~= nil and randompt < threshold then
 			if self.Loss["Gold"] ~= nil then

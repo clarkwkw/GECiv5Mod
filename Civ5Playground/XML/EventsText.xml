@@ -45,18 +45,6 @@
 		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_BODY">
 			<Text>Your civilization is the first to research [COLOR_TECH_TEXT]Sailing[ENDCOLOR], and inspired a citizen to become a [COLOR_GREAT_PEOPLE_STORED]Great Admiral[ENDCOLOR].</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
-			<Text>Progress: Settler</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
-			<Text>Try to use the settler unit to found a new city</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
-			<Text>Progress: Found Capitial City</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
-			<Text>Congrats! You have just found the capitial city!</Text>
-		</Row>
 		<Row Tag="TXT_KEY_UGFN_FREETECH">
 			<Text>You are granted free techs, click here to choose..</Text>
 		</Row>
@@ -102,18 +90,6 @@
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_FIRSTINWATER_BODY">
 			<Text>你是首個研發出[COLOR_TECH_TEXT]航海[ENDCOLOR]的文明，啟發了一位市民成為[COLOR_GREAT_PEOPLE_STORED]海軍統帥[ENDCOLOR]。</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
-			<Text>進度: 開拓者</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
-			<Text>嘗試利用開拓者創建新城市</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
-			<Text>進度: 已建立首都</Text>
-		</Row>
-			<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
-			<Text>恭喜! 你已成功建立首都!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_FREETECH">
 			<Text>你被贈予免費科技，點此揀選..</Text>

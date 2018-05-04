@@ -6,6 +6,7 @@ local BlackDeathObsoleteCondition = function()
 	return HistoricalEventManager.GetCurrentYear() >= 1900
 end
 
+--[[
 DisasterEvent:New({
 	EventID = "BLACKDEATH",
 	EventName = "TXT_KEY_UGFN_DISASTER_BLACKDEATH_NAME",
@@ -24,3 +25,4 @@ DisasterEvent:New({
 		}
 	}
 })
+--]]

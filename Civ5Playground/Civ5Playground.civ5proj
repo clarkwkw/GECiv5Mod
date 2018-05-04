@@ -28,13 +28,14 @@
         <Description>Registers event listeners</Description>
         <FileName>Lua/StartUp.lua</FileName>
       </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>UGFN Part 1</Name>
+        <Description>Giant world map, Larger Europe, 22 Civs, EPIC speed, All natural wonders, True start locations</Description>
+        <FileName>Maps/UGFN Part 1.civ5map</FileName>
+      </Content>
     </ModContent>
     <ModActions>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/GameText.xml</FileName>
-      </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
@@ -53,16 +54,6 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/Events/BeginnersLuck.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/Events/BerserkBarbarian.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>XML/Buildings.xml</FileName>
       </Action>
       <Action>
@@ -74,6 +65,16 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>XML/TestPolicies.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/EventsText.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/AdvicesText.xml</FileName>
       </Action>
     </ModActions>
   </PropertyGroup>
@@ -94,6 +95,14 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\Achievements\AchievementsList.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Advices\CommonAdvices.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Advices\Part1Advices.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -133,11 +142,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Maps\UGFN Part 1.civ5map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\AdvicesText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="XML\Buildings.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="XML\GameText.xml">
+    <Content Include="XML\EventsText.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -174,6 +191,8 @@
     <Folder Include="Lua" />
     <Folder Include="Lua\Events" />
     <Folder Include="Lua\Achievements" />
+    <Folder Include="Lua\Advices" />
+    <Folder Include="Maps" />
     <Folder Include="XML" />
     <Folder Include="XML\Events" />
   </ItemGroup>

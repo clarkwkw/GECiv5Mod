@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
+			<Text>[COLOR_FONT_RED]Caution: Wrong Settings[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG">
+			<Text>[NEWLINE]You have not selected our designated map. Please make sure you [NEWLINE][NEWLINE] 1. start a game in [COLOR_FONT_RED]Mod -> Single Player -> Game Settings[ENDCOLOR], [NEWLINE] 2. change the map type by selecting [COLOR_FONT_RED]Additional Maps -> UGFN Part X[ENDCOLOR], [NEWLINE] 3. check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR].[NEWLINE][NEWLINE] If you have any questions, feel free to ask our student helpers.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
+			<Text>[NEWLINE]You have not turned on the[COLOR_FONT_RED] %s [ENDCOLOR]scenario settings. [NEWLINE]Please make sure you start a game in [COLOR_FONT_RED] Mod -> Single Player -> Game Settings[ENDCOLOR] [NEWLINE] and check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR] when selecting this map. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
+			<Text>Progress: Settler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
+			<Text>[NEWLINE]Try to use the settler unit to found a new city</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
+			<Text>Progress: Found Capitial City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
+			<Text>[NEWLINE]Congrats! You have just found the capitial city. If you want to expand your civilization, you can consider training [COLOR_UNIT_TEXT]settlers[ENDCOLOR] to found more cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_TITLE">
+			<Text>Progress: Found Capitial City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_MSG">
+			<Text>[NEWLINE]Congrats! You have built %d university(ies). You just have %d more to go.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_FINISH_MSG">
+			<Text>[NEWLINE]Congrats! You have built %d universities. You have completed the required universities.</Text>
+		</Row>
+	</Language_en_US>
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
+			<Text>[COLOR_FONT_RED]注意: 錯誤設定[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG">
+			<Text>[NEWLINE]你並沒有選擇正確的地圖，請確保你開新遊戲時[NEWLINE][NEWLINE] 1. 有點選[COLOR_FONT_RED] 模組 -> 單人模式 -> 遊戲設定[ENDCOLOR], [NEWLINE] 2. 有選擇[COLOR_FONT_RED]地圖類型 -> 其他地圖 -> UGFN Part X[ENDCOLOR], [NEWLINE] 3. 有勾選 [COLOR_FONT_RED]"載入劇本"[ENDCOLOR]。[NEWLINE][NEWLINE] 如有疑問，歡迎向student helpers查詢。 </Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
+			<Text>[NEWLINE]你並沒有啟動[COLOR_FONT_RED] %s [ENDCOLOR]的劇本設定。[NEWLINE]請確保你在 [COLOR_FONT_RED]模組 -> 單人模式 -> 遊戲設定[ENDCOLOR] 中，[NEWLINE] 選擇這個地圖並點選[COLOR_FONT_RED]"載入劇本"[ENDCOLOR]。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
+			<Text>進度: 開拓者</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
+			<Text>[NEWLINE]嘗試利用開拓者創建新城市</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
+			<Text>進度: 已建立首都</Text>
+		</Row>
+			<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
+			<Text>[NEWLINE]恭喜! 你已成功建立首都。如果你想擴張版圖，你可以考慮訓練 [COLOR_UNIT_TEXT]開拓者[ENDCOLOR]，以建造新城市。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_TITLE">
+			<Text>>進度: 已建造大學</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_MSG">
+			<Text>[NEWLINE]恭喜! 你已成功建造 %d 間大學，還需要 %d 間。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_FINISH_MSG">
+			<Text>[NEWLINE]恭喜! 你已成功建造 %d 間大學，完成與大學相關的要求。</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+</GameData>

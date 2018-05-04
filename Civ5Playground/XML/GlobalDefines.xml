@@ -4,7 +4,7 @@
 <GameData>
 	<Defines>
 		<Row Name="UGFN_DEBUG_MODE">
-			<Value>1</Value>
+			<Value>0</Value>
 		</Row>		
 	</Defines>
 </GameData>

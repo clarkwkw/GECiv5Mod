@@ -78,15 +78,14 @@ end
 
 Utils.PopDebugMsg = function()
 	print("DEBUG MODE: "..GameDefines.UGFN_DEBUG_MODE)
-	if GameDefines.UGFN_DEBUG_MODE == 1 then
-		AdvisorManager.GenerateAdvisorPopUp(
-			Game.GetActivePlayer(),
-			AdvisorTypes.ADVISOR_MILITARY, 
-			"Debug Messages",
-			"Start time: "..Utils.GetGlobalProperty("STARTTIME").."[NEWLINE]"..
-			"Year: "..Game.GetGameTurnYear()
-		)
-	end
+
+	AdvisorManager.GenerateAdvisorPopUp(
+		Game.GetActivePlayer(),
+		AdvisorTypes.ADVISOR_MILITARY, 
+		"Debug Messages",
+		"Start time: "..Utils.GetGlobalProperty("STARTTIME").."[NEWLINE]"..
+		"Year: "..Game.GetGameTurnYear()
+	)
 	return false
 end
 
@@ -150,4 +149,9 @@ end
 Utils.FromLuaCode = function (code)
 	local func =  loadstring("return "..code)
 	return func()
+end
+
+-- Given a full path, returns the Path, Filename, and Extension as 3 values
+Utils.SplitPath = function(path)
+	return path:match("(.-)([^\\/]-)%.([^\\/%.]+)$")
 end

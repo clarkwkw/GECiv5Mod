@@ -1,10 +1,3 @@
--- StartUp
--- Author: clark
--- DateCreated: 1/20/2018 9:52:09 AM
---------------------------------------------------------------
-
-print("Hello world from Civ5Playground!!!!!!!!!!!!!!!!!!!!!")
-
 include("Utils.lua")
 include("ObjectCountListeners.lua")
 include("ListenerManager.lua")
@@ -17,38 +10,12 @@ include("Achievement.lua")
 Utils.GenerateCheckString()
 HistoricalEventManager.InitEvents()
 BerserkEnermyEventManager.InitEvents()
+Events.ActivePlayerTurnStart.Add(ListenerManager.ExecuteTurnStartListeners)
+Events.ActivePlayerTurnStart.Add(AdvisorManager.TriggerOnePopUp)
+Events.ActivePlayerTurnEnd.Add(AdvisorManager.Dominate)
+Events.AdvisorDisplayHide.Add(AdvisorManager.TriggerOnePopUp)
+
 print("Adding listeners..")
-
-ListenerManager.AddIndividualTurnStartListener(
-	"NOTIFICATION_DEBUG_MSG",
-	Utils.PopDebugMsg
-)
-
---- Monitoring no. of Palace Built
-ListenerManager.AddIndividualTurnStartListener(
-	"NOTIFICATION_PALACE_BUILT",
-	BuildingCountListenerFactory(
-		GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace 
-		1, 
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_TITLE"),
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_MSG"),
-		true
-	)
-
-)
-
---- Monitoring no. of Settler Built
-ListenerManager.AddIndividualTurnStartListener(
-	"NOTIFICATION_SETTLER_BUILT",
-	BuildingCountListenerFactory(
-		GameInfo.UnitClasses.UNITCLASS_SETTLER.ID, --- SETTLER
-		1, 
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE"),
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_SETTLER_MSG"),
-		true
-	)
-
-)
 
 ListenerManager.AddGlobalTurnStartListener(
 	"HISTORICAL_EVENTS",
@@ -60,23 +27,31 @@ ListenerManager.AddGlobalTurnStartListener(
 	BerserkEnermyEventManager.TriggerEvents
 )
 
-Events.ActivePlayerTurnStart.Add(ListenerManager.ExecuteTurnStartListeners)
-Events.ActivePlayerTurnStart.Add(AdvisorManager.TriggerOnePopUp)
-Events.ActivePlayerTurnEnd.Add(AdvisorManager.Dominate)
-Events.AdvisorDisplayHide.Add(AdvisorManager.TriggerOnePopUp)
+if GameDefines.UGFN_DEBUG_MODE == 1 then
+	ListenerManager.AddIndividualTurnStartListener(
+		"NOTIFICATION_DEBUG_MSG",
+		Utils.PopDebugMsg
+	)
+end
 
---[[
-Events.ActivePlayerTurnStart.Add(
-	function()
-		for j = 1, 5 do
-			local st = os.clock()
-			local n = 1000000*j
-			for i = 1, n do
-				player = GetCurrentPlayer()
-				player:GetBuildingClassCount(GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID)
-			end
-			print(string.format("elapsed time [%d]: %.2f", n, os.clock() - st))
-		end
+_, mapname, _ = Utils.SplitPath(PreGame.GetMapScript())
+print("map: " .. mapname)
+include("CommonAdvices.lua")
+if mapname == "UGFN Part 1" then
+	include("Part1Advices.lua")
+else
+	print("Map not selected, going to prompt reminder..")
+	WrongMapSettingsPopup = function()
+		AdvisorManager.GenerateAdvisorPopUp(
+			Game.GetActivePlayer(),
+			AdvisorTypes.ADVISOR_MILITARY, 
+			Locale.Lookup("TXT_KEY_UGFN_WRONG_SETTINGS_TITLE"),
+			Locale.Lookup("TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG")
+		)
+		return false
 	end
-)
---]]
+	ListenerManager.AddIndividualTurnStartListener(
+		"NOTIFICATION_WRONG_MAP_MSG",
+		WrongMapSettingsPopup
+	)
+end

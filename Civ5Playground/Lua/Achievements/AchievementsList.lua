@@ -6,6 +6,7 @@ FirstInWaterObsoleteCondition = function ()
 	return HistoricalEventManager.GetCurrentYear() >= 0
 end
 
+--[[
 Achievement:New({
 	EventID = "FIRSTINWATER",
 	EventName = "TXT_KEY_UGFN_FIRSTINWATER_NAME",
@@ -21,3 +22,4 @@ Achievement:New({
 	AdvisorHeading = "TXT_KEY_UGFN_FIRSTINWATER_ADVHEAD",
 	AdvisorBody = "TXT_KEY_UGFN_FIRSTINWATER_BODY"
 })
+--]]
