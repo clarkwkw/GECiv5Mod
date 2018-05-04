@@ -8,6 +8,7 @@ from threading import Thread
 from queue import Empty
 import json
 import re
+from functools import partial
 
 TEST_MODE = True
 VERSION_DICT = {}
@@ -24,7 +25,11 @@ def install_helper(civ5_path, chosen_ver, version_dict, queue):
 	if not io_utils.verify_civ5_installation_path(civ5_path):
 		queue.put(("Cannot detect Civ5 installation, please check installation path.", True))
 		return
-	
+
+	if not io_utils.check_civ5_activated():
+		queue.put(("Cannot detect Civ5 mod path, please try to launch Civ5 once.", True))
+		return
+
 	if chosen_ver not in version_dict["versions"]:
 		queue.put(("Invalid version config.", True))
 	else:
@@ -34,7 +39,7 @@ def install_helper(civ5_path, chosen_ver, version_dict, queue):
 			downloaded_dir = network_utils.download_mod(mod_url)
 
 			queue.put(("Backing up files...", ))
-			with open(os.path.join(downloaded_dir, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
+			with open(os.path.join(downloaded_dir, "modinfo.json"), "r") as f:
 				modinfo = json.load(f)
 
 			for file in modinfo["files_replaced"]:
@@ -45,8 +50,18 @@ def install_helper(civ5_path, chosen_ver, version_dict, queue):
 					pass
 
 			queue.put(("Installing...", ))
+
+			# Replacing files in Civ5 base game
 			install_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[platform.system().lower()])
-			io_utils.merge_dir(downloaded_dir, install_path)
+			io_utils.merge_dir(os.path.join(downloaded_dir, "basegame"), install_path)
+
+			# Copying files to mod folder
+			mod_install_path = os.path.join(io_utils.MOD_PATHS[os_ver], modinfo["modname"])
+			io_utils.make_sure_path_exists(mod_install_path)
+			io_utils.merge_dir(os.path.join(downloaded_dir, modinfo["modname"]), mod_install_path)
+
+			# Placing modinfo in Civ5 root path
+			shutil.copy2(os.path.join(downloaded_dir, "modinfo.json"), install_path)
 
 			queue.put(("Removing temporary files...", ))
 			shutil.rmtree(downloaded_dir)
@@ -66,7 +81,7 @@ def uninstall_helper(civ5_path, queue):
 
 	queue.put(("Removing files...", ))
 
-	with open(os.path.join(civ5_path, "Assets/DLC/MP_MODSPACK/modinfo.json"), "r") as f:
+	with open(os.path.join(civ5_path, "modinfo.json"), "r") as f:
 		modinfo = json.load(f)
 
 	for path in modinfo["files_copied"]:
@@ -78,6 +93,12 @@ def uninstall_helper(civ5_path, queue):
 				os.remove(full_path)
 		except (IOError, FileNotFoundError):
 			pass
+
+	try:
+		os.remove(os.path.join(civ5_path, "modinfo.json"))
+		shutil.rmtree(os.path.join(io_utils.MOD_PATHS[os_ver], modinfo["modname"]))
+	except (IOError, FileNotFoundError) as e:
+		pass
 
 	queue.put(("Restoring files...", ))
 
@@ -120,13 +141,20 @@ class ModInstaller(tk.Tk):
 
 		self.version_menu["menu"].delete(0, "end")
 		for version in options:
-			self.version_menu["menu"].add_command(label = version, command = lambda: switch_version_helper(version))
+			self.version_menu["menu"].add_command(label = version, command = partial(switch_version_helper, version))
 
 	def update_label_civstatus(self):
 		civ5_path = self.var_civ5_path.get()
 		if io_utils.verify_civ5_installation_path(civ5_path):
-			self.civstatus_val.config(fg = "green")
-			self.var_civ_status.set("Installed")
+			civ5_activated = io_utils.check_civ5_activated()
+
+			if civ5_activated:
+				self.civstatus_val.config(fg = "green")
+				self.var_civ_status.set("Installed")
+			else:
+				self.civstatus_val.config(fg = "red")
+				self.var_civ_status.set("Not activated")
+				self.update_status_msg("Try to launch Civ5 once and then restart this installer.", True)
 		else:
 			self.civstatus_val.config(fg = "red")
 			self.var_civ_status.set("Not detected")
@@ -188,11 +216,15 @@ class ModInstaller(tk.Tk):
 
 		self.install_button.config(state = tk.DISABLED)
 		self.update_status_msg("")
-		self.install_process = Process(target = install_helper, args = (
-														self.var_civ5_path.get(), 
-														self.var_chosen_ver.get(), 
-														VERSION_DICT,
-														queue))
+		self.install_process = Process(target = install_helper, 
+			args = (
+				self.var_civ5_path.get(), 
+				self.var_chosen_ver.get(), 
+				VERSION_DICT,
+				queue
+			)
+		)
+
 		self.install_process.daemon = True
 		self.install_process.start()
 		self.after(20, self.update_status_tracker)

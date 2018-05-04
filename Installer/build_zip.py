@@ -22,7 +22,6 @@ CIV5_ROOT_DIR = "C:/Program Files (x86)/Steam/steamapps/common/Sid Meier's Civil
 
 # Directories that need to be copied under the Civ5 installation path
 DIR_COPY = [
-	"Assets/DLC/MP_MODSPACK"
 ]
 
 # Directories containing files that need to be replaced, indicated by relative path to current working directory
@@ -30,9 +29,12 @@ DIR_REPLACE = [
 	"../Builtin"
 ]
 
-TMP_DIR = "./tmp"
+# Directories containing the mod to be copied
+DIR_MOD = os.path.expanduser("~/Documents/My Games/Sid Meier's Civilization 5/MODS/")
 
-MODINFO_PATH = "Assets/DLC/MP_MODSPACK/modinfo.json"
+MOD_NAME = "Civ5 Playground (v 1)"
+
+TMP_DIR = "./tmp"
 
 # ---------- End of Settings Section ---------- #
 
@@ -53,26 +55,34 @@ if __name__ == "__main__":
 	if os.path.exists(TMP_DIR):
 		shutil.rmtree(TMP_DIR)
 
-	io_utils.make_sure_path_exists(TMP_DIR)
+	io_utils.make_sure_path_exists(os.path.join(TMP_DIR, "basegame"))
 	for dir_path in DIR_COPY:
 		src_dir = os.path.join(CIV5_ROOT_DIR, io_utils.CIV5_ROOT_OFFSET[os_version], dir_path)
-		target_dir = os.path.join(TMP_DIR , dir_path)
+		target_dir = os.path.join(TMP_DIR, "basegame", dir_path)
 		copy_tree(src_dir, target_dir)
 		files_copied.append(dir_path.replace("\\", "/"))
 
 	for dir_path in DIR_REPLACE:
-		io_utils.merge_dir(dir_path, TMP_DIR)
+		io_utils.merge_dir(dir_path, os.path.join(TMP_DIR, "basegame"))
 		
 		for root, subdirs, files in os.walk(dir_path):
 			for file in files:
 				files_replaced.append(os.path.relpath(os.path.join(root, file), dir_path).replace("\\", "/"))
 
-	with open(os.path.join(TMP_DIR, MODINFO_PATH), "w") as f:
-		files
+	src_moddir = os.path.join(DIR_MOD, MOD_NAME)
+	target_moddir = os.path.join(TMP_DIR, MOD_NAME)
+	try:
+		copy_tree(src_moddir, target_moddir)
+	except:
+		print("Cannot detect built mod files under 'MyGames', build the solution using ModBuddy first")
+		exit(-1)
+
+	with open(os.path.join(TMP_DIR, "modinfo.json"), "w") as f:
 		modinfo = {
 			"version": VERSION_NUMBER,
 			"files_copied": files_copied,
-			"files_replaced": files_replaced
+			"files_replaced": files_replaced,
+			"modname": MOD_NAME
 		}
 		json.dump(modinfo, f, indent = 4)
 

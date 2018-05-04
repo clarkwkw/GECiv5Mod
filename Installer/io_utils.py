@@ -16,6 +16,11 @@ POSSIBLE_INSTALLATION_PATHS = {
 	]
 }
 
+MOD_PATHS = {
+	"windows": os.path.expanduser("~/Documents/My Games/Sid Meier's Civilization 5/MODS"),
+	"darwin": ""
+}
+
 # On some system, e.g. MacOS, the game content is placed in a subdirectory under civ5 installation path
 CIV5_ROOT_OFFSET = {
 	"windows": "",
@@ -56,9 +61,13 @@ def verify_civ5_installation_path(path):
 			return False
 	return True
 
+def check_civ5_activated():
+	os_type = platform.system().lower()
+	return os.path.exists(MOD_PATHS[os_type])
+
 def check_mod_version(civ5_path):
 	os_type = platform.system().lower()
-	MODINFO_PATH = os.path.join(CIV5_ROOT_OFFSET[os_type], "Assets/DLC/MP_MODSPACK/modinfo.json")
+	MODINFO_PATH = os.path.join(CIV5_ROOT_OFFSET[os_type], "modinfo.json")
 	if not verify_civ5_installation_path(civ5_path):
 		return None
 
