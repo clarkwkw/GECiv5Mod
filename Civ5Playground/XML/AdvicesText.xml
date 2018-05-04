@@ -55,7 +55,7 @@
 			<Text>[COLOR_FONT_GREEN]好的開始[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_MSG">
-			<Text>[NEWLINE]犀利! 你成功啟動 %s 的劇本。在這個劇本中，你需要[NEWLINE][NEWLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
+			<Text>[NEWLINE]犀利! 你已成功啟動 %s 的劇本。在這個劇本中，你需要[NEWLINE][NEWLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
 			<Text>[COLOR_FONT_RED]注意: 錯誤設定[ENDCOLOR]</Text>

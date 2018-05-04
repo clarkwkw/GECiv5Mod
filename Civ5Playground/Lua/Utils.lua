@@ -76,19 +76,6 @@ Utils.GenerateCheckString = function()
 	end
 end
 
-Utils.PopDebugMsg = function()
-	print("DEBUG MODE: "..GameDefines.UGFN_DEBUG_MODE)
-
-	AdvisorManager.GenerateAdvisorPopUp(
-		Game.GetActivePlayer(),
-		AdvisorTypes.ADVISOR_MILITARY, 
-		"Debug Messages",
-		"Start time: "..Utils.GetGlobalProperty("STARTTIME").."[NEWLINE]"..
-		"Year: "..Game.GetGameTurnYear()
-	)
-	return false
-end
-
 Utils.GetCurrentTime = function()
 	local date_table = os.date("*t")
 	local ms = string.match(tostring(os.clock()), "%d%.(%d+)")
