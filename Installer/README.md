@@ -10,10 +10,15 @@
 ## Packing the Mod into a Zip
 1. Build the solution in ModBuddy Solution Explorer.
 2. Modify `build_zip.py` to configure 
+
    a. the path to the Civilization V base game, 
+   
    b. directories that contains files to copy/replace, 
+   
    c. the directory containing the mod built by ModBuddy,
+   
    d. name of the mod.
+   
 3. Issue the command `python build_zip.py` and enter the version number.
 4. A zip file named `{VERSION_NUMBER}.zip` should be generated.
 
