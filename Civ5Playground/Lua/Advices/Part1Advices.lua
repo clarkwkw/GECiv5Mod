@@ -8,10 +8,26 @@ WrongScenarioSettingsPopup = function()
 	return false
 end
 
+WrongScenarioSettingsPopup = function()
+	AdvisorManager.GenerateAdvisorPopUp(
+		Game.GetActivePlayer(),
+		AdvisorTypes.ADVISOR_MILITARY, 
+		Locale.Lookup("TXT_KEY_UGFN_CORRECT_SETTINGS_TITLE"),
+		string.format(Locale.Lookup("TXT_KEY_UGFN_CORRECT_SETTINGS_MSG"), "PART 1", Locale.Lookup("TXT_KEY_UGFN_PART1_REQUIREMENTS"))
+	)
+	return true
+end
+
 if not PreGame.GetLoadWBScenario() then
 	print("Scenario not activated, going to prompt reminder..")
 	ListenerManager.AddIndividualTurnStartListener(
 		"NOTIFICATION_WRONG_SCENARIO_MSG",
+		WrongScenarioSettingsPopup
+	)
+else
+	print("Correct settings for part 1, going to prompt a popup..")
+	ListenerManager.AddIndividualTurnStartListener(
+		"NOTIFICATION_CORRECT_SETTINGS_MSG",
 		WrongScenarioSettingsPopup
 	)
 end

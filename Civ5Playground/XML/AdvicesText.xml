@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_en_US>
+		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_TITLE">
+			<Text>[COLOR_FONT_GREEN]What a Great Start[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_MSG">
+			<Text>[NEWLINE]Good job! You have selected the correct settings of %s. In this scenario, you need to [NEWLINE][NewLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
 			<Text>[COLOR_FONT_RED]Caution: Wrong Settings[ENDCOLOR]</Text>
 		</Row>
@@ -10,6 +16,10 @@
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
 			<Text>[NEWLINE]You have not turned on the[COLOR_FONT_RED] %s [ENDCOLOR]scenario settings. [NEWLINE]Please make sure you start a game in [COLOR_FONT_RED] Mod -> Single Player -> Setup Game[ENDCOLOR] [NEWLINE] and check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR] when selecting this map. </Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
+			<Text>a. research [COLOR_TECH_TEXT]Education[ENDCOLOR], [NEWLINE]b. build 3 [COLOR_BUILDING_TEXT]universities[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>Progress: Settler</Text>
@@ -41,6 +51,12 @@
 		
 	</Language_en_US>
 	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_TITLE">
+			<Text>[COLOR_FONT_GREEN]好的開始[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_MSG">
+			<Text>[NEWLINE]犀利! 你成功啟動 %s 的劇本。在這個劇本中，你需要[NEWLINE][NEWLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
+		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
 			<Text>[COLOR_FONT_RED]注意: 錯誤設定[ENDCOLOR]</Text>
 		</Row>
@@ -49,6 +65,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
 			<Text>[NEWLINE]你並沒有啟動[COLOR_FONT_RED] %s [ENDCOLOR]的劇本設定。[NEWLINE]請確保你在 [COLOR_FONT_RED]模組 -> 單人模式 -> 遊戲設定[ENDCOLOR] 中，[NEWLINE] 選擇這個地圖並點選[COLOR_FONT_RED]"載入劇本"[ENDCOLOR]。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
+			<Text>a. 成功研究[COLOR_TECH_TEXT]教育[ENDCOLOR] [NEWLINE]b. 興建3間 [COLOR_BUILDING_TEXT]大學[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>進度: 開拓者</Text>
