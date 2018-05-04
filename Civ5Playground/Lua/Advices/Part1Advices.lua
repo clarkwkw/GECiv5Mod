@@ -8,7 +8,7 @@ WrongScenarioSettingsPopup = function()
 	return false
 end
 
-WrongScenarioSettingsPopup = function()
+CorrectSettingsPopup = function()
 	AdvisorManager.GenerateAdvisorPopUp(
 		Game.GetActivePlayer(),
 		AdvisorTypes.ADVISOR_MILITARY, 
@@ -28,7 +28,7 @@ else
 	print("Correct settings for part 1, going to prompt a popup..")
 	ListenerManager.AddIndividualTurnStartListener(
 		"NOTIFICATION_CORRECT_SETTINGS_MSG",
-		WrongScenarioSettingsPopup
+		CorrectSettingsPopup
 	)
 end
 
