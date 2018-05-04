@@ -15,7 +15,7 @@
    
    b. directories that contains files to copy/replace, 
    
-   c. the directory containing the mod built by ModBuddy,
+   c. the directory containing the mod built by ModBuddy,
    
    d. name of the mod.
    
