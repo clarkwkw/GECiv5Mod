@@ -36,14 +36,14 @@ end
 --- unitClass: an integer indicating the unit class
 ---		see http://modiki.civfanatics.com/index.php?title=UnitClassType_(Civ5_Type) for details
 
-function UnitCountListenerFactory(untiClass, count, heading, msg, onAdvisor)
+function UnitCountListenerFactory(unitClass, count, heading, msg, onAdvisor)
 	listener = 
 		function()
 			local player = Utils.GetCurrentPlayer()
 			if player == nil then
 				return
 			end
-			local built = player:GetUnitClassCount(untiClass)
+			local built = player:GetUnitClassCount(unitClass)
 			if built >= count then
 				if not onAdvisor then
 					player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, msg, heading)
@@ -54,5 +54,25 @@ function UnitCountListenerFactory(untiClass, count, heading, msg, onAdvisor)
 			end
 			return false
 		end
+	return listener
+end
+
+function TechnologyResearchedListenerFactory(techType, heading, msg, onAdvisor)
+	listener = function()
+		local player = Utils.GetCurrentPlayer()
+		if player == nil then
+			return
+		end
+		local researched = Teams[player:GetTeam()]:IsHasTech(techType)
+		print("Progress: ", researched)
+		print("Progress: ", player:GetResearchProgress(techType))
+		if researched then
+			if not onAdvisor then
+				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, msg, heading)
+			else
+				AdvisorManager.GenerateAdvisorPopUp(Game.GetActivePlayer(), AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
+			end
+		end
+	end
 	return listener
 end

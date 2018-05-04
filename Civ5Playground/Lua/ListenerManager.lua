@@ -5,8 +5,8 @@ local active_turn_start_listeners = {}
 local individual_turn_start_listeners = {}
 local global_turn_start_listeners = {}
 local last_executed = Utils.GetGlobalProperty("ListenerManagerLastExecuted") or -1000000
-local bonus_last_dispenced = -1000
-local bonus_dispence_freq = 30
+local bonus_last_dispensed = Utils.GetGlobalProperty("TesterBonusLastDispensed") or -1000
+local bonus_dispense_freq = 20
 
 ListenerManager = {}
 --[[
@@ -84,7 +84,7 @@ end
 ListenerManager.TestBonusListenerFactory = function(players)
 	local func = function()
 		local curTurn = Game.GetElapsedGameTurns()
-		if (curTurn - bonus_last_dispenced) >= bonus_dispence_freq then
+		if (curTurn - bonus_last_dispensed) >= bonus_dispense_freq then
 			print("Dispensing tester bonus..")
 			local event = HistoricalEvent:New({
 				EventID = "testingbonus",
@@ -94,8 +94,9 @@ ListenerManager.TestBonusListenerFactory = function(players)
 				Compensation = {["tech"] = 2, ["culture"] = curTurn*30, ["UNIT_SCIENTIST"] = 1, ["UNIT_WORKER"] = 1}
 			})
 			event:Trigger(true, players)
-			bonus_last_dispenced = curTurn
-			print(string.format("Next bonus: Turn #%d", curTurn + bonus_dispence_freq))
+			bonus_last_dispensed = curTurn
+			Utils.SetGlobalProperty("TesterBonusLastDispensed", curTurn)
+			print(string.format("Next bonus: Turn #%d", curTurn + bonus_dispense_freq))
 		end
 	end
 	return func 
