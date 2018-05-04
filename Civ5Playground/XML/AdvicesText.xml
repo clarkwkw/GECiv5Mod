@@ -5,7 +5,7 @@
 			<Text>[COLOR_FONT_GREEN]What a Great Start[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_MSG">
-			<Text>[NEWLINE]Good job! You have selected the correct settings of %s. In this scenario, you need to [NEWLINE][NewLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
+			<Text>[NEWLINE]Good job! You have selected the correct settings of %s. In this scenario, you need to [NEWLINE][NEWLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
 			<Text>[COLOR_FONT_RED]Caution: Wrong Settings[ENDCOLOR]</Text>
