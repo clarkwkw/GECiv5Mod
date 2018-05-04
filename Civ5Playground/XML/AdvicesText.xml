@@ -5,11 +5,11 @@
 			<Text>[COLOR_FONT_RED]Caution: Wrong Settings[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG">
-			<Text>[NEWLINE]You have not selected our designated map. Please make sure you [NEWLINE][NEWLINE] 1. start a game in [COLOR_FONT_RED]Mod -> Single Player -> Game Settings[ENDCOLOR], [NEWLINE] 2. change the map type by selecting [COLOR_FONT_RED]Additional Maps -> UGFN Part X[ENDCOLOR], [NEWLINE] 3. check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR].[NEWLINE][NEWLINE] If you have any questions, feel free to ask our student helpers.
+			<Text>[NEWLINE]You have not selected our designated map. Please make sure you [NEWLINE][NEWLINE] 1. start a game in [COLOR_FONT_RED]Mod -> Single Player -> Setup Game[ENDCOLOR], [NEWLINE] 2. change "map type" by selecting [COLOR_FONT_RED]Additional Map -> UGFN Part X[ENDCOLOR], [NEWLINE] 3. check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR].[NEWLINE][NEWLINE] If you have any questions, feel free to ask our student helpers.
 			</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
-			<Text>[NEWLINE]You have not turned on the[COLOR_FONT_RED] %s [ENDCOLOR]scenario settings. [NEWLINE]Please make sure you start a game in [COLOR_FONT_RED] Mod -> Single Player -> Game Settings[ENDCOLOR] [NEWLINE] and check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR] when selecting this map. </Text>
+			<Text>[NEWLINE]You have not turned on the[COLOR_FONT_RED] %s [ENDCOLOR]scenario settings. [NEWLINE]Please make sure you start a game in [COLOR_FONT_RED] Mod -> Single Player -> Setup Game[ENDCOLOR] [NEWLINE] and check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR] when selecting this map. </Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>Progress: Settler</Text>

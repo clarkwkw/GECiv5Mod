@@ -18,7 +18,7 @@ POSSIBLE_INSTALLATION_PATHS = {
 
 MOD_PATHS = {
 	"windows": os.path.expanduser("~/Documents/My Games/Sid Meier's Civilization 5/MODS"),
-	"darwin": ""
+	"darwin": os.path.expanduser("~/Documents/Aspyr/Sid Meier's Civilization 5/MODS")
 }
 
 # On some system, e.g. MacOS, the game content is placed in a subdirectory under civ5 installation path
