@@ -597,4 +597,9 @@ function InputHandler( uiMsg, wParam, lParam )
         end
     end
 end
+
 ContextPtr:SetInputHandler( InputHandler );
+
+PreGame.SetRandomMapScript(true);
+Controls.StartButton:SetDisabled(PreGame.IsRandomMapScript() or not PreGame.GetMapScript())
+Controls.StartButton:SetText(Locale.ConvertTextKey("TXT_KEY_UGFN_SELECT_MAP"));
