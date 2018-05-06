@@ -48,6 +48,10 @@
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_EDUCATION_MSG">
 			<Text>[NEWLINE]Congrats! You have researched [COLOR_TECH_TEXT]Education[ENDCOLOR]. You can start to build the [COLOR_BUILDING_TEXT]universities[ENDCOLOR].</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">
+			<Text>Please Select Map</Text>
+		</Row>
 		
 	</Language_en_US>
 	<Language_zh_Hant_HK>
@@ -95,6 +99,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_EDUCATION_MSG">
 			<Text>[NEWLINE]恭喜! 你已成功研究 [COLOR_TECH_TEXT]教育[ENDCOLOR]。 你可以開始建造 [COLOR_BUILDING_TEXT]大學[ENDCOLOR]。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">
+			<Text>請選擇地圖</Text>
 		</Row>
 	</Language_zh_Hant_HK>
 </GameData>
