@@ -52,8 +52,10 @@ def install_helper(civ5_path, chosen_ver, version_dict, queue):
 			queue.put(("Installing...", ))
 
 			# Replacing files in Civ5 base game
+			src_path = os.path.join(downloaded_dir, "basegame")
 			install_path = os.path.join(civ5_path, io_utils.CIV5_ROOT_OFFSET[platform.system().lower()])
-			io_utils.merge_dir(os.path.join(downloaded_dir, "basegame"), install_path)
+			if os.path.exists(src_path):
+				io_utils.merge_dir(src_path, install_path)
 
 			# Copying files to mod folder
 			mod_install_path = os.path.join(io_utils.MOD_PATHS[os_ver], modinfo["modname"])
