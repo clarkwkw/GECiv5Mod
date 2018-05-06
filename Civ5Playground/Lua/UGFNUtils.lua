@@ -3,7 +3,6 @@
 -- DateCreated: 1/19/2018 7:00:40 PM
 --------------------------------------------------------------
 include("AdvisorManager.lua")
-
 local i_TurnPlayer = -1
 local g_SaveData = Modding.OpenSaveData("UGFN", 1)
 local g_Properties = {}

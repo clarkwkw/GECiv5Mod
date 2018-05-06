@@ -160,7 +160,7 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Utils.lua">
+    <Content Include="Lua\UGFNUtils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -238,7 +238,6 @@
     <Folder Include="Lua\Events" />
     <Folder Include="Lua\Achievements" />
     <Folder Include="Lua\Advices" />
-    <Folder Include="Lua\UI" />
     <Folder Include="Maps" />
     <Folder Include="Overrides" />
     <Folder Include="XML" />
