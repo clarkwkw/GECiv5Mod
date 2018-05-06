@@ -38,7 +38,7 @@
             </Box>
 
             <!-- Start Game  -->
-            <GridButton Anchor="R,B" ID="StartButton" Offset="38,54" Size="260,45" Style="BaseButton" String="TXT_KEY_START_GAME"/>
+            <GridButton Anchor="R,B" ID="StartButton" Offset="38,54" Size="260,45" Style="BaseButton" String="TXT_KEY_UGFN_SELECT_MAP" Disabled="1"/>
 
             <!-- Screen Title  -->
 
