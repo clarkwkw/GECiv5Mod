@@ -3,13 +3,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>42BE3F07-762B-4449-A334-A4EF1966BD22</ProjectGuid>
-    <Name>Civ5 Playground</Name>
+    <Name>CUHKGEFWorldHistory</Name>
     <Guid>17c0bfe1-11af-4921-9198-5db1ea0e4b10</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser>Trying things out.</Teaser>
-    <Description>Trying things out.</Description>
-    <Authors>clark</Authors>
+    <Teaser>
+    </Teaser>
+    <Description>CUHK GEF World History Mod.</Description>
+    <Authors>Student Helpers</Authors>
     <SpecialThanks>
     </SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -75,21 +76,6 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>XML/AdvicesText.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/Technologies.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/TechText.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/Icons.xml</FileName>
       </Action>
     </ModActions>
     <ModBlockers>

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # ModBuddy Solution File, Format Version 11.00
-Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Civ5Playground", "Civ5Playground\Civ5Playground.civ5proj", "{42BE3F07-762B-4449-A334-A4EF1966BD22}"
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "CUHKGEFWorldHistory", "Civ5Playground\CUHKGEFWorldHistory.civ5proj", "{42BE3F07-762B-4449-A334-A4EF1966BD22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
