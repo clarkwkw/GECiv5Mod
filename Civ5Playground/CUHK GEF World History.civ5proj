@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>42BE3F07-762B-4449-A334-A4EF1966BD22</ProjectGuid>
-    <Name>CUHKGEFWorldHistory</Name>
+    <Name>CUHK GEF World History</Name>
     <Guid>17c0bfe1-11af-4921-9198-5db1ea0e4b10</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>

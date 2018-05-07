@@ -32,7 +32,7 @@ DIR_REPLACE = [
 # Directories containing the mod to be copied
 DIR_MOD = os.path.expanduser("~/Documents/My Games/Sid Meier's Civilization 5/MODS/")
 
-MOD_NAME = "CUHKGEFWorldHistory (v 1)"
+MOD_NAME = "CUHK GEF World History (v 1)"
 
 TMP_DIR = "./tmp"
 
