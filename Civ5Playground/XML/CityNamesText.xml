@@ -10,5 +10,9 @@
 		<Row Tag="TXT_KEY_CITY_NAME_CHANGAN">
 			<Text>Chang'an</Text>
 		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_NAME_LOYANG"/>
+			<Set Text="Luoyang"/>
+		</Update>
 	</Language_en_US>
 </GameData>
