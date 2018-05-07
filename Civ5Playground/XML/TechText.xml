@@ -1,0 +1,268 @@
+<GameData>
+  <Language_en_US>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_ENGINEERING</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_BRIDGEBUILDING_TECH_ENGINEERING</Tag>
+      <Text>BridgesOnRivers</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_BIOLOGY</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_STEAM_POWER</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_RAILROAD</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_RESEARCHAGREEMENTTRADINGALLOWED_TECH_EDUCATION</Tag>
+      <Text>ResearchAgreements</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_DEFENSIVEPACTTRADINGALLOWED_TECH_CHIVALRY</Tag>
+      <Text>DefPact</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_COMPASS</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_OPENBORDERSTRADINGALLOWED_TECH_CIVIL_SERVICE</Tag>
+      <Text>OpenBorders</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_ASTRONOMY</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDALLWATERPASSAGE_TECH_ASTRONOMY</Tag>
+      <Text>OceanCross</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSWORLDCONGRESS_TECH_PRINTING_PRESS</Tag>
+      <Text>WorldCongress</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_BANKING</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_PENICILIN</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSEMBARKING_TECH_OPTICS</Tag>
+      <Text>Embark</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWEMBASSYTRADINGALLOWED_TECH_WRITING</Tag>
+      <Text>Embassy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_ANIMAL_HUSBANDRY</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_SAILING</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_MAPVISIBLE_TECH_SATELLITES</Tag>
+      <Text>RevealMap</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EXTRAVOTESPERDIPLOMAT_TECH_GLOBALIZATION</Tag>
+      <Text>ExtraVotesPerDiplomat1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INFLUENCESPREADMODIFIER_TECH_INTERNET</Tag>
+      <Text>TourismBy100</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_DESC</Tag>
+      <Text>Arithmatic</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_0_DESC</Tag>
+      <Text>Trapping</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_2_DESC</Tag>
+      <Text>Writing</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_2_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_2_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_3_DESC</Tag>
+      <Text>The Wheel</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_3_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_3_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_4_DESC</Tag>
+      <Text>Astrology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_4_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_4_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_5_DESC</Tag>
+      <Text>Numerology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_5_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_5_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_6_DESC</Tag>
+      <Text>Geometry</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_6_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_6_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_7_DESC</Tag>
+      <Text>ClassicalPhilosophy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_7_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_7_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_8_DESC</Tag>
+      <Text>Drama</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_8_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_8_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_9_DESC</Tag>
+      <Text>Current</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_9_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_9_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_10_DESC</Tag>
+      <Text>PublicEntainment</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_10_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_10_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_11_DESC</Tag>
+      <Text>Hydrology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_11_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_11_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_12_DESC</Tag>
+      <Text>Iron</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_12_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_12_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_15_DESC</Tag>
+      <Text>HorsebackRiding</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_15_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_15_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Update>
+      <Set Text="Agricultu" />
+      <Where Tag="TXT_KEY_TECH_ANIMAL_HUSBANDRY_TITLE" />
+    </Update>
+    <Update>
+      <Set Text="Mysticism" />
+      <Where Tag="TXT_KEY_TECH_ARCHERY_TITLE" />
+    </Update>
+    <Update>
+      <Set Text="Geometry" />
+      <Where Tag="TXT_KEY_TECH_MASONRY_TITLE" />
+    </Update>
+    <Update>
+      <Set Text="Crafting" />
+      <Where Tag="TXT_KEY_TECH_POTTERY_TITLE" />
+    </Update>
+    <Update>
+      <Set Text="Astrology" />
+      <Where Tag="TXT_KEY_TECH_TRAPPING_TITLE" />
+    </Update>
+  </Language_en_US>
+</GameData>

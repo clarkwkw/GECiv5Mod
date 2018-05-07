@@ -1,0 +1,1826 @@
+<GameData>
+  <Technologies>
+    <Delete Type="TECH_CALENDAR" />
+    <Delete Type="TECH_WRITING" />
+    <Delete Type="TECH_TRAPPING" />
+    <Delete Type="TECH_THE_WHEEL" />
+    <Delete Type="TECH_MASONRY" />
+    <Delete Type="TECH_HORSEBACK_RIDING" />
+    <Delete Type="TECH_MATHEMATICS" />
+    <Delete Type="TECH_CONSTRUCTION" />
+    <Delete Type="TECH_PHILOSOPHY" />
+    <Delete Type="TECH_DRAMA" />
+    <Delete Type="TECH_CURRENCY" />
+    <Delete Type="TECH_ENGINEERING" />
+    <Delete Type="TECH_IRON_WORKING" />
+    <Delete Type="TECH_THEOLOGY" />
+    <Delete Type="TECH_CIVIL_SERVICE" />
+    <Delete Type="TECH_GUILDS" />
+    <Delete Type="TECH_METAL_CASTING" />
+    <Delete Type="TECH_COMPASS" />
+    <Delete Type="TECH_EDUCATION" />
+    <Delete Type="TECH_CHIVALRY" />
+    <Delete Type="TECH_MACHINERY" />
+    <Delete Type="TECH_PHYSICS" />
+    <Delete Type="TECH_STEEL" />
+    <Delete Type="TECH_ASTRONOMY" />
+    <Delete Type="TECH_ACOUSTICS" />
+    <Delete Type="TECH_BANKING" />
+    <Delete Type="TECH_PRINTING_PRESS" />
+    <Delete Type="TECH_GUNPOWDER" />
+    <Delete Type="TECH_NAVIGATION" />
+    <Delete Type="TECH_ARCHITECTURE" />
+    <Delete Type="TECH_ECONOMICS" />
+    <Delete Type="TECH_METALLURGY" />
+    <Delete Type="TECH_CHEMISTRY" />
+    <Delete Type="TECH_ARCHAEOLOGY" />
+    <Delete Type="TECH_SCIENTIFIC_THEORY" />
+    <Delete Type="TECH_INDUSTRIALIZATION" />
+    <Delete Type="TECH_RIFLING" />
+    <Delete Type="TECH_MILITARY_SCIENCE" />
+    <Delete Type="TECH_FERTILIZER" />
+    <Delete Type="TECH_BIOLOGY" />
+    <Delete Type="TECH_ELECTRICITY" />
+    <Delete Type="TECH_STEAM_POWER" />
+    <Delete Type="TECH_DYNAMITE" />
+    <Delete Type="TECH_REFRIGERATION" />
+    <Delete Type="TECH_RADIO" />
+    <Delete Type="TECH_REPLACEABLE_PARTS" />
+    <Delete Type="TECH_FLIGHT" />
+    <Delete Type="TECH_RAILROAD" />
+    <Delete Type="TECH_PLASTIC" />
+    <Delete Type="TECH_ELECTRONICS" />
+    <Delete Type="TECH_BALLISTICS" />
+    <Delete Type="TECH_COMBUSTION" />
+    <Delete Type="TECH_PENICILIN" />
+    <Delete Type="TECH_ATOMIC_THEORY" />
+    <Delete Type="TECH_RADAR" />
+    <Delete Type="TECH_COMBINED_ARMS" />
+    <Delete Type="TECH_ECOLOGY" />
+    <Delete Type="TECH_NUCLEAR_FISSION" />
+    <Delete Type="TECH_ROCKETRY" />
+    <Delete Type="TECH_COMPUTERS" />
+    <Delete Type="TECH_TELECOM" />
+    <Delete Type="TECH_MOBILE_TACTICS" />
+    <Delete Type="TECH_ADVANCED_BALLISTICS" />
+    <Delete Type="TECH_SATELLITES" />
+    <Delete Type="TECH_ROBOTICS" />
+    <Delete Type="TECH_LASERS" />
+    <Delete Type="TECH_INTERNET" />
+    <Delete Type="TECH_GLOBALIZATION" />
+    <Delete Type="TECH_PARTICLE_PHYSICS" />
+    <Delete Type="TECH_NUCLEAR_FUSION" />
+    <Delete Type="TECH_NANOTECHNOLOGY" />
+    <Delete Type="TECH_STEALTH" />
+    <Delete Type="TECH_FUTURE_TECH" />
+    <Row>
+      <ID>81</ID>
+      <Type>TECH_UNNAMED_TECH_0</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_0_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_0_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_0_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>1</GridX>
+      <GridY>2</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_0_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TRAP_ICON</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>82</ID>
+      <Type>TECH_UNNAMED_TECH_1</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_1_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_1_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_1_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>1</GridX>
+      <GridY>7</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_1_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>FACE_ICON</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>86</ID>
+      <Type>TECH_UNNAMED_TECH_3</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_3_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_3_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_3_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>1</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_3_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>87</ID>
+      <Type>TECH_UNNAMED_TECH_4</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_4_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_4_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_4_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_4_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>88</ID>
+      <Type>TECH_UNNAMED_TECH_5</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_5_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_5_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_5_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>6</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_5_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>89</ID>
+      <Type>TECH_UNNAMED_TECH_6</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_6_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_6_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_6_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>7</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_6_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>90</ID>
+      <Type>TECH_UNNAMED_TECH_7</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_7_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_7_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_7_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>1</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_7_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>91</ID>
+      <Type>TECH_UNNAMED_TECH_8</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_8_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_8_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_8_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_8_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>92</ID>
+      <Type>TECH_UNNAMED_TECH_9</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_9_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_9_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_9_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>5</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_9_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>93</ID>
+      <Type>TECH_UNNAMED_TECH_10</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_10_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_10_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_10_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>7</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_10_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>94</ID>
+      <Type>TECH_UNNAMED_TECH_11</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_11_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_11_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_11_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>8</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_11_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>95</ID>
+      <Type>TECH_UNNAMED_TECH_12</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_12_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_12_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_12_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>9</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_12_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>98</ID>
+      <Type>TECH_UNNAMED_TECH_15</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_15_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_15_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_15_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_CLASSICAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>3</GridX>
+      <GridY>2</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_15_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>100</ID>
+      <Type>TECH_UNNAMED_TECH_2</Type>
+      <Description>TXT_KEY_TECH_UNNAMED_TECH_2_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_UNNAMED_TECH_2_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_UNNAMED_TECH_2_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_ANCIENT</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>true</Trade>
+      <GoodyTech>true</GoodyTech>
+      <GridX>2</GridX>
+      <GridY>3</GridY>
+      <Quote>TXT_KEY_TECH_UNNAMED_TECH_2_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+  </Technologies>
+  <Technology_TradeRouteDomainExtraRange>
+    <Delete TechType="TECH_COMPASS" DomainType="DOMAIN_SEA" Range="10" />
+    <Delete TechType="TECH_REFRIGERATION" DomainType="DOMAIN_SEA" Range="10" />
+    <Delete TechType="TECH_COMBUSTION" DomainType="DOMAIN_LAND" Range="10" />
+  </Technology_TradeRouteDomainExtraRange>
+  <Technology_Flavors>
+    <Delete TechType="TECH_CALENDAR" FlavorType="FLAVOR_HAPPINESS" Flavor="4" />
+    <Delete TechType="TECH_CALENDAR" FlavorType="FLAVOR_TILE_IMPROVEMENT" Flavor="5" />
+    <Delete TechType="TECH_CALENDAR" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_CALENDAR" FlavorType="FLAVOR_RELIGION" Flavor="2" />
+    <Delete TechType="TECH_CALENDAR" FlavorType="FLAVOR_GOLD" Flavor="6" />
+    <Delete TechType="TECH_CALENDAR" FlavorType="FLAVOR_HAPPINESS" Flavor="2" />
+    <Delete TechType="TECH_WRITING" FlavorType="FLAVOR_SCIENCE" Flavor="6" />
+    <Delete TechType="TECH_WRITING" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_WRITING" FlavorType="FLAVOR_DIPLOMACY" Flavor="2" />
+    <Delete TechType="TECH_WRITING" FlavorType="FLAVOR_MILITARY_TRAINING" Flavor="4" />
+    <Delete TechType="TECH_TRAPPING" FlavorType="FLAVOR_GOLD" Flavor="8" />
+    <Delete TechType="TECH_TRAPPING" FlavorType="FLAVOR_TILE_IMPROVEMENT" Flavor="2" />
+    <Delete TechType="TECH_TRAPPING" FlavorType="FLAVOR_HAPPINESS" Flavor="3" />
+    <Delete TechType="TECH_THE_WHEEL" FlavorType="FLAVOR_MOBILE" Flavor="2" />
+    <Delete TechType="TECH_THE_WHEEL" FlavorType="FLAVOR_GROWTH" Flavor="2" />
+    <Delete TechType="TECH_THE_WHEEL" FlavorType="FLAVOR_RANGED" Flavor="2" />
+    <Delete TechType="TECH_THE_WHEEL" FlavorType="FLAVOR_INFRASTRUCTURE" Flavor="4" />
+    <Delete TechType="TECH_THE_WHEEL" FlavorType="FLAVOR_GOLD" Flavor="6" />
+    <Delete TechType="TECH_MASONRY" FlavorType="FLAVOR_CITY_DEFENSE" Flavor="4" />
+    <Delete TechType="TECH_MASONRY" FlavorType="FLAVOR_HAPPINESS" Flavor="2" />
+    <Delete TechType="TECH_MASONRY" FlavorType="FLAVOR_TILE_IMPROVEMENT" Flavor="2" />
+    <Delete TechType="TECH_MASONRY" FlavorType="FLAVOR_WONDER" Flavor="4" />
+    <Delete TechType="TECH_HORSEBACK_RIDING" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_HORSEBACK_RIDING" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_HORSEBACK_RIDING" FlavorType="FLAVOR_PRODUCTION" Flavor="3" />
+    <Delete TechType="TECH_MATHEMATICS" FlavorType="FLAVOR_RANGED" Flavor="8" />
+    <Delete TechType="TECH_MATHEMATICS" FlavorType="FLAVOR_OFFENSE" Flavor="4" />
+    <Delete TechType="TECH_MATHEMATICS" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_CONSTRUCTION" FlavorType="FLAVOR_HAPPINESS" Flavor="20" />
+    <Delete TechType="TECH_CONSTRUCTION" FlavorType="FLAVOR_PRODUCTION" Flavor="6" />
+    <Delete TechType="TECH_CONSTRUCTION" FlavorType="FLAVOR_RANGED" Flavor="6" />
+    <Delete TechType="TECH_CONSTRUCTION" FlavorType="FLAVOR_DEFENSE" Flavor="2" />
+    <Delete TechType="TECH_CONSTRUCTION" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_CONSTRUCTION" FlavorType="FLAVOR_TILE_IMPROVEMENT" Flavor="5" />
+    <Delete TechType="TECH_PHILOSOPHY" FlavorType="FLAVOR_SCIENCE" Flavor="3" />
+    <Delete TechType="TECH_PHILOSOPHY" FlavorType="FLAVOR_CULTURE" Flavor="6" />
+    <Delete TechType="TECH_PHILOSOPHY" FlavorType="FLAVOR_RELIGION" Flavor="2" />
+    <Delete TechType="TECH_PHILOSOPHY" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_DRAMA" FlavorType="FLAVOR_CULTURE" Flavor="6" />
+    <Delete TechType="TECH_DRAMA" FlavorType="FLAVOR_GREAT_PEOPLE" Flavor="3" />
+    <Delete TechType="TECH_CURRENCY" FlavorType="FLAVOR_GOLD" Flavor="20" />
+    <Delete TechType="TECH_CURRENCY" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_IRON_WORKING" FlavorType="FLAVOR_OFFENSE" Flavor="12" />
+    <Delete TechType="TECH_IRON_WORKING" FlavorType="FLAVOR_DEFENSE" Flavor="6" />
+    <Delete TechType="TECH_IRON_WORKING" FlavorType="FLAVOR_MILITARY_TRAINING" Flavor="3" />
+    <Delete TechType="TECH_THEOLOGY" FlavorType="FLAVOR_RELIGION" Flavor="6" />
+    <Delete TechType="TECH_THEOLOGY" FlavorType="FLAVOR_GREAT_PEOPLE" Flavor="3" />
+    <Delete TechType="TECH_THEOLOGY" FlavorType="FLAVOR_WONDER" Flavor="4" />
+    <Delete TechType="TECH_CIVIL_SERVICE" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_CIVIL_SERVICE" FlavorType="FLAVOR_GROWTH" Flavor="20" />
+    <Delete TechType="TECH_CIVIL_SERVICE" FlavorType="FLAVOR_SCIENCE" Flavor="10" />
+    <Delete TechType="TECH_CIVIL_SERVICE" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_GUILDS" FlavorType="FLAVOR_GOLD" Flavor="20" />
+    <Delete TechType="TECH_GUILDS" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_ENGINEERING" FlavorType="FLAVOR_DEFENSE" Flavor="2" />
+    <Delete TechType="TECH_ENGINEERING" FlavorType="FLAVOR_GROWTH" Flavor="10" />
+    <Delete TechType="TECH_ENGINEERING" FlavorType="FLAVOR_INFRASTRUCTURE" Flavor="2" />
+    <Delete TechType="TECH_METAL_CASTING" FlavorType="FLAVOR_PRODUCTION" Flavor="25" />
+    <Delete TechType="TECH_METAL_CASTING" FlavorType="FLAVOR_WONDER" Flavor="3" />
+    <Delete TechType="TECH_METAL_CASTING" FlavorType="FLAVOR_OFFENSE" Flavor="3" />
+    <Delete TechType="TECH_METAL_CASTING" FlavorType="FLAVOR_DEFENSE" Flavor="3" />
+    <Delete TechType="TECH_METAL_CASTING" FlavorType="FLAVOR_MILITARY_TRAINING" Flavor="3" />
+    <Delete TechType="TECH_COMPASS" FlavorType="FLAVOR_GOLD" Flavor="6" />
+    <Delete TechType="TECH_COMPASS" FlavorType="FLAVOR_PRODUCTION" Flavor="3" />
+    <Delete TechType="TECH_COMPASS" FlavorType="FLAVOR_NAVAL" Flavor="10" />
+    <Delete TechType="TECH_COMPASS" FlavorType="FLAVOR_WATER_CONNECTION" Flavor="10" />
+    <Delete TechType="TECH_EDUCATION" FlavorType="FLAVOR_SCIENCE" Flavor="12" />
+    <Delete TechType="TECH_EDUCATION" FlavorType="FLAVOR_WONDER" Flavor="4" />
+    <Delete TechType="TECH_EDUCATION" FlavorType="FLAVOR_DIPLOMACY" Flavor="4" />
+    <Delete TechType="TECH_CHIVALRY" FlavorType="FLAVOR_OFFENSE" Flavor="3" />
+    <Delete TechType="TECH_CHIVALRY" FlavorType="FLAVOR_MOBILE" Flavor="8" />
+    <Delete TechType="TECH_CHIVALRY" FlavorType="FLAVOR_CITY_DEFENSE" Flavor="3" />
+    <Delete TechType="TECH_CHIVALRY" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_CHIVALRY" FlavorType="FLAVOR_DIPLOMACY" Flavor="2" />
+    <Delete TechType="TECH_MACHINERY" FlavorType="FLAVOR_RANGED" Flavor="8" />
+    <Delete TechType="TECH_MACHINERY" FlavorType="FLAVOR_INFRASTRUCTURE" Flavor="4" />
+    <Delete TechType="TECH_MACHINERY" FlavorType="FLAVOR_PRODUCTION" Flavor="2" />
+    <Delete TechType="TECH_MACHINERY" FlavorType="FLAVOR_DEFENSE" Flavor="3" />
+    <Delete TechType="TECH_PHYSICS" FlavorType="FLAVOR_RANGED" Flavor="10" />
+    <Delete TechType="TECH_PHYSICS" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_PHYSICS" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_STEEL" FlavorType="FLAVOR_OFFENSE" Flavor="20" />
+    <Delete TechType="TECH_STEEL" FlavorType="FLAVOR_MILITARY_TRAINING" Flavor="5" />
+    <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_NAVAL_RECON" Flavor="15" />
+    <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_RECON" Flavor="5" />
+    <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_NAVAL" Flavor="5" />
+    <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_SCIENCE" Flavor="5" />
+    <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_EXPANSION" Flavor="10" />
+    <Delete TechType="TECH_ACOUSTICS" FlavorType="FLAVOR_CULTURE" Flavor="8" />
+    <Delete TechType="TECH_ACOUSTICS" FlavorType="FLAVOR_WONDER" Flavor="4" />
+    <Delete TechType="TECH_BANKING" FlavorType="FLAVOR_GOLD" Flavor="20" />
+    <Delete TechType="TECH_BANKING" FlavorType="FLAVOR_EXPANSION" Flavor="5" />
+    <Delete TechType="TECH_BANKING" FlavorType="FLAVOR_HAPPINESS" Flavor="5" />
+    <Delete TechType="TECH_BANKING" FlavorType="FLAVOR_WONDER" Flavor="10" />
+    <Delete TechType="TECH_PRINTING_PRESS" FlavorType="FLAVOR_HAPPINESS" Flavor="12" />
+    <Delete TechType="TECH_PRINTING_PRESS" FlavorType="FLAVOR_WONDER" Flavor="4" />
+    <Delete TechType="TECH_PRINTING_PRESS" FlavorType="FLAVOR_GREAT_PEOPLE" Flavor="2" />
+    <Delete TechType="TECH_GUNPOWDER" FlavorType="FLAVOR_DEFENSE" Flavor="12" />
+    <Delete TechType="TECH_GUNPOWDER" FlavorType="FLAVOR_OFFENSE" Flavor="6" />
+    <Delete TechType="TECH_GUNPOWDER" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_NAVIGATION" FlavorType="FLAVOR_NAVAL" Flavor="14" />
+    <Delete TechType="TECH_NAVIGATION" FlavorType="FLAVOR_PRODUCTION" Flavor="4" />
+    <Delete TechType="TECH_ARCHITECTURE" FlavorType="FLAVOR_WONDER" Flavor="12" />
+    <Delete TechType="TECH_ARCHITECTURE" FlavorType="FLAVOR_SCIENCE" Flavor="12" />
+    <Delete TechType="TECH_ECONOMICS" FlavorType="FLAVOR_GOLD" Flavor="12" />
+    <Delete TechType="TECH_ECONOMICS" FlavorType="FLAVOR_PRODUCTION" Flavor="8" />
+    <Delete TechType="TECH_CHEMISTRY" FlavorType="FLAVOR_RANGED" Flavor="10" />
+    <Delete TechType="TECH_CHEMISTRY" FlavorType="FLAVOR_OFFENSE" Flavor="6" />
+    <Delete TechType="TECH_CHEMISTRY" FlavorType="FLAVOR_DEFENSE" Flavor="3" />
+    <Delete TechType="TECH_CHEMISTRY" FlavorType="FLAVOR_PRODUCTION" Flavor="10" />
+    <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_OFFENSE" Flavor="4" />
+    <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_MOBILE" Flavor="8" />
+    <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_DEFENSE" Flavor="4" />
+    <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_CITY_DEFENSE" Flavor="3" />
+    <Delete TechType="TECH_ARCHAEOLOGY" FlavorType="FLAVOR_CULTURE" Flavor="25" />
+    <Delete TechType="TECH_ARCHAEOLOGY" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_SCIENTIFIC_THEORY" FlavorType="FLAVOR_SCIENCE" Flavor="20" />
+    <Delete TechType="TECH_INDUSTRIALIZATION" FlavorType="FLAVOR_PRODUCTION" Flavor="20" />
+    <Delete TechType="TECH_INDUSTRIALIZATION" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_OFFENSE" Flavor="4" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_MILITARY_TRAINING" Flavor="5" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_WONDER" Flavor="1" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_GROWTH" Flavor="20" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_SCIENCE" Flavor="15" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_GOLD" Flavor="8" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_GREAT_PEOPLE" Flavor="5" />
+    <Delete TechType="TECH_RIFLING" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_RIFLING" FlavorType="FLAVOR_OFFENSE" Flavor="10" />
+    <Delete TechType="TECH_RIFLING" FlavorType="FLAVOR_CITY_DEFENSE" Flavor="5" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_GROWTH" Flavor="10" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_TILE_IMPROVEMENT" Flavor="10" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_OFFENSE" Flavor="25" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_NAVAL" Flavor="12" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_AIR" Flavor="25" />
+    <Delete TechType="TECH_BIOLOGY" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_STEAM_POWER" FlavorType="FLAVOR_NAVAL" Flavor="15" />
+    <Delete TechType="TECH_ELECTRICITY" FlavorType="FLAVOR_GOLD" Flavor="10" />
+    <Delete TechType="TECH_ELECTRICITY" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" FlavorType="FLAVOR_DEFENSE" Flavor="15" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_RAILROAD" FlavorType="FLAVOR_INFRASTRUCTURE" Flavor="10" />
+    <Delete TechType="TECH_RAILROAD" FlavorType="FLAVOR_PRODUCTION" Flavor="10" />
+    <Delete TechType="TECH_RAILROAD" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_DYNAMITE" FlavorType="FLAVOR_RANGED" Flavor="12" />
+    <Delete TechType="TECH_DYNAMITE" FlavorType="FLAVOR_OFFENSE" Flavor="10" />
+    <Delete TechType="TECH_DYNAMITE" FlavorType="FLAVOR_DEFENSE" Flavor="8" />
+    <Delete TechType="TECH_REFRIGERATION" FlavorType="FLAVOR_NAVAL" Flavor="10" />
+    <Delete TechType="TECH_REFRIGERATION" FlavorType="FLAVOR_NAVAL_TILE_IMPROVEMENT" Flavor="4" />
+    <Delete TechType="TECH_REFRIGERATION" FlavorType="FLAVOR_PRODUCTION" Flavor="5" />
+    <Delete TechType="TECH_REFRIGERATION" FlavorType="FLAVOR_OFFENSE" Flavor="10" />
+    <Delete TechType="TECH_REFRIGERATION" FlavorType="FLAVOR_AIR" Flavor="5" />
+    <Delete TechType="TECH_RADIO" FlavorType="FLAVOR_AIR" Flavor="2" />
+    <Delete TechType="TECH_RADIO" FlavorType="FLAVOR_CULTURE" Flavor="15" />
+    <Delete TechType="TECH_RADIO" FlavorType="FLAVOR_WONDER" Flavor="4" />
+    <Delete TechType="TECH_FLIGHT" FlavorType="FLAVOR_AIR" Flavor="15" />
+    <Delete TechType="TECH_FLIGHT" FlavorType="FLAVOR_ANTIAIR" Flavor="5" />
+    <Delete TechType="TECH_BALLISTICS" FlavorType="FLAVOR_OFFENSE" Flavor="10" />
+    <Delete TechType="TECH_BALLISTICS" FlavorType="FLAVOR_ANTIAIR" Flavor="5" />
+    <Delete TechType="TECH_BALLISTICS" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_COMBUSTION" FlavorType="FLAVOR_OFFENSE" Flavor="15" />
+    <Delete TechType="TECH_COMBUSTION" FlavorType="FLAVOR_MOBILE" Flavor="5" />
+    <Delete TechType="TECH_COMBUSTION" FlavorType="FLAVOR_NAVAL" Flavor="5" />
+    <Delete TechType="TECH_PLASTIC" FlavorType="FLAVOR_PRODUCTION" Flavor="5" />
+    <Delete TechType="TECH_PLASTIC" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_PLASTIC" FlavorType="FLAVOR_SCIENCE" Flavor="5" />
+    <Delete TechType="TECH_PLASTIC" FlavorType="FLAVOR_SPACESHIP" Flavor="5" />
+    <Delete TechType="TECH_PENICILIN" FlavorType="FLAVOR_GROWTH" Flavor="10" />
+    <Delete TechType="TECH_PENICILIN" FlavorType="FLAVOR_SCIENCE" Flavor="2" />
+    <Delete TechType="TECH_PENICILIN" FlavorType="FLAVOR_GOLD" Flavor="2" />
+    <Delete TechType="TECH_ELECTRONICS" FlavorType="FLAVOR_NAVAL" Flavor="10" />
+    <Delete TechType="TECH_ELECTRONICS" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_ELECTRONICS" FlavorType="FLAVOR_AIR_CARRIER" Flavor="5" />
+    <Delete TechType="TECH_RADAR" FlavorType="FLAVOR_AIR" Flavor="15" />
+    <Delete TechType="TECH_RADAR" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_RADAR" FlavorType="FLAVOR_ANTIAIR" Flavor="5" />
+    <Delete TechType="TECH_COMBINED_ARMS" FlavorType="FLAVOR_OFFENSE" Flavor="10" />
+    <Delete TechType="TECH_COMBINED_ARMS" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_COMBINED_ARMS" FlavorType="FLAVOR_DEFENSE" Flavor="5" />
+    <Delete TechType="TECH_ATOMIC_THEORY" FlavorType="FLAVOR_NUKE" Flavor="25" />
+    <Delete TechType="TECH_ATOMIC_THEORY" FlavorType="FLAVOR_OFFENSE" Flavor="10" />
+    <Delete TechType="TECH_ECOLOGY" FlavorType="FLAVOR_PRODUCTION" Flavor="10" />
+    <Delete TechType="TECH_COMPUTERS" FlavorType="FLAVOR_AIR" Flavor="5" />
+    <Delete TechType="TECH_COMPUTERS" FlavorType="FLAVOR_NAVAL" Flavor="5" />
+    <Delete TechType="TECH_COMPUTERS" FlavorType="FLAVOR_NUKE" Flavor="5" />
+    <Delete TechType="TECH_TELECOM" FlavorType="FLAVOR_WONDER" Flavor="5" />
+    <Delete TechType="TECH_TELECOM" FlavorType="FLAVOR_DEFENSE" Flavor="5" />
+    <Delete TechType="TECH_ROCKETRY" FlavorType="FLAVOR_RANGED" Flavor="10" />
+    <Delete TechType="TECH_ROCKETRY" FlavorType="FLAVOR_AIR" Flavor="5" />
+    <Delete TechType="TECH_ROCKETRY" FlavorType="FLAVOR_MOBILE" Flavor="5" />
+    <Delete TechType="TECH_ROCKETRY" FlavorType="FLAVOR_SPACESHIP" Flavor="30" />
+    <Delete TechType="TECH_LASERS" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_LASERS" FlavorType="FLAVOR_MOBILE" Flavor="5" />
+    <Delete TechType="TECH_LASERS" FlavorType="FLAVOR_AIR" Flavor="5" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" FlavorType="FLAVOR_NUKE" Flavor="30" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" FlavorType="FLAVOR_PRODUCTION" Flavor="10" />
+    <Delete TechType="TECH_INTERNET" FlavorType="FLAVOR_CULTURE" Flavor="50" />
+    <Delete TechType="TECH_GLOBALIZATION" FlavorType="FLAVOR_DIPLOMACY" Flavor="50" />
+    <Delete TechType="TECH_ROBOTICS" FlavorType="FLAVOR_NAVAL" Flavor="4" />
+    <Delete TechType="TECH_ROBOTICS" FlavorType="FLAVOR_SPACESHIP" Flavor="25" />
+    <Delete TechType="TECH_SATELLITES" FlavorType="FLAVOR_SCIENCE" Flavor="6" />
+    <Delete TechType="TECH_SATELLITES" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_SATELLITES" FlavorType="FLAVOR_SPACESHIP" Flavor="10" />
+    <Delete TechType="TECH_STEALTH" FlavorType="FLAVOR_AIR" Flavor="10" />
+    <Delete TechType="TECH_MOBILE_TACTICS" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_MOBILE_TACTICS" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" FlavorType="FLAVOR_NUKE" Flavor="10" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" FlavorType="FLAVOR_SPACESHIP" Flavor="10" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" FlavorType="FLAVOR_SPACESHIP" Flavor="20" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" FlavorType="FLAVOR_OFFENSE" Flavor="15" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" FlavorType="FLAVOR_NUKE" Flavor="5" />
+    <Delete TechType="TECH_NANOTECHNOLOGY" FlavorType="FLAVOR_SPACESHIP" Flavor="20" />
+    <Delete TechType="TECH_FUTURE_TECH" FlavorType="FLAVOR_SCIENCE" Flavor="10" />
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RELIGION</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WATER_CONNECTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RECON</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_HAPPINESS</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>14</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>3</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>1</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>12</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>8</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_ANTIAIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_ANTIAIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GROWTH</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_GOLD</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_ANTIAIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NUKE</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NUKE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_RANGED</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>30</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NUKE</FlavorType>
+      <Flavor>30</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_PRODUCTION</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_CULTURE</FlavorType>
+      <Flavor>50</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+      <Flavor>50</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>25</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_WONDER</FlavorType>
+      <Flavor>2</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_AIR</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_MOBILE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_DEFENSE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NUKE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_OFFENSE</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_NUKE</FlavorType>
+      <Flavor>5</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <FlavorType>FLAVOR_SCIENCE</FlavorType>
+      <Flavor>10</Flavor>
+    </Row>
+  </Technology_Flavors>
+  <Technology_PrereqTechs>
+    <Delete TechType="TECH_CALENDAR" PrereqTech="TECH_POTTERY" />
+    <Delete TechType="TECH_WRITING" PrereqTech="TECH_POTTERY" />
+    <Delete TechType="TECH_TRAPPING" PrereqTech="TECH_ANIMAL_HUSBANDRY" />
+    <Delete TechType="TECH_THE_WHEEL" PrereqTech="TECH_ANIMAL_HUSBANDRY" />
+    <Delete TechType="TECH_THE_WHEEL" PrereqTech="TECH_ARCHERY" />
+    <Delete TechType="TECH_MASONRY" PrereqTech="TECH_MINING" />
+    <Delete TechType="TECH_PHILOSOPHY" PrereqTech="TECH_CALENDAR" />
+    <Delete TechType="TECH_PHILOSOPHY" PrereqTech="TECH_WRITING" />
+    <Delete TechType="TECH_HORSEBACK_RIDING" PrereqTech="TECH_THE_WHEEL" />
+    <Delete TechType="TECH_HORSEBACK_RIDING" PrereqTech="TECH_TRAPPING" />
+    <Delete TechType="TECH_MATHEMATICS" PrereqTech="TECH_THE_WHEEL" />
+    <Delete TechType="TECH_CONSTRUCTION" PrereqTech="TECH_MASONRY" />
+    <Delete TechType="TECH_CONSTRUCTION" PrereqTech="TECH_THE_WHEEL" />
+    <Delete TechType="TECH_DRAMA" PrereqTech="TECH_WRITING" />
+    <Delete TechType="TECH_CURRENCY" PrereqTech="TECH_MATHEMATICS" />
+    <Delete TechType="TECH_ENGINEERING" PrereqTech="TECH_MATHEMATICS" />
+    <Delete TechType="TECH_ENGINEERING" PrereqTech="TECH_CONSTRUCTION" />
+    <Delete TechType="TECH_IRON_WORKING" PrereqTech="TECH_BRONZE_WORKING" />
+    <Delete TechType="TECH_THEOLOGY" PrereqTech="TECH_PHILOSOPHY" />
+    <Delete TechType="TECH_THEOLOGY" PrereqTech="TECH_DRAMA" />
+    <Delete TechType="TECH_GUILDS" PrereqTech="TECH_CURRENCY" />
+    <Delete TechType="TECH_CIVIL_SERVICE" PrereqTech="TECH_DRAMA" />
+    <Delete TechType="TECH_CIVIL_SERVICE" PrereqTech="TECH_HORSEBACK_RIDING" />
+    <Delete TechType="TECH_CIVIL_SERVICE" PrereqTech="TECH_CURRENCY" />
+    <Delete TechType="TECH_METAL_CASTING" PrereqTech="TECH_ENGINEERING" />
+    <Delete TechType="TECH_METAL_CASTING" PrereqTech="TECH_IRON_WORKING" />
+    <Delete TechType="TECH_COMPASS" PrereqTech="TECH_OPTICS" />
+    <Delete TechType="TECH_COMPASS" PrereqTech="TECH_THEOLOGY" />
+    <Delete TechType="TECH_EDUCATION" PrereqTech="TECH_THEOLOGY" />
+    <Delete TechType="TECH_EDUCATION" PrereqTech="TECH_CIVIL_SERVICE" />
+    <Delete TechType="TECH_CHIVALRY" PrereqTech="TECH_CIVIL_SERVICE" />
+    <Delete TechType="TECH_CHIVALRY" PrereqTech="TECH_GUILDS" />
+    <Delete TechType="TECH_MACHINERY" PrereqTech="TECH_ENGINEERING" />
+    <Delete TechType="TECH_MACHINERY" PrereqTech="TECH_GUILDS" />
+    <Delete TechType="TECH_PHYSICS" PrereqTech="TECH_METAL_CASTING" />
+    <Delete TechType="TECH_STEEL" PrereqTech="TECH_METAL_CASTING" />
+    <Delete TechType="TECH_ASTRONOMY" PrereqTech="TECH_COMPASS" />
+    <Delete TechType="TECH_ASTRONOMY" PrereqTech="TECH_EDUCATION" />
+    <Delete TechType="TECH_ACOUSTICS" PrereqTech="TECH_EDUCATION" />
+    <Delete TechType="TECH_BANKING" PrereqTech="TECH_EDUCATION" />
+    <Delete TechType="TECH_BANKING" PrereqTech="TECH_CHIVALRY" />
+    <Delete TechType="TECH_PRINTING_PRESS" PrereqTech="TECH_MACHINERY" />
+    <Delete TechType="TECH_PRINTING_PRESS" PrereqTech="TECH_PHYSICS" />
+    <Delete TechType="TECH_PRINTING_PRESS" PrereqTech="TECH_CHIVALRY" />
+    <Delete TechType="TECH_GUNPOWDER" PrereqTech="TECH_PHYSICS" />
+    <Delete TechType="TECH_GUNPOWDER" PrereqTech="TECH_STEEL" />
+    <Delete TechType="TECH_NAVIGATION" PrereqTech="TECH_ASTRONOMY" />
+    <Delete TechType="TECH_ARCHITECTURE" PrereqTech="TECH_ACOUSTICS" />
+    <Delete TechType="TECH_ARCHITECTURE" PrereqTech="TECH_BANKING" />
+    <Delete TechType="TECH_ECONOMICS" PrereqTech="TECH_BANKING" />
+    <Delete TechType="TECH_ECONOMICS" PrereqTech="TECH_PRINTING_PRESS" />
+    <Delete TechType="TECH_CHEMISTRY" PrereqTech="TECH_GUNPOWDER" />
+    <Delete TechType="TECH_METALLURGY" PrereqTech="TECH_GUNPOWDER" />
+    <Delete TechType="TECH_METALLURGY" PrereqTech="TECH_PRINTING_PRESS" />
+    <Delete TechType="TECH_ARCHAEOLOGY" PrereqTech="TECH_NAVIGATION" />
+    <Delete TechType="TECH_ARCHAEOLOGY" PrereqTech="TECH_ARCHITECTURE" />
+    <Delete TechType="TECH_SCIENTIFIC_THEORY" PrereqTech="TECH_ECONOMICS" />
+    <Delete TechType="TECH_SCIENTIFIC_THEORY" PrereqTech="TECH_ARCHITECTURE" />
+    <Delete TechType="TECH_INDUSTRIALIZATION" PrereqTech="TECH_ECONOMICS" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_CHEMISTRY" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_METALLURGY" />
+    <Delete TechType="TECH_FERTILIZER" PrereqTech="TECH_CHEMISTRY" />
+    <Delete TechType="TECH_RIFLING" PrereqTech="TECH_ECONOMICS" />
+    <Delete TechType="TECH_RIFLING" PrereqTech="TECH_METALLURGY" />
+    <Delete TechType="TECH_BIOLOGY" PrereqTech="TECH_ARCHAEOLOGY" />
+    <Delete TechType="TECH_BIOLOGY" PrereqTech="TECH_SCIENTIFIC_THEORY" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_RIFLING" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_INDUSTRIALIZATION" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_SCIENTIFIC_THEORY" />
+    <Delete TechType="TECH_ELECTRICITY" PrereqTech="TECH_SCIENTIFIC_THEORY" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_ELECTRICITY" />
+    <Delete TechType="TECH_RAILROAD" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_RAILROAD" PrereqTech="TECH_DYNAMITE" />
+    <Delete TechType="TECH_DYNAMITE" PrereqTech="TECH_FERTILIZER" />
+    <Delete TechType="TECH_DYNAMITE" PrereqTech="TECH_MILITARY_SCIENCE" />
+    <Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_ELECTRICITY" />
+    <Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_BIOLOGY" />
+    <Delete TechType="TECH_RADIO" PrereqTech="TECH_ELECTRICITY" />
+    <Delete TechType="TECH_FLIGHT" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_BALLISTICS" PrereqTech="TECH_RAILROAD" />
+    <Delete TechType="TECH_BALLISTICS" PrereqTech="TECH_FLIGHT" />
+    <Delete TechType="TECH_COMBUSTION" PrereqTech="TECH_RAILROAD" />
+    <Delete TechType="TECH_PLASTIC" PrereqTech="TECH_RADIO" />
+    <Delete TechType="TECH_PLASTIC" PrereqTech="TECH_REPLACEABLE_PARTS" />
+    <Delete TechType="TECH_PENICILIN" PrereqTech="TECH_REFRIGERATION" />
+    <Delete TechType="TECH_PENICILIN" PrereqTech="TECH_PLASTIC" />
+    <Delete TechType="TECH_ELECTRONICS" PrereqTech="TECH_REPLACEABLE_PARTS" />
+    <Delete TechType="TECH_ELECTRONICS" PrereqTech="TECH_FLIGHT" />
+    <Delete TechType="TECH_RADAR" PrereqTech="TECH_ELECTRONICS" />
+    <Delete TechType="TECH_RADAR" PrereqTech="TECH_BALLISTICS" />
+    <Delete TechType="TECH_COMBINED_ARMS" PrereqTech="TECH_BALLISTICS" />
+    <Delete TechType="TECH_COMBINED_ARMS" PrereqTech="TECH_COMBUSTION" />
+    <Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_PLASTIC" />
+    <Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_ELECTRONICS" />
+    <Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_ATOMIC_THEORY" />
+    <Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_PENICILIN" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" PrereqTech="TECH_ATOMIC_THEORY" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_ROCKETRY" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_COMBINED_ARMS" />
+    <Delete TechType="TECH_TELECOM" PrereqTech="TECH_ECOLOGY" />
+    <Delete TechType="TECH_MOBILE_TACTICS" PrereqTech="TECH_ECOLOGY" />
+    <Delete TechType="TECH_MOBILE_TACTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_ROCKETRY" />
+    <Delete TechType="TECH_SATELLITES" PrereqTech="TECH_ROCKETRY" />
+    <Delete TechType="TECH_ROBOTICS" PrereqTech="TECH_ROCKETRY" />
+    <Delete TechType="TECH_ROBOTICS" PrereqTech="TECH_COMPUTERS" />
+    <Delete TechType="TECH_LASERS" PrereqTech="TECH_COMPUTERS" />
+    <Delete TechType="TECH_INTERNET" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_GLOBALIZATION" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_MOBILE_TACTICS" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_ADVANCED_BALLISTICS" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_ADVANCED_BALLISTICS" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_SATELLITES" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_STEALTH" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_STEALTH" PrereqTech="TECH_LASERS" />
+    <Delete TechType="TECH_NANOTECHNOLOGY" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_INTERNET" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_GLOBALIZATION" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_PARTICLE_PHYSICS" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_NUCLEAR_FUSION" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_NANOTECHNOLOGY" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_STEALTH" />
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_2</TechType>
+      <PrereqTech>TECH_ARCHERY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_4</TechType>
+      <PrereqTech>TECH_ARCHERY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_5</TechType>
+      <PrereqTech>TECH_ARCHERY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_3</TechType>
+      <PrereqTech>TECH_POTTERY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_6</TechType>
+      <PrereqTech>TECH_UNNAMED_TECH_4</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_5</TechType>
+      <PrereqTech>TECH_UNNAMED_TECH_4</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_UNNAMED_TECH_7</TechType>
+      <PrereqTech>TECH_UNNAMED_TECH_3</PrereqTech>
+    </Row>
+  </Technology_PrereqTechs>
+</GameData>
