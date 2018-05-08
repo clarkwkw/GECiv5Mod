@@ -72,7 +72,9 @@ function TechnologyResearchedListenerFactory(techType, heading, msg, onAdvisor)
 			else
 				AdvisorManager.GenerateAdvisorPopUp(Game.GetActivePlayer(), AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
 			end
+			return true
 		end
+		return false
 	end
 	return listener
 end
