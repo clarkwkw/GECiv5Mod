@@ -3,7 +3,7 @@
 - cxFreeze (for compiling executable for MacOS)
 - pyinstaller (for compiling executable for Windows)
 
-## Installer Compilation
+## Compiling Installer
 1. Clone the repository on the target platform, and install the required dependencies.
 2. Change to this directory and issue the command `make {OS}`, where `OS` must be `windows` or `mac`.
 
