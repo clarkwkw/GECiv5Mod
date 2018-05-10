@@ -181,12 +181,13 @@ function Refresh()
 	local additionalMapsFolder = folders["MAP_FOLDER_ADDITIONAL"];
 	
 	for row in GameInfo.Maps() do
+		
+		--- Filter UGFN maps
 		if IsUGFNMap(row.Name) then
 			local folder = rootFolder;
 			if(row.FolderType ~= nil) then
 				folder = folders[row.FolderType];
 			end
-			--- Filter UGFN maps
 		
 			table.insert(folder.Items, {
 				Name = Locale.Lookup(row.Name),
