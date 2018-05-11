@@ -21,6 +21,11 @@
 		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
 			<Text>a. research [COLOR_TECH_TEXT]Education[ENDCOLOR], [NEWLINE]b. build 3 [COLOR_BUILDING_TEXT]universities[ENDCOLOR].</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
+			<Text>a. keep hold on your original captial city, [NEWLINE]b. build 3 [COLOR_BUILDING_TEXT]factories[ENDCOLOR].</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>Progress: Settler</Text>
 		</Row>
@@ -33,20 +38,20 @@
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
 			<Text>[NEWLINE]Congrats! You have just found the capitial city. If you want to expand your civilization, you can consider training [COLOR_UNIT_TEXT]settlers[ENDCOLOR] to found more cities.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_TITLE">
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
 			<Text>Progress: Built University</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_MSG">
-			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. You just have [COLOR_FONT_GREEN]%d[ENDCOLOR] more to go.</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_MSG">
+			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. You just have [COLOR_FONT_GREEN]%d[ENDCOLOR] more to go.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_FINISH_MSG">
-			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. You have completed the requirement.</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG">
+			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. You have completed the requirement.</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_EDUCATION_TITLE">
-			<Text>Progress: Researched Education</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_TITLE">
+			<Text>Progress: Researched %s</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_EDUCATION_MSG">
-			<Text>[NEWLINE]Congrats! You have researched [COLOR_TECH_TEXT]Education[ENDCOLOR]. You can start to build the [COLOR_BUILDING_TEXT]universities[ENDCOLOR].</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_MSG">
+			<Text>[NEWLINE]Congrats! You have researched [COLOR_TECH_TEXT]%s[ENDCOLOR]. You can start to build [COLOR_BUILDING_TEXT]%s[ENDCOLOR].</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">
@@ -73,6 +78,11 @@
 		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
 			<Text>a. 成功研究[COLOR_TECH_TEXT]教育[ENDCOLOR] [NEWLINE]b. 興建3間 [COLOR_BUILDING_TEXT]大學[ENDCOLOR]</Text>
 		</Row>
+
+		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
+			<Text>a. 保護原有首都 [NEWLINE]b. 興建3間 [COLOR_BUILDING_TEXT]工廠[ENDCOLOR]</Text>
+		</Row>
+
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
 			<Text>進度: 開拓者</Text>
 		</Row>
@@ -85,21 +95,24 @@
 			<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
 			<Text>[NEWLINE]恭喜! 你已成功建立首都。如果你想擴張版圖，你可以考慮訓練 [COLOR_UNIT_TEXT]開拓者[ENDCOLOR]，以建造新城市。</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_TITLE">
-			<Text>進度: 已建造大學</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
+			<Text>進度: 已建造%s</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]大學[ENDCOLOR]，還需要 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間。</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_MSG">
+			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]%s[ENDCOLOR]，還需要 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間。</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_UNIVERSITY_FINISH_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]大學[ENDCOLOR]，完成相關要求。</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG">
+			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]%s[ENDCOLOR]，完成相關要求。</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_EDUCATION_TITLE">
-			<Text>進度: 已研究教育</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_TITLE">
+			<Text>進度: 已研究%s</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_EDUCATION_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功研究 [COLOR_TECH_TEXT]教育[ENDCOLOR]。 你可以開始建造 [COLOR_BUILDING_TEXT]大學[ENDCOLOR]。</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_MSG">
+			<Text>[NEWLINE]恭喜! 你已成功研究 [COLOR_TECH_TEXT]%s[ENDCOLOR]。 你可以開始建造 [COLOR_BUILDING_TEXT]%s[ENDCOLOR]。</Text>
 		</Row>
+
+		</Row>
+
 		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">
 			<Text>請選擇地圖</Text>
 		</Row>

@@ -1,3 +1,6 @@
+local TXT_EDUCATION = Locale.Lookup("TXT_KEY_TECH_EDUCATION")
+local TXT_UNIVERSITY = Locale.Lookup("TXT_KEY_BUILDING_UNIVERSITY")
+
 WrongScenarioSettingsPopup = function()
 	AdvisorManager.GenerateAdvisorPopUp(
 		Game.GetActivePlayer(),
@@ -37,8 +40,15 @@ ListenerManager.AddIndividualTurnStartListener(
 	"NOTIFICATION_EDUCATION_RESEARCHED",
 	TechnologyResearchedListenerFactory(
 		GameInfoTypes["TECH_EDUCATION"],
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_EDUCATION_TITLE"),
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_EDUCATION_MSG"),
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_TECH_TITLE"), 
+			TXT_EDUCATION
+		),
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_TECH_MSG"), 
+			TXT_EDUCATION,
+			TXT_UNIVERSITY
+		),
 		true
 	)
 )
@@ -51,8 +61,16 @@ for i = 1,UNIVERSITIES_REQUIRED - 1 do
 		BuildingCountListenerFactory(
 			GameInfo.BuildingClasses.BUILDINGCLASS_UNIVERSITY.ID,
 			i, 
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_UNIVERSITY_TITLE"),
-			string.format(Locale.Lookup("TXT_KEY_UGFN_PROGRESS_UNIVERSITY_MSG"), i, UNIVERSITIES_REQUIRED - i),
+			string.format(
+				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
+				TXT_UNIVERSITY
+			),
+			string.format(
+				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_MSG"), 
+				i, 
+				TXT_UNIVERSITY,
+				UNIVERSITIES_REQUIRED - i
+			),
 			true
 		)
 	)
@@ -62,8 +80,15 @@ ListenerManager.AddIndividualTurnStartListener(
 	BuildingCountListenerFactory(
 		GameInfo.BuildingClasses.BUILDINGCLASS_UNIVERSITY.ID,
 		UNIVERSITIES_REQUIRED, 
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_UNIVERSITY_TITLE"),
-		string.format(Locale.Lookup("TXT_KEY_UGFN_PROGRESS_UNIVERSITY_FINISH_MSG"), UNIVERSITIES_REQUIRED),
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
+			TXT_UNIVERSITY
+		)
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG"), 
+			UNIVERSITIES_REQUIRED,
+			TXT_UNIVERSITY
+		),
 		true
 	)
 )
