@@ -83,7 +83,7 @@ ListenerManager.AddIndividualTurnStartListener(
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
 			TXT_UNIVERSITY
-		)
+		),
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG"), 
 			UNIVERSITIES_REQUIRED,

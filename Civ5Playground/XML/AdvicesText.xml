@@ -111,8 +111,6 @@
 			<Text>[NEWLINE]恭喜! 你已成功研究 [COLOR_TECH_TEXT]%s[ENDCOLOR]。 你可以開始建造 [COLOR_BUILDING_TEXT]%s[ENDCOLOR]。</Text>
 		</Row>
 
-		</Row>
-
 		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">
 			<Text>請選擇地圖</Text>
 		</Row>
