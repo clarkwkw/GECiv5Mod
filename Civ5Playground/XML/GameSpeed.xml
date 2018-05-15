@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_GAMESPEED_1500AD">
+			<Text>1500AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_1500AD_HELP">
+			<Text>Quick speed with with year per turn offset for 1500AD.</Text>
+		</Row>
+	</Language_en_US>
+
+	<GameSpeeds>
+		<Row>
+			<Type>GAMESPEED_1500AD</Type>
+			<Description>TXT_KEY_GAMESPEED_1500AD</Description>
+			<Help>TXT_KEY_GAMESPEED_1500AD_HELP</Help>
+			
+			<DealDuration>25</DealDuration>
+			<GrowthPercent>67</GrowthPercent>
+			<TrainPercent>67</TrainPercent>
+			<ConstructPercent>67</ConstructPercent>
+			<CreatePercent>67</CreatePercent>
+			<ResearchPercent>67</ResearchPercent>
+			<GoldPercent>67</GoldPercent>
+			<GoldGiftMod>125</GoldGiftMod>
+			<BuildPercent>67</BuildPercent>
+			<ImprovementPercent>67</ImprovementPercent>
+			<GreatPeoplePercent>67</GreatPeoplePercent>
+			<CulturePercent>67</CulturePercent>
+			<FaithPercent>67</FaithPercent>
+			<BarbPercent>67</BarbPercent>
+			<FeatureProductionPercent>67</FeatureProductionPercent>
+			<UnitDiscoverPercent>67</UnitDiscoverPercent>
+			<UnitHurryPercent>67</UnitHurryPercent>
+			<UnitTradePercent>67</UnitTradePercent>
+			<GoldenAgePercent>80</GoldenAgePercent>
+			<HurryPercent>100</HurryPercent>
+			<InflationPercent>45</InflationPercent>
+			<InflationOffset>-60</InflationOffset>
+			<ReligiousPressureAdjacentCity>90</ReligiousPressureAdjacentCity>
+			<VictoryDelayPercent>67</VictoryDelayPercent>
+			<MinorCivElectionFreqMod>67</MinorCivElectionFreqMod>
+			<OpinionDurationPercent>67</OpinionDurationPercent>
+			<SpyRatePercent>50</SpyRatePercent>
+			<PeaceDealDuration>10</PeaceDealDuration>
+			<RelationshipDuration>50</RelationshipDuration>
+			<LeaguePercent>67</LeaguePercent>
+			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+	</GameSpeeds>
+
+	<GameSpeed_Turns>
+		<Row>
+			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>70</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
+			<MonthIncrement>24</MonthIncrement>
+			<TurnsPerIncrement>65</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
+			<MonthIncrement>12</MonthIncrement>
+			<TurnsPerIncrement>70</TurnsPerIncrement>
+		</Row>
+	</GameSpeed_Turns>
+
+</GameData>

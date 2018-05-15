@@ -32,8 +32,14 @@
       <Content>
         <Type>Map</Type>
         <Name>UGFN Part 1</Name>
-        <Description>Giant world map, Larger Europe, 22 Civs, EPIC speed, All natural wonders, True start locations</Description>
+        <Description>Map for part 1</Description>
         <FileName>Maps/UGFN Part 1.civ5map</FileName>
+      </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>UGFN Part 2 &amp; 3</Name>
+        <Description>Map for part 2 &amp; 3</Description>
+        <FileName>Maps/UGFN Part 23.Civ5Map</FileName>
       </Content>
     </ModContent>
     <ModActions>
@@ -60,16 +66,6 @@
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>XML/TestPolicies.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>XML/TestPolicies.xml</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>XML/EventsText.xml</FileName>
       </Action>
       <Action>
@@ -81,6 +77,11 @@
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>XML/CityNames.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/GameSpeed.xml</FileName>
       </Action>
     </ModActions>
     <ModBlockers>
@@ -250,6 +251,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Maps\UGFN Part 23.Civ5Map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Overrides\AdvancedSetup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -287,6 +292,10 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\EventsText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\GameSpeed.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
