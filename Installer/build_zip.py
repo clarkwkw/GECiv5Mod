@@ -7,13 +7,6 @@ from os.path import dirname
 import json
 import platform 
 
-'''
-Prerequisite:
-1. Run the Multiplayer Mod DLC-hack, you can find the details at 
-   https://forums.civfanatics.com/threads/mpmpm-multiplayer-mod-dlc-hack-updated.533238/
-2. Configure the civ5 installation path and other settings in below
-'''
-
 # ------------------ Settings ------------------ #
 
 # Installation Path of Civ5
@@ -38,13 +31,13 @@ TMP_DIR = "./tmp"
 
 # ---------- End of Settings Section ---------- #
 
-VERSION_NUMBER = input("Version number [e.g. v0.3]: ")
+VERSION_NUMBER = input("Version number [e.g. v0.2]: ")
 
 ZIP_NAME = str(VERSION_NUMBER) + ".zip"
 
 os_version = platform.system().lower()
 
-if __name__ == "__main__":
+def main():
 	files_copied = []
 	files_replaced = []
 
@@ -89,3 +82,5 @@ if __name__ == "__main__":
 	io_utils.zipdir(TMP_DIR, ZIP_NAME)
 	shutil.rmtree(TMP_DIR)
 	print("Done")
+
+main()
