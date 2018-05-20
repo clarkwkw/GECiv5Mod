@@ -40,7 +40,8 @@ print("map: " .. mapname)
 
 include("CommonAdvices.lua")
 if mapname == "UGFN Part 1" then
-	include("Part1Advices.lua")
+	include("Part23Advices.lua")
+	---include("Part1Advices.lua")
 
 elseif "UGFN Part 23" then
 	include("Part23Advices.lua")

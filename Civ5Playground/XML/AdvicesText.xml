@@ -23,7 +23,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_PART1_RESEARCHED_NEXT_STEP">
-			<Text>You can start to build [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. Once you have built universities in every cities, you can then construct the [COLOR_BUILDING_TEXT]Oxford University[ENDCOLOR].</Text>
+			<Text>You can start to build [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. Once you have built universities in every cities, you can then construct the [COLOR_BUILDING_TEXT]Oxford University[ENDCOLOR].[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]Note: You need to keep hold on 3 cities to satisfy the requirements of part 1.[ENDCOLOR]</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
