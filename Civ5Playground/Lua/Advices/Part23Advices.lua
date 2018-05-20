@@ -1,5 +1,5 @@
-local TXT_INDUSTRIALIZATION = Locale.Lookup("TXT_KEY_TECH_INDUSTRIALIZATION")
-local TXT_FACTORY = Locale.Lookup("TXT_KEY_BUILDING_FACTORY")
+local TXT_ATOMIC_THEORY = Locale.Lookup("TXT_KEY_TECH_ATOMIC_THEORY_TITLE")
+local TXT_MANHATTAN_PROJ = Locale.Lookup("TXT_KEY_PROJECT_MANHATTAN_PROJECT")
 
 WrongScenarioSettingsPopup = function()
 	AdvisorManager.GenerateAdvisorPopUp(
@@ -35,60 +35,37 @@ else
 	)
 end
 
---- Shown on successfully researched industrialization
+--- Shown on successfully researched atomic theory
 ListenerManager.AddIndividualTurnStartListener(
-	"NOTIFICATION_INDUSTRIALIZATION_RESEARCHED",
+	"NOTIFICATION_ATOMIC_THEORY_RESEARCHED",
 	TechnologyResearchedListenerFactory(
-		GameInfoTypes["TECH_INDUSTRIALIZATION"],
+		GameInfoTypes["TECH_ATOMIC_THEORY"],
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_TECH_TITLE"), 
-			TXT_INDUSTRIALIZATION
+			TXT_ATOMIC_THEORY
 		),
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_TECH_MSG"), 
-			TXT_INDUSTRIALIZATION,
-			TXT_FACTORY
+			TXT_ATOMIC_THEORY,
+			Locale.Lookup("TXT_KEY_PART23_RESEARCHED_NEXT_STEP")
 		),
 		true
 	)
 )
 
---- Shown on successfully building factories
-local FACTORIES_REQUIRED = 3
-for i = 1,FACTORIES_REQUIRED - 1 do 
-	ListenerManager.AddIndividualTurnStartListener(
-		string.format("NOTIFICATION_FACTORY_BUILT_%d", i),
-		BuildingCountListenerFactory(
-			GameInfo.BuildingClasses.BUILDINGCLASS_FACTORY.ID,
-			i, 
+--- Shown on completing Manhattan Project
+ListenerManager.AddIndividualTurnStartListener(
+		"NOTIFICATION_MANHATTAN_PROJ_BUILT",
+		ProjectCompletedListenerFactory(
+			GameInfo.Projects.PROJECT_MANHATTAN_PROJECT.ID,
 			string.format(
 				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
-				TXT_FACTORY
+				TXT_MANHATTAN_PROJ
 			),
 			string.format(
-				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_MSG"), 
-				i, 
-				TXT_FACTORY,
-				FACTORIES_REQUIRED - i
+				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG"),
+				TXT_MANHATTAN_PROJ
 			),
 			true
 		)
 	)
-end
-ListenerManager.AddIndividualTurnStartListener(
-	string.format("NOTIFICATION_FACTORY_BUILT_%d", FACTORIES_REQUIRED),
-	BuildingCountListenerFactory(
-		GameInfo.BuildingClasses.BUILDINGCLASS_FACTORY.ID,
-		FACTORIES_REQUIRED, 
-		string.format(
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
-			TXT_FACTORY
-		),
-		string.format(
-			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG"), 
-			FACTORIES_REQUIRED,
-			TXT_FACTORY
-		),
-		true
-	)
-)

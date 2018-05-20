@@ -19,11 +19,19 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
-			<Text>a. research [COLOR_TECH_TEXT]Education[ENDCOLOR], [NEWLINE]b. build 3 [COLOR_BUILDING_TEXT]universities[ENDCOLOR].</Text>
+			<Text>a. keep hold on [COLOR_FONT_GREEN]3 cities[ENDCOLOR], [NEWLINE]b. build the [COLOR_BUILDING_TEXT]Oxford University[ENDCOLOR]. [NEWLINE] [NEWLINE] So, the first step is to research [COLOR_TECH_TEXT]Education[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PART1_RESEARCHED_NEXT_STEP">
+			<Text>You can start to build [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. Once you have built universities in every cities, you can then construct the [COLOR_BUILDING_TEXT]Oxford University[ENDCOLOR].</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
-			<Text>a. keep hold on your original captial city, [NEWLINE]b. build 3 [COLOR_BUILDING_TEXT]factories[ENDCOLOR].</Text>
+			<Text>a. complete the [COLOR_PROJECT_TEXT]Manhattan Project[ENDCOLOR]. [NEWLINE] [NEWLINE] So, the first step is to research [COLOR_TECH_TEXT]Atomic Theory[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PART23_RESEARCHED_NEXT_STEP">
+			<Text>You can start to build the [COLOR_PROJECT_TEXT]Manhattan Project[ENDCOLOR].</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
@@ -39,19 +47,19 @@
 			<Text>[NEWLINE]Congrats! You have just found the capitial city. If you want to expand your civilization, you can consider training [COLOR_UNIT_TEXT]settlers[ENDCOLOR] to found more cities.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
-			<Text>Progress: Built University</Text>
+			<Text>Progress: Constructed %s</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_MSG">
 			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. You just have [COLOR_FONT_GREEN]%d[ENDCOLOR] more to go.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG">
-			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. You have completed the requirement.</Text>
+			<Text>[NEWLINE]Congrats! You have built the required [COLOR_FONT_GREEN]%s[ENDCOLOR].</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_TITLE">
 			<Text>Progress: Researched %s</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_MSG">
-			<Text>[NEWLINE]Congrats! You have researched [COLOR_TECH_TEXT]%s[ENDCOLOR]. You can start to build [COLOR_BUILDING_TEXT]%s[ENDCOLOR].</Text>
+			<Text>[NEWLINE]Congrats! You have researched [COLOR_TECH_TEXT]%s[ENDCOLOR]. %s</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">
@@ -75,12 +83,22 @@
 		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
 			<Text>[NEWLINE]你並沒有啟動[COLOR_FONT_RED] %s [ENDCOLOR]的劇本設定。[NEWLINE]請確保你在 [COLOR_FONT_RED]模組 -> 單人模式 -> 遊戲設定[ENDCOLOR] 中，[NEWLINE] 選擇這個地圖並點選[COLOR_FONT_RED]"載入劇本"[ENDCOLOR]。</Text>
 		</Row>
+
 		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
-			<Text>a. 成功研究[COLOR_TECH_TEXT]教育[ENDCOLOR] [NEWLINE]b. 興建3間 [COLOR_BUILDING_TEXT]大學[ENDCOLOR]</Text>
+			<Text>a. 擁有至少3座城市 [NEWLINE]b. 興建 [COLOR_BUILDING_TEXT]牛津大學[ENDCOLOR] [NEWLINE] [NEWLINE] 第一步，你需要研究[COLOR_TECH_TEXT]教育制度[ENDCOLOR]。</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PART1_RESEARCHED_NEXT_STEP">
+			<Text>你可以開始興建[COLOR_BUILDING_TEXT]大學[ENDCOLOR]。當你於每個城市都建好[COLOR_BUILDING_TEXT]大學[ENDCOLOR]後，你可以興建[COLOR_BUILDING_TEXT]牛津大學[ENDCOLOR]。[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]注意: 你必需擁有至少3座城市，以符合Part 1要求。[ENDCOLOR]</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
-			<Text>a. 保護原有首都 [NEWLINE]b. 興建3間 [COLOR_BUILDING_TEXT]工廠[ENDCOLOR]</Text>
+			<Text>a. [COLOR_PROJECT_TEXT]完成曼哈頓計畫[ENDCOLOR] [NEWLINE] [NEWLINE] 第一步，你需要研究[COLOR_TECH_TEXT]原子理論[ENDCOLOR]。</Text>
+			
+		</Row>
+
+		<Row Tag="TXT_KEY_PART23_RESEARCHED_NEXT_STEP">
+			<Text>你可以建造 [COLOR_PROJECT_TEXT]曼哈頓計畫[ENDCOLOR]。</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
@@ -102,13 +120,13 @@
 			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]%s[ENDCOLOR]，還需要 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]%s[ENDCOLOR]，完成相關要求。</Text>
+			<Text>[NEWLINE]恭喜! 你已成功建造所需的 [COLOR_FONT_GREEN]%s[ENDCOLOR]。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_TITLE">
 			<Text>進度: 已研究%s</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功研究 [COLOR_TECH_TEXT]%s[ENDCOLOR]。 你可以開始建造 [COLOR_BUILDING_TEXT]%s[ENDCOLOR]。</Text>
+			<Text>[NEWLINE]恭喜! 你已成功研究 [COLOR_TECH_TEXT]%s[ENDCOLOR]。 %s</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_SELECT_MAP">

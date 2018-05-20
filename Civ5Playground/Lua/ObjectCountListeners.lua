@@ -64,9 +64,27 @@ function TechnologyResearchedListenerFactory(techType, heading, msg, onAdvisor)
 			return
 		end
 		local researched = Teams[player:GetTeam()]:IsHasTech(techType)
-		print("Progress: ", researched)
-		print("Progress: ", player:GetResearchProgress(techType))
 		if researched then
+			if not onAdvisor then
+				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, msg, heading)
+			else
+				AdvisorManager.GenerateAdvisorPopUp(Game.GetActivePlayer(), AdvisorTypes.ADVISOR_ECONOMIC, heading, msg)
+			end
+			return true
+		end
+		return false
+	end
+	return listener
+end
+
+function ProjectCompletedListenerFactory(projectType, heading, msg, onAdvisor)
+	listener = function()
+		local player = Utils.GetCurrentPlayer()
+		if player == nil then
+			return
+		end
+		local count = Teams[player:GetTeam()]:GetProjectCount(projectType)
+		if count > 0 then
 			if not onAdvisor then
 				player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, msg, heading)
 			else
