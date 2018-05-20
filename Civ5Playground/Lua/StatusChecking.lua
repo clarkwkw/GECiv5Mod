@@ -24,7 +24,19 @@ local GetBuildingProgressStr = function(buildingClassId)
 	return "" .. player:GetBuildingClassCount(buildingClassId)
 end
 
+local GetProjectProgressStr = function(projectType)
+	local player = Utils.GetCurrentPlayer()
+	local count = Teams[player:GetTeam()]:GetProjectCount(projectType)
+	if count > 0 then
+		return "[COLOR_FONT_GREEN]Yes[ENDCOLOR]"
+	else
+		return "[COLOR_FONT_RED]No[ENDCOLOR]"
+	end
+
+end
+
 PopCheckingMsg = function()
+	local player = Utils.GetCurrentPlayer()
 	print("DEBUG MODE: "..GameDefines.UGFN_DEBUG_MODE)
 	
 	AdvisorManager.GenerateAdvisorPopUp(
@@ -35,8 +47,17 @@ PopCheckingMsg = function()
 		"Start time: "..Utils.GetGlobalProperty("STARTTIME").."[NEWLINE]"..
 		"Year: "..Game.GetGameTurnYear().."[NEWLINE]"..
 		"Debug bonus dispensed: "..GetBonusDispensedStr().."[NEWLINE]"..
+		"No. of cities holding: "..player:GetNumCities().."[NEWLINE][NEWLINE]"..
+
+		"Part 1 Summary".."[NEWLINE]"..
 		"Education researched: "..GetTechProgressStr(GameInfoTypes["TECH_EDUCATION"]).."[NEWLINE]"..
-		"Universities built: "..GetBuildingProgressStr(GameInfo.BuildingClasses.BUILDINGCLASS_UNIVERSITY.ID)
+		"Universities built: "..GetBuildingProgressStr(GameInfo.BuildingClasses.BUILDINGCLASS_UNIVERSITY.ID).."[NEWLINE]"..
+		"Oxford University built: "..GetBuildingProgressStr(GameInfo.BuildingClasses.BUILDINGCLASS_OXFORD_UNIVERSITY.ID).."[NEWLINE][NEWLINE]"..
+		
+		"Part 2/3 Summary".."[NEWLINE]"..
+		"Atomic Theory researched: "..GetTechProgressStr(GameInfoTypes["TECH_ATOMIC_THEORY"]).."[NEWLINE]"..
+		"Manhatton Project constructed: "..GetProjectProgressStr(GameInfo.Projects.PROJECT_MANHATTAN_PROJECT.ID)
+
 	)
 	return false
 end
