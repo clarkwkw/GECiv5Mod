@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  <Language_en_US>
+  	<Row Tag="TXT_KEY_CITYSTATE_SCOTLAND">
+      <Text>Scotland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SCOTLAND_ADJ">
+      <Text>Scotland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_SCOTLAND_TEXT">
+      <Text>Scotland Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_IRELAND">
+      <Text>Ireland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_IRELAND_ADJ">
+      <Text>Ireland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_IRELAND_TEXT">
+      <Text>Ireland Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_UTRECHT">
+      <Text>Utrecht</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_UTRECHT_ADJ">
+      <Text>Utrecht</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_UTRECHT_TEXT">
+      <Text>Utrecht Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SWITZERLAND">
+      <Text>Switzerland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SWITZERLAND_ADJ">
+      <Text>Switzerland</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_SWITZERLAND_TEXT">
+      <Text>Switzerland Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_PAPAL_STATES">
+      <Text>Papal States</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_PAPAL_STATES_ADJ">
+      <Text>Papal States</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_PAPAL_STATES_TEXT">
+      <Text>Papal States Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MOROCCO">
+      <Text>Morocco</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MOROCCO_ADJ">
+      <Text>Morocco</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_MOROCCO_TEXT">
+      <Text>Morocco Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_HUNGARY">
+      <Text>Hungary</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_HUNGARY_ADJ">
+      <Text>Hungary</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_HUNGARY_TEXT">
+      <Text>Hungary Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_CRIMEA">
+      <Text>Crimea</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_CRIMEA_ADJ">
+      <Text>Crimea</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_CRIMEA_TEXT">
+      <Text>Crimea Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_GOLDEN_HORDE">
+      <Text>Golden Horde</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_GOLDEN_HORDE_ADJ">
+      <Text>Golden Horde</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_GOLDEN_HORDE_TEXT">
+      <Text>Golden Horde Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SHAYBANIDS">
+      <Text>Shaybanids</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SHAYBANIDS_ADJ">
+      <Text>Shaybanids</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_SHAYBANIDS_TEXT">
+      <Text>Shaybanids Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SIND">
+      <Text>Sind</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SIND_ADJ">
+      <Text>Sind</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_SIND_TEXT">
+      <Text>Sind Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_GUJARAT">
+      <Text>Gujarat</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_GUJARAT_ADJ">
+      <Text>Gujarat</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_GUJARAT_TEXT">
+      <Text>Gujarat Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_BADMANI">
+      <Text>Badmani</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_BADMANI_ADJ">
+      <Text>Badmani</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_BADMANI_TEXT">
+      <Text>Badmani Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_VIJAYANAGAR">
+      <Text>Vijayanagar</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_VIJAYANAGAR_ADJ">
+      <Text>Vijayanagar</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_VIJAYANAGAR_TEXT">
+      <Text>Vijayanagar Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_GAJAPATIS">
+      <Text>Gajapatis</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_GAJAPATIS_ADJ">
+      <Text>Gajapatis</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_GAJAPATIS_TEXT">
+      <Text>Gajapatis Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_ZIMBABWE">
+      <Text>Zimbabwe</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_ZIMBABWE_ADJ">
+      <Text>Zimbabwe</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_ZIMBABWE_TEXT">
+      <Text>Zimbabwe Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_AZTEC">
+      <Text>Aztec</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_AZTEC_ADJ">
+      <Text>Aztec</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_AZTEC_TEXT">
+      <Text>Aztec Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MAYA">
+      <Text>Maya</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MAYA_ADJ">
+      <Text>Maya</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_MAYA_TEXT">
+      <Text>Maya Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_DAI_VIET">
+      <Text>Dai Viet</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_DAI_VIET_ADJ">
+      <Text>Dai Viet</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_DAI_VIET_TEXT">
+      <Text>Dai Viet Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_TIBET">
+      <Text>Tibet</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_TIBET_ADJ">
+      <Text>Tibet</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_TIBET_TEXT">
+      <Text>Tibet Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SHAN">
+      <Text>Shan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SHAN_ADJ">
+      <Text>Shan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_SHAN_TEXT">
+      <Text>Shan Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_AINU">
+      <Text>Ainu</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_AINU_ADJ">
+      <Text>Ainu</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_AINU_TEXT">
+      <Text>Ainu Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_RYUKYU">
+      <Text>Ryukyu</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_RYUKYU_ADJ">
+      <Text>Ryukyu</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_RYUKYU_TEXT">
+      <Text>Ryukyu Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MANCHU">
+      <Text>Manchu</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MANCHU_ADJ">
+      <Text>Manchu</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_MANCHU_TEXT">
+      <Text>Manchu Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_OMAN">
+      <Text>Oman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_OMAN_ADJ">
+      <Text>Oman</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_OMAN_TEXT">
+      <Text>Oman Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_FEZ">
+      <Text>Fez</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_FEZ_ADJ">
+      <Text>Fez</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_FEZ_TEXT">
+      <Text>Fez Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_BRUNEI">
+      <Text>Brunei</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_BRUNEI_ADJ">
+      <Text>Brunei</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_BRUNEI_TEXT">
+      <Text>Brunei Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_LUZON">
+      <Text>Luzon</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_LUZON_ADJ">
+      <Text>Luzon</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_LUZON_TEXT">
+      <Text>Luzon Description.</Text>
+    </Row>
+  </Language_en_US>
+</GameData>

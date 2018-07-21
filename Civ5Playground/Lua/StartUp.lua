@@ -36,12 +36,11 @@ if GameDefines.UGFN_DEBUG_MODE == 1 then
 end
 
 _, mapname, _ = Utils.SplitPath(PreGame.GetMapScript())
-print("map: " .. mapname)
+print("Selected Map: " .. mapname)
 
 include("CommonAdvices.lua")
 if mapname == "UGFN Part 1" then
-	include("Part23Advices.lua")
-	---include("Part1Advices.lua")
+	include("Part1Advices.lua")
 
 elseif "UGFN Part 23" then
 	include("Part23Advices.lua")

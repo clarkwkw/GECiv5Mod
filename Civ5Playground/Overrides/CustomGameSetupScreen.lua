@@ -3,8 +3,10 @@
 -------------------------------------------------
 include( "IconSupport" );
 include( "UniqueBonuses" );
-      
-local bIsModding = (ContextPtr:GetID() == "ModdingGameSetupScreen");
+include( "GameSetupUtils" );
+
+--- local bIsModding = (ContextPtr:GetID() == "ModdingGameSetupScreen");
+local bIsModding = true;
 
 -------------------------------------------------
 -- Back Button Handler
@@ -106,7 +108,8 @@ Controls.RemoveButton:RegisterCallback( Mouse.eLClick, OnCancel );
 -------------------------------------------------
 -------------------------------------------------
 function OnCivilization()
-    UIManager:QueuePopup( Controls.SelectCivilization, PopupPriority.SelectCivilization );
+	---UIManager:QueuePopup( Controls.SelectCivilization, PopupPriority.SelectCivilization );
+    ContextPtr:LookUpControl("../SelectCivilization"):SetHide(false)
     Controls.MainSelection:SetHide( true );
     Controls.SelectGameSpeed:SetHide( true );
     Controls.SelectDifficulty:SetHide( true );
@@ -191,7 +194,7 @@ Controls.MapSizeButton:RegisterCallback( Mouse.eLClick, OnMapSize );
 -------------------------------------------------
 -------------------------------------------------
 function UpdateDisplay()
-
+	print("updating")
 	-- In theory, PreGame should do this for me, but just to be sure.
 	for i = 0, GameDefines.MAX_MAJOR_CIVS do
 		local civIndex = PreGame.GetCivilization(i);
@@ -297,7 +300,7 @@ end
 ---------------------------------------------------------------- 
 function SetMapSizeForScript()
 	Controls.MapSizeButton:SetHide(false);
-	Controls.MapSizeButton:SetDisabled(false);
+	--- Controls.MapSizeButton:SetDisabled(false);
 	if( not PreGame.IsRandomWorldSize() ) then
 		local info = GameInfo.Worlds[ PreGame.GetWorldSize() ];
 		if ( info ~= nil ) then
@@ -564,8 +567,8 @@ end
 ----------------------------------------------------------------        
 ----------------------------------------------------------------        
 function ShowHideHandler( isHide, isInit )
-	if ( not isInit ) then
-		if( isHide == false ) then 	
+	--if ( not isInit ) then
+	--	if( isHide == false ) then 	
 			UpdateDisplay();
 					    
 			if(bIsModding) then
@@ -580,8 +583,8 @@ function ShowHideHandler( isHide, isInit )
 			Controls.SelectMapSize:SetHide( true );
 			Controls.SelectDifficulty:SetHide( true );
 			Controls.SelectGameSpeed:SetHide( true );
-		end
-	end
+	--	end
+	--end
 end
 ContextPtr:SetShowHideHandler( ShowHideHandler );
 
@@ -603,6 +606,4 @@ ContextPtr:SetInputHandler( InputHandler );
 PreGame.SetRandomMapScript(true);
 Controls.StartButton:SetDisabled(PreGame.IsRandomMapScript() or not PreGame.GetMapScript())
 Controls.StartButton:SetText(Locale.ConvertTextKey("TXT_KEY_UGFN_SELECT_MAP"));
-Controls.GameSpeedButton:SetDisabled(true);
-Controls.DifficultyButton:SetDisabled(true);
-Controls.ScenarioCheck:SetDisabled(true);
+LuaEvents.SetupScreenToUpdate.Add(UpdateDisplay);

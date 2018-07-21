@@ -41,6 +41,12 @@
         <Description>Map for part 2 &amp; 3</Description>
         <FileName>Maps/UGFN Part 23.Civ5Map</FileName>
       </Content>
+      <Content>
+        <Type>Custom</Type>
+        <Name>Setup Game</Name>
+        <Description>Check this to proceed to game setup screen.</Description>
+        <FileName>Overrides/CustomGameSetupScreen.xml</FileName>
+      </Content>
     </ModContent>
     <ModActions>
       <Action>
@@ -83,25 +89,23 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/GameSpeed.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/MinorCivilizations.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/MinorCivilizationsText.xml</FileName>
+      </Action>
     </ModActions>
     <ModBlockers>
-      <Association>
-        <Type>Dlc</Type>
-        <Name>Expansion 1 - Gods and Kings</Name>
-        <Id>0E3751A1-F840-4e1b-9706-519BF484E59D</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
     </ModBlockers>
     <ModDependencies>
-      <Association xmlns="">
-        <Type>Dlc</Type>
-        <Name>Expansion 2 - Brave New World</Name>
-        <Id>6DA07636-4123-4018-B643-6575B4EC336B</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
     </ModDependencies>
+    <HideSetupGame>true</HideSetupGame>
+    <ModProperties />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -259,15 +263,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Overrides\GameSetupScreen.lua">
+    <Content Include="Overrides\CustomGameSetupScreen.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="Overrides\GameSetupScreen.xml">
+    <Content Include="Overrides\CustomGameSetupScreen.xml">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Overrides\GameSetupUtils.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Overrides\SelectCivilization.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -320,6 +328,14 @@
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\Icons.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\MinorCivilizations.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\MinorCivilizationsText.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

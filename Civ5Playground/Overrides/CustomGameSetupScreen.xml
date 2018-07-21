@@ -123,7 +123,7 @@
                     </Stack>
 
                     <Box Anchor="L,B"  Offset="116,0" Color="White.64" Size="430,30" ConsumeMouse="1"  ID="LoadScenarioBox">
-                        <CheckBox Anchor="L,C" TextAnchorSide="Right" TextOffset="40,0" String="TXT_KEY_LOAD_SCENARIO" ID="ScenarioCheck"  />
+                        <CheckBox Anchor="L,C" TextAnchorSide="Right" TextOffset="40,0" String="TXT_KEY_LOAD_SCENARIO" ID="ScenarioCheck"  Disabled = "1"/>
                     </Box>
 
 
@@ -139,7 +139,7 @@
                 <!--=======================================================================================================================-->
                 <!-- MapSizeButton  -->
                 <!--=======================================================================================================================-->
-                <Button Anchor="L,T" Offset="0,0" Size="544,100" Color="255,255,255,0" ID="MapSizeButton" >
+                <Button Anchor="L,T" Offset="0,0" Size="544,100" Color="255,255,255,0" ID="MapSizeButton" Disabled = "1" >
                     <ShowOnMouseOver>
                         <AlphaAnim Anchor="L,T" Size="922,106" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd=".5">
                             <Grid   Size="544,104" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
@@ -162,7 +162,7 @@
                 <!-- DifficultyButton  -->
                 <!--=======================================================================================================================-->
 
-                <Button Anchor="L,T" Offset="0,0" Size="544,100" Color="255,255,255,0" ID="DifficultyButton" >
+                <Button Anchor="L,T" Offset="0,0" Size="544,100" Color="255,255,255,0" ID="DifficultyButton" Disabled = "1">
                     <ShowOnMouseOver>
                         <AlphaAnim Anchor="L,T" Size="922,106" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd=".5">
                             <Grid   Size="544,104" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
@@ -187,7 +187,7 @@
                 <!-- GameSpeedButton -->
                 <!--=======================================================================================================================-->
 
-                <Button Anchor="L,T" Offset="0,0" Size="544,100" Color="255,255,255,0"  ID="GameSpeedButton">
+                <Button Anchor="L,T" Offset="0,0" Size="544,100" Color="255,255,255,0"  ID="GameSpeedButton" Disabled = "1">
                     <ShowOnMouseOver>
                         <AlphaAnim Anchor="L,T" Size="922,106" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="1.5" AlphaEnd=".5">
                             <Grid   Size="544,104" Offset="0,-2" Padding="0,0" Style="Grid9FrameTurnsHL" />
