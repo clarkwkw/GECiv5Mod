@@ -17,35 +17,35 @@
 			<Help>TXT_KEY_GAMESPEED_1500AD_HELP</Help>
 			
 			<DealDuration>25</DealDuration>
-			<GrowthPercent>50</GrowthPercent>
-			<TrainPercent>50</TrainPercent>
-			<ConstructPercent>50</ConstructPercent>
-			<CreatePercent>50</CreatePercent>
+			<GrowthPercent>67</GrowthPercent>
+			<TrainPercent>67</TrainPercent>
+			<ConstructPercent>67</ConstructPercent>
+			<CreatePercent>67</CreatePercent>
 			<ResearchPercent>50</ResearchPercent>
-			<GoldPercent>50</GoldPercent>
-			<GoldGiftMod>95</GoldGiftMod>
-			<BuildPercent>50</BuildPercent>
-			<ImprovementPercent>50</ImprovementPercent>
-			<GreatPeoplePercent>50</GreatPeoplePercent>
-			<CulturePercent>50</CulturePercent>
-			<FaithPercent>50</FaithPercent>
-			<BarbPercent>50</BarbPercent>
-			<FeatureProductionPercent>50</FeatureProductionPercent>
-			<UnitDiscoverPercent>50</UnitDiscoverPercent>
-			<UnitHurryPercent>50</UnitHurryPercent>
-			<UnitTradePercent>50</UnitTradePercent>
-			<GoldenAgePercent>60</GoldenAgePercent>
-			<HurryPercent>75</HurryPercent>
+			<GoldPercent>67</GoldPercent>
+			<GoldGiftMod>125</GoldGiftMod>
+			<BuildPercent>67</BuildPercent>
+			<ImprovementPercent>67</ImprovementPercent>
+			<GreatPeoplePercent>67</GreatPeoplePercent>
+			<CulturePercent>67</CulturePercent>
+			<FaithPercent>67</FaithPercent>
+			<BarbPercent>67</BarbPercent>
+			<FeatureProductionPercent>67</FeatureProductionPercent>
+			<UnitDiscoverPercent>67</UnitDiscoverPercent>
+			<UnitHurryPercent>67</UnitHurryPercent>
+			<UnitTradePercent>67</UnitTradePercent>
+			<GoldenAgePercent>80</GoldenAgePercent>
+			<HurryPercent>100</HurryPercent>
 			<InflationPercent>45</InflationPercent>
 			<InflationOffset>-60</InflationOffset>
 			<ReligiousPressureAdjacentCity>90</ReligiousPressureAdjacentCity>
-			<VictoryDelayPercent>50</VictoryDelayPercent>
-			<MinorCivElectionFreqMod>50</MinorCivElectionFreqMod>
-			<OpinionDurationPercent>50</OpinionDurationPercent>
-			<SpyRatePercent>40</SpyRatePercent>
+			<VictoryDelayPercent>67</VictoryDelayPercent>
+			<MinorCivElectionFreqMod>67</MinorCivElectionFreqMod>
+			<OpinionDurationPercent>67</OpinionDurationPercent>
+			<SpyRatePercent>50</SpyRatePercent>
 			<PeaceDealDuration>10</PeaceDealDuration>
 			<RelationshipDuration>50</RelationshipDuration>
-			<LeaguePercent>50</LeaguePercent>
+			<LeaguePercent>67</LeaguePercent>
 			<IconAtlas>GAMESPEED_ATLAS</IconAtlas>
 			<PortraitIndex>3</PortraitIndex>
 		</Row>
@@ -54,18 +54,23 @@
 	<GameSpeed_Turns>
 		<Row>
 			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
+			<MonthIncrement>120</MonthIncrement>
+			<TurnsPerIncrement>25</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
 			<MonthIncrement>60</MonthIncrement>
-			<TurnsPerIncrement>70</TurnsPerIncrement>
+			<TurnsPerIncrement>24</TurnsPerIncrement>
 		</Row>
 		<Row>
 			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
 			<MonthIncrement>24</MonthIncrement>
-			<TurnsPerIncrement>65</TurnsPerIncrement>
+			<TurnsPerIncrement>50</TurnsPerIncrement>
 		</Row>
 		<Row>
 			<GameSpeedType>GAMESPEED_1500AD</GameSpeedType>
 			<MonthIncrement>12</MonthIncrement>
-			<TurnsPerIncrement>70</TurnsPerIncrement>
+			<TurnsPerIncrement>80</TurnsPerIncrement>
 		</Row>
 	</GameSpeed_Turns>
 
