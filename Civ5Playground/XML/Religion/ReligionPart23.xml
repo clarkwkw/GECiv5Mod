@@ -3,37 +3,71 @@
 	<ScenarioReligion>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
+			<ReligionId>RELIGION_CHRISTIANITY</ReligionId>
+			<FounderCivId>MINOR_CIV_PAPAL_STATES</FounderCivId>
+			<HolyCityName>Rome</HolyCityName>
+			<FounderBelief1>BELIEF_CHURCH_PROPERTY</FounderBelief1>
+			<FounderBelief2>BELIEF_CATHEDRALS</FounderBelief2>
+			<FounderBelief3>BELIEF_HOLY_ORDER</FounderBelief3>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
+			<FounderCivId>CIVILIZATION_ARABIA</FounderCivId>
+			<HolyCityName>Mecca</HolyCityName>
+			<FounderBelief1>BELIEF_PILGRIMAGE</FounderBelief1>
+			<FounderBelief2>BELIEF_MOSQUES</FounderBelief2>
+			<FounderBelief3>BELIEF_JUST_WAR</FounderBelief3>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<ReligionId>RELIGION_HINDUISM</ReligionId>
+			<FounderCivId>CIVILIZATION_INDIA</FounderCivId>
+			<HolyCityName>Allahabad</HolyCityName>
+			<FounderBelief1>BELIEF_INITIATION_RITES</FounderBelief1>
+			<FounderBelief2>BELIEF_FEED_WORLD</FounderBelief2>
+			<FounderBelief3>BELIEF_RELIQUARY</FounderBelief3>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 			<FounderCivId>CIVILIZATION_INDIA</FounderCivId>
-			<HolyCityName>TXT_KEY_CITY_NAME_DELHI</HolyCityName>
-			<FounderBelief1>BELIEF_GODDESS_HUNT</FounderBelief1>
-			<FounderBelief2>BELIEF_FERTILITY_RITES</FounderBelief2>
-			<FounderBelief3>BELIEF_GOD_CRAFTSMEN</FounderBelief3>
-			<FounderBelief4>BELIEF_GOD_SEA</FounderBelief4>
+			<HolyCityName>Patna</HolyCityName>
+			<FounderBelief1>BELIEF_PEACE_LOVING</FounderBelief1>
+			<FounderBelief2>BELIEF_GURUSHIP</FounderBelief2>
+			<FounderBelief3>BELIEF_RELIGIOUS_TEXTS</FounderBelief3>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<ReligionId>RELIGION_CONFUCIANISM</ReligionId>
+			<FounderCivId>CIVILIZATION_CHINA</FounderCivId>
+			<HolyCityName>Kaifeng</HolyCityName>
+			<FounderBelief1>BELIEF_PAPAL_PRIMACY</FounderBelief1>
+			<FounderBelief2>BELIEF_PAGODAS</FounderBelief2>
+			<FounderBelief3>BELIEF_RELIGIOUS_UNITY</FounderBelief3>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<ReligionId>RELIGION_SHINTO</ReligionId>
-			<FounderCivId>MINOR_CIV_SAMARKAND</FounderCivId>
-			<HolyCityName>samarkand</HolyCityName>
-			<FounderBelief1>BELIEF_RELIGIOUS_TEXTS</FounderBelief1>
-			<FounderBelief2>BELIEF_TITHE</FounderBelief2>
-			<FounderBelief3>BELIEF_HOLY_ORDER</FounderBelief3>
-			<FounderBelief4>BELIEF_ASCETISM</FounderBelief4>
+			<FounderCivId>CIVILIZATION_JAPAN</FounderCivId>
+			<HolyCityName>Kyoto</HolyCityName>
+			<FounderBelief1>BELIEF_CEREMONIAL_BURIAL</FounderBelief1>
+			<FounderBelief2>BELIEF_HOLY_WARRIORS</FounderBelief2>
+			<FounderBelief3>BELIEF_DEFENDER_FAITH</FounderBelief3>
 		</Row>
 	</ScenarioReligion>
 	<ScenarioCityReligion>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDIA</CityCivId>
-			<CityName>TXT_KEY_CITY_NAME_LAHORE</CityName>
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
+			<CityName>Lahore</CityName>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDIA</CityCivId>
-			<CityName>ALLAHABAD</CityName> 
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
+			<CityName>Allahabad</CityName> 
+			<ReligionId>RELIGION_HINDUISM</ReligionId>
 		</Row>
 	</ScenarioCityReligion>
 </GameData>
