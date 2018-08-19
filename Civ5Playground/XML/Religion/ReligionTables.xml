@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!--
+		ReligionId:	refer to http://modiki.civfanatics.com/index.php?title=ReligionType_(Civ5_Type)
+					e.g. RELIGION_BUDDHISM
+		FounderCivId: refer to http://modiki.civfanatics.com/index.php?title=CivilizationType_(Civ5_Type)
+					e.g. CIVILIZATION_INDIA
+		HolyCityName: name of the holy city, it must be the TXT_KEY placeholder in order to run well in other languages
+					e.g. TXT_KEY_CITY_NAME_DELHI
+		FounderBelief: Id of the founder belief, refer to http://modiki.civfanatics.com/index.php?title=BeliefType_(Civ5_Type)
+					e.g. NO_BELIEF, BELIEF_GODDESS_HUNT, ...
+	-->
+	<Table name="ScenarioReligion">
+		<Column name="ScenarioId" type="text" primarykey="true"/>
+		<Column name="ReligionId" type="text" notnull="true" />
+		<Column name="FounderCivId" type="text" notnull="true" />
+		<Column name="HolyCityName" type="text" notnull="true" />
+		<Column name="PantheonBelief" type="text" notnull="true" />
+		<Column name="FounderBelief1" type="text" notnull="true" />
+		<Column name="FounderBelief2" type="text" notnull="true" />
+		<Column name="FounderBelief3" type="text" notnull="true" />
+		<Column name="FounderBelief4" type="text" notnull="true" />
+	</Table>
+    <Table name="ScenarioCityReligion">
+		<Column name="ScenarioId" type="text" primarykey="true"/>
+		<Column name="CityCivId" type="text" notnull="true" />
+		<Column name="CityName" type="text" notnull="true"/>
+		<Column name="ReligionId" type="text" notnull="true" />
+	</Table>	
+</GameData>
+

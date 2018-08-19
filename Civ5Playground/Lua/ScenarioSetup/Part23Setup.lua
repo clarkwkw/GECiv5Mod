@@ -35,6 +35,13 @@ else
 	)
 end
 
+local religionConfigured = Utils.GetGlobalProperty("Part23ReligionConfigured")
+if not religionConfigured then
+	include("ReligionSetup.lua")
+	SetupReligion("Part23")
+	Utils.SetGlobalProperty("Part23ReligionConfigured", true)
+end
+
 --- Shown on successfully researched atomic theory
 ListenerManager.AddIndividualTurnStartListener(
 	"NOTIFICATION_ATOMIC_THEORY_RESEARCHED",

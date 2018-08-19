@@ -99,6 +99,16 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/MinorCivilizationsText.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Religion/ReligionTables.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Religion/ReligionPart23.xml</FileName>
+      </Action>
     </ModActions>
     <ModBlockers>
     </ModBlockers>
@@ -199,15 +209,15 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Advices\CommonAdvices.lua">
+    <Content Include="Lua\ScenarioSetup\CommonSetup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Advices\Part1Advices.lua">
+    <Content Include="Lua\ScenarioSetup\Part1Setup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
-    <Content Include="Lua\Advices\Part23Advices.lua">
+    <Content Include="Lua\ScenarioSetup\Part23Setup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -236,6 +246,10 @@
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Lua\ObjectCountListeners.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\ScenarioSetup\ReligionSetup.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
@@ -339,6 +353,14 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="XML\Religion\ReligionPart23.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Religion\ReligionTables.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="XML\Technologies.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -360,12 +382,13 @@
     <Folder Include="Lua" />
     <Folder Include="Lua\Events" />
     <Folder Include="Lua\Achievements" />
-    <Folder Include="Lua\Advices" />
+    <Folder Include="Lua\ScenarioSetup" />
     <Folder Include="Maps" />
     <Folder Include="Art" />
     <Folder Include="Overrides" />
     <Folder Include="XML" />
     <Folder Include="XML\Events" />
+    <Folder Include="XML\Religion" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>

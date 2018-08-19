@@ -38,12 +38,12 @@ end
 _, mapname, _ = Utils.SplitPath(PreGame.GetMapScript())
 print("Selected Map: " .. mapname)
 
-include("CommonAdvices.lua")
+include("CommonSetup.lua")
 if mapname == "UGFN Part 1" then
-	include("Part1Advices.lua")
+	include("Part1Setup.lua")
 
 elseif "UGFN Part 23" then
-	include("Part23Advices.lua")
+	include("Part23Setup.lua")
 
 else
 	print("Map not selected, going to prompt reminder..")
