@@ -1,7 +1,7 @@
 SetupReligion = function(scenarioId)
 	local civToPlayer = CreateCivToPlayerLookupTable()
-
-	-- Create holy cities
+	print("Setting holy cities..")
+	-- Set holy cities
 	for row in GameInfo.ScenarioReligion{ScenarioId = scenarioId} do
 		local player = civToPlayer[GameInfo.Civilizations[row.FounderCivId].ID]
 		local city = GetCityByPlayerAndCityName(player, row.HolyCityName)
@@ -18,7 +18,7 @@ SetupReligion = function(scenarioId)
 			)
 		end
 	end
-
+	print("Setting follower cities..")
 	--- Change belief
 	for row in GameInfo.ScenarioCityReligion{ScenarioId = scenarioId} do
 		local player = civToPlayer[GameInfo.Civilizations[row.CityCivId].ID]
@@ -39,7 +39,10 @@ end
 
 GetCityByPlayerAndCityName = function(player, cityName)
 	for city in player:Cities() do
-		if city:GetNameKey() == cityName then
+		local isMatched = city:GetNameKey():lower() == cityName:lower()
+		isMatched = isMatched or Locale.LookupLanguage("en_US", city:GetNameKey()):lower() == cityName:lower()
+
+		if isMatched then
 			return city
 		end
 	end
