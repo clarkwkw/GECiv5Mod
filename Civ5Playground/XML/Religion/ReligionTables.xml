@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<!--
-		ReligionId:	refer to http://modiki.civfanatics.com/index.php?title=ReligionType_(Civ5_Type)
-					e.g. RELIGION_BUDDHISM
-		FounderCivId: refer to http://modiki.civfanatics.com/index.php?title=CivilizationType_(Civ5_Type)
-					e.g. CIVILIZATION_INDIA
+		ReligionId:	refer to references/religions.README
+		FounderCivId: could be major/minor civilizations refer to references/major_civs.README & references/minor_civs.README
 		HolyCityName: name of the holy city, it could be either the TXT_KEY placeholder or the city name (case insensitive) in English
 					e.g. TXT_KEY_CITY_NAME_DELHI, delhi, ...
 		FounderBelief: Id of the founder belief, refer to http://modiki.civfanatics.com/index.php?title=BeliefType_(Civ5_Type)
@@ -15,7 +13,6 @@
 		<Column name="ReligionId" type="text" notnull="true" />
 		<Column name="FounderCivId" type="text" notnull="true" />
 		<Column name="HolyCityName" type="text" notnull="true" />
-		<Column name="PantheonBelief" type="text" notnull="true" />
 		<Column name="FounderBelief1" type="text" notnull="true" />
 		<Column name="FounderBelief2" type="text" notnull="true" />
 		<Column name="FounderBelief3" type="text" notnull="true" />
@@ -28,4 +25,3 @@
 		<Column name="ReligionId" type="text" notnull="true" />
 	</Table>	
 </GameData>
-

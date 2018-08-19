@@ -6,11 +6,20 @@
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 			<FounderCivId>CIVILIZATION_INDIA</FounderCivId>
 			<HolyCityName>TXT_KEY_CITY_NAME_DELHI</HolyCityName>
-			<PantheonBelief>BELIEF_WORLD_CHURCH</PantheonBelief> 
 			<FounderBelief1>BELIEF_GODDESS_HUNT</FounderBelief1>
 			<FounderBelief2>BELIEF_FERTILITY_RITES</FounderBelief2>
 			<FounderBelief3>BELIEF_GOD_CRAFTSMEN</FounderBelief3>
 			<FounderBelief4>BELIEF_GOD_SEA</FounderBelief4>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<ReligionId>RELIGION_SHINTO</ReligionId>
+			<FounderCivId>MINOR_CIV_SAMARKAND</FounderCivId>
+			<HolyCityName>samarkand</HolyCityName>
+			<FounderBelief1>BELIEF_RELIGIOUS_TEXTS</FounderBelief1>
+			<FounderBelief2>BELIEF_TITHE</FounderBelief2>
+			<FounderBelief3>BELIEF_HOLY_ORDER</FounderBelief3>
+			<FounderBelief4>BELIEF_ASCETISM</FounderBelief4>
 		</Row>
 	</ScenarioReligion>
 	<ScenarioCityReligion>
@@ -24,12 +33,6 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDIA</CityCivId>
 			<CityName>ALLAHABAD</CityName> 
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_INDIA</CityCivId>
-			<CityName>Kabul</CityName> 
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 		</Row>
 	</ScenarioCityReligion>
