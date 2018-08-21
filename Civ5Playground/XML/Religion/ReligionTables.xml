@@ -16,7 +16,7 @@
 		<Column name="FounderBelief1" type="text" notnull="true" />
 		<Column name="FounderBelief2" type="text" notnull="true" />
 		<Column name="FounderBelief3" type="text" notnull="true" />
-		<Column name="FounderBelief4" type="text" notnull="NO_BELIEF" />
+		<Column name="FounderBelief4" type="text" notnull="true" />
 	</Table>
     <Table name="ScenarioCityReligion">
 		<Column name="ScenarioId" type="text" notnull="true"/>
