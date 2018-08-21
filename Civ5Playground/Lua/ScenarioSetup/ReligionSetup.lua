@@ -11,7 +11,6 @@ SetupReligion = function(scenarioId)
 		elseif GameInfo["MinorCivilizations"][row.FounderCivId] ~= nil then
 			player = minorCivToPlayer[GameInfo["MinorCivilizations"][row.FounderCivId].ID]
 		end
-
 		if player ~= nil then
 			local city = GetCityByPlayerAndCityName(player, row.HolyCityName)
 			if city ~= nil then
@@ -19,10 +18,10 @@ SetupReligion = function(scenarioId)
 					player:GetID(),
 					GameInfo.Religions[row.ReligionId].ID,
 					nil,
-					GameInfo.Beliefs[row.FounderBelief1].ID,
-					GameInfo.Beliefs[row.FounderBelief2].ID,
-					GameInfo.Beliefs[row.FounderBelief3].ID,
-					GameInfo.Beliefs[row.FounderBelief4].ID,
+					BeliefTypes[row.FounderBelief1] or -1,
+					BeliefTypes[row.FounderBelief2] or -1,
+					BeliefTypes[row.FounderBelief3] or -1,
+					BeliefTypes[row.FounderBelief4] or -1,
 					city
 				)
 			end

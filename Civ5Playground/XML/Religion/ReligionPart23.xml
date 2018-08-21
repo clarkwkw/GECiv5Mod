@@ -9,7 +9,6 @@
 			<FounderBelief1>BELIEF_CHURCH_PROPERTY</FounderBelief1>
 			<FounderBelief2>BELIEF_CATHEDRALS</FounderBelief2>
 			<FounderBelief3>BELIEF_HOLY_ORDER</FounderBelief3>
-			<FounderBelief4>NO_BELIEF</FounderBelief4>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -19,7 +18,6 @@
 			<FounderBelief1>BELIEF_PILGRIMAGE</FounderBelief1>
 			<FounderBelief2>BELIEF_MOSQUES</FounderBelief2>
 			<FounderBelief3>BELIEF_JUST_WAR</FounderBelief3>
-			<FounderBelief4>NO_BELIEF</FounderBelief4>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -29,7 +27,6 @@
 			<FounderBelief1>BELIEF_INITIATION_RITES</FounderBelief1>
 			<FounderBelief2>BELIEF_FEED_WORLD</FounderBelief2>
 			<FounderBelief3>BELIEF_RELIQUARY</FounderBelief3>
-			<FounderBelief4>NO_BELIEF</FounderBelief4>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -39,7 +36,6 @@
 			<FounderBelief1>BELIEF_PEACE_LOVING</FounderBelief1>
 			<FounderBelief2>BELIEF_GURUSHIP</FounderBelief2>
 			<FounderBelief3>BELIEF_RELIGIOUS_TEXTS</FounderBelief3>
-			<FounderBelief4>NO_BELIEF</FounderBelief4>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -49,7 +45,6 @@
 			<FounderBelief1>BELIEF_PAPAL_PRIMACY</FounderBelief1>
 			<FounderBelief2>BELIEF_PAGODAS</FounderBelief2>
 			<FounderBelief3>BELIEF_RELIGIOUS_UNITY</FounderBelief3>
-			<FounderBelief4>NO_BELIEF</FounderBelief4>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -59,7 +54,6 @@
 			<FounderBelief1>BELIEF_CEREMONIAL_BURIAL</FounderBelief1>
 			<FounderBelief2>BELIEF_HOLY_WARRIORS</FounderBelief2>
 			<FounderBelief3>BELIEF_DEFENDER_FAITH</FounderBelief3>
-			<FounderBelief4>NO_BELIEF</FounderBelief4>
 		</Row>
 	</ScenarioReligion>
 	<ScenarioCityReligion>
