@@ -598,13 +598,13 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_ETHIOPIA</CityCivId>
 			<CityName>Zeila</CityName>
-			<ReligionId>RELIGION_CHRISTIANITY</ReligionId>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_ETHIOPIA</CityCivId>
 			<CityName>Aden</CityName>
-			<ReligionId>RELIGION_CHRISTIANITY</ReligionId>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -706,12 +706,6 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_MONGOL</CityCivId>
 			<CityName>Baotau</CityName>
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_MONGOL</CityCivId>
-			<CityName>Buryats</CityName>
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 		</Row>
 		<Row>
@@ -832,6 +826,12 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_CHINA</CityCivId>
 			<CityName>Yachow</CityName>
+			<ReligionId>RELIGION_CONFUCIANISM</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>CIVILIZATION_CHINA</CityCivId>
+			<CityName>Shenyang</CityName>
 			<ReligionId>RELIGION_CONFUCIANISM</ReligionId>
 		</Row>
 		<Row>
@@ -958,12 +958,6 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDONESIA</CityCivId>
 			<CityName>Berune</CityName>
-			<ReligionId>RELIGION_ISLAM</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_INDONESIA</CityCivId>
-			<CityName>Luwu</CityName>
 			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
