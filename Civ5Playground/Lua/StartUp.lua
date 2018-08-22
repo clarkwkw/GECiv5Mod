@@ -18,6 +18,11 @@ Events.AdvisorDisplayHide.Add(AdvisorManager.TriggerOnePopUp)
 print("Adding listeners..")
 
 ListenerManager.AddGlobalTurnStartListener(
+	"FIRST_TURN_FINISHED",
+	Utils.SetFirstTurnFinished
+)
+
+ListenerManager.AddGlobalTurnStartListener(
 	"HISTORICAL_EVENTS",
 	HistoricalEventManager.TriggerEvents
 )
@@ -43,6 +48,7 @@ if mapname == "UGFN Part 1" then
 	include("Part1Setup.lua")
 
 elseif "UGFN Part 23" then
+	Events.NotificationAdded.Add(Utils.HandleFirstTurnNotificationAdded)
 	include("Part23Setup.lua")
 
 else

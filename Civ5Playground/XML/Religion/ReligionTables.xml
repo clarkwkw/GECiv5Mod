@@ -23,5 +23,10 @@
 		<Column name="CityCivId" type="text" notnull="true" />
 		<Column name="CityName" type="text" notnull="true"/>
 		<Column name="ReligionId" type="text" notnull="true" />
+	</Table>
+	<Table name="ScenarioPantheon">
+		<Column name="ScenarioId" type="text" notnull="true"/>
+		<Column name="CivId" type="text" notnull="true" />
+		<Column name="PantheonBelief" type="text" notnull="true" />
 	</Table>	
 </GameData>

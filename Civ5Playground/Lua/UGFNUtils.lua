@@ -145,3 +145,14 @@ end
 Utils.StrStartsWith = function(String, Start)
    return string.sub(String, 1, string.len(Start)) == Start
 end
+
+Utils.SetFirstTurnFinished = function()
+	Utils.SetGlobalProperty("FIRST_TURN_OVER", true)
+	return true
+end
+
+Utils.HandleFirstTurnNotificationAdded = function(notificationId, notificationType, toolTip, summary, gameValue, extraGameData)
+	if Utils.GetGlobalProperty("FIRST_TURN_OVER") == nil then
+		UI.RemoveNotification(notificationId)
+	end
+end

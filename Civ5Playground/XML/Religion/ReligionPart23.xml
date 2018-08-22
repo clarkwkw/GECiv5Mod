@@ -1081,4 +1081,13 @@
 			<ReligionId>RELIGION_CHRISTIANITY</ReligionId>
 		</Row>
 	</ScenarioCityReligion>
+	<!--
+	<ScenarioPantheon>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_INDIA</CivId>
+			<PantheonBelief>BELIEF_GODDESS_HUNT</PantheonBelief>
+		</Row>
+	</ScenarioPantheon>
+	-->
 </GameData>
