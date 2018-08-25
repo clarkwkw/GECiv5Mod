@@ -31,8 +31,8 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<ReligionId>RELIGION_HINDUISM</ReligionId>
-			<FounderCivId>CIVILIZATION_INDIA</FounderCivId>
-			<HolyCityName>Allahabad</HolyCityName>
+			<FounderCivId>MINOR_CIV_GAJAPATIS</FounderCivId>
+			<HolyCityName>Cuttack</HolyCityName>
 			<FounderBelief1>BELIEF_INITIATION_RITES</FounderBelief1>
 			<FounderBelief2>BELIEF_FEED_WORLD</FounderBelief2>
 			<FounderBelief3>BELIEF_RELIQUARY</FounderBelief3>
@@ -946,19 +946,19 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDONESIA</CityCivId>
 			<CityName>Majapahit</CityName>
-			<ReligionId>RELIGION_ISLAM</ReligionId>
+			<ReligionId>RELIGION_HINDUISM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDONESIA</CityCivId>
 			<CityName>Palambang</CityName>
-			<ReligionId>RELIGION_ISLAM</ReligionId>
+			<ReligionId>RELIGION_HINDUISM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_INDONESIA</CityCivId>
 			<CityName>Berune</CityName>
-			<ReligionId>RELIGION_ISLAM</ReligionId>
+			<ReligionId>RELIGION_HINDUISM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -1084,19 +1084,19 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_SIND</CityCivId>
 			<CityName>Thatta</CityName>
-			<ReligionId>RELIGION_HINDUISM</ReligionId>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_GUJARAT</CityCivId>
-			<CityName>Surat</CityName>
-			<ReligionId>RELIGION_HINDUISM</ReligionId>
+			<CityName>Ahmedabad</CityName>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_BADMANI</CityCivId>
 			<CityName>Bidar</CityName>
-			<ReligionId>RELIGION_HINDUISM</ReligionId>
+			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -1107,7 +1107,7 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_GAJAPATIS</CityCivId>
-			<CityName>Orissa</CityName>
+			<CityName>Cuttack</CityName>
 			<ReligionId>RELIGION_HINDUISM</ReligionId>
 		</Row>
 		<Row>
