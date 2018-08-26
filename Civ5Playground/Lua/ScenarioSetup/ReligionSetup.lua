@@ -26,17 +26,11 @@ SetupReligion = function(scenarioId)
 					player:GetID(),
 					GameInfo.Religions[row.ReligionId].ID,
 					nil,
-					BeliefTypes[row.FounderBelief1] or -1,
-					BeliefTypes[row.FounderBelief2] or -1,
-					-1,
-					-1,
+					GetBeliefIdByKey(row.FounderBelief1),
+					GetBeliefIdByKey(row.FounderBelief2),
+					GetBeliefIdByKey(row.FounderBelief3),
+					GetBeliefIdByKey(row.FounderBelief4),
 					city)
-				Game.EnhanceReligion(
-					player:GetID(),
-					GameInfo.Religions[row.ReligionId].ID,
-					BeliefTypes[row.FounderBelief3] or -1,
-					BeliefTypes[row.FounderBelief4] or -1
-				)
 			end
 		end
 	end
@@ -91,4 +85,13 @@ GetPlayerById = function(id, civToPlayer, minorCivToPlayer)
 		player = minorCivToPlayer[GameInfo["MinorCivilizations"][id].ID]
 	end
 	return player
+end
+
+GetBeliefIdByKey = function(key)
+	local belief = GameInfo.Beliefs[key]
+	if belief then
+		return belief.ID
+	else
+		return -1
+	end
 end

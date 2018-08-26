@@ -1133,7 +1133,7 @@
 	<ScenarioPantheon>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
-			<CivId>CIVILIZATION_INDIA</CivId>
+			<CivId>CIVILIZATION_CHINA</CivId>
 			<PantheonBelief>BELIEF_GODDESS_HUNT</PantheonBelief>
 		</Row>
 	</ScenarioPantheon>
