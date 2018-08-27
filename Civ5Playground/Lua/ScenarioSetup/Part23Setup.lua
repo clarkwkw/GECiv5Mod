@@ -1,39 +1,10 @@
-local TXT_ATOMIC_THEORY = Locale.Lookup("TXT_KEY_TECH_ATOMIC_THEORY_TITLE")
-local TXT_MANHATTAN_PROJ = Locale.Lookup("TXT_KEY_PROJECT_MANHATTAN_PROJECT")
-
-WrongScenarioSettingsPopup = function()
-	AdvisorManager.GenerateAdvisorPopUp(
-		Game.GetActivePlayer(),
-		AdvisorTypes.ADVISOR_MILITARY, 
-		Locale.Lookup("TXT_KEY_UGFN_WRONG_SETTINGS_TITLE"),
-		string.format(Locale.Lookup("TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG"), "PART 2/3")
-	)
-	return false
-end
-
-CorrectSettingsPopup = function()
-	AdvisorManager.GenerateAdvisorPopUp(
-		Game.GetActivePlayer(),
-		AdvisorTypes.ADVISOR_MILITARY, 
-		Locale.Lookup("TXT_KEY_UGFN_CORRECT_SETTINGS_TITLE"),
-		string.format(Locale.Lookup("TXT_KEY_UGFN_CORRECT_SETTINGS_MSG"), "PART 2/3", Locale.Lookup("TXT_KEY_UGFN_PART23_REQUIREMENTS"))
-	)
-	return true
-end
-
-if not PreGame.GetLoadWBScenario() then
-	print("Scenario not activated, going to prompt reminder..")
-	ListenerManager.AddIndividualTurnStartListener(
-		"NOTIFICATION_WRONG_SCENARIO_MSG",
-		WrongScenarioSettingsPopup
-	)
-else
-	print("Correct settings for part 2/3, going to prompt a popup..")
-	ListenerManager.AddIndividualTurnStartListener(
-		"NOTIFICATION_CORRECT_SETTINGS_MSG",
-		CorrectSettingsPopup
-	)
-end
+local KEY_PREREQUISITE_TECH = "TECH_INDUSTRIALIZATION"
+local TXT_PREREQUISITE_TECH = Locale.Lookup("TXT_KEY_TECH_INDUSTRIALIZATION")
+local BUILDING_CLASS_ID = GameInfo.BuildingClasses.BUILDINGCLASS_FACTORY.ID
+local KEY_BUILDING_TYPE = "BUILDING_FACTORY"
+local TXT_BUILDING = Locale.Lookup("TXT_KEY_BUILDING_FACTORY")
+local NUM_BUILDING_REQUIRED = 4
+local TXT_RESEARCHED_NEXT_STEP = string.format(Locale.Lookup("TXT_KEY_RESEARCHED_NEXT_STEP"), TXT_BUILDING, TXT_BUILDING)
 
 local religionConfigured = Utils.GetGlobalProperty("Part23ReligionConfigured")
 if not religionConfigured then
@@ -42,37 +13,108 @@ if not religionConfigured then
 	Utils.SetGlobalProperty("Part23ReligionConfigured", true)
 end
 
---- Shown on successfully researched atomic theory
+function RequirementPopup()
+	AdvisorManager.GenerateAdvisorPopUp(
+		Game.GetActivePlayer(),
+		AdvisorTypes.ADVISOR_MILITARY, 
+		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_JUST_STARTED_TITLE"),
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_REQUIREMENTS"),
+			NUM_BUILDING_REQUIRED,
+			NUM_BUILDING_REQUIRED,
+			TXT_BUILDING,
+			TXT_PREREQUISITE_TECH
+		)
+	)
+	return true
+end
+
 ListenerManager.AddIndividualTurnStartListener(
-	"NOTIFICATION_ATOMIC_THEORY_RESEARCHED",
+		"NOTIFICATION_PART23_STARTED",
+		RequirementPopup
+)
+
+--- Shown on successfully researched
+ListenerManager.AddIndividualTurnStartListener(
+	"NOTIFICATION_PART23_TECH_RESEARCHED",
 	TechnologyResearchedListenerFactory(
-		GameInfoTypes["TECH_ATOMIC_THEORY"],
+		GameInfoTypes[KEY_PREREQUISITE_TECH],
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_TECH_TITLE"), 
-			TXT_ATOMIC_THEORY
+			TXT_PREREQUISITE_TECH
 		),
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_TECH_MSG"), 
-			TXT_ATOMIC_THEORY,
-			Locale.Lookup("TXT_KEY_PART23_RESEARCHED_NEXT_STEP")
+			TXT_PREREQUISITE_TECH,
+			TXT_RESEARCHED_NEXT_STEP
 		),
 		true
 	)
 )
 
---- Shown on completing Manhattan Project
+--- Shown on successfully building universities
+for i = 1, NUM_BUILDING_REQUIRED - 1 do 	
+	ListenerManager.AddIndividualTurnStartListener(	
+		string.format("NOTIFICATION_PART23_BUILDING_CONSTRUCTED_%d", i),	
+		BuildingCountListenerFactory(	
+			BUILDING_CLASS_ID,
+			i, 	
+			string.format(	
+				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),	
+				TXT_BUILDING	
+			),	
+			string.format(	
+				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_MSG"), 	
+				i, 	
+				TXT_BUILDING,	
+				NUM_BUILDING_REQUIRED - i	
+			),	
+			true	
+		)	
+	)	
+end
+
 ListenerManager.AddIndividualTurnStartListener(
-		"NOTIFICATION_MANHATTAN_PROJ_BUILT",
-		ProjectCompletedListenerFactory(
-			GameInfo.Projects.PROJECT_MANHATTAN_PROJECT.ID,
-			string.format(
-				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
-				TXT_MANHATTAN_PROJ
-			),
-			string.format(
-				Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG"),
-				TXT_MANHATTAN_PROJ
-			),
-			true
-		)
+	"NOTIFICATION_PART23_COMPLETED",
+	BuildingCountListenerFactory(
+		BUILDING_CLASS_ID,
+		1, 
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
+			TXT_BUILDING
+		),
+		string.format(
+			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG"), 
+			TXT_BUILDING
+		),
+		true
 	)
+)
+
+function OnUpdateProgressItems(localPlayer)
+	local researched = 0
+	if Teams[localPlayer:GetTeam()]:IsHasTech(KEY_PREREQUISITE_TECH) then
+		researched = 1
+	end
+
+	LuaEvents.OnAddProgressItem(
+		GameInfo.Technologies[KEY_PREREQUISITE_TECH], 
+		TXT_PREREQUISITE_TECH, 
+		string.format("%d/%d", researched, 1)
+	)
+	
+	LuaEvents.OnAddProgressItem(
+		GameInfo.Buildings[KEY_BUILDING_TYPE], 
+		TXT_BUILDING, 
+		string.format("%d/%d", localPlayer:GetBuildingClassCount(BUILDING_CLASS_ID), NUM_BUILDING_REQUIRED)
+	)
+
+	local myLeaderInfo = GameInfo.Leaders[localPlayer:GetLeaderType()];
+
+	LuaEvents.OnAddProgressItem(
+		myLeaderInfo, 
+		Locale.Lookup("TXT_KEY_GEF_PROGRESS_STARTTIME"), 
+		Utils.GetGlobalProperty("STARTTIME")
+	)
+end
+LuaEvents.OnUpdateProgressItems.Add(OnUpdateProgressItems)

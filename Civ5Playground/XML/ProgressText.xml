@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+  <Language_en_US>
+  	<Row Tag="TXT_KEY_GEF_PROGRESS_BUTTON_TEXT">
+      <Text>Progress</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_BUTTON_TOOLTIP">
+      <Text>Check out your progress</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_ITEM">
+      <Text>Requirement</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_PROGRESS">
+      <Text>Progress</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_STARTTIME">
+      <Text>Game start time</Text>
+    </Row>
+  </Language_en_US>
+
+  <Language_zh_Hant_HK>
+  	<Row Tag="TXT_KEY_GEF_PROGRESS_BUTTON_TEXT">
+      <Text>進度</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_BUTTON_TOOLTIP">
+      <Text>查看你的遊戲進度</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_ITEM">
+      <Text>要求</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_PROGRESS">
+      <Text>進度</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_STARTTIME">
+      <Text>遊戲開始時間</Text>
+    </Row>
+  </Language_zh_Hant_HK>
+</GameData>

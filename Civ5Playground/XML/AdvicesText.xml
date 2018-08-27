@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<Language_en_US>
-		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_TITLE">
-			<Text>[COLOR_FONT_GREEN]What a Great Start[ENDCOLOR]</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_JUST_STARTED_TITLE">
+			<Text>Progress: Just Begun</Text>
 		</Row>
-		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_MSG">
-			<Text>[NEWLINE]Good job! You have selected the correct settings of %s. In this scenario, you need to [NEWLINE][NEWLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
-			<Text>[COLOR_FONT_RED]Caution: Wrong Settings[ENDCOLOR]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG">
-			<Text>[NEWLINE]You have not selected our designated map. Please make sure you [NEWLINE][NEWLINE] 1. start a game in [COLOR_FONT_RED]Mod -> Single Player -> Setup Game[ENDCOLOR], [NEWLINE] 2. change "map type" by selecting [COLOR_FONT_RED]Additional Map -> UGFN Part X[ENDCOLOR], [NEWLINE] 3. check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR].[NEWLINE][NEWLINE] If you have any questions, feel free to ask our student helpers.
-			</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
-			<Text>[NEWLINE]You have not turned on the[COLOR_FONT_RED] %s [ENDCOLOR]scenario settings. [NEWLINE]Please make sure you start a game in [COLOR_FONT_RED] Mod -> Single Player -> Setup Game[ENDCOLOR] [NEWLINE] and check [COLOR_FONT_RED]"Load Scenario"[ENDCOLOR] when selecting this map. </Text>
+		<Row Tag="TXT_KEY_UGFN_REQUIREMENTS">
+			<Text>a. keep hold on [COLOR_FONT_GREEN]%d cities[ENDCOLOR], [NEWLINE]b. build %d [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. [NEWLINE] [NEWLINE] So, the first step is to research [COLOR_TECH_TEXT]%s[ENDCOLOR].</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
-			<Text>a. keep hold on [COLOR_FONT_GREEN]3 cities[ENDCOLOR], [NEWLINE]b. build the [COLOR_BUILDING_TEXT]Oxford University[ENDCOLOR]. [NEWLINE] [NEWLINE] So, the first step is to research [COLOR_TECH_TEXT]Education[ENDCOLOR].</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_PART1_RESEARCHED_NEXT_STEP">
-			<Text>You can start to build [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. Once you have built universities in every cities, you can then construct the [COLOR_BUILDING_TEXT]Oxford University[ENDCOLOR].[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]Note: You need to keep hold on 3 cities to satisfy the requirements of part 1.[ENDCOLOR]</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
-			<Text>a. complete the [COLOR_PROJECT_TEXT]Manhattan Project[ENDCOLOR]. [NEWLINE] [NEWLINE] So, the first step is to research [COLOR_TECH_TEXT]Atomic Theory[ENDCOLOR].</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_PART23_RESEARCHED_NEXT_STEP">
-			<Text>You can start to build the [COLOR_PROJECT_TEXT]Manhattan Project[ENDCOLOR].</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
-			<Text>Progress: Settler</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
-			<Text>[NEWLINE]Try to use the settler unit to found a new city</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
-			<Text>Progress: Found Capitial City</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
-			<Text>[NEWLINE]Congrats! You have just found the capitial city. If you want to expand your civilization, you can consider training [COLOR_UNIT_TEXT]settlers[ENDCOLOR] to found more cities.</Text>
+		<Row Tag="TXT_KEY_RESEARCHED_NEXT_STEP">
+			<Text>You can start to build [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. [NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]Note: You need to keep hold on the cities with universities to satisfy the requirements of part 1.[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
 			<Text>Progress: Constructed %s</Text>
@@ -68,51 +33,18 @@
 		
 	</Language_en_US>
 	<Language_zh_Hant_HK>
-		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_TITLE">
-			<Text>[COLOR_FONT_GREEN]好的開始[ENDCOLOR]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_CORRECT_SETTINGS_MSG">
-			<Text>[NEWLINE]犀利! 你已成功啟動 %s 的劇本。在這個劇本中，你需要[NEWLINE][NEWLINE]%s[NEWLINE][NEWLINE]Enjoy the game!</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_TITLE">
-			<Text>[COLOR_FONT_RED]注意: 錯誤設定[ENDCOLOR]</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG">
-			<Text>[NEWLINE]你並沒有選擇正確的地圖，請確保你開新遊戲時[NEWLINE][NEWLINE] 1. 有點選[COLOR_FONT_RED] 模組 -> 單人模式 -> 遊戲設定[ENDCOLOR], [NEWLINE] 2. 有選擇[COLOR_FONT_RED]地圖類型 -> 其他地圖 -> UGFN Part X[ENDCOLOR], [NEWLINE] 3. 有勾選 [COLOR_FONT_RED]"載入劇本"[ENDCOLOR]。[NEWLINE][NEWLINE] 如有疑問，歡迎向student helpers查詢。 </Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_WRONG_SETTINGS_CHECK_SCENARIO_MSG">
-			<Text>[NEWLINE]你並沒有啟動[COLOR_FONT_RED] %s [ENDCOLOR]的劇本設定。[NEWLINE]請確保你在 [COLOR_FONT_RED]模組 -> 單人模式 -> 遊戲設定[ENDCOLOR] 中，[NEWLINE] 選擇這個地圖並點選[COLOR_FONT_RED]"載入劇本"[ENDCOLOR]。</Text>
+		<Row Tag="TXT_KEY_UGFN_PROGRESS_JUST_STARTED_TITLE">
+			<Text>進度: 遊戲開始</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_UGFN_PART1_REQUIREMENTS">
-			<Text>a. 擁有至少3座城市 [NEWLINE]b. 興建 [COLOR_BUILDING_TEXT]牛津大學[ENDCOLOR] [NEWLINE] [NEWLINE] 第一步，你需要研究[COLOR_TECH_TEXT]教育制度[ENDCOLOR]。</Text>
+		<Row Tag="TXT_KEY_UGFN_REQUIREMENTS">
+			<Text>a. 擁有至少%d座城市 [NEWLINE]b. 興建 %d座[COLOR_BUILDING_TEXT]%s[ENDCOLOR] [NEWLINE] [NEWLINE] 第一步，你需要研究[COLOR_TECH_TEXT]%s[ENDCOLOR]。</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_PART1_RESEARCHED_NEXT_STEP">
-			<Text>你可以開始興建[COLOR_BUILDING_TEXT]大學[ENDCOLOR]。當你於每個城市都建好[COLOR_BUILDING_TEXT]大學[ENDCOLOR]後，你可以興建[COLOR_BUILDING_TEXT]牛津大學[ENDCOLOR]。[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]注意: 你必需擁有至少3座城市，以符合Part 1要求。[ENDCOLOR]</Text>
+		<Row Tag="TXT_KEY_RESEARCHED_NEXT_STEP">
+			<Text>你可以開始興建[COLOR_BUILDING_TEXT]%s[ENDCOLOR]。[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]注意: 你必需控制建有%s的城市，以符合Part 1要求。[ENDCOLOR]</Text>
 		</Row>
 
-		<Row Tag="TXT_KEY_UGFN_PART23_REQUIREMENTS">
-			<Text>a. [COLOR_PROJECT_TEXT]完成曼哈頓計畫[ENDCOLOR] [NEWLINE] [NEWLINE] 第一步，你需要研究[COLOR_TECH_TEXT]原子理論[ENDCOLOR]。</Text>
-			
-		</Row>
-
-		<Row Tag="TXT_KEY_PART23_RESEARCHED_NEXT_STEP">
-			<Text>你可以建造 [COLOR_PROJECT_TEXT]曼哈頓計畫[ENDCOLOR]。</Text>
-		</Row>
-
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_TITLE">
-			<Text>進度: 開拓者</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_SETTLER_MSG">
-			<Text>[NEWLINE]嘗試利用開拓者創建新城市</Text>
-		</Row>
-		<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_TITLE">
-			<Text>進度: 已建立首都</Text>
-		</Row>
-			<Row Tag="TXT_KEY_UGFN_PROGRESS_PALACE_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功建立首都。如果你想擴張版圖，你可以考慮訓練 [COLOR_UNIT_TEXT]開拓者[ENDCOLOR]，以建造新城市。</Text>
-		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
 			<Text>進度: 已建造%s</Text>
 		</Row>
