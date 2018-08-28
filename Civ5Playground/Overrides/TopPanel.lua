@@ -76,6 +76,14 @@ function UpdateData()
 			--end
 			
 			Controls.GoldPerTurn:SetText(strGoldStr);
+
+			-----------------------------
+			-- Update international trade routes
+			-----------------------------
+			local iUsedTradeRoutes = pPlayer:GetNumInternationalTradeRoutesUsed();
+			local iAvailableTradeRoutes = pPlayer:GetNumInternationalTradeRoutesAvailable();
+			local strInternationalTradeRoutes = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_INTERNATIONAL_TRADE_ROUTES", iUsedTradeRoutes, iAvailableTradeRoutes);
+			Controls.InternationalTradeRoutes:SetText(strInternationalTradeRoutes);
 			
 			-----------------------------
 			-- Update Happiness
@@ -113,7 +121,11 @@ function UpdateData()
 				strGoldenAgeStr = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_GOLDEN_AGES_OFF");
 			else
 				if (pPlayer:GetGoldenAgeTurns() > 0) then
-					strGoldenAgeStr = string.format(Locale.ToUpper(Locale.ConvertTextKey("TXT_KEY_GOLDEN_AGE_ANNOUNCE")) .. " (%i)", pPlayer:GetGoldenAgeTurns());
+				    if (pPlayer:GetGoldenAgeTourismModifier() > 0) then
+						strGoldenAgeStr = string.format(Locale.ToUpper(Locale.ConvertTextKey("TXT_KEY_UNIQUE_GOLDEN_AGE_ANNOUNCE")) .. " (%i)", pPlayer:GetGoldenAgeTurns());
+					else
+						strGoldenAgeStr = string.format(Locale.ToUpper(Locale.ConvertTextKey("TXT_KEY_GOLDEN_AGE_ANNOUNCE")) .. " (%i)", pPlayer:GetGoldenAgeTurns());
+					end
 				else
 					strGoldenAgeStr = string.format("%i/%i", pPlayer:GetGoldenAgeProgressMeter(), pPlayer:GetGoldenAgeProgressThreshold());
 				end
@@ -144,6 +156,25 @@ function UpdateData()
 			
 			Controls.CultureString:SetText(strCultureStr);
 			
+			-----------------------------
+			-- Update Tourism
+			-----------------------------
+			local strTourism;
+			strTourism = string.format("[ICON_TOURISM] +%i", pPlayer:GetTourism());
+			Controls.TourismString:SetText(strTourism);
+			
+			-----------------------------
+			-- Update Faith
+			-----------------------------
+			local strFaithStr;
+			if (Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+				strFaithStr = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_RELIGION_OFF");
+			else
+				strFaithStr = string.format("%i (+%i)", pPlayer:GetFaith(), pPlayer:GetTotalFaithPerTurn());
+				strFaithStr = "[ICON_PEACE]" .. strFaithStr;
+			end
+			Controls.FaithString:SetText(strFaithStr);
+	
 			-----------------------------
 			-- Update Resources
 			-----------------------------
@@ -220,8 +251,17 @@ function UpdateData()
 		end
 		
 		-- Update date
-			
-		local date = Game.GetTurnString();
+		local date;
+		local traditionalDate = Game.GetTurnString();
+		
+		if (pPlayer:IsUsingMayaCalendar()) then
+			date = pPlayer:GetMayaCalendarString();
+			local toolTipString = Locale.ConvertTextKey("TXT_KEY_MAYA_DATE_TOOLTIP", pPlayer:GetMayaCalendarLongString(), traditionalDate);
+			Controls.CurrentDate:SetToolTipString(toolTipString);
+		else
+			date = traditionalDate;
+		end
+		
 		Controls.CurrentDate:SetText(date);
 	end
 end
@@ -234,6 +274,7 @@ function OnGEFProgress()
 	LuaEvents.OnToggleGEFProgressPanel()
 end
 Controls.GEFProgressButton:RegisterCallback( Mouse.eLClick, OnGEFProgress );
+
 -------------------------------------------------
 -------------------------------------------------
 function OnCivilopedia()	
@@ -246,6 +287,7 @@ function OnCivilopedia()
 	Events.SearchForPediaEntry("");
 end
 Controls.CivilopediaButton:RegisterCallback( Mouse.eLClick, OnCivilopedia );
+
 
 -------------------------------------------------
 -------------------------------------------------
@@ -277,10 +319,47 @@ Controls.CultureString:RegisterCallback( Mouse.eLClick, OnCultureClicked );
 -------------------------------------------------
 function OnTechClicked()
 	
-	Events.SerialEventGameMessagePopup( { Type = ButtonPopupTypes.BUTTONPOPUP_TECH_TREE } );
+	Events.SerialEventGameMessagePopup( { Type = ButtonPopupTypes.BUTTONPOPUP_TECH_TREE, Data2 = -1} );
 
 end
 Controls.SciencePerTurn:RegisterCallback( Mouse.eLClick, OnTechClicked );
+
+-------------------------------------------------
+-------------------------------------------------
+function OnTourismClicked()
+	
+	Events.SerialEventGameMessagePopup( { Type = ButtonPopupTypes.BUTTONPOPUP_CULTURE_OVERVIEW, Data2 = 4 } );
+
+end
+Controls.TourismString:RegisterCallback( Mouse.eLClick, OnTourismClicked );
+
+
+-------------------------------------------------
+-------------------------------------------------
+function OnFaithClicked()
+	
+	Events.SerialEventGameMessagePopup( { Type = ButtonPopupTypes.BUTTONPOPUP_RELIGION_OVERVIEW } );
+
+end
+Controls.FaithString:RegisterCallback( Mouse.eLClick, OnFaithClicked );
+
+-------------------------------------------------
+-------------------------------------------------
+function OnGoldClicked()
+	
+	Events.SerialEventGameMessagePopup( { Type = ButtonPopupTypes.BUTTONPOPUP_ECONOMIC_OVERVIEW } );
+
+end
+Controls.GoldPerTurn:RegisterCallback( Mouse.eLClick, OnGoldClicked );
+
+-------------------------------------------------
+-------------------------------------------------
+function OnTradeRouteClicked()
+	
+	Events.SerialEventGameMessagePopup( { Type = ButtonPopupTypes.BUTTONPOPUP_TRADE_ROUTE_OVERVIEW } );
+
+end
+Controls.InternationalTradeRoutes:RegisterCallback( Mouse.eLClick, OnTradeRouteClicked );
 
 
 -------------------------------------------------
@@ -295,7 +374,10 @@ function DoInitTooltips()
 	Controls.HappinessString:SetToolTipCallback( HappinessTipHandler );
 	Controls.GoldenAgeString:SetToolTipCallback( GoldenAgeTipHandler );
 	Controls.CultureString:SetToolTipCallback( CultureTipHandler );
+	Controls.TourismString:SetToolTipCallback( TourismTipHandler );
+	Controls.FaithString:SetToolTipCallback( FaithTipHandler );
 	Controls.ResourceString:SetToolTipCallback( ResourcesTipHandler );
+	Controls.InternationalTradeRoutes:SetToolTipCallback( InternationalTradeRoutesTipHandler );
 end
 
 -- Science Tooltip
@@ -315,6 +397,11 @@ function ScienceTipHandler( control )
 		local pCity = UI.GetHeadSelectedCity();
 	
 		local iSciencePerTurn = pPlayer:GetScience();
+	
+		if (pPlayer:IsAnarchy()) then
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_ANARCHY", pPlayer:GetAnarchyNumTurns());
+			strText = strText .. "[NEWLINE][NEWLINE]";
+		end
 	
 		-- Science
 		if (not OptionsManager.IsNoBasicHelp()) then
@@ -343,7 +430,7 @@ function ScienceTipHandler( control )
 		end
 	
 		-- Science from Cities
-		local iScienceFromCities = pPlayer:GetScienceFromCitiesTimes100();
+		local iScienceFromCities = pPlayer:GetScienceFromCitiesTimes100(true);
 		if (iScienceFromCities ~= 0) then
 		
 			-- Add separator for non-initial entries
@@ -354,6 +441,18 @@ function ScienceTipHandler( control )
 			end
 
 			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_SCIENCE_FROM_CITIES", iScienceFromCities / 100);
+		end
+	
+		-- Science from Trade Routes
+		local iScienceFromTrade = pPlayer:GetScienceFromCitiesTimes100(false) - iScienceFromCities;
+		if (iScienceFromTrade ~= 0) then
+			if (bFirstEntry) then
+				bFirstEntry = false;
+			else
+				strText = strText .. "[NEWLINE]";
+			end
+			
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_SCIENCE_FROM_ITR", iScienceFromTrade / 100);
 		end
 	
 		-- Science from Other Players
@@ -397,6 +496,12 @@ function ScienceTipHandler( control )
 	
 			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_SCIENCE_FROM_RESEARCH_AGREEMENTS", iScienceFromRAs / 100);
 		end
+		
+		-- Let people know that building more cities makes techs harder to get
+		if (not OptionsManager.IsNoBasicHelp()) then
+			strText = strText .. "[NEWLINE][NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_TECH_CITY_COST", Game.GetNumCitiesTechCostMod());
+		end
 	end
 	
 	tipControlTable.TooltipLabel:SetText( strText );
@@ -424,10 +529,20 @@ function GoldTipHandler( control )
 		iGoldPerTurnToOtherPlayers = -iGoldPerTurnFromOtherPlayers;
 		iGoldPerTurnFromOtherPlayers = 0;
 	end
+	
+	local iGoldPerTurnFromReligion = pPlayer:GetGoldPerTurnFromReligion();
 
-	local fGoldPerTurnFromCities = pPlayer:GetGoldFromCitiesTimes100() / 100;
+	local fTradeRouteGold = (pPlayer:GetGoldFromCitiesTimes100() - pPlayer:GetGoldFromCitiesMinusTradeRoutesTimes100()) / 100;
+	local fGoldPerTurnFromCities = pPlayer:GetGoldFromCitiesMinusTradeRoutesTimes100() / 100;
 	local fCityConnectionGold = pPlayer:GetCityConnectionGoldTimes100() / 100;
-	local fTotalIncome = fGoldPerTurnFromCities + iGoldPerTurnFromOtherPlayers + fCityConnectionGold;
+	--local fInternationalTradeRouteGold = pPlayer:GetGoldPerTurnFromTradeRoutesTimes100() / 100;
+	local fTraitGold = pPlayer:GetGoldPerTurnFromTraits();
+	local fTotalIncome = fGoldPerTurnFromCities + iGoldPerTurnFromOtherPlayers + fCityConnectionGold + iGoldPerTurnFromReligion + fTradeRouteGold + fTraitGold;
+	
+	if (pPlayer:IsAnarchy()) then
+		strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_ANARCHY", pPlayer:GetAnarchyNumTurns());
+		strText = strText .. "[NEWLINE][NEWLINE]";
+	end
 	
 	if (not OptionsManager.IsNoBasicHelp()) then
 		strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_AVAILABLE_GOLD", iTotalGold);
@@ -437,9 +552,16 @@ function GoldTipHandler( control )
 	strText = strText .. "[COLOR:150:255:150:255]";
 	strText = strText .. "+" .. Locale.ConvertTextKey("TXT_KEY_TP_TOTAL_INCOME", math.floor(fTotalIncome));
 	strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_CITY_OUTPUT", fGoldPerTurnFromCities);
-	strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_GOLD_FROM_TR", math.floor(fCityConnectionGold));
+	strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_GOLD_FROM_CITY_CONNECTIONS", math.floor(fCityConnectionGold));
+	strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_GOLD_FROM_ITR", math.floor(fTradeRouteGold));
+	if (math.floor(fTraitGold) > 0) then
+		strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_GOLD_FROM_TRAITS", math.floor(fTraitGold));
+	end
 	if (iGoldPerTurnFromOtherPlayers > 0) then
 		strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_GOLD_FROM_OTHERS", iGoldPerTurnFromOtherPlayers);
+	end
+	if (iGoldPerTurnFromReligion > 0) then
+		strText = strText .. "[NEWLINE]  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_GOLD_FROM_RELIGION", iGoldPerTurnFromReligion);
 	end
 	strText = strText .. "[/COLOR]";
 	
@@ -515,22 +637,16 @@ function HappinessTipHandler( control )
 		local iPoliciesHappiness = pPlayer:GetHappinessFromPolicies();
 		local iResourcesHappiness = pPlayer:GetHappinessFromResources();
 		local iExtraLuxuryHappiness = pPlayer:GetExtraHappinessPerLuxury();
+		local iCityHappiness = pPlayer:GetHappinessFromCities();
 		local iBuildingHappiness = pPlayer:GetHappinessFromBuildings();
-		local iGarrisonedUnitsHappiness = pPlayer:GetHappinessFromGarrisonedUnits();
 		local iTradeRouteHappiness = pPlayer:GetHappinessFromTradeRoutes();
 		local iReligionHappiness = pPlayer:GetHappinessFromReligion();
 		local iNaturalWonderHappiness = pPlayer:GetHappinessFromNaturalWonders();
 		local iExtraHappinessPerCity = pPlayer:GetExtraHappinessPerCity() * pPlayer:GetNumCities();
+		local iMinorCivHappiness = pPlayer:GetHappinessFromMinorCivs();
+		local iLeagueHappiness = pPlayer:GetHappinessFromLeagues();
 	
-		local iMinorCivHappiness = 0;
-		local pMinor;
-	
-		-- Loop through all the Minors the active player knows
-		for iPlayerLoop = GameDefines.MAX_MAJOR_CIVS, GameDefines.MAX_CIV_PLAYERS-1, 1 do
-			iMinorCivHappiness = iMinorCivHappiness + pPlayer:GetHappinessFromMinor(iPlayerLoop);
-		end
-	
-		local iHandicapHappiness = pPlayer:GetHappiness() - iPoliciesHappiness - iResourcesHappiness - iBuildingHappiness - iGarrisonedUnitsHappiness - iTradeRouteHappiness - iReligionHappiness - iNaturalWonderHappiness - iMinorCivHappiness - iExtraHappinessPerCity;
+		local iHandicapHappiness = pPlayer:GetHappiness() - iPoliciesHappiness - iResourcesHappiness - iCityHappiness - iBuildingHappiness - iTradeRouteHappiness - iReligionHappiness - iNaturalWonderHappiness - iMinorCivHappiness - iExtraHappinessPerCity - iLeagueHappiness;
 	
 		if (pPlayer:IsEmpireVeryUnhappy()) then
 		
@@ -547,7 +663,7 @@ function HappinessTipHandler( control )
 			strText = strText .. "[COLOR:255:60:60:255]" .. Locale.ConvertTextKey("TXT_KEY_TP_EMPIRE_UNHAPPY") .. "[/COLOR]";
 		end
 	
-		local iTotalHappiness = iPoliciesHappiness + iResourcesHappiness + iBuildingHappiness + iGarrisonedUnitsHappiness + iMinorCivHappiness + iHandicapHappiness + iTradeRouteHappiness + iReligionHappiness + iNaturalWonderHappiness + iExtraHappinessPerCity;
+		local iTotalHappiness = iPoliciesHappiness + iResourcesHappiness + iCityHappiness + iBuildingHappiness + iMinorCivHappiness + iHandicapHappiness + iTradeRouteHappiness + iReligionHappiness + iNaturalWonderHappiness + iExtraHappinessPerCity + iLeagueHappiness;
 	
 		strText = strText .. "[NEWLINE][NEWLINE]";
 		strText = strText .. "[COLOR:150:255:150:255]";
@@ -563,13 +679,12 @@ function HappinessTipHandler( control )
 
 		for resource in GameInfo.Resources() do
 			local resourceID = resource.ID;
-			if (pPlayer:GetNumResourceTotal(resourceID, true) > 0) then
-				if (resource.Happiness ~= 0) then
-					strText = strText .. "[NEWLINE]";
-					strText = strText .. "          +" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_EACH_RESOURCE", resource.Happiness, resource.IconString, resource.Description);
-					iNumHappinessResources = iNumHappinessResources + 1;
-					iBaseHappinessFromResources = iBaseHappinessFromResources + resource.Happiness;
-				end
+			local iHappiness = pPlayer:GetHappinessFromLuxury(resourceID);
+			if (iHappiness > 0) then
+				strText = strText .. "[NEWLINE]";
+				strText = strText .. "          +" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_EACH_RESOURCE", iHappiness, resource.IconString, resource.Description);
+				iNumHappinessResources = iNumHappinessResources + 1;
+				iBaseHappinessFromResources = iBaseHappinessFromResources + iHappiness;
 			end
 		end
 	
@@ -593,16 +708,14 @@ function HappinessTipHandler( control )
 			strText = strText .. "          +" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_OTHER_SOURCES", iMiscHappiness);
 		end
 	
+		strText = strText .. "[NEWLINE]";
+		strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_CITIES", iCityHappiness);
 		if (iPoliciesHappiness >= 0) then
 			strText = strText .. "[NEWLINE]";
 			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_POLICIES", iPoliciesHappiness);
 		end
 		strText = strText .. "[NEWLINE]";
 		strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_BUILDINGS", iBuildingHappiness);
-		if (iGarrisonedUnitsHappiness ~= 0) then
-			strText = strText .. "[NEWLINE]";
-			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_GARRISONED_UNITS", iGarrisonedUnitsHappiness);
-		end
 		if (iTradeRouteHappiness ~= 0) then
 			strText = strText .. "[NEWLINE]";
 			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_CONNECTED_CITIES", iTradeRouteHappiness);
@@ -623,6 +736,10 @@ function HappinessTipHandler( control )
 			strText = strText .. "[NEWLINE]";
 			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_CITY_STATE_FRIENDSHIP", iMinorCivHappiness);
 		end
+		if (iLeagueHappiness ~= 0) then
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_LEAGUES", iLeagueHappiness);
+		end
 		strText = strText .. "[NEWLINE]";
 		strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_DIFFICULTY_LEVEL", iHandicapHappiness);
 		strText = strText .. "[/COLOR]";
@@ -639,7 +756,8 @@ function HappinessTipHandler( control )
 			
 		local iUnhappinessFromPop = Locale.ToNumber( unhappinessFromPop / 100, "#.##" );
 		local iUnhappinessFromOccupiedCities = Locale.ToNumber( pPlayer:GetUnhappinessFromOccupiedCities() / 100, "#.##" );
-
+		local iUnhappinessPublicOpinion = pPlayer:GetUnhappinessFromPublicOpinion();
+		
 		strText = strText .. "[NEWLINE][NEWLINE]";
 		strText = strText .. "[COLOR:255:150:150:255]";
 		strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_UNHAPPINESS_TOTAL", iTotalUnhappiness);
@@ -672,8 +790,11 @@ function HappinessTipHandler( control )
 		if (iPoliciesHappiness < 0) then
 			strText = strText .. "[NEWLINE]";
 			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_HAPPINESS_POLICIES", iPoliciesHappiness);
-		end
-			
+		end		
+		if (iUnhappinessPublicOpinion > 0) then
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. "  [ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_TP_UNHAPPINESS_PUBLIC_OPINION", iUnhappinessPublicOpinion);
+		end		
 		strText = strText .. "[/COLOR]";
 	
 		-- Basic explanation of Happiness
@@ -720,7 +841,16 @@ function GoldenAgeTipHandler( control )
 		end
 	
 		strText = strText .. "[NEWLINE][NEWLINE]";
-		strText = strText ..  Locale.ConvertTextKey("TXT_KEY_TP_GOLDEN_AGE_EFFECT");
+		if (pPlayer:IsGoldenAgeCultureBonusDisabled()) then
+			strText = strText ..  Locale.ConvertTextKey("TXT_KEY_TP_GOLDEN_AGE_EFFECT_NO_CULTURE");		
+		else
+			strText = strText ..  Locale.ConvertTextKey("TXT_KEY_TP_GOLDEN_AGE_EFFECT");		
+		end
+		
+		if (pPlayer:GetGoldenAgeTurns() > 0 and pPlayer:GetGoldenAgeTourismModifier() > 0) then
+			strText = strText .. "[NEWLINE][NEWLINE]";
+			strText = strText ..  Locale.ConvertTextKey("TXT_KEY_TP_CARNIVAL_EFFECT");			
+		end
 	end
 	
 	tipControlTable.TooltipLabel:SetText( strText );
@@ -755,6 +885,11 @@ function CultureTipHandler( control )
 				iTurns = math.ceil(iTurns);
 			end
 	    end
+	    
+	    if (pPlayer:IsAnarchy()) then
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_ANARCHY", pPlayer:GetAnarchyNumTurns());
+		end
+	    
 		strText = strText .. Locale.ConvertTextKey("TXT_KEY_NEXT_POLICY_TURN_LABEL", iTurns);
 	
 		if (not OptionsManager.IsNoBasicHelp()) then
@@ -765,6 +900,13 @@ function CultureTipHandler( control )
 			if (pPlayer:GetNextPolicyCost() > 0) then
 				strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_NEXT_POLICY", pPlayer:GetNextPolicyCost());
 			end
+		end
+
+		if (pPlayer:IsAnarchy()) then
+			tipControlTable.TooltipLabel:SetText( strText );
+			tipControlTable.TopPanelMouseover:SetHide(false);
+			tipControlTable.TopPanelMouseover:DoAutoSize();
+			return;
 		end
 
 		local bFirstEntry = true;
@@ -811,8 +953,22 @@ function CultureTipHandler( control )
 			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_FROM_HAPPINESS", iCultureFromHappiness);
 		end
 	
+		-- Culture from Traits
+		local iCultureFromTraits = pPlayer:GetJONSCulturePerTurnFromTraits();
+		if (iCultureFromTraits ~= 0) then
+		
+			-- Add separator for non-initial entries
+			if (bFirstEntry) then
+				strText = strText .. "[NEWLINE]";
+				bFirstEntry = false;
+			end
+
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_FROM_TRAITS", iCultureFromTraits);
+		end
+	
 		-- Culture from Minor Civs
-		local iCultureFromMinors = pPlayer:GetJONSCulturePerTurnFromMinorCivs();
+		local iCultureFromMinors = pPlayer:GetCulturePerTurnFromMinorCivs();
 		if (iCultureFromMinors ~= 0) then
 		
 			-- Add separator for non-initial entries
@@ -824,7 +980,50 @@ function CultureTipHandler( control )
 			strText = strText .. "[NEWLINE]";
 			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_FROM_MINORS", iCultureFromMinors);
 		end
-	
+
+		-- Culture from Religion
+		local iCultureFromReligion = pPlayer:GetCulturePerTurnFromReligion();
+		if (iCultureFromReligion ~= 0) then
+		
+			-- Add separator for non-initial entries
+			if (bFirstEntry) then
+				strText = strText .. "[NEWLINE]";
+				bFirstEntry = false;
+			end
+
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_FROM_RELIGION", iCultureFromReligion);
+		end
+		
+		-- Culture from a bonus turns (League Project)
+		local iCultureFromBonusTurns = pPlayer:GetCulturePerTurnFromBonusTurns();
+		if (iCultureFromBonusTurns ~= 0) then
+		
+			-- Add separator for non-initial entries
+			if (bFirstEntry) then
+				strText = strText .. "[NEWLINE]";
+				bFirstEntry = false;
+			end
+
+			local iBonusTurns = pPlayer:GetCultureBonusTurns();
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_FROM_BONUS_TURNS", iCultureFromBonusTurns, iBonusTurns);
+		end
+		
+		-- Culture from Golden Age
+		local iCultureFromGoldenAge = pPlayer:GetTotalJONSCulturePerTurn() - iCultureForFree - iCultureFromCities - iCultureFromHappiness - iCultureFromMinors - iCultureFromReligion - iCultureFromTraits - iCultureFromBonusTurns;
+		if (iCultureFromGoldenAge ~= 0) then
+		
+			-- Add separator for non-initial entries
+			if (bFirstEntry) then
+				strText = strText .. "[NEWLINE]";
+				bFirstEntry = false;
+			end
+
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_CULTURE_FROM_GOLDEN_AGE", iCultureFromGoldenAge);
+		end
+
 		-- Let people know that building more cities makes policies harder to get
 		if (not OptionsManager.IsNoBasicHelp()) then
 			strText = strText .. "[NEWLINE][NEWLINE]";
@@ -832,6 +1031,148 @@ function CultureTipHandler( control )
 		end
 	end
 	
+	tipControlTable.TooltipLabel:SetText( strText );
+	tipControlTable.TopPanelMouseover:SetHide(false);
+    
+    -- Autosize tooltip
+    tipControlTable.TopPanelMouseover:DoAutoSize();
+	
+end
+
+-- Tourism Tooltip
+function TourismTipHandler( control )
+
+	local iPlayerID = Game.GetActivePlayer();
+	local pPlayer = Players[iPlayerID];
+	
+	local iTotalGreatWorks = pPlayer:GetNumGreatWorks();
+	local iTotalSlots = pPlayer:GetNumGreatWorkSlots();
+	
+	local strText1 = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_TOURISM_TOOLTIP_1", iTotalGreatWorks);
+	local strText2 = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_TOURISM_TOOLTIP_2", (iTotalSlots - iTotalGreatWorks));
+		
+	local strText = strText1 .. "[NEWLINE]" .. strText2;
+		
+	local cultureVictory = GameInfo.Victories["VICTORY_CULTURAL"];
+	if(cultureVictory ~= nil and PreGame.IsVictory(cultureVictory.ID)) then
+	    local iNumInfluential = pPlayer:GetNumCivsInfluentialOn();
+		local iNumToBeInfluential = pPlayer:GetNumCivsToBeInfluentialOn();
+		local szText = Locale.ConvertTextKey("TXT_KEY_CO_VICTORY_INFLUENTIAL_OF", iNumInfluential, iNumToBeInfluential);
+
+		local strText3 = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_TOURISM_TOOLTIP_3", szText);
+		
+		strText = strText .. "[NEWLINE][NEWLINE]" .. strText3;
+	end	
+
+	tipControlTable.TooltipLabel:SetText( strText );
+	tipControlTable.TopPanelMouseover:SetHide(false);
+    
+    -- Autosize tooltip
+    tipControlTable.TopPanelMouseover:DoAutoSize();
+	
+end
+
+-- FaithTooltip
+function FaithTipHandler( control )
+
+	local strText = "";
+
+	if (Game.IsOption(GameOptionTypes.GAMEOPTION_NO_RELIGION)) then
+		strText = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_RELIGION_OFF_TOOLTIP");
+	else
+	
+		local iPlayerID = Game.GetActivePlayer();
+		local pPlayer = Players[iPlayerID];
+
+	    if (pPlayer:IsAnarchy()) then
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_ANARCHY", pPlayer:GetAnarchyNumTurns());
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. "[NEWLINE]";
+		end
+	    
+		strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_ACCUMULATED", pPlayer:GetFaith());
+		strText = strText .. "[NEWLINE]";
+	
+		-- Faith from Cities
+		local iFaithFromCities = pPlayer:GetFaithPerTurnFromCities();
+		if (iFaithFromCities ~= 0) then
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_FROM_CITIES", iFaithFromCities);
+		end
+	
+		-- Faith from Minor Civs
+		local iFaithFromMinorCivs = pPlayer:GetFaithPerTurnFromMinorCivs();
+		if (iFaithFromMinorCivs ~= 0) then
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_FROM_MINORS", iFaithFromMinorCivs);
+		end
+
+		-- Faith from Religion
+		local iFaithFromReligion = pPlayer:GetFaithPerTurnFromReligion();
+		if (iFaithFromReligion ~= 0) then
+			strText = strText .. "[NEWLINE]";
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_FROM_RELIGION", iFaithFromReligion);
+		end
+		
+		if (iFaithFromCities ~= 0 or iFaithFromMinorCivs ~= 0 or iFaithFromReligion ~= 0) then
+			strText = strText .. "[NEWLINE]";
+		end
+	
+		strText = strText .. "[NEWLINE]";
+
+		if (pPlayer:HasCreatedPantheon()) then
+			if (Game.GetNumReligionsStillToFound() > 0 or pPlayer:HasCreatedReligion()) then
+				if (pPlayer:GetCurrentEra() < GameInfo.Eras["ERA_INDUSTRIAL"].ID) then
+					strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_NEXT_PROPHET", pPlayer:GetMinimumFaithNextGreatProphet());
+					strText = strText .. "[NEWLINE]";
+					strText = strText .. "[NEWLINE]";
+				end
+			end
+		else
+			if (pPlayer:CanCreatePantheon(false)) then
+				strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_NEXT_PANTHEON", Game.GetMinimumFaithNextPantheon());
+				strText = strText .. "[NEWLINE]";
+			else
+				strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_PANTHEONS_LOCKED");
+				strText = strText .. "[NEWLINE]";
+			end
+			strText = strText .. "[NEWLINE]";
+		end
+
+		if (Game.GetNumReligionsStillToFound() < 0) then
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_RELIGIONS_LEFT", 0);
+		else
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_RELIGIONS_LEFT", Game.GetNumReligionsStillToFound());
+		end
+		
+		if (pPlayer:GetCurrentEra() >= GameInfo.Eras["ERA_INDUSTRIAL"].ID) then
+		    local bAnyFound = false;
+			strText = strText .. "[NEWLINE]";		
+			strText = strText .. "[NEWLINE]";		
+			strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_FAITH_NEXT_GREAT_PERSON", pPlayer:GetMinimumFaithNextGreatProphet());	
+			
+			local capital = pPlayer:GetCapitalCity();
+			if(capital ~= nil) then	
+				for info in GameInfo.Units{Special = "SPECIALUNIT_PEOPLE"} do
+					local infoID = info.ID;
+					local faithCost = capital:GetUnitFaithPurchaseCost(infoID, true);
+					if(faithCost > 0 and pPlayer:IsCanPurchaseAnyCity(false, true, infoID, -1, YieldTypes.YIELD_FAITH)) then
+						if (pPlayer:DoesUnitPassFaithPurchaseCheck(infoID)) then
+							strText = strText .. "[NEWLINE]";
+							strText = strText .. "[ICON_BULLET]" .. Locale.ConvertTextKey(info.Description);
+							bAnyFound = true;
+						end
+					end
+				end
+			end
+						
+			if (not bAnyFound) then
+				strText = strText .. "[NEWLINE]";
+				strText = strText .. "[ICON_BULLET]" .. Locale.ConvertTextKey("TXT_KEY_RO_YR_NO_GREAT_PEOPLE");
+			end
+		end
+	end
+
 	tipControlTable.TooltipLabel:SetText( strText );
 	tipControlTable.TopPanelMouseover:SetHide(false);
     
@@ -891,7 +1232,6 @@ function ResourcesTipHandler( control )
 					strText = strText .. ": ";
 					strText = strText .. Locale.ConvertTextKey("TXT_KEY_TP_RESOURCE_INFO", iNumTotal, iNumUsed);
 				end
-				
 			end
 		end
 	end
@@ -907,6 +1247,66 @@ function ResourcesTipHandler( control )
     -- Autosize tooltip
     tipControlTable.TopPanelMouseover:DoAutoSize();
 	
+end
+
+-- International Trade Route Tooltip
+function InternationalTradeRoutesTipHandler( control )
+
+	local iPlayerID = Game.GetActivePlayer();
+	local pPlayer = Players[iPlayerID];
+	
+	local strTT = "";
+	
+	local iNumLandTradeUnitsAvail = pPlayer:GetNumAvailableTradeUnits(DomainTypes.DOMAIN_LAND);
+	if (iNumLandTradeUnitsAvail > 0) then
+		local iTradeUnitType = pPlayer:GetTradeUnitType(DomainTypes.DOMAIN_LAND);
+		local strUnusedTradeUnitWarning = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_INTERNATIONAL_TRADE_ROUTES_TT_UNASSIGNED", iNumLandTradeUnitsAvail, GameInfo.Units[iTradeUnitType].Description);
+		strTT = strTT .. strUnusedTradeUnitWarning;
+	end
+	
+	local iNumSeaTradeUnitsAvail = pPlayer:GetNumAvailableTradeUnits(DomainTypes.DOMAIN_SEA);
+	if (iNumSeaTradeUnitsAvail > 0) then
+		local iTradeUnitType = pPlayer:GetTradeUnitType(DomainTypes.DOMAIN_SEA);
+		local strUnusedTradeUnitWarning = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_INTERNATIONAL_TRADE_ROUTES_TT_UNASSIGNED", iNumLandTradeUnitsAvail, GameInfo.Units[iTradeUnitType].Description);	
+		strTT = strTT .. strUnusedTradeUnitWarning;
+	end
+	
+	if (strTT ~= "") then
+		strTT = strTT .. "[NEWLINE]";
+	end
+	
+	local iUsedTradeRoutes = pPlayer:GetNumInternationalTradeRoutesUsed();
+	local iAvailableTradeRoutes = pPlayer:GetNumInternationalTradeRoutesAvailable();
+	
+	local strText = Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_INTERNATIONAL_TRADE_ROUTES_TT", iUsedTradeRoutes, iAvailableTradeRoutes);
+	strTT = strTT .. strText;
+	
+	local strYourTradeRoutes = pPlayer:GetTradeYourRoutesTTString();
+	if (strYourTradeRoutes ~= "") then
+		strTT = strTT .. "[NEWLINE][NEWLINE]"
+		strTT = strTT .. Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_ITR_ESTABLISHED_BY_PLAYER_TT");
+		strTT = strTT .. "[NEWLINE]";
+		strTT = strTT .. strYourTradeRoutes;
+	end
+
+	local strToYouTradeRoutes = pPlayer:GetTradeToYouRoutesTTString();
+	if (strToYouTradeRoutes ~= "") then
+		strTT = strTT .. "[NEWLINE][NEWLINE]"
+		strTT = strTT .. Locale.ConvertTextKey("TXT_KEY_TOP_PANEL_ITR_ESTABLISHED_BY_OTHER_TT");
+		strTT = strTT .. "[NEWLINE]";
+		strTT = strTT .. strToYouTradeRoutes;
+	end
+	
+	--print(strText);
+	if(strText ~= "") then
+		tipControlTable.TopPanelMouseover:SetHide(false);
+		tipControlTable.TooltipLabel:SetText( strTT );
+	else
+		tipControlTable.TopPanelMouseover:SetHide(true);
+	end
+    
+    -- Autosize tooltip
+    tipControlTable.TopPanelMouseover:DoAutoSize();
 end
 
 -------------------------------------------------

@@ -93,25 +93,27 @@ ListenerManager.AddIndividualTurnStartListener(
 
 function OnUpdateProgressItems(localPlayer)
 	local researched = 0
-	if Teams[localPlayer:GetTeam()]:IsHasTech(KEY_PREREQUISITE_TECH) then
+	if Teams[localPlayer:GetTeam()]:IsHasTech(GameInfoTypes[KEY_PREREQUISITE_TECH]) then
 		researched = 1
 	end
 
-	LuaEvents.OnAddProgressItem(
+	LuaEvents.OnAddIntProgressItem(
 		GameInfo.Technologies[KEY_PREREQUISITE_TECH], 
 		TXT_PREREQUISITE_TECH, 
-		string.format("%d/%d", researched, 1)
+		researched,
+		1
 	)
 	
-	LuaEvents.OnAddProgressItem(
+	LuaEvents.OnAddIntProgressItem(
 		GameInfo.Buildings[KEY_BUILDING_TYPE], 
 		TXT_BUILDING, 
-		string.format("%d/%d", localPlayer:GetBuildingClassCount(BUILDING_CLASS_ID), NUM_BUILDING_REQUIRED)
+		localPlayer:GetBuildingClassCount(BUILDING_CLASS_ID), 
+		NUM_BUILDING_REQUIRED
 	)
 
 	local myLeaderInfo = GameInfo.Leaders[localPlayer:GetLeaderType()];
 
-	LuaEvents.OnAddProgressItem(
+	LuaEvents.OnAddTextProgressItem(
 		myLeaderInfo, 
 		Locale.Lookup("TXT_KEY_GEF_PROGRESS_STARTTIME"), 
 		Utils.GetGlobalProperty("STARTTIME")

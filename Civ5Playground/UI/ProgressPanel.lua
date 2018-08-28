@@ -34,19 +34,30 @@ function UpdateDisplay()
 
 
 	local localPlayer = Players[Game.GetActivePlayer()]
-	print("Adding items..")
 	LuaEvents.OnUpdateProgressItems(localPlayer)
 	Controls.ProgressStack:CalculateSize()
 	RecalcPanelSize()
 end
+Events.ActivePlayerTurnStart.Add(UpdateDisplay)
 
-function OnAddProgressItem(object, itemText, progressText)
+function OnAddIntProgressItem(object, itemText, current, required)
+	local progressText = string.format("%d/%d", current, required)
+	if current >= required then
+		progressText = string.format("[COLOR_FONT_GREEN]%s[ENDCOLOR]", progressText)
+	else
+		progressText = string.format("[COLOR_FONT_RED]%s[ENDCOLOR]", progressText)
+	end
+	OnAddTextProgressItem(object, itemText, progressText)
+end
+LuaEvents.OnAddIntProgressItem.Add(OnAddIntProgressItem)
+
+function OnAddTextProgressItem(object, itemText, progressText)
 	local progressItem = g_ProgressButtonIM:GetInstance()
 	IconHookup( object.PortraitIndex, 64, object.IconAtlas, progressItem.Portrait )
 	progressItem.ItemText:SetText(itemText)
 	progressItem.ProgressText:SetText(progressText)
 end
-LuaEvents.OnAddProgressItem.Add(OnAddProgressItem)
+LuaEvents.OnAddTextProgressItem.Add(OnAddTextProgressItem)
 
 function InputHandler( uiMsg, wParam, lParam )
 	if uiMsg == KeyEvents.KeyDown then

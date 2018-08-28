@@ -80,7 +80,7 @@ Utils.GetCurrentTime = function()
 	local ms = string.match(tostring(os.clock()), "%d%.(%d+)")
 	local hour, minute, second = date_table.hour, date_table.min, date_table.sec
 	local year, month, day = date_table.year, date_table.month, date_table.day
-	local result = string.format("%d-%d-%d %d:%d:%d:%s", year, month, day, hour, minute, second, ms)
+	local result = string.format("%d-%d-%d %d:%d:%d", year, month, day, hour, minute, second)
 	return result
 end
 
