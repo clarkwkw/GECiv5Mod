@@ -65,6 +65,7 @@
 			<FounderBelief3>BELIEF_DEFENDER_FAITH</FounderBelief3>
 		</Row>
 	</ScenarioReligion>
+	<!--
 	<ScenarioPantheon>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -118,11 +119,6 @@
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
-			<CivId>CIVILIZATION_ARABIA</CivId>
-			<PantheonBelief>BELIEF_MONUMENT_GODS</PantheonBelief>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_SONGHAI</CivId>
 			<PantheonBelief>BELIEF_DESERT_FOLKLORE</PantheonBelief>
 		</Row>
@@ -134,7 +130,7 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_INCA</CivId>
-			<PantheonBelief>BELIEF_RELIGIOUS_IDOLS</PantheonBelief>
+			<PantheonBelief>BELIEF_ANCESTOR_WORSHIP</PantheonBelief>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -153,23 +149,13 @@
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
-			<CivId>CIVILIZATION_CHINA</CivId>
-			<PantheonBelief>BELIEF_ANCESTOR_WORSHIP</PantheonBelief>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_KOREA</CivId>
 			<PantheonBelief>BELIEF_GOD_KING</PantheonBelief>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
-			<CivId>CIVILIZATION_JAPAN</CivId>
-			<PantheonBelief>BELIEF_OPEN_SKY</PantheonBelief>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_SIAM</CivId>
-			<PantheonBelief>BELIEF_SUN_GOD</PantheonBelief>
+			<PantheonBelief>BELIEF_OPEN_SKY</PantheonBelief>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -177,6 +163,7 @@
 			<PantheonBelief>BELIEF_SACRED_PATH</PantheonBelief>
 		</Row>
 	</ScenarioPantheon>
+	!-->
 	<ScenarioCityReligion>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
