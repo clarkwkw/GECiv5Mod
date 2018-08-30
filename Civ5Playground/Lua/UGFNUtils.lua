@@ -156,3 +156,22 @@ Utils.HandleFirstTurnNotificationAdded = function(notificationId, notificationTy
 		UI.RemoveNotification(notificationId)
 	end
 end
+
+
+timeSpentLastUpdated = os.time()
+if Utils.GetGlobalProperty("TOTAL_TIME_SPENT") == nil then
+	Utils.SetGlobalProperty("TOTAL_TIME_SPENT", 0)
+end
+
+Utils.UpdateTotalTimeSpent = function()
+	local curTime = os.time()
+	local totalTime = Utils.GetGlobalProperty("TOTAL_TIME_SPENT") + os.difftime(curTime, timeSpentLastUpdated)
+	Utils.SetGlobalProperty("TOTAL_TIME_SPENT", totalTime)
+	timeSpentLastUpdated = curTime
+	LuaEvents.OnUpdateTimeSpentItem()
+end
+
+Utils.GetTotalTimeSpent = function(table)
+	table["value"] = Utils.GetGlobalProperty("TOTAL_TIME_SPENT")
+end
+LuaEvents.OnGetTotalTimeSpent.Add(Utils.GetTotalTimeSpent)

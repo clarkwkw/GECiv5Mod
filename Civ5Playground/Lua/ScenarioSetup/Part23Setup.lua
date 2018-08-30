@@ -78,7 +78,7 @@ ListenerManager.AddIndividualTurnStartListener(
 	"NOTIFICATION_PART23_COMPLETED",
 	BuildingCountListenerFactory(
 		BUILDING_CLASS_ID,
-		1, 
+		NUM_BUILDING_REQUIRED, 
 		string.format(
 			Locale.Lookup("TXT_KEY_UGFN_PROGRESS_BUILD_TITLE"),
 			TXT_BUILDING

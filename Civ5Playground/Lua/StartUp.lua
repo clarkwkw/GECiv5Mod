@@ -11,6 +11,7 @@ Utils.GenerateCheckString()
 HistoricalEventManager.InitEvents()
 BerserkEnermyEventManager.InitEvents()
 Events.ActivePlayerTurnStart.Add(ListenerManager.ExecuteTurnStartListeners)
+Events.ActivePlayerTurnStart.Add(Utils.UpdateTotalTimeSpent)
 Events.ActivePlayerTurnStart.Add(AdvisorManager.TriggerOnePopUp)
 Events.ActivePlayerTurnEnd.Add(AdvisorManager.Dominate)
 Events.AdvisorDisplayHide.Add(AdvisorManager.TriggerOnePopUp)
@@ -51,19 +52,4 @@ elseif "UGFN Part 23" then
 	Events.NotificationAdded.Add(Utils.HandleFirstTurnNotificationAdded)
 	include("Part23Setup.lua")
 
-else
-	print("Map not selected, going to prompt reminder..")
-	WrongMapSettingsPopup = function()
-		AdvisorManager.GenerateAdvisorPopUp(
-			Game.GetActivePlayer(),
-			AdvisorTypes.ADVISOR_MILITARY, 
-			Locale.Lookup("TXT_KEY_UGFN_WRONG_SETTINGS_TITLE"),
-			Locale.Lookup("TXT_KEY_UGFN_WRONG_SETTINGS_MAP_MSG")
-		)
-		return false
-	end
-	ListenerManager.AddIndividualTurnStartListener(
-		"NOTIFICATION_WRONG_MAP_MSG",
-		WrongMapSettingsPopup
-	)
 end

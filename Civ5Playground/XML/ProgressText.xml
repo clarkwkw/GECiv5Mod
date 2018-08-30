@@ -17,6 +17,9 @@
     <Row Tag="TXT_KEY_GEF_PROGRESS_STARTTIME">
       <Text>Game start time</Text>
     </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_TOTALTIME">
+      <Text>You have played</Text>
+    </Row>
   </Language_en_US>
 
   <Language_zh_Hant_HK>
@@ -34,6 +37,9 @@
     </Row>
     <Row Tag="TXT_KEY_GEF_PROGRESS_STARTTIME">
       <Text>遊戲開始時間</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_TOTALTIME">
+      <Text>你已遊玩</Text>
     </Row>
   </Language_zh_Hant_HK>
 </GameData>

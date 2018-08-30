@@ -1,17 +1,3 @@
-
---- Shown on successfully founding the first city
-ListenerManager.AddIndividualTurnStartListener(
-	"NOTIFICATION_PALACE_BUILT",
-	BuildingCountListenerFactory(
-		GameInfo.BuildingClasses.BUILDINGCLASS_PALACE.ID, --- Palace 
-		1, 
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_TITLE"),
-		Locale.Lookup("TXT_KEY_UGFN_PROGRESS_PALACE_MSG"),
-		true
-	)
-
-)
-
 --- Add additional resouces for fast testing
 local testers = {}
 for key, player in pairs(Players) do
