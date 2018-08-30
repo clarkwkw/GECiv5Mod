@@ -52,7 +52,7 @@
 			<FounderCivId>CIVILIZATION_CHINA</FounderCivId>
 			<HolyCityName>Kaifeng</HolyCityName>
 			<FounderBelief1>BELIEF_PAPAL_PRIMACY</FounderBelief1>
-			<FounderBelief2>BELIEF_PAGODAS</FounderBelief2>
+			<FounderBelief2>BELIEF_SWORD_PLOWSHARES</FounderBelief2>
 			<FounderBelief3>BELIEF_RELIGIOUS_UNITY</FounderBelief3>
 		</Row>
 		<Row>
@@ -234,7 +234,7 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_FRANCE</CityCivId>
-			<CityName>Montpeiller</CityName>
+			<CityName>Marseilles</CityName>
 			<ReligionId>RELIGION_CHRISTIANITY</ReligionId>
 		</Row>
 		<Row>
