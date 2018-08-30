@@ -66,6 +66,7 @@
 		</Row>
 	</ScenarioReligion>
 	<ScenarioPantheon>
+		<!--
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_ENGLAND</CivId>
@@ -144,7 +145,7 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_KOREA</CivId>
-			<PantheonBelief>BELIEF_GOD_KING</PantheonBelief>
+			<PantheonBelief>BELIEF_MONUMENT_GODS</PantheonBelief>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -156,8 +157,7 @@
 			<CivId>CIVILIZATION_INDONESIA</CivId>
 			<PantheonBelief>BELIEF_SACRED_PATH</PantheonBelief>
 		</Row>
-	<!--
-	!-->
+		-->
 	</ScenarioPantheon>
 	<ScenarioCityReligion>
 		<Row>
