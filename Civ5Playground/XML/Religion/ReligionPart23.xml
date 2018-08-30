@@ -65,6 +65,105 @@
 			<FounderBelief3>BELIEF_DEFENDER_FAITH</FounderBelief3>
 		</Row>
 	</ScenarioReligion>
+	<!--
+	<ScenarioPantheon>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_ENGLAND</CivId>
+			<PantheonBelief>BELIEF_MESSENGER_GODS</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_FRANCE</CivId>
+			<PantheonBelief>BELIEF_GOD_CRAFTSMEN</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_AUSTRIA</CivId>
+			<PantheonBelief>BELIEF_FERTILITY_RITES</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_DENMARK</CivId>
+			<PantheonBelief>BELIEF_DANCE_AURORA</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_VENICE</CivId>
+			<PantheonBelief>BELIEF_GOD_SEA</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_POLAND</CivId>
+			<PantheonBelief>BELIEF_ORAL_TRADITION</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_RUSSIA</CivId>
+			<PantheonBelief>BELIEF_GOD_WAR</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_SPAIN</CivId>
+			<PantheonBelief>BELIEF_SACRED_WATERS</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_PORTUGAL</CivId>
+			<PantheonBelief>BELIEF_GODDESS_LOVE</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_OTTOMAN</CivId>
+			<PantheonBelief>BELIEF_STONE_CIRCLES</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_SONGHAI</CivId>
+			<PantheonBelief>BELIEF_DESERT_FOLKLORE</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_ETHIOPIA</CivId>
+			<PantheonBelief>GODDESS_HUNT</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_INCA</CivId>
+			<PantheonBelief>BELIEF_ANCESTOR_WORSHIP</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_PERSIA</CivId>
+			<PantheonBelief>BELIEF_ONE_WITH_NATURE</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_INDIA</CivId>
+			<PantheonBelief>BELIEF_GOD_FESTIVALS</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_MONGOL</CivId>
+			<PantheonBelief>BELIEF_FAITH_HEALERS</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_KOREA</CivId>
+			<PantheonBelief>BELIEF_GOD_KING</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_SIAM</CivId>
+			<PantheonBelief>BELIEF_OPEN_SKY</PantheonBelief>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CivId>CIVILIZATION_INDONESIA</CivId>
+			<PantheonBelief>BELIEF_SACRED_PATH</PantheonBelief>
+		</Row>
+	</ScenarioPantheon>
+	!-->
 	<ScenarioCityReligion>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -1129,13 +1228,4 @@
 			<ReligionId>RELIGION_ISLAM</ReligionId>
 		</Row>
 	</ScenarioCityReligion>
-	<!--
-	<ScenarioPantheon>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CivId>CIVILIZATION_CHINA</CivId>
-			<PantheonBelief>BELIEF_GODDESS_HUNT</PantheonBelief>
-		</Row>
-	</ScenarioPantheon>
-	-->
 </GameData>
