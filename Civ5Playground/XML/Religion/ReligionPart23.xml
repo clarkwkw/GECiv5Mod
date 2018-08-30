@@ -65,7 +65,6 @@
 			<FounderBelief3>BELIEF_DEFENDER_FAITH</FounderBelief3>
 		</Row>
 	</ScenarioReligion>
-	<!--
 	<ScenarioPantheon>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -96,11 +95,6 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CivId>CIVILIZATION_POLAND</CivId>
 			<PantheonBelief>BELIEF_ORAL_TRADITION</PantheonBelief>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CivId>CIVILIZATION_RUSSIA</CivId>
-			<PantheonBelief>BELIEF_GOD_WAR</PantheonBelief>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
@@ -162,8 +156,9 @@
 			<CivId>CIVILIZATION_INDONESIA</CivId>
 			<PantheonBelief>BELIEF_SACRED_PATH</PantheonBelief>
 		</Row>
-	</ScenarioPantheon>
+	<!--
 	!-->
+	</ScenarioPantheon>
 	<ScenarioCityReligion>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
