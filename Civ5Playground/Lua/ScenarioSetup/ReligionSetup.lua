@@ -6,9 +6,10 @@ SetupReligion = function(scenarioId)
 	for row in GameInfo.ScenarioPantheon{ScenarioId = scenarioId} do
 		print("\t", row.CivId, "->", row.PantheonBelief)
 		local player = GetPlayerById(row.CivId, civToPlayer, minorCivToPlayer)
+		local beliefType = GameInfo.Beliefs[row.PantheonBelief]
 
-		if player ~= nil then
-			Game.FoundPantheon(player:GetID(), BeliefTypes[row.PantheonBelief] or -1)
+		if player ~= nil and beliefType ~= nil then
+			Game.FoundPantheon(player:GetID(), beliefType.ID)
 		end
 	end
 
