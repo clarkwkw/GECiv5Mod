@@ -80,7 +80,7 @@ Utils.GetCurrentTime = function()
 	local ms = string.match(tostring(os.clock()), "%d%.(%d+)")
 	local hour, minute, second = date_table.hour, date_table.min, date_table.sec
 	local year, month, day = date_table.year, date_table.month, date_table.day
-	local result = string.format("%d-%d-%d %d:%d:%d", year, month, day, hour, minute, second)
+	local result = string.format("%d-%02d-%02d %02d:%02d:%02d", year, month, day, hour, minute, second)
 	return result
 end
 
@@ -168,10 +168,10 @@ Utils.UpdateTotalTimeSpent = function()
 	local totalTime = Utils.GetGlobalProperty("TOTAL_TIME_SPENT") + os.difftime(curTime, timeSpentLastUpdated)
 	Utils.SetGlobalProperty("TOTAL_TIME_SPENT", totalTime)
 	timeSpentLastUpdated = curTime
-	LuaEvents.OnUpdateTimeSpentItem()
+	return totalTime
 end
 
 Utils.GetTotalTimeSpent = function(table)
-	table["value"] = Utils.GetGlobalProperty("TOTAL_TIME_SPENT")
+	table["value"] = Utils.UpdateTotalTimeSpent()
 end
 LuaEvents.OnGetTotalTimeSpent.Add(Utils.GetTotalTimeSpent)

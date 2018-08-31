@@ -260,6 +260,8 @@ function UpdateDisplay()
 	SetSelectedCiv();
 
 	Controls.StartButton:SetDisabled(PreGame.IsRandomMapScript() or not PreGame.GetMapScript())
+
+	SelectCivilizationBlocker()
     
 end
 
@@ -602,6 +604,12 @@ function InputHandler( uiMsg, wParam, lParam )
 end
 
 ContextPtr:SetInputHandler( InputHandler );
+
+function SelectCivilizationBlocker()
+	local isBlocking = not IsWBMap(PreGame.GetMapScript())
+	Controls.CivilizationButton:SetHide(isBlocking)
+	Controls.CivilizationBlockingButton:SetHide(not isBlocking)
+end
 
 PreGame.SetRandomMapScript(true);
 Controls.StartButton:SetDisabled(PreGame.IsRandomMapScript() or not PreGame.GetMapScript())

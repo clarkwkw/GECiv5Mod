@@ -36,11 +36,12 @@ function UpdateDisplay()
 	LuaEvents.OnUpdateProgressItems(localPlayer)
 	Controls.ProgressStack:CalculateSize()
 
-
 	LuaEvents.OnUpdateTimeSpentItem()
+	Controls.TimeSpentStack:CalculateSize()
+
 	RecalcPanelSize()
 end
-Events.ActivePlayerTurnStart.Add(UpdateDisplay)
+ContextPtr:SetUpdate(UpdateDisplay)
 
 function OnAddIntProgressItem(object, itemText, current, required)
 	local progressText = string.format("%d/%d", current, required)
@@ -61,29 +62,20 @@ function OnAddTextProgressItem(object, itemText, progressText)
 end
 LuaEvents.OnAddTextProgressItem.Add(OnAddTextProgressItem)
 
-function OnUpdateTimeSpentItem()
-	if (ContextPtr:IsHidden()) then
-		return;
-	end
-	
-	if (IsGameCoreBusy()) then
-		return;
-	end
-	
+function OnUpdateTimeSpentItem()	
 	g_TimeSpentButtonIM:ResetInstances()
 	local timeSpentItem = g_TimeSpentButtonIM:GetInstance()
 	local table = {}
 	LuaEvents.OnGetTotalTimeSpent(table)
 
-	local secSpent = table["value"]
-	local hrSpent = math.floor(secSpent/3600)
-	local minSpent = math.floor((secSpent - 3600*hrSpent)/60)
+	local totalSecSpent = table["value"]
+	local hrSpent = math.floor(totalSecSpent/3600)
+	local minSpent = math.floor((totalSecSpent - 3600*hrSpent)/60)
+	local secSpent = totalSecSpent - 3600*hrSpent - 60*minSpent
 
 	IconHookup( GameInfo.Units.UNIT_SCOUT.PortraitIndex, 64, GameInfo.Units.UNIT_SCOUT.IconAtlas, timeSpentItem.Portrait )
 	timeSpentItem.ItemText:SetText(Locale.Lookup("TXT_KEY_GEF_PROGRESS_TOTALTIME"))
-	timeSpentItem.ProgressText:SetText(string.format("%02.0f:%02.0f", hrSpent, minSpent) )
-
-	Controls.TimeSpentStack:CalculateSize()
+	timeSpentItem.ProgressText:SetText(string.format("%02.0f:%02.0f:%02.0f", hrSpent, minSpent, secSpent) )
 end
 LuaEvents.OnUpdateTimeSpentItem.Add(OnUpdateTimeSpentItem)
 
