@@ -33,14 +33,6 @@ ListenerManager.AddGlobalTurnStartListener(
 	BerserkEnermyEventManager.TriggerEvents
 )
 
-if GameDefines.UGFN_DEBUG_MODE == 1 then
-	include("StatusChecking.lua")
-	ListenerManager.AddIndividualTurnStartListener(
-		"NOTIFICATION_DEBUG_MSG",
-		PopCheckingMsg
-	)
-end
-
 _, mapname, _ = Utils.SplitPath(PreGame.GetMapScript())
 print("Selected Map: " .. mapname)
 

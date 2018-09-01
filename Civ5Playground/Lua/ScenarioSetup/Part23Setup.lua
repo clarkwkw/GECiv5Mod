@@ -6,11 +6,15 @@ local TXT_BUILDING = Locale.Lookup("TXT_KEY_BUILDING_FACTORY")
 local NUM_BUILDING_REQUIRED = 4
 local TXT_RESEARCHED_NEXT_STEP = string.format(Locale.Lookup("TXT_KEY_RESEARCHED_NEXT_STEP"), TXT_BUILDING, TXT_BUILDING)
 
-local religionConfigured = Utils.GetGlobalProperty("Part23ReligionConfigured")
-if not religionConfigured then
+local firstTurnConfigLoaded = Utils.GetGlobalProperty("Part23FirstTurnConfigLoaded")
+if not firstTurnConfigLoaded then
 	include("ReligionSetup.lua")
 	SetupReligion("Part23")
-	Utils.SetGlobalProperty("Part23ReligionConfigured", true)
+	local civToPlayer = CreateCivToPlayerLookupTable()
+	local venice = civToPlayer[GameInfo.Civilizations["CIVILIZATION_VENICE"].ID]
+	local veniceTeam = Teams[venice:GetTeam()]
+	veniceTeam:SetHasTech(GameInfoTypes["TECH_OPTICS"], true)
+	Utils.SetGlobalProperty("Part23FirstTurnConfigLoaded", true)
 end
 
 function RequirementPopup()
@@ -120,3 +124,5 @@ function OnUpdateProgressItems(localPlayer)
 	)
 end
 LuaEvents.OnUpdateProgressItems.Add(OnUpdateProgressItems)
+
+--- Grant Optics to Venice
