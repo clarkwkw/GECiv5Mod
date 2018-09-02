@@ -9,7 +9,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_RESEARCHED_NEXT_STEP">
-			<Text>You can start to build [COLOR_BUILDING_TEXT]universities[ENDCOLOR]. [NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]Note: You need to keep hold on the cities with universities to satisfy the requirements of part 1.[ENDCOLOR]</Text>
+			<Text>You can start to build [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. [NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]Note: You need to keep hold on the cities with %s to satisfy the requirements of this part.[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
 			<Text>Progress: Constructed %s</Text>
@@ -18,7 +18,7 @@
 			<Text>[NEWLINE]Congrats! You have built [COLOR_FONT_GREEN]%d[ENDCOLOR] [COLOR_BUILDING_TEXT]%s[ENDCOLOR]. You just have [COLOR_FONT_GREEN]%d[ENDCOLOR] more to go.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG">
-			<Text>[NEWLINE]Congrats! You have built the required [COLOR_FONT_GREEN]%s[ENDCOLOR].</Text>
+			<Text>[NEWLINE]Congrats! You have built the required number of [COLOR_FONT_GREEN]%s[ENDCOLOR]. You can now save and submit the save file to your student helper.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_TITLE">
 			<Text>Progress: Researched %s</Text>
@@ -42,7 +42,7 @@
 		</Row>
 
 		<Row Tag="TXT_KEY_RESEARCHED_NEXT_STEP">
-			<Text>你可以開始興建[COLOR_BUILDING_TEXT]%s[ENDCOLOR]。[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]注意: 你必需控制建有%s的城市，以符合Part 1要求。[ENDCOLOR]</Text>
+			<Text>你可以開始興建[COLOR_BUILDING_TEXT]%s[ENDCOLOR]。[NEWLINE][NEWLINE][ICON_WAR][COLOR_FONT_RED]注意: 你必需控制建有 %s 的城市，以符合要求。[ENDCOLOR]</Text>
 		</Row>
 
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_TITLE">
@@ -52,7 +52,7 @@
 			<Text>[NEWLINE]恭喜! 你已成功建造 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間[COLOR_TECH_TEXT]%s[ENDCOLOR]，還需要 [COLOR_FONT_GREEN]%d[ENDCOLOR] 間。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_BUILD_FINISH_MSG">
-			<Text>[NEWLINE]恭喜! 你已成功建造所需的 [COLOR_FONT_GREEN]%s[ENDCOLOR]。</Text>
+			<Text>[NEWLINE]恭喜! 你已成功建造指定數量的 [COLOR_FONT_GREEN]%s[ENDCOLOR]。 你現在可以儲存遊戲，並將存檔傳送給student helper。</Text>
 		</Row>
 		<Row Tag="TXT_KEY_UGFN_PROGRESS_TECH_TITLE">
 			<Text>進度: 已研究%s</Text>
