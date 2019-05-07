@@ -254,5 +254,50 @@
     <Row Tag="TXT_KEY_CIV5_LUZON_TEXT">
       <Text>Luzon Description.</Text>
     </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SHIMAZU_CLAN">
+      <Text>Shimazu Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_SHIMAZU_CLAN_ADJ">
+      <Text>Shimazu Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_SHIMAZU_CLAN_TEXT">
+      <Text>Shimazu Clan Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_CHOSOKABE_CLAN">
+      <Text>Chosokabe Klan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_CHOSOKABE_CLAN_ADJ">
+      <Text>Chosokabe Klan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_CHOSOKABE_CLAN_TEXT">
+      <Text>Chosokabe Klan Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_HOJO_CLAN">
+      <Text>Hojo Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_HOJO_CLAN_ADJ">
+      <Text>Hojo Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_HOJO_CLAN_TEXT">
+      <Text>Hojo Clan Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_NANBU_CLAN">
+      <Text>Nanbu Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_NANBU_CLAN_ADJ">
+      <Text>Nanbu Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_NANBU_CLAN_TEXT">
+      <Text>Nanbu Clan Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_TAIOAN">
+      <Text>Taioan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_TAIOAN_ADJ">
+      <Text>Taioan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_TAIOAN_TEXT">
+      <Text>Taioan Description.</Text>
+    </Row>
   </Language_en_US>
 </GameData>

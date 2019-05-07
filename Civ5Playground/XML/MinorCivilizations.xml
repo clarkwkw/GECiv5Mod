@@ -366,6 +366,71 @@
 			<ArtStylePrefix>ASIAN </ArtStylePrefix>
 			<MinorCivTrait>MINOR_TRAIT_MERCANTILE</MinorCivTrait>
 		</Row>
+		<Row>
+			<Type>MINOR_CIV_SHIMAZU_CLAN</Type>
+			<Description>TXT_KEY_CITYSTATE_SHIMAZU_CLAN</Description>
+			<ShortDescription>TXT_KEY_CITYSTATE_SHIMAZU_CLAN</ShortDescription>
+			<Adjective>TXT_KEY_CITYSTATE_SHIMAZU_CLAN_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_CIV5_SHIMAZU_CLAN_TEXT</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_LIGHT_PURPLE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleSuffix>_ASIA</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<MinorCivTrait>MINOR_TRAIT_MARITIME</MinorCivTrait>
+		</Row>
+		<Row>
+			<Type>MINOR_CIV_CHOSOKABE_CLAN</Type>
+			<Description>TXT_KEY_CITYSTATE_CHOSOKABE_CLAN</Description>
+			<ShortDescription>TXT_KEY_CITYSTATE_CHOSOKABE_CLAN</ShortDescription>
+			<Adjective>TXT_KEY_CITYSTATE_CHOSOKABE_CLAN_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_CIV5_CHOSOKABE_CLAN_TEXT</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_LIGHT_GREEN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleSuffix>_ASIA</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<MinorCivTrait>MINOR_TRAIT_MILITARISTIC</MinorCivTrait>
+		</Row>
+		<Row>
+			<Type>MINOR_CIV_HOJO_CLAN</Type>
+			<Description>TXT_KEY_CITYSTATE_HOJO_CLAN</Description>
+			<ShortDescription>TXT_KEY_CITYSTATE_HOJO_CLAN</ShortDescription>
+			<Adjective>TXT_KEY_CITYSTATE_HOJO_CLAN_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_CIV5_HOJO_CLAN_TEXT</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_GRAY</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleSuffix>_ASIA</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<MinorCivTrait>MINOR_TRAIT_MERCANTILE</MinorCivTrait>
+		</Row>
+		<Row>
+			<Type>MINOR_CIV_NANBU_CLAN</Type>
+			<Description>TXT_KEY_CITYSTATE_NANBU_CLAN</Description>
+			<ShortDescription>TXT_KEY_CITYSTATE_NANBU_CLAN</ShortDescription>
+			<Adjective>TXT_KEY_CITYSTATE_NANBU_CLAN_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_CIV5_NANBU_CLAN_TEXT</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_LIGHT_ORANGE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleSuffix>_ASIA</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<MinorCivTrait>MINOR_TRAIT_CULTURED</MinorCivTrait>
+		</Row>
+		<Row>
+			<Type>MINOR_CIV_TAIOAN</Type>
+			<Description>TXT_KEY_CITYSTATE_TAIOAN</Description>
+			<ShortDescription>TXT_KEY_CITYSTATE_TAIOAN</ShortDescription>
+			<Adjective>TXT_KEY_CITYSTATE_TAIOAN_ADJ</Adjective>
+			<Civilopedia>TXT_KEY_CIV5_TAIOAN_TEXT</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_MINOR_GRAY</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleSuffix>_ASIA</ArtStyleSuffix>
+			<ArtStylePrefix>ASIAN </ArtStylePrefix>
+			<MinorCivTrait>MINOR_TRAIT_CULTURED</MinorCivTrait>
+		</Row>
 	</MinorCivilizations>
 
 	<MinorCivilization_CityNames>
@@ -480,6 +545,26 @@
 		<Row>
 			<MinorCivType>MINOR_CIV_LUZON</MinorCivType>
 			<CityName>TXT_KEY_CITYSTATE_LUZON</CityName>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SHIMAZU_CLAN</MinorCivType>
+			<CityName>TXT_KEY_CITYSTATE_SHIMAZU_CLAN</CityName>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_CHOSOKABE_CLAN</MinorCivType>
+			<CityName>TXT_KEY_CITYSTATE_CHOSOKAVE_CLAN</CityName>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_HOJO_CLAN</MinorCivType>
+			<CityName>TXT_KEY_CITYSTATE_HOJO_CLAN</CityName>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_NANBU_CLAN</MinorCivType>
+			<CityName>TXT_KEY_CITYSTATE_NANBU_CLAN</CityName>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_TAIOAN</MinorCivType>
+			<CityName>TXT_KEY_CITYSTATE_TAIOAN</CityName>
 		</Row>
 	</MinorCivilization_CityNames>
 
@@ -1157,6 +1242,116 @@
 		<Row>
 			<MinorCivType>MINOR_CIV_LUZON</MinorCivType>
 			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SHIMAZU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SHIMAZU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_NUKE</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SHIMAZU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SHIMAZU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_SHIMAZU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_CHOSOKABE_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_CHOSOKABE_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_NUKE</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_CHOSOKABE_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_CHOSOKABE_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_CHOSOKABE_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_HOJO_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_HOJO_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_NUKE</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_HOJO_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_HOJO_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_NANBU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_NANBU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_NUKE</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_NANBU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_NANBU_CLAN</MinorCivType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_TAIOAN</MinorCivType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_TAIOAN</MinorCivType>
+			<FlavorType>FLAVOR_NUKE</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_TAIOAN</MinorCivType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>0</Flavor>
+		</Row>
+		<Row>
+			<MinorCivType>MINOR_CIV_TAIOAN</MinorCivType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
 			<Flavor>10</Flavor>
 		</Row>
 	</MinorCivilization_Flavors>
