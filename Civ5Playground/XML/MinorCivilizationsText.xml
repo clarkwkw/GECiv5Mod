@@ -264,13 +264,13 @@
       <Text>Shimazu Clan Description.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITYSTATE_CHOSOKABE_CLAN">
-      <Text>Chosokabe Klan</Text>
+      <Text>Chosokabe Clan</Text>
     </Row>
     <Row Tag="TXT_KEY_CITYSTATE_CHOSOKABE_CLAN_ADJ">
-      <Text>Chosokabe Klan</Text>
+      <Text>Chosokabe Clan</Text>
     </Row>
     <Row Tag="TXT_KEY_CIV5_CHOSOKABE_CLAN_TEXT">
-      <Text>Chosokabe Klan Description.</Text>
+      <Text>Chosokabe Clan Description.</Text>
     </Row>
     <Row Tag="TXT_KEY_CITYSTATE_HOJO_CLAN">
       <Text>Hojo Clan</Text>
