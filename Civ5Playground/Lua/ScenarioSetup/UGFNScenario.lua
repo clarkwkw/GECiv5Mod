@@ -18,9 +18,20 @@ function UGFNScenario:New(o)
 	setmetatable(o, self)
     self.__index = self
 
-    local prev_progress = Utils.GetGlobalProperty("scenario_progress")
-    if prev_progress == nil then
-		Utils.SetGlobalProperty("scenario_progress", "none")
+    local building_constrcuted = Utils.GetPlayerProperty(Game.GetActivePlayer(), "scenario_building_constructed")
+    if building_constrcuted == nil then
+		Utils.SetPlayerProperty(Game.GetActivePlayer(), "scenario_building_constructed", 0)
+	end
+
+	local tech_researched = Utils.GetPlayerProperty(Game.GetActivePlayer(), "scenario_tech_researched")
+
+    if tech_researched == nil then
+		Utils.SetPlayerProperty(Game.GetActivePlayer(), "scenario_tech_researched", 0)
+	end
+
+	local victory_achieved = Utils.GetPlayerProperty(Game.GetActivePlayer(), "victory")
+	if victory_achieved == nil then
+		Utils.SetPlayerProperty(Game.GetActivePlayer(), "victory", 0)
 	end
 
     return o
@@ -50,10 +61,29 @@ function UGFNScenario:configureRequirementPopup()
 
 end
 
-function UGFNScenario:setProgress(progress)
-	Utils.SetGlobalProperty("scenario_progress", progress)
+function UGFNScenario:setTechResearched()
+	Utils.SetPlayerProperty(Game.GetActivePlayer(), "scenario_tech_researched", 1)
 end
 
+function UGFNScenario:setBuildingConstructed(count)
+	Utils.SetPlayerProperty(Game.GetActivePlayer(), "scenario_building_constructed", count)
+end
+
+function UGFNScenario:setVictoryAttained()
+	Utils.SetPlayerProperty(Game.GetActivePlayer(), "victory", 1)
+end
+
+function UGFNScenario:isTechResearched()
+	return Utils.GetPlayerProperty(Game.GetActivePlayer(), "scenario_tech_researched") == 1
+end
+
+function UGFNScenario:getBuildingConstructedCount()
+	return Utils.GetPlayerProperty(Game.GetActivePlayer(), "scenario_building_constructed")
+end
+
+function UGFNScenario:isVictoryAttained()
+	return Utils.GetPlayerProperty(Game.GetActivePlayer(), "victory") == 1
+end
 
 function UGFNScenario:configure_tech_researched_popup()
 	local txt_tech = Locale.Lookup(self.prerequiste_tech_txt_key)
@@ -74,19 +104,23 @@ function UGFNScenario:configure_tech_researched_popup()
 			true
 	)
 
-	local function listener()
-		local triggered = show_popup()
-		if triggered then
-			self.setProgress("tech_researched")
-		end
-		return triggered
-
-	end
 
 	ListenerManager.AddIndividualTurnStartListener(
 		"NOTIFICATION_TECH_RESEARCHED",
-		listener
+		show_popup
 	)
+
+	local update_progress = function(teamId, techType, adopted)
+		local team = Teams[teamId]
+		local player = Players[team:GetLeaderID()]
+		if (techType == GameInfoTypes[self.prerequiste_tech] and player:IsHuman()) then
+			self:setTechResearched(1)
+			GameEvents.TeamTechResearched.Remove(update_progress)
+		end
+	end
+
+	GameEvents.TeamTechResearched.Add(update_progress)
+
 end
 
 function UGFNScenario:configure_building_constructed_popup()
@@ -108,17 +142,10 @@ function UGFNScenario:configure_building_constructed_popup()
 			),	
 			true	
 		)
-		local function listener()
-			local triggered = show_popup()
-			if triggered then
-				self.setProgress(i)
-			end
-			return triggered
-		end	 	
 		ListenerManager.AddIndividualTurnStartListener(	
 			string.format("NOTIFICATION_BUILDING_CONSTRUCTED_%d", i),	
-			listener
-		)	
+			show_popup
+		)
 	end
 
 	local show_completed_popup = BuildingCountListenerFactory(
@@ -134,52 +161,55 @@ function UGFNScenario:configure_building_constructed_popup()
 		),
 			true
 	)
-
-	local function listener()
-		local triggered = show_completed_popup()
-		if triggered then
-			self.setProgress(self.n_building_required)
-		end
-		return triggered
-	end
 	ListenerManager.AddIndividualTurnStartListener(	
 		string.format("NOTIFICATION_BUILDING_CONSTRUCTED_%d", self.n_building_required),	
-		listener
+		show_completed_popup
 	)
+	
+	local update_progress = function(ownerId, cityId, buildingType, bGold, bFaithOrCulture)
+		local player = Players[ownerId]
+		if (buildingType == GameInfoTypes[self.building_type] and player:IsHuman()) then
+			self:setBuildingConstructed(self:getBuildingConstructedCount() + 1)
+		end
+	end
+	GameEvents.CityConstructed.Add(update_progress)	
 end
 
 function create_update_progress_item_hook(scenario)
-	function OnUpdateProgressItems(localPlayer)
-		local progress = Utils.GetGlobalProperty("scenario_progress")
-		researched = 0
-		if progress ~= "none" then
-			researched = 1
-		end
+	function OnUpdateProgressItems()
+		local buildingCount = scenario:getBuildingConstructedCount()
 
+		local researched_int = 0
+		if scenario:isTechResearched() == true then
+			researched_int = 1
+		end
 		LuaEvents.OnAddIntProgressItem(
 			GameInfo.Technologies[scenario.prerequiste_tech], 
 			Locale.Lookup(scenario.prerequiste_tech_txt_key), 
-			researched,
+			researched_int,
 			1
 		)
-		
-		built = 0
-		if progress ~= "none" and progress ~= "researched" then
-			built = progress
-		end
+
 		LuaEvents.OnAddIntProgressItem(
 			GameInfo.Buildings[scenario.building_type], 
 			Locale.Lookup(scenario.building_txt_key),
-			built,
+			buildingCount,
 			scenario.n_building_required
 		)
 
-		local myLeaderInfo = GameInfo.Leaders[localPlayer:GetLeaderType()];
+		local myLeaderInfo = GameInfo.Leaders[Utils.GetCurrentPlayer():GetLeaderType()];
 
 		LuaEvents.OnAddTextProgressItem(
 			myLeaderInfo, 
 			Locale.Lookup("TXT_KEY_GEF_PROGRESS_STARTTIME"), 
 			Utils.GetGlobalProperty("STARTTIME")
+		)
+
+		LuaEvents.OnAddIntProgressItem(
+			GameInfo.Buildings[scenario.building_type], 
+			Locale.Lookup("TXT_KEY_GEF_PROGRESS_Victory"),
+			scenario:isVictoryAttained() and 1 or 0,
+			1
 		)
 	end
 	return OnUpdateProgressItems
@@ -190,12 +220,14 @@ function UGFNScenario:configure_update_progress_item_hook()
 end
 
 function UGFNScenario:configure_victory_hook()
-	local listener = function()
-		if Game.GetActivePlayer():GetTeam() == Game:GetWinner() then
-			Utils.SetGlobalProperty("VICTORY", true)
+	local listener = function(endGameType, teamId)
+		if Utils.GetCurrentPlayer():GetTeam() == teamId then
+			self:setVictoryAttained()
+			Events.EndGameShow.Remove(listener)
 			return true
 		end
 	end
+	Events.EndGameShow.Add(listener)
 	ListenerManager.AddIndividualTurnStartListener(	
 		string.format("LISTENER_VICTORY"),	
 		listener
