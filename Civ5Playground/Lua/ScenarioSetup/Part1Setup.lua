@@ -6,7 +6,8 @@ part23Scenario = UGFNScenario:New({
 	building_txt_key = "TXT_KEY_BUILDING_UNIVERSITY",
 	n_building_required = 4,
 	prerequiste_tech = "TECH_EDUCATION",
-	prerequiste_tech_txt_key = "TXT_KEY_TECH_EDUCATION"
+	prerequiste_tech_txt_key = "TXT_KEY_TECH_EDUCATION",
+	require_victory = false
 })
 part23Scenario:configureRequirementPopup()
 part23Scenario:configure_tech_researched_popup()

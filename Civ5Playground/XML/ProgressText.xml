@@ -20,6 +20,9 @@
     <Row Tag="TXT_KEY_GEF_PROGRESS_TOTALTIME">
       <Text>You have played</Text>
     </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_Victory">
+      <Text>Attained victory</Text>
+    </Row>
   </Language_en_US>
 
   <Language_zh_Hant_HK>
@@ -40,6 +43,9 @@
     </Row>
     <Row Tag="TXT_KEY_GEF_PROGRESS_TOTALTIME">
       <Text>你已遊玩</Text>
+    </Row>
+    <Row Tag="TXT_KEY_GEF_PROGRESS_Victory">
+      <Text>獲取勝利</Text>
     </Row>
   </Language_zh_Hant_HK>
 </GameData>

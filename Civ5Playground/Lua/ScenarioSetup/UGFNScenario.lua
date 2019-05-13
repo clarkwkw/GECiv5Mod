@@ -6,7 +6,8 @@ function UGFNScenario:New(o)
 		"building_txt_key",
 		"n_building_required",
 		"prerequiste_tech",
-		"prerequiste_tech_txt_key"
+		"prerequiste_tech_txt_key",
+		"require_victory"
 	}
 
 	for i, key in ipairs(required_fields) do
@@ -196,20 +197,25 @@ function create_update_progress_item_hook(scenario)
 			buildingCount,
 			scenario.n_building_required
 		)
+		local object = GameInfo.Buildings[scenario.building_type]
 
+		if scenario.require_victory then
+			LuaEvents.OnAddIntProgressItem(
+				{
+					["IconAtlas"] = "UGFN_TROPHY_ATLAS_64",
+					["PortraitIndex"] = 0
+				},
+				Locale.Lookup("TXT_KEY_GEF_PROGRESS_Victory"),
+				scenario:isVictoryAttained() and 1 or 0,
+				1
+			)
+		end
 		local myLeaderInfo = GameInfo.Leaders[Utils.GetCurrentPlayer():GetLeaderType()];
 
 		LuaEvents.OnAddTextProgressItem(
 			myLeaderInfo, 
 			Locale.Lookup("TXT_KEY_GEF_PROGRESS_STARTTIME"), 
 			Utils.GetGlobalProperty("STARTTIME")
-		)
-
-		LuaEvents.OnAddIntProgressItem(
-			GameInfo.Buildings[scenario.building_type], 
-			Locale.Lookup("TXT_KEY_GEF_PROGRESS_Victory"),
-			scenario:isVictoryAttained() and 1 or 0,
-			1
 		)
 	end
 	return OnUpdateProgressItems

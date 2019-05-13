@@ -109,6 +109,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/ProgressText.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Atlas.xml</FileName>
+      </Action>
     </ModActions>
     <ModBlockers>
     </ModBlockers>
@@ -129,6 +134,10 @@
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Atlas\trophy_64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Lua\Achievements\Achievement.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -261,6 +270,10 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="XML\Atlas.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="XML\Buildings.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -336,6 +349,7 @@
     <Folder Include="Lua\Achievements" />
     <Folder Include="Lua\ScenarioSetup" />
     <Folder Include="Maps" />
+    <Folder Include="Atlas" />
     <Folder Include="UI" />
     <Folder Include="Overrides" />
     <Folder Include="XML" />

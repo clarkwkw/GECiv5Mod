@@ -17,7 +17,8 @@ part23Scenario = UGFNScenario:New({
 	building_txt_key = "TXT_KEY_BUILDING_FACTORY",
 	n_building_required = 4,
 	prerequiste_tech = "TECH_INDUSTRIALIZATION",
-	prerequiste_tech_txt_key = "TXT_KEY_TECH_INDUSTRIALIZATION"
+	prerequiste_tech_txt_key = "TXT_KEY_TECH_INDUSTRIALIZATION",
+	require_victory = true
 })
 part23Scenario:configureRequirementPopup()
 part23Scenario:configure_tech_researched_popup()
