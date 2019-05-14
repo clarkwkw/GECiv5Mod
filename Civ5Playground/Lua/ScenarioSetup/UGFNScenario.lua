@@ -6,7 +6,10 @@ function UGFNScenario:New(o)
 		"building_txt_key",
 		"n_building_required",
 		"prerequiste_tech",
-		"prerequiste_tech_txt_key",
+		"prerequiste_tech_txt_key"
+	}
+
+	local boolean_or_optional_fields = {
 		"require_victory"
 	}
 
