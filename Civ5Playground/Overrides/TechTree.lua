@@ -58,7 +58,6 @@ local blockSizeX = 270;
 local blockSpacingY = 68;
 local extraYOffset = 32;
 
-
 local maxTechNameLength = 32 - Locale.Length(Locale.Lookup("TXT_KEY_TURNS"));
 
 -------------------------------------------------
@@ -108,51 +107,6 @@ function InitialSetup()
 	local cnxUp = 2
 	local cnxDown = 4
 	
-	-- Figure out which left and right adapters we need
-	-- Morlark - Change pipe system so that branches converge at source tech rather than destination tech. 101012.
-	--[[
-	for row in GameInfo.Technology_PrereqTechs() do
-		local prereq = GameInfo.Technologies[row.PrereqTech];
-		local tech = GameInfo.Technologies[row.TechType];
-		if tech and prereq then
-			if tech.GridY < prereq.GridY then
-				techPipes[tech.Type].leftConnectionDown = true;
-				techPipes[prereq.Type].rightConnectionUp = true;
-			elseif tech.GridY > prereq.GridY then
-				techPipes[tech.Type].leftConnectionUp = true;
-				techPipes[prereq.Type].rightConnectionDown = true;
-			else -- tech.GridY == prereq.GridY
-				techPipes[tech.Type].leftConnectionCenter = true;
-				techPipes[prereq.Type].rightConnectionCenter = true;
-			end
-			local xOffset = (tech.GridX - prereq.GridX) - 1;
-			if xOffset > techPipes[prereq.Type].xOffset then
-				techPipes[prereq.Type].xOffset = xOffset;
-			end
-		end
-	end
-	for row in GameInfo.Technology_ORPrereqTechs() do
-		local prereq = GameInfo.Technologies[row.PrereqTech];
-		local tech = GameInfo.Technologies[row.TechType];
-		if tech and prereq then
-			if tech.GridY < prereq.GridY then
-				techPipes[tech.Type].leftConnectionDown = true;
-				techPipes[prereq.Type].rightConnectionUp = true;
-			elseif tech.GridY > prereq.GridY then
-				techPipes[tech.Type].leftConnectionUp = true;
-				techPipes[prereq.Type].rightConnectionDown = true;
-			else -- tech.GridY == prereq.GridY
-				techPipes[tech.Type].leftConnectionCenter = true;
-				techPipes[prereq.Type].rightConnectionCenter = true;
-			end
-			
-			local xOffset = (tech.GridX - prereq.GridX) - 1;
-			if xOffset > techPipes[prereq.Type].xOffset then
-				techPipes[prereq.Type].xOffset = xOffset;
-			end
-		end
-	end
-	]]--
 	for row in GameInfo.Technology_PrereqTechs() do
 		local prereq = GameInfo.Technologies[row.PrereqTech];
 		local tech = GameInfo.Technologies[row.TechType];
@@ -255,106 +209,6 @@ function InitialSetup()
 		-- End of Morlark's additions.
 	end
 
-
-
-	-- Morlark - Change pipe system so that branches converge at source tech rather than destination tech. 101012.
-	--[[
-	for row in GameInfo.Technology_PrereqTechs() do
-		local prereq = GameInfo.Technologies[row.PrereqTech];
-		local tech = GameInfo.Technologies[row.TechType];
-		if tech and prereq then
-			
-			if tech.GridX - prereq.GridX > 1 then
-				local hConnection = g_PipeManager:GetInstance();
-				hConnection.TechPipeIcon:SetOffsetVal(prereq.GridX*blockSpacingX + blockSizeX + 96, (prereq.GridY-5)*blockSpacingY + 12 + extraYOffset);
-				hConnection.TechPipeIcon:SetTexture(hTexture);
-				local size = { x = (tech.GridX-prereq.GridX - 1)*blockSpacingX + 4; y = 42; };
-				hConnection.TechPipeIcon:SetSize(size);
-			end
-			
-			if tech.GridY - prereq.GridY == 1 or tech.GridY - prereq.GridY == -1 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = (blockSpacingY / 2) + 8; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 2 or tech.GridY - prereq.GridY == -2 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, (tech.GridY-5)*blockSpacingY - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = (blockSpacingY * 3 / 2) + 8; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 3 or tech.GridY - prereq.GridY == -3 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 2 + 20; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-			
-			if tech.GridY - prereq.GridY == 4 or tech.GridY - prereq.GridY == -4 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 3 + 8; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-		
-		end
-	end
-
-	for row in GameInfo.Technology_ORPrereqTechs() do
-		local prereq = GameInfo.Technologies[row.PrereqTech];
-		local tech = GameInfo.Technologies[row.TechType];
-		if tech and prereq then
-		
-			if tech.GridX - prereq.GridX > 1 then
-				local hConnection = g_PipeManager:GetInstance();
-				hConnection.TechPipeIcon:SetOffsetVal(prereq.GridX*blockSpacingX + blockSizeX + 96, (prereq.GridY-5)*blockSpacingY + 12 + extraYOffset);
-				hConnection.TechPipeIcon:SetTexture(hTexture);
-				local size = { x = (tech.GridX-prereq.GridX - 1)*blockSpacingX + 4; y = 42; };
-				hConnection.TechPipeIcon:SetSize(size);
-			end
-			
-			if tech.GridY - prereq.GridY == 1 or tech.GridY - prereq.GridY == -1 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = (blockSpacingY / 2) + 8; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 2 or tech.GridY - prereq.GridY == -2 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, (tech.GridY-5)*blockSpacingY - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = (blockSpacingY * 3 / 2) + 8; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-			
-			if tech.GridY - prereq.GridY == 3 or tech.GridY - prereq.GridY == -3 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 2 + 20; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-			
-			if tech.GridY - prereq.GridY == 4 or tech.GridY - prereq.GridY == -4 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((tech.GridX-1)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 3 + 8; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-		
-		end
-	end
-	]]--
 	for row in GameInfo.Technology_PrereqTechs() do
 		local prereq = GameInfo.Technologies[row.PrereqTech];
 		local tech = GameInfo.Technologies[row.TechType];
@@ -391,52 +245,21 @@ function InitialSetup()
 				local size = { x = 32; y = blockSpacingY * 2 + 20; };
 				vConnection.TechPipeIcon:SetSize(size);
 			end
-			
+
 			if tech.GridY - prereq.GridY == 4 or tech.GridY - prereq.GridY == -4 then
 				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
+				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
 				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 3 + 11; };
+				local size = { x = 32; y = blockSpacingY * 3 + 20; };
 				vConnection.TechPipeIcon:SetSize(size);
 			end
-
-			if tech.GridY - prereq.GridY == 5 or tech.GridY - prereq.GridY == -5 then
+			
+			if math.abs(tech.GridY - prereq.GridY) >= 5 then
 				local vConnection = g_PipeManager:GetInstance();
+
 				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
 				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 4 + 11; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 6 or tech.GridY - prereq.GridY == -6 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 5 + 11; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 7 or tech.GridY - prereq.GridY == -7 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 6 + 11; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 8 or tech.GridY - prereq.GridY == -8 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 7 + 11; };
-				vConnection.TechPipeIcon:SetSize(size);
-			end
-
-			if tech.GridY - prereq.GridY == 9 or tech.GridY - prereq.GridY == -9 then
-				local vConnection = g_PipeManager:GetInstance();
-				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
-				vConnection.TechPipeIcon:SetTexture(vTexture);
-				local size = { x = 32; y = blockSpacingY * 8 + 11; };
+				local size = { x = 32; y = blockSpacingY * (math.abs(tech.GridY - prereq.GridY) - 1) + 11; };
 				vConnection.TechPipeIcon:SetSize(size);
 			end
 		
@@ -485,6 +308,15 @@ function InitialSetup()
 				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset);
 				vConnection.TechPipeIcon:SetTexture(vTexture);
 				local size = { x = 32; y = blockSpacingY * 3 + 20; };
+				vConnection.TechPipeIcon:SetSize(size);
+			end
+
+			if math.abs(tech.GridY - prereq.GridY) >= 5 then
+				local vConnection = g_PipeManager:GetInstance();
+
+				vConnection.TechPipeIcon:SetOffsetVal((prereq.GridX)*blockSpacingX + blockSizeX + 96, ((tech.GridY-5)*blockSpacingY) - (((tech.GridY-prereq.GridY) * blockSpacingY) / 2) + extraYOffset + 5);
+				vConnection.TechPipeIcon:SetTexture(vTexture);
+				local size = { x = 32; y = blockSpacingY * (math.abs(tech.GridY - prereq.GridY) - 1) + 11; };
 				vConnection.TechPipeIcon:SetSize(size);
 			end
 		
@@ -566,7 +398,7 @@ function InitialSetup()
 		end
 		
 		if thisPipe.leftConnectionType >= 1 then
-			
+
 			local startPipe = g_PipeManager:GetInstance();
 			startPipe.TechPipeIcon:SetOffsetVal( tech.GridX*blockSpacingX + 26, yOffset );
 			startPipe.TechPipeIcon:SetTexture(left1Texture);
