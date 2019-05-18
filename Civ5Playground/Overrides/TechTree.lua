@@ -13,9 +13,12 @@ include( "TechHelpInclude" );
 local m_PopupInfo = nil;
 local stealingTechTargetPlayerID = -1;
 
-local g_PipeManager = InstanceManager:new( "TechPipeInstance", "TechPipeIcon", Controls.TechTreeScrollPanel );
-local g_EraManager = InstanceManager:new( "EraBlockInstance", "EraBlock", Controls.EraStack );
-local g_TechInstanceManager = InstanceManager:new( "TechButtonInstance", "TechButton", Controls.TechTreeScrollPanel );
+
+local g_TectTreeManager = InstanceManager:new( "TechTreeInstance", "TechTreeScrollPanel", Controls.TechTreeVerticalScrollPanel );
+local g_TechTree = g_TectTreeManager:GetInstance()
+local g_PipeManager = InstanceManager:new( "TechPipeInstance", "TechPipeIcon", g_TechTree.TechTreeScrollPanel );
+local g_EraManager = InstanceManager:new( "EraBlockInstance", "EraBlock", g_TechTree.EraStack );
+local g_TechInstanceManager = InstanceManager:new( "TechButtonInstance", "TechButton", g_TechTree.TechTreeScrollPanel );
 
 local g_NeedsFullRefreshOnOpen = false;
 local g_NeedsFullRefresh = false;
@@ -184,7 +187,14 @@ end
 function InitialSetup()
 
 	-- make the scroll bar the correct size for the display size
-	Controls.TechTreeScrollBar:SetSizeX( Controls.TechTreeScrollPanel:GetSize().x - 150 );
+	g_TechTree.TechTreeScrollBar:SetSizeX( g_TechTree.TechTreeScrollPanel:GetSize().x - 150 );
+	Controls.TechTreeVerticalScrollBar:SetSizeY( Controls.TechTreeVerticalScrollPanel:GetSize().y - 57 );
+	Controls.VScrollDownButton:SetOffsetY( 19 + Controls.TechTreeVerticalScrollPanel:GetSize().y - 57 );
+
+	print("Sizes:")
+	print(Controls.TechTreeVerticalScrollPanel:GetSize().y)
+	print(Controls.VScrollUpButton:GetSize().y)
+	print(Controls.VScrollDownButton:GetSize().y)
 	
 	-- gather info about this player's unique units and buldings
 	GatherInfoAboutUniqueStuff( civType );
@@ -485,9 +495,9 @@ function InitialSetup()
 	end
 
 	-- resize the panel to fit the contents
-	Controls.EraStack:CalculateSize();
-	Controls.EraStack:ReprocessAnchoring();
-    Controls.TechTreeScrollPanel:CalculateInternalSize();
+	g_TechTree.EraStack:CalculateSize();
+	g_TechTree.EraStack:ReprocessAnchoring();
+    g_TechTree.TechTreeScrollPanel:CalculateInternalSize();
     
     --initialized = true;		
 end
@@ -957,7 +967,7 @@ function OnCloseButtonClicked ()
     Events.SerialEventGameMessagePopupProcessed.CallImmediate(ButtonPopupTypes.BUTTONPOPUP_TECH_TREE, 0);
     g_isOpen = false;	
 end
-Controls.CloseButton:RegisterCallback( Mouse.eLClick, OnCloseButtonClicked );
+g_TechTree.CloseButton:RegisterCallback( Mouse.eLClick, OnCloseButtonClicked );
 
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
