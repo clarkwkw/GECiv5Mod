@@ -272,6 +272,24 @@
     <Row Tag="TXT_KEY_CIV5_CHOSOKABE_CLAN_TEXT">
       <Text>Chosokabe Clan Description.</Text>
     </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MORI_CLAN">
+      <Text>Mori Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_MORI_CLAN_ADJ">
+      <Text>Mori Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_MORI_CLAN_TEXT">
+      <Text>Mori Clan Description.</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_UESUGI_CLAN">
+      <Text>Uesugi Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITYSTATE_UESUGI_CLAN_ADJ">
+      <Text>Uesugi Clan</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CIV5_UESUGI_CLAN_TEXT">
+      <Text>Uesugi Clan Description.</Text>
+    </Row>
     <Row Tag="TXT_KEY_CITYSTATE_HOJO_CLAN">
       <Text>Hojo Clan</Text>
     </Row>
@@ -290,14 +308,14 @@
     <Row Tag="TXT_KEY_CIV5_NANBU_CLAN_TEXT">
       <Text>Nanbu Clan Description.</Text>
     </Row>
-    <Row Tag="TXT_KEY_CITYSTATE_TAIOAN">
-      <Text>Taioan</Text>
+    <Row Tag="TXT_KEY_CITYSTATE_TOUNGOO">
+      <Text>Toungoo</Text>
     </Row>
-    <Row Tag="TXT_KEY_CITYSTATE_TAIOAN_ADJ">
-      <Text>Taioan</Text>
+    <Row Tag="TXT_KEY_CITYSTATE_TOUNGOO_ADJ">
+      <Text>Toungoo</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIV5_TAIOAN_TEXT">
-      <Text>Taioan Description.</Text>
+    <Row Tag="TXT_KEY_CIV5_TOUNGOO_TEXT">
+      <Text>Toungoo Description.</Text>
     </Row>
   </Language_en_US>
 </GameData>
