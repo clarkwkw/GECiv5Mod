@@ -1133,7 +1133,7 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_SHAN</CityCivId>
-			<CityName>Shan</CityName>
+			<CityName>Mong Yang</CityName>
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 		</Row>
 		<Row>
@@ -1170,6 +1170,12 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_TOUNGOO</CityCivId>
 			<CityName>Pegu</CityName>
+			<ReligionId>RELIGION_BUDDHISM</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_TOUNGOO</CityCivId>
+			<CityName>Ava</CityName>
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 		</Row>
 		<Row>
