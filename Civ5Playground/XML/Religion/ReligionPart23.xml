@@ -941,7 +941,7 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_KOREA</CityCivId>
-			<CityName>Hamheung</CityName>
+			<CityName>Pyongyang</CityName>
 			<ReligionId>RELIGION_CONFUCIANISM</ReligionId>
 		</Row>
 		<Row>
@@ -959,49 +959,25 @@
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_JAPAN</CityCivId>
-			<CityName>Satsuma</CityName>
+			<CityName>Mikawa</CityName>
 			<ReligionId>RELIGION_SHINTO</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_JAPAN</CityCivId>
-			<CityName>Kochi</CityName>
+			<CityName>Sagami</CityName>
 			<ReligionId>RELIGION_SHINTO</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_JAPAN</CityCivId>
-			<CityName>Owari</CityName>
-			<ReligionId>RELIGION_SHINTO</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_JAPAN</CityCivId>
-			<CityName>Edo</CityName>
-			<ReligionId>RELIGION_SHINTO</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_JAPAN</CityCivId>
-			<CityName>Osaki</CityName>
-			<ReligionId>RELIGION_SHINTO</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_JAPAN</CityCivId>
-			<CityName>Mutsu</CityName>
+			<CityName>Kai</CityName>
 			<ReligionId>RELIGION_SHINTO</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_SIAM</CityCivId>
 			<CityName>Ayutthaya</CityName>
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_SIAM</CityCivId>
-			<CityName>Pegu</CityName>
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 		</Row>
 		<Row>
@@ -1014,18 +990,6 @@
 			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>CIVILIZATION_SIAM</CityCivId>
 			<CityName>Vientiane</CityName>
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_SIAM</CityCivId>
-			<CityName>Vijaya</CityName>
-			<ReligionId>RELIGION_BUDDHISM</ReligionId>
-		</Row>
-		<Row>
-			<ScenarioId>Part23</ScenarioId>
-			<CityCivId>CIVILIZATION_SIAM</CityCivId>
-			<CityName>Champa</CityName>
 			<ReligionId>RELIGION_BUDDHISM</ReligionId>
 		</Row>
 		<Row>
@@ -1204,15 +1168,63 @@
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_TOUNGOO</CityCivId>
+			<CityName>Pegu</CityName>
+			<ReligionId>RELIGION_BUDDHISM</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_DAI_VIET</CityCivId>
 			<CityName>Dai La</CityName>
 			<ReligionId>RELIGION_CONFUCIANISM</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_DAI_VIET</CityCivId>
+			<CityName>Vijaya</CityName>
+			<ReligionId>RELIGION_BUDDHISM</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_DAI_VIET</CityCivId>
+			<CityName>Champa</CityName>
+			<ReligionId>RELIGION_BUDDHISM</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
 			<CityCivId>MINOR_CIV_RYUKYU</CityCivId>
 			<CityName>Shuri</CityName>
 			<ReligionId>RELIGION_CONFUCIANISM</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_SHIMAZU_CLAN</CityCivId>
+			<CityName>Satsuma</CityName>
+			<ReligionId>RELIGION_SHINTO</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_CHOSOKABE_CLAN</CityCivId>
+			<CityName>Tosa</CityName>
+			<ReligionId>RELIGION_SHINTO</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_MORI_CLAN</CityCivId>
+			<CityName>Aki</CityName>
+			<ReligionId>RELIGION_SHINTO</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_UESUGI_CLAN</CityCivId>
+			<CityName>Echigo</CityName>
+			<ReligionId>RELIGION_SHINTO</ReligionId>
+		</Row>
+		<Row>
+			<ScenarioId>Part23</ScenarioId>
+			<CityCivId>MINOR_CIV_NANBU_CLAN</CityCivId>
+			<CityName>Mutsu</CityName>
+			<ReligionId>RELIGION_SHINTO</ReligionId>
 		</Row>
 		<Row>
 			<ScenarioId>Part23</ScenarioId>
