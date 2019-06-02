@@ -72,6 +72,10 @@ local techButtons = {};
 local eraBlocks = {};
 local eraColumns = {};
 
+function mod(a, b)
+    return a - (math.floor(a/b)*b)
+end
+
 function isVerticalOffsetActivated(prereq)
 	local config = GameInfo.TechTreeVerticalPipeConfig{PrereqTechType=prereq.Type}()
 	return config ~= nil;
@@ -399,9 +403,10 @@ function InitialSetup()
 		if thisPipe.rightConnectionType >= 1 then
 			
 			local startPipe = g_PipeManager:GetInstance();
+			local startPipeExtendsion = mod(thisPipe.rightConnectionType, 2) == 0 and rightOffsetFromVertical or 0;
 			startPipe.TechPipeIcon:SetOffsetVal( tech.GridX*blockSpacingX + blockSizeX + 64, yOffset );
 			startPipe.TechPipeIcon:SetTexture(right1Texture);
-			startPipe.TechPipeIcon:SetSize(connectorSize);
+			startPipe.TechPipeIcon:SetSize({x = connectorSize.x + startPipeExtendsion; y = connectorSize.y});
 			
 			local pipe = g_PipeManager:GetInstance();			
 			if thisPipe.rightConnectionType == 1 then
@@ -463,11 +468,17 @@ function InitialSetup()
 			end
 		end
 
-		if thisPipe.leftConnectionType >= 1 then
+
+		if thisPipe.leftConnectionType >= 1 or thisPipe.leftOffsetConnectionType >= 1 then
+			local startPipeExtendsion = thisPipe.leftOffsetConnectionType >= 1  and rightOffsetFromVertical or 0;
+			startPipeExtendsion = startPipeExtendsion + (thisPipe.leftOffsetConnectionType == 1 and -1*connectorSize.x or 0);
 			local startPipe = g_PipeManager:GetInstance();
-			startPipe.TechPipeIcon:SetOffsetVal( tech.GridX*blockSpacingX + 26, yOffset );
+			startPipe.TechPipeIcon:SetOffsetVal( tech.GridX*blockSpacingX + 26 + startPipeExtendsion, yOffset );
 			startPipe.TechPipeIcon:SetTexture(left1Texture);
-			startPipe.TechPipeIcon:SetSize(	Vector2(40, 42) );
+			startPipe.TechPipeIcon:SetSize(	Vector2(40 - startPipeExtendsion, 42) );
+		end
+
+		if thisPipe.leftConnectionType >= 1 then
 			createLeftBranchIcon(tech.GridX, thisPipe.leftConnectionType, 0, 0, yOffset)
 		end
 
