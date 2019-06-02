@@ -9,10 +9,6 @@
 		</Row>
 	</BuildingClasses>
 	<Buildings>
-		<Update>
-			<Set PrereqTech="TECH_GRAPHICAL_ANALYSIS" />
-			<Where Type="BUILDING_NOTRE_DAME" />
-		</Update>
 		<Row>
 			<Type>BUILDING_DUMFREETECH</Type>
 			<BuildingClass>BUILDINGCLASS_DUMFREETECH</BuildingClass>

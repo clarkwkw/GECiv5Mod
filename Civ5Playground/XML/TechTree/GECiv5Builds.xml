@@ -1,0 +1,28 @@
+<GameData>
+  <Builds>
+    <Update>
+      <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="BUILD_LUMBERMILL" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ARCHERY" />
+      <Where Type="BUILD_CAMP" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_CALENDAR" />
+      <Where Type="BUILD_REMOVE_MARSH" />
+    </Update>
+    <Update>
+      <Set ID="32" />
+      <Where Type="BUILD_POLDER" />
+    </Update>
+    <Update>
+      <Set ID="33" PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="BUILD_TERRACE_FARM" />
+    </Update>
+    <Update>
+      <Set ID="34" PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="BUILD_MOAI" />
+    </Update>
+  </Builds>
+</GameData>

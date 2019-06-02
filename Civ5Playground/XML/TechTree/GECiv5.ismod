@@ -1,0 +1,19 @@
+<ISMod Prefix="GECiv5">
+  <File>GECiv5GameText.xml</File>
+  <File>GECiv5Technologies.xml</File>
+  <File>GECiv5GenericFunctionalities.xml</File>
+  <File>GECiv5Units.xml</File>
+  <File>GECiv5Improvements.xml</File>
+  <File>GECiv5Leaders.xml</File>
+  <File>GECiv5Builds.xml</File>
+  <File>GECiv5Resources.xml</File>
+  <File>GECiv5BuildingClasses.xml</File>
+  <File>GECiv5Civilizations.xml</File>
+  <File>GECiv5Buildings.xml</File>
+  <File>GECiv5Traits.xml</File>
+  <File>GECiv5Processes.xml</File>
+  <File>GECiv5PlayerColors.xml</File>
+  <File>GECiv5Colors.xml</File>
+  <File>GECiv5Concepts.xml</File>
+  <File>GECiv5GameOptions.xml</File>
+</ISMod>

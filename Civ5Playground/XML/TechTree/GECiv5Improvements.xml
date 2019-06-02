@@ -1,0 +1,23 @@
+<GameData>
+  <Improvement_TechYieldChanges>
+    <Delete ImprovementType="IMPROVEMENT_MANUFACTORY" TechType="TECH_CHEMISTRY" YieldType="YIELD_PRODUCTION" Yield="1" />
+    <Row>
+      <ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
+      <TechType>TECH_PHYSICS</TechType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
+      <TechType>TECH_PRINTING_PRESS</TechType>
+      <YieldType>YIELD_CULTURE</YieldType>
+      <Yield>2</Yield>
+    </Row>
+  </Improvement_TechYieldChanges>
+  <Improvements>
+    <Update>
+      <Set ID="28" />
+      <Where Type="IMPROVEMENT_POLDER" />
+    </Update>
+  </Improvements>
+</GameData>

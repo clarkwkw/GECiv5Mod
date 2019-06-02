@@ -1,0 +1,22 @@
+<GameData>
+    <Table name="TechTreeVerticalPipeConfig">
+		<Column name="PrereqTechType" type="text" notnull="true" unique="true"/>
+	</Table>
+	<TechTreeVerticalPipeConfig>
+		<Row>
+			<PrereqTechType>TECH_MYTHOLOGY</PrereqTechType>
+		</Row>
+		<Row>
+			<PrereqTechType>TECH_MATHEMATICS</PrereqTechType>
+		</Row>
+		<Row>
+			<PrereqTechType>TECH_BRONZE_WORKING</PrereqTechType>
+		</Row>
+		<Row>
+			<PrereqTechType>TECH_RATIONALISM</PrereqTechType>
+		</Row>
+		<Row>
+			<PrereqTechType>TECH_PRINTING_PRESS</PrereqTechType>
+		</Row>
+	</TechTreeVerticalPipeConfig>
+</GameData>

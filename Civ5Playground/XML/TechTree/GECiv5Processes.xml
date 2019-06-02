@@ -1,0 +1,8 @@
+<GameData>
+  <Processes>
+    <Update>
+      <Set TechPrereq="TECH_UNIVERSITY_EDUCATION" />
+      <Where Type="PROCESS_RESEARCH" />
+    </Update>
+  </Processes>
+</GameData>

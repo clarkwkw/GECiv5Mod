@@ -1,0 +1,104 @@
+<GameData>
+  <GameOptions>
+    <Update>
+      <Set ID="4" />
+      <Where Type="GAMEOPTION_NO_CITY_RAZING" />
+    </Update>
+    <Update>
+      <Set ID="5" />
+      <Where Type="GAMEOPTION_NO_BARBARIANS" />
+    </Update>
+    <Update>
+      <Set ID="6" />
+      <Where Type="GAMEOPTION_RAGING_BARBARIANS" />
+    </Update>
+    <Update>
+      <Set ID="7" />
+      <Where Type="GAMEOPTION_ALWAYS_WAR" />
+    </Update>
+    <Update>
+      <Set ID="8" />
+      <Where Type="GAMEOPTION_ALWAYS_PEACE" />
+    </Update>
+    <Update>
+      <Set ID="9" />
+      <Where Type="GAMEOPTION_ONE_CITY_CHALLENGE" />
+    </Update>
+    <Update>
+      <Set ID="10" />
+      <Where Type="GAMEOPTION_NO_CHANGING_WAR_PEACE" />
+    </Update>
+    <Update>
+      <Set ID="11" />
+      <Where Type="GAMEOPTION_NEW_RANDOM_SEED" />
+    </Update>
+    <Update>
+      <Set ID="12" />
+      <Where Type="GAMEOPTION_LOCK_MODS" />
+    </Update>
+    <Update>
+      <Set ID="13" />
+      <Where Type="GAMEOPTION_COMPLETE_KILLS" />
+    </Update>
+    <Update>
+      <Set ID="14" />
+      <Where Type="GAMEOPTION_NO_GOODY_HUTS" />
+    </Update>
+    <Update>
+      <Set ID="15" />
+      <Where Type="GAMEOPTION_RANDOM_PERSONALITIES" />
+    </Update>
+    <Update>
+      <Set ID="16" />
+      <Where Type="GAMEOPTION_POLICY_SAVING" />
+    </Update>
+    <Update>
+      <Set ID="17" />
+      <Where Type="GAMEOPTION_PROMOTION_SAVING" />
+    </Update>
+    <Update>
+      <Set ID="18" />
+      <Where Type="GAMEOPTION_END_TURN_TIMER_ENABLED" />
+    </Update>
+    <Update>
+      <Set ID="19" />
+      <Where Type="GAMEOPTION_SIMULTANEOUS_TURNS" />
+    </Update>
+    <Update>
+      <Set ID="20" />
+      <Where Type="GAMEOPTION_DYNAMIC_TURNS" />
+    </Update>
+    <Update>
+      <Set ID="21" />
+      <Where Type="GAMEOPTION_PITBOSS" />
+    </Update>
+    <Update>
+      <Set ID="22" />
+      <Where Type="GAMEOPTION_QUICK_COMBAT" />
+    </Update>
+    <Update>
+      <Set ID="23" />
+      <Where Type="GAMEOPTION_DISABLE_START_BIAS" />
+    </Update>
+    <Update>
+      <Set ID="24" />
+      <Where Type="GAMEOPTION_NO_SCIENCE" />
+    </Update>
+    <Update>
+      <Set ID="25" />
+      <Where Type="GAMEOPTION_NO_POLICIES" />
+    </Update>
+    <Update>
+      <Set ID="26" />
+      <Where Type="GAMEOPTION_NO_HAPPINESS" />
+    </Update>
+    <Update>
+      <Set ID="27" />
+      <Where Type="GAMEOPTION_NO_TUTORIAL" />
+    </Update>
+    <Update>
+      <Set ID="28" />
+      <Where Type="GAMEOPTION_QUICK_MOVEMENT" />
+    </Update>
+  </GameOptions>
+</GameData>

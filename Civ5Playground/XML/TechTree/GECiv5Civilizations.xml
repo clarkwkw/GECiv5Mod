@@ -1,0 +1,20 @@
+<GameData>
+  <Civilizations>
+    <Update>
+      <Set ID="41" />
+      <Where Type="CIVILIZATION_HUNS" />
+    </Update>
+    <Update>
+      <Set ID="42" />
+      <Where Type="CIVILIZATION_MAYA" />
+    </Update>
+    <Update>
+      <Set ID="43" />
+      <Where Type="CIVILIZATION_NETHERLANDS" />
+    </Update>
+    <Update>
+      <Set ID="44" />
+      <Where Type="CIVILIZATION_SWEDEN" />
+    </Update>
+  </Civilizations>
+</GameData>

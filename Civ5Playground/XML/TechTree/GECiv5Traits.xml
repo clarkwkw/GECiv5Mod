@@ -1,0 +1,28 @@
+<GameData>
+  <Traits>
+    <Update>
+      <Set ID="42" />
+      <Where Type="TRAIT_SEVEN_CITIES" />
+    </Update>
+    <Update>
+      <Set ID="43" />
+      <Where Type="TRAIT_VIKING_FURY" />
+    </Update>
+    <Update>
+      <Set ID="44" />
+      <Where Type="TRAIT_INGENIOUS" />
+    </Update>
+    <Update>
+      <Set ID="45" />
+      <Where Type="TRAIT_GREAT_ANDEAN_ROAD" />
+    </Update>
+    <Update>
+      <Set ID="46" />
+      <Where Type="TRAIT_TERROR" />
+    </Update>
+    <Update>
+      <Set ID="47" />
+      <Where Type="TRAIT_WAYFINDING" />
+    </Update>
+  </Traits>
+</GameData>

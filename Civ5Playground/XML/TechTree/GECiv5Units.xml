@@ -1,0 +1,235 @@
+<GameData>
+  <UnitPromotions_Terrains>
+    <Delete PromotionType="PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY" TerrainType="TERRAIN_OCEAN" Attack="0" Defense="0" DoubleMove="false" Impassable="true" PassableTech="TECH_ASTRONOMY" PediaType="" />
+    <Row>
+      <PromotionType>PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY</PromotionType>
+      <TerrainType>TERRAIN_OCEAN</TerrainType>
+      <Impassable>true</Impassable>
+      <PassableTech>TECH_SCIENTIFIC_METHOD</PassableTech>
+    </Row>
+  </UnitPromotions_Terrains>
+  <UnitPromotions>
+    <Update>
+      <Set ID="199" />
+      <Where Type="PROMOTION_NAVAL_BONUS" />
+    </Update>
+    <Update>
+      <Set ID="200" />
+      <Where Type="PROMOTION_FEARED_ELEPHANT" />
+    </Update>
+    <Update>
+      <Set ID="201" />
+      <Where Type="PROMOTION_FLANK_ATTACK_BONUS" />
+    </Update>
+    <Update>
+      <Set ID="202" />
+      <Where Type="PROMOTION_DEFEND_NEAR_CAPITAL" />
+    </Update>
+    <Update>
+      <Set ID="203" />
+      <Where Type="PROMOTION_EMBARKED_SIGHT" />
+    </Update>
+    <Update>
+      <Set ID="204" />
+      <Where Type="PROMOTION_MOVEMENT_TO_GENERAL" />
+    </Update>
+    <Update>
+      <Set ID="205" />
+      <Where Type="PROMOTION_GENERAL_STACKING" />
+    </Update>
+    <Update>
+      <Set ID="206" />
+      <Where Type="PROMOTION_ONLY_ATTACKS_CITIES" />
+    </Update>
+    <Update>
+      <Set ID="207" />
+      <Where Type="PROMOTION_WAR_CANOES" />
+    </Update>
+    <Update>
+      <Set ID="208" />
+      <Where Type="PROMOTION_PRIZE_SHIPS" />
+    </Update>
+    <Update>
+      <Set ID="209" />
+      <Where Type="PROMOTION_GREAT_ADMIRAL" />
+    </Update>
+    <Update>
+      <Set ID="210" />
+      <Where Type="PROMOTION_UNWELCOME_EVANGELIST" />
+    </Update>
+    <Update>
+      <Set ID="211" />
+      <Where Type="PROMOTION_WITHDRAW_BEFORE_MELEE" />
+    </Update>
+    <Update>
+      <Set ID="212" />
+      <Where Type="PROMOTION_SKI_INFANTRY" />
+    </Update>
+    <Update>
+      <Set ID="213" />
+      <Where Type="PROMOTION_HAKA_WAR_DANCE" />
+    </Update>
+  </UnitPromotions>
+  <Units>
+    <Update>
+      <Set PrereqTech="TECH_CHIVALRY" />
+      <Where Type="UNIT_ZULU_IMPI" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_POLISH_WINGED_HUSSAR" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVIGATION" />
+      <Where Type="UNIT_PORTUGUESE_NAU" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Where Type="UNIT_ENGLISH_SHIPOFTHELINE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVIGATION" />
+      <Where Type="UNIT_CARAVEL" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_SCIENTIFIC_METHOD" />
+      <Where Type="UNIT_TRIREME" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_LANCER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_OTTOMAN_SIPAHI" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_GUNPOWDER" />
+      <Where Type="UNIT_CANNON" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MACHINERY" />
+      <Where Type="UNIT_TREBUCHET" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_CHIVALRY" ObsoleteTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_PIKEMAN" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_GUILDS" />
+      <Where Type="UNIT_GERMAN_LANDSKNECHT" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="UNIT_CATAPULT" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="UNIT_ROMAN_BALLISTA" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="UNIT_ARCHER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_DANISH_BERSERKER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="UNIT_INCAN_SLINGER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="UNIT_BABYLONIAN_BOWMAN" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVIGATION" />
+      <Where Type="UNIT_KOREAN_TURTLE_SHIP" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MACHINERY" />
+      <Where Type="UNIT_KOREAN_HWACHA" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Where Type="UNIT_MAYAN_ATLATLIST" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_SCIENTIFIC_METHOD" />
+      <Where Type="UNIT_BYZANTINE_DROMON" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_SCIENTIFIC_METHOD" />
+      <Where Type="UNIT_CARTHAGINIAN_QUINQUEREME" />
+    </Update>
+    <Update>
+      <Set ID="131" />
+      <Where Type="UNIT_MISSIONARY" />
+    </Update>
+    <Update>
+      <Set ID="132" PrereqTech="TECH_MATHEMATICS" />
+      <Where Type="UNIT_COMPOSITE_BOWMAN" />
+    </Update>
+    <Update>
+      <Set ID="133" />
+      <Where Type="UNIT_GALLEASS" />
+    </Update>
+    <Update>
+      <Set ID="134" />
+      <Where Type="UNIT_GREAT_WAR_INFANTRY" />
+    </Update>
+    <Update>
+      <Set ID="135" />
+      <Where Type="UNIT_MARINE" />
+    </Update>
+    <Update>
+      <Set ID="136" />
+      <Where Type="UNIT_TRIPLANE" />
+    </Update>
+    <Update>
+      <Set ID="137" />
+      <Where Type="UNIT_WWI_BOMBER" />
+    </Update>
+    <Update>
+      <Set ID="138" />
+      <Where Type="UNIT_WWI_TANK" />
+    </Update>
+    <Update>
+      <Set ID="139" />
+      <Where Type="UNIT_MACHINE_GUN" />
+    </Update>
+    <Update>
+      <Set ID="140" />
+      <Where Type="UNIT_SWEDISH_CAROLEAN" />
+    </Update>
+    <Update>
+      <Set ID="141" PrereqTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_SWEDISH_HAKKAPELIITTA" />
+    </Update>
+    <Update>
+      <Set ID="142" />
+      <Where Type="UNIT_HUN_BATTERING_RAM" />
+    </Update>
+    <Update>
+      <Set ID="143" PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Where Type="UNIT_PRIVATEER" />
+    </Update>
+    <Update>
+      <Set ID="144" PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Where Type="UNIT_DUTCH_SEA_BEGGAR" />
+    </Update>
+    <Update>
+      <Set ID="145" />
+      <Where Type="UNIT_INQUISITOR" />
+    </Update>
+    <Update>
+      <Set ID="146" />
+      <Where Type="UNIT_GREAT_ADMIRAL" />
+    </Update>
+    <Update>
+      <Set ID="147" />
+      <Where Type="UNIT_GATLINGGUN" />
+    </Update>
+  </Units>
+</GameData>

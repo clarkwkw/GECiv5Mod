@@ -1,0 +1,344 @@
+<GameData>
+  <PlayerColors>
+    <Update>
+      <Set ID="21" />
+      <Where Type="PLAYERCOLOR_HUNS" />
+    </Update>
+    <Update>
+      <Set ID="22" />
+      <Where Type="PLAYERCOLOR_MAYA" />
+    </Update>
+    <Update>
+      <Set ID="23" />
+      <Where Type="PLAYERCOLOR_NETHERLANDS" />
+    </Update>
+    <Update>
+      <Set ID="24" />
+      <Where Type="PLAYERCOLOR_SWEDEN" />
+    </Update>
+    <Update>
+      <Set ID="25" />
+      <Where Type="PLAYERCOLOR_BLACK" />
+    </Update>
+    <Update>
+      <Set ID="26" />
+      <Where Type="PLAYERCOLOR_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="27" />
+      <Where Type="PLAYERCOLOR_BROWN" />
+    </Update>
+    <Update>
+      <Set ID="28" />
+      <Where Type="PLAYERCOLOR_CYAN" />
+    </Update>
+    <Update>
+      <Set ID="29" />
+      <Where Type="PLAYERCOLOR_DARK_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="30" />
+      <Where Type="PLAYERCOLOR_DARK_CYAN" />
+    </Update>
+    <Update>
+      <Set ID="31" />
+      <Where Type="PLAYERCOLOR_DARK_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="32" />
+      <Where Type="PLAYERCOLOR_DARK_PINK" />
+    </Update>
+    <Update>
+      <Set ID="33" />
+      <Where Type="PLAYERCOLOR_DARK_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="34" />
+      <Where Type="PLAYERCOLOR_DARK_RED" />
+    </Update>
+    <Update>
+      <Set ID="35" />
+      <Where Type="PLAYERCOLOR_DARK_YELLOW" />
+    </Update>
+    <Update>
+      <Set ID="36" />
+      <Where Type="PLAYERCOLOR_GRAY" />
+    </Update>
+    <Update>
+      <Set ID="37" />
+      <Where Type="PLAYERCOLOR_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="38" />
+      <Where Type="PLAYERCOLOR_ORANGE" />
+    </Update>
+    <Update>
+      <Set ID="39" />
+      <Where Type="PLAYERCOLOR_PEACH" />
+    </Update>
+    <Update>
+      <Set ID="40" />
+      <Where Type="PLAYERCOLOR_PINK" />
+    </Update>
+    <Update>
+      <Set ID="41" />
+      <Where Type="PLAYERCOLOR_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="42" />
+      <Where Type="PLAYERCOLOR_RED" />
+    </Update>
+    <Update>
+      <Set ID="43" />
+      <Where Type="PLAYERCOLOR_WHITE" />
+    </Update>
+    <Update>
+      <Set ID="44" />
+      <Where Type="PLAYERCOLOR_YELLOW" />
+    </Update>
+    <Update>
+      <Set ID="45" />
+      <Where Type="PLAYERCOLOR_LIGHT_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="46" />
+      <Where Type="PLAYERCOLOR_LIGHT_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="47" />
+      <Where Type="PLAYERCOLOR_LIGHT_YELLOW" />
+    </Update>
+    <Update>
+      <Set ID="48" />
+      <Where Type="PLAYERCOLOR_LIGHT_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="49" />
+      <Where Type="PLAYERCOLOR_LIGHT_ORANGE" />
+    </Update>
+    <Update>
+      <Set ID="50" />
+      <Where Type="PLAYERCOLOR_MIDDLE_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="51" />
+      <Where Type="PLAYERCOLOR_DARK_GRAY" />
+    </Update>
+    <Update>
+      <Set ID="52" />
+      <Where Type="PLAYERCOLOR_MIDDLE_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="53" />
+      <Where Type="PLAYERCOLOR_DARK_LEMON" />
+    </Update>
+    <Update>
+      <Set ID="54" />
+      <Where Type="PLAYERCOLOR_MIDDLE_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="55" />
+      <Where Type="PLAYERCOLOR_MIDDLE_CYAN" />
+    </Update>
+    <Update>
+      <Set ID="56" />
+      <Where Type="PLAYERCOLOR_LIGHT_BROWN" />
+    </Update>
+    <Update>
+      <Set ID="57" />
+      <Where Type="PLAYERCOLOR_DARK_ORANGE" />
+    </Update>
+    <Update>
+      <Set ID="58" />
+      <Where Type="PLAYERCOLOR_DARK_DARK_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="59" />
+      <Where Type="PLAYERCOLOR_DARK_INDIGO" />
+    </Update>
+    <Update>
+      <Set ID="60" />
+      <Where Type="PLAYERCOLOR_RED_AND_GOLD" />
+    </Update>
+    <Update>
+      <Set ID="61" />
+      <Where Type="PLAYERCOLOR_GOLD_AND_BLACK" />
+    </Update>
+    <Update>
+      <Set ID="62" />
+      <Where Type="PLAYERCOLOR_GREEN_AND_BLACK" />
+    </Update>
+    <Update>
+      <Set ID="63" />
+      <Where Type="PLAYERCOLOR_DARK_CYAN_AND_LEMON" />
+    </Update>
+    <Update>
+      <Set ID="64" />
+      <Where Type="PLAYERCOLOR_BLACK_AND_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="65" />
+      <Where Type="PLAYERCOLOR_GREEN_AND_WHITE" />
+    </Update>
+    <Update>
+      <Set ID="66" />
+      <Where Type="PLAYERCOLOR_CYAN_AND_GRAY" />
+    </Update>
+    <Update>
+      <Set ID="67" />
+      <Where Type="PLAYERCOLOR_DARK_INDIGO_AND_WHITE" />
+    </Update>
+    <Update>
+      <Set ID="68" />
+      <Where Type="PLAYERCOLOR_ORANGE_AND_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="69" />
+      <Where Type="PLAYERCOLOR_BARBARIAN" />
+    </Update>
+    <Update>
+      <Set ID="70" />
+      <Where Type="PLAYERCOLOR_MINOR_WHITE" />
+    </Update>
+    <Update>
+      <Set ID="71" />
+      <Where Type="PLAYERCOLOR_MINOR_GRAY" />
+    </Update>
+    <Update>
+      <Set ID="72" />
+      <Where Type="PLAYERCOLOR_MINOR_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="73" />
+      <Where Type="PLAYERCOLOR_MINOR_MIDDLE_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="74" />
+      <Where Type="PLAYERCOLOR_MINOR_CYAN" />
+    </Update>
+    <Update>
+      <Set ID="75" />
+      <Where Type="PLAYERCOLOR_MINOR_MIDDLE_CYAN" />
+    </Update>
+    <Update>
+      <Set ID="76" />
+      <Where Type="PLAYERCOLOR_MINOR_PEACH" />
+    </Update>
+    <Update>
+      <Set ID="77" />
+      <Where Type="PLAYERCOLOR_MINOR_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="78" />
+      <Where Type="PLAYERCOLOR_MINOR_LIGHT_GREEN" />
+    </Update>
+    <Update>
+      <Set ID="79" />
+      <Where Type="PLAYERCOLOR_MINOR_LIGHT_BLUE" />
+    </Update>
+    <Update>
+      <Set ID="80" />
+      <Where Type="PLAYERCOLOR_MINOR_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="81" />
+      <Where Type="PLAYERCOLOR_MINOR_MIDDLE_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="82" />
+      <Where Type="PLAYERCOLOR_MINOR_LIGHT_PURPLE" />
+    </Update>
+    <Update>
+      <Set ID="83" />
+      <Where Type="PLAYERCOLOR_MINOR_LIGHT_ORANGE" />
+    </Update>
+    <Update>
+      <Set ID="84" />
+      <Where Type="PLAYERCOLOR_MINOR_YELLOW" />
+    </Update>
+    <Update>
+      <Set ID="85" />
+      <Where Type="PLAYERCOLOR_MINOR_LIGHT_YELLOW" />
+    </Update>
+    <Update>
+      <Set ID="86" />
+      <Where Type="PLAYERCOLOR_MINOR_GOLDENROD" />
+    </Update>
+    <Update>
+      <Set ID="87" />
+      <Where Type="PLAYERCOLOR_MINOR_DARK_LEMON" />
+    </Update>
+    <Update>
+      <Set ID="88" />
+      <Where Type="PLAYERCOLOR_AMERICA" />
+    </Update>
+    <Update>
+      <Set ID="89" />
+      <Where Type="PLAYERCOLOR_ARABIA" />
+    </Update>
+    <Update>
+      <Set ID="90" />
+      <Where Type="PLAYERCOLOR_AZTEC" />
+    </Update>
+    <Update>
+      <Set ID="91" />
+      <Where Type="PLAYERCOLOR_CHINA" />
+    </Update>
+    <Update>
+      <Set ID="92" />
+      <Where Type="PLAYERCOLOR_EGYPT" />
+    </Update>
+    <Update>
+      <Set ID="93" />
+      <Where Type="PLAYERCOLOR_ENGLAND" />
+    </Update>
+    <Update>
+      <Set ID="94" />
+      <Where Type="PLAYERCOLOR_FRANCE" />
+    </Update>
+    <Update>
+      <Set ID="95" />
+      <Where Type="PLAYERCOLOR_GERMANY" />
+    </Update>
+    <Update>
+      <Set ID="96" />
+      <Where Type="PLAYERCOLOR_GREECE" />
+    </Update>
+    <Update>
+      <Set ID="97" />
+      <Where Type="PLAYERCOLOR_INDIA" />
+    </Update>
+    <Update>
+      <Set ID="98" />
+      <Where Type="PLAYERCOLOR_IROQUOIS" />
+    </Update>
+    <Update>
+      <Set ID="99" />
+      <Where Type="PLAYERCOLOR_JAPAN" />
+    </Update>
+    <Update>
+      <Set ID="100" />
+      <Where Type="PLAYERCOLOR_OTTOMAN" />
+    </Update>
+    <Update>
+      <Set ID="101" />
+      <Where Type="PLAYERCOLOR_PERSIA" />
+    </Update>
+    <Update>
+      <Set ID="102" />
+      <Where Type="PLAYERCOLOR_ROME" />
+    </Update>
+    <Update>
+      <Set ID="103" />
+      <Where Type="PLAYERCOLOR_RUSSIA" />
+    </Update>
+    <Update>
+      <Set ID="104" />
+      <Where Type="PLAYERCOLOR_SIAM" />
+    </Update>
+    <Update>
+      <Set ID="105" />
+      <Where Type="PLAYERCOLOR_SONGHAI" />
+    </Update>
+  </PlayerColors>
+</GameData>

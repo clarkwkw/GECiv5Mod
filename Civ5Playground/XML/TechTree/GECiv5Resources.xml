@@ -1,0 +1,28 @@
+<GameData>
+  <Resources>
+    <Update>
+      <Set TechCityTrade="TECH_AGRICULTURE" />
+      <Where Type="RESOURCE_TRUFFLES" />
+    </Update>
+    <Update>
+      <Set TechCityTrade="TECH_AGRICULTURE" />
+      <Where Type="RESOURCE_BISON" />
+    </Update>
+    <Update>
+      <Set TechReveal="TECH_IRON_WORKING" />
+      <Where Type="RESOURCE_IRON" />
+    </Update>
+    <Update>
+      <Set TechCityTrade="TECH_AGRICULTURE" />
+      <Where Type="RESOURCE_DEER" />
+    </Update>
+    <Update>
+      <Set TechCityTrade="TECH_AGRICULTURE" />
+      <Where Type="RESOURCE_IVORY" />
+    </Update>
+    <Update>
+      <Set TechCityTrade="TECH_AGRICULTURE" />
+      <Where Type="RESOURCE_FUR" />
+    </Update>
+  </Resources>
+</GameData>

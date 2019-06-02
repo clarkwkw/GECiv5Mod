@@ -1,0 +1,1 @@
+Update Technologies SET GridY = GridY - 1;
