@@ -365,7 +365,7 @@
       <Where Tag="TXT_KEY_TECH_THEOLOGY_DESC" />
     </Update>
   </Language_en_US>
-  <Languages>
+  <!--<Languages>
     <Row>
       <ID>0</ID>
       <Type>en_US</Type>
@@ -387,5 +387,5 @@
       <TableName>Language_en_US</TableName>
       <PluralRule>2</PluralRule>
     </Row>
-  </Languages>
+  </Languages>-->
 </GameData>
