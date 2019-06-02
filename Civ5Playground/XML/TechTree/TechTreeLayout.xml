@@ -13,10 +13,10 @@
 			<PrereqTechType>TECH_BRONZE_WORKING</PrereqTechType>
 		</Row>
 		<Row>
-			<PrereqTechType>TECH_RATIONALISM</PrereqTechType>
+			<PrereqTechType>TECH_PRINTING_PRESS</PrereqTechType>
 		</Row>
 		<Row>
-			<PrereqTechType>TECH_PRINTING_PRESS</PrereqTechType>
+			<PrereqTechType>TECH_GUILDS</PrereqTechType>
 		</Row>
 	</TechTreeVerticalPipeConfig>
 </GameData>
