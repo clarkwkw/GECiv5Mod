@@ -4,7 +4,7 @@
       <Set PrereqTech="TECH_LAW" />
       <Where Type="BUILDING_COURTHOUSE" />
     </Update>
-    <Update>
+   <Update>
       <Set PrereqTech="TECH_UNIVERSITY_EDUCATION" />
       <Where Type="BUILDING_WAT" />
     </Update>
@@ -165,107 +165,27 @@
       <Where Type="BUILDING_PARTHENON" />
     </Update>
     <Update>
-      <Set ID="115" PrereqTech="TECH_MATHEMATICS" />
+      <Set PrereqTech="TECH_MATHEMATICS" />
       <Where Type="BUILDING_TEMPLE_ARTEMIS" />
     </Update>
     <Update>
-      <Set ID="116" PrereqTech="TECH_DRAMA" />
+      <Set PrereqTech="TECH_DRAMA" />
       <Where Type="BUILDING_MAUSOLEUM_HALICARNASSUS" />
     </Update>
     <Update>
-      <Set ID="117" />
-      <Where Type="BUILDING_AMPHITHEATER" />
-    </Update>
-    <Update>
-      <Set ID="118" PrereqTech="TECH_MYTHOLOGY" />
+      <Set PrereqTech="TECH_MYTHOLOGY" />
       <Where Type="BUILDING_SHRINE" />
     </Update>
     <Update>
-      <Set ID="119" />
-      <Where Type="BUILDING_RECYCLING_CENTER" />
-    </Update>
-    <Update>
-      <Set ID="120" />
-      <Where Type="BUILDING_BOMB_SHELTER" />
-    </Update>
-    <Update>
-      <Set ID="121" />
-      <Where Type="BUILDING_CONSTABLE" />
-    </Update>
-    <Update>
-      <Set ID="122" />
-      <Where Type="BUILDING_POLICE_STATION" />
-    </Update>
-    <Update>
-      <Set ID="123" />
-      <Where Type="BUILDING_INTELLIGENCE_AGENCY" />
-    </Update>
-    <Update>
-      <Set ID="124" />
-      <Where Type="BUILDING_ALHAMBRA" />
-    </Update>
-    <Update>
-      <Set ID="125" />
-      <Where Type="BUILDING_CN_TOWER" />
-    </Update>
-    <Update>
-      <Set ID="126" />
-      <Where Type="BUILDING_HUBBLE" />
-    </Update>
-    <Update>
-      <Set ID="127" PrereqTech="TECH_SCIENTIFIC_METHOD" />
+      <Set PrereqTech="TECH_SCIENTIFIC_METHOD" />
       <Where Type="BUILDING_LEANING_TOWER" />
     </Update>
     <Update>
-      <Set ID="128" />
-      <Where Type="BUILDING_MOSQUE_OF_DJENNE" />
-    </Update>
-    <Update>
-      <Set ID="129" />
-      <Where Type="BUILDING_NEUSCHWANSTEIN" />
-    </Update>
-    <Update>
-      <Set ID="130" />
-      <Where Type="BUILDING_PETRA" />
-    </Update>
-    <Update>
-      <Set ID="131" PrereqTech="TECH_ASSOCIATIVE_THINKING" />
+      <Set PrereqTech="TECH_ASSOCIATIVE_THINKING" />
       <Where Type="BUILDING_TERRACOTTA_ARMY" />
     </Update>
     <Update>
-      <Set ID="132" />
-      <Where Type="BUILDING_GREAT_FIREWALL" />
-    </Update>
-    <Update>
-      <Set ID="133" />
-      <Where Type="BUILDING_CATHEDRAL" />
-    </Update>
-    <Update>
-      <Set ID="134" />
-      <Where Type="BUILDING_MOSQUE" />
-    </Update>
-    <Update>
-      <Set ID="135" />
-      <Where Type="BUILDING_PAGODA" />
-    </Update>
-    <Update>
-      <Set ID="136" />
-      <Where Type="BUILDING_CEILIDH_HALL" />
-    </Update>
-    <Update>
-      <Set ID="137" />
-      <Where Type="BUILDING_COFFEE_HOUSE" />
-    </Update>
-    <Update>
-      <Set ID="138" />
-      <Where Type="BUILDING_STELE" />
-    </Update>
-    <Update>
-      <Set ID="139" />
-      <Where Type="BUILDING_MAYA_PYRAMID" />
-    </Update>
-    <Update>
-      <Set ID="140" PrereqTech="TECH_POLITICAL_PHILOSOPHY" />
+      <Set PrereqTech="TECH_POLITICAL_PHILOSOPHY" />
       <Where Type="BUILDING_GRAND_TEMPLE" />
     </Update>
   </Buildings>
