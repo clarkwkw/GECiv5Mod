@@ -5,10 +5,57 @@
     <Delete Type="TECH_PHILOSOPHY" />
     <Delete Type="TECH_EDUCATION" />
     <Delete Type="TECH_ASTRONOMY" />
+    <Delete Type="TECH_ACOUSTICS" />
     <Delete Type="TECH_ARCHITECTURE" />
     <Delete Type="TECH_METALLURGY" />
+    <Delete Type="TECH_ARCHAEOLOGY" />
+    <Delete Type="TECH_SCIENTIFIC_THEORY" />
+    <Delete Type="TECH_MILITARY_SCIENCE" />
+    <Delete Type="TECH_FERTILIZER" />
+    <Delete Type="TECH_STEAM_POWER" />
+    <Delete Type="TECH_TELECOM" />
+    <Delete Type="TECH_MOBILE_TACTICS" />
+    <Delete Type="TECH_LASERS" />
+    <Delete Type="TECH_PARTICLE_PHYSICS" />
     <Row>
-      <ID>26</ID>
+      <ID>81</ID>
+      <Type>TECH_GEOLOGY</Type>
+      <Description>TXT_KEY_TECH_GEOLOGY_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_GEOLOGY_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_GEOLOGY_HELP</Help>
+      <Cost>1600</Cost>
+      <Era>ERA_INDUSTRIAL</Era>
+      <Trade>true</Trade>
+      <TriggersArchaeologicalSites>true</TriggersArchaeologicalSites>
+      <GridX>9</GridX>
+      <GridY>5</GridY>
+      <Quote>TXT_KEY_TECH_GEOLOGY_QUOTE</Quote>
+      <PortraitIndex>43</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_ARCHAEOLOGY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_ARCHAEOLOGY</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>82</ID>
+      <Type>TECH_STEAM_BOAT</Type>
+      <Description>TXT_KEY_TECH_STEAM_BOAT_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_STEAM_BOAT_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_STEAM_BOAT_HELP</Help>
+      <Cost>2350</Cost>
+      <Era>ERA_INDUSTRIAL</Era>
+      <EmbarkedMoveChange>1</EmbarkedMoveChange>
+      <InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
+      <Trade>true</Trade>
+      <GridX>10</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_STEAM_BOAT_QUOTE</Quote>
+      <PortraitIndex>42</PortraitIndex>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_STEAM_POWER</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_STEAM_POWER</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>83</ID>
       <Type>TECH_UNIVERSITY_EDUCATION</Type>
       <Description>TXT_KEY_TECH_UNIVERSITY_EDUCATION_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_UNIVERSITY_EDUCATION_CIV</Civilopedia>
@@ -26,7 +73,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_EDUCATION</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>31</ID>
+      <ID>84</ID>
       <Type>TECH_SCIENTIFIC_METHOD</Type>
       <Description>TXT_KEY_TECH_SCIENTIFIC_METHOD_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_SCIENTIFIC_METHOD_CIV</Civilopedia>
@@ -43,7 +90,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_ASTRONOMY</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>37</ID>
+      <ID>85</ID>
       <Type>TECH_NAVAL_ARCHITECTURE</Type>
       <Description>TXT_KEY_TECH_NAVAL_ARCHITECTURE_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_NAVAL_ARCHITECTURE_CIV</Civilopedia>
@@ -61,7 +108,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_ARCHITECTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>81</ID>
+      <ID>86</ID>
       <Type>TECH_COMPLEX_CONSTRUCTION</Type>
       <Description>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_CIV</Civilopedia>
@@ -78,7 +125,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_CONSTRUCTION</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>82</ID>
+      <ID>87</ID>
       <Type>TECH_POLITICAL_PHILOSOPHY</Type>
       <Description>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_CIV</Civilopedia>
@@ -95,7 +142,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_PHILOSOPHY</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>83</ID>
+      <ID>88</ID>
       <Type>TECH_MYTHOLOGY</Type>
       <Description>TXT_KEY_TECH_MYTHOLOGY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_MYTHOLOGY_CIV</Civilopedia>
@@ -116,7 +163,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>84</ID>
+      <ID>89</ID>
       <Type>TECH_LAW</Type>
       <Description>TXT_KEY_TECH_LAW_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_LAW_CIV</Civilopedia>
@@ -138,7 +185,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>85</ID>
+      <ID>90</ID>
       <Type>TECH_ASSOCIATIVE_THINKING</Type>
       <Description>TXT_KEY_TECH_ASSOCIATIVE_THINKING_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_ASSOCIATIVE_THINKING_CIV</Civilopedia>
@@ -159,7 +206,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>86</ID>
+      <ID>91</ID>
       <Type>TECH_NATURAL_PHILOSOPHY</Type>
       <Description>TXT_KEY_TECH_NATURAL_PHILOSOPHY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_NATURAL_PHILOSOPHY_CIV</Civilopedia>
@@ -180,7 +227,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>87</ID>
+      <ID>92</ID>
       <Type>TECH_HOLISTIC_WORLDIEW</Type>
       <Description>TXT_KEY_TECH_HOLISTIC_WORLDIEW_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_HOLISTIC_WORLDIEW_CIV</Civilopedia>
@@ -201,7 +248,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>88</ID>
+      <ID>93</ID>
       <Type>TECH_RATIONALISM</Type>
       <Description>TXT_KEY_TECH_RATIONALISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_RATIONALISM_CIV</Civilopedia>
@@ -222,7 +269,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Row>
-      <ID>90</ID>
+      <ID>94</ID>
       <Type>TECH_LIBERALISM</Type>
       <Description>TXT_KEY_TECH_LIBERALISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_LIBERALISM_CIV</Civilopedia>
@@ -236,6 +283,174 @@
       <GridX>8</GridX>
       <GridY>2</GridY>
       <Quote>TXT_KEY_TECH_LIBERALISM_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>95</ID>
+      <Type>TECH_NATIONALISM</Type>
+      <Description>TXT_KEY_TECH_NATIONALISM_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_NATIONALISM_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_NATIONALISM_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_INDUSTRIAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>9</GridX>
+      <GridY>1</GridY>
+      <Quote>TXT_KEY_TECH_NATIONALISM_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>96</ID>
+      <Type>TECH_GENETICS</Type>
+      <Description>TXT_KEY_TECH_GENETICS_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_GENETICS_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_GENETICS_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_INDUSTRIAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>10</GridX>
+      <GridY>8</GridY>
+      <Quote>TXT_KEY_TECH_GENETICS_QUOTE</Quote>
+      <PortraitIndex>39</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>97</ID>
+      <Type>TECH_MARXISM</Type>
+      <Description>TXT_KEY_TECH_MARXISM_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_MARXISM_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_MARXISM_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_INDUSTRIAL</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>10</GridX>
+      <GridY>1</GridY>
+      <Quote>TXT_KEY_TECH_MARXISM_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>98</ID>
+      <Type>TECH_FASCISM</Type>
+      <Description>TXT_KEY_TECH_FASCISM_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_FASCISM_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_FASCISM_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_MODERN</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>11</GridX>
+      <GridY>7</GridY>
+      <Quote>TXT_KEY_TECH_FASCISM_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>99</ID>
+      <Type>TECH_PESTICIDES</Type>
+      <Description>TXT_KEY_TECH_PESTICIDES_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_PESTICIDES_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_PESTICIDES_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_POSTMODERN</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>13</GridX>
+      <GridY>8</GridY>
+      <Quote>TXT_KEY_TECH_PESTICIDES_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>100</ID>
+      <Type>TECH_BIOTECHNOLOGY</Type>
+      <Description>TXT_KEY_TECH_BIOTECHNOLOGY_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_BIOTECHNOLOGY_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_BIOTECHNOLOGY_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_POSTMODERN</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>14</GridX>
+      <GridY>8</GridY>
+      <Quote>TXT_KEY_TECH_BIOTECHNOLOGY_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>101</ID>
+      <Type>TECH_ADVANCED_ENGINE</Type>
+      <Description>TXT_KEY_TECH_ADVANCED_ENGINE_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_ADVANCED_ENGINE_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_ADVANCED_ENGINE_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_FUTURE</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>15</GridX>
+      <GridY>4</GridY>
+      <Quote>TXT_KEY_TECH_ADVANCED_ENGINE_QUOTE</Quote>
+      <PortraitIndex>0</PortraitIndex>
+      <ScenarioTechButton>0</ScenarioTechButton>
+      <IconAtlas>TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+    </Row>
+    <Row>
+      <ID>102</ID>
+      <Type>TECH_ARTIFICIAL_INTELLIGENCE</Type>
+      <Description>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_DESC</Description>
+      <Civilopedia>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_CIV</Civilopedia>
+      <Help>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_HELP</Help>
+      <Cost>20</Cost>
+      <AdvancedStartCost>0</AdvancedStartCost>
+      <Era>ERA_FUTURE</Era>
+      <FirstFreeUnitClass>0</FirstFreeUnitClass>
+      <Trade>1</Trade>
+      <GoodyTech>1</GoodyTech>
+      <GridX>16</GridX>
+      <GridY>2</GridY>
+      <Quote>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_QUOTE</Quote>
       <PortraitIndex>0</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
@@ -315,7 +530,7 @@
       <Where Type="TECH_THEOLOGY" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_CIVIL_SERVICE_DESC" Civilopedia="TXT_KEY_TECH_CIVIL_SERVICE_CIV" GridY="1" />
+      <Set Description="TXT_KEY_TECH_CIVIL_SERVICE_DESC" Civilopedia="TXT_KEY_TECH_CIVIL_SERVICE_CIV" DefensivePactTradingAllowed="true" GridY="1" />
       <Where Type="TECH_CIVIL_SERVICE" />
     </Update>
     <Update>
@@ -327,7 +542,7 @@
       <Where Type="TECH_COMPASS" />
     </Update>
     <Update>
-      <Set GridX="5" GridY="10" />
+      <Set DefensivePactTradingAllowed="false" GridX="5" GridY="10" />
       <Where Type="TECH_CHIVALRY" />
     </Update>
     <Update>
@@ -343,11 +558,7 @@
       <Where Type="TECH_STEEL" />
     </Update>
     <Update>
-      <Set GridX="8" GridY="0" />
-      <Where Type="TECH_ACOUSTICS" />
-    </Update>
-    <Update>
-      <Set GridY="1" />
+      <Set Era="ERA_MEDIEVAL" GridX="6" GridY="1" />
       <Where Type="TECH_BANKING" />
     </Update>
     <Update>
@@ -365,6 +576,106 @@
     <Update>
       <Set GridY="1" />
       <Where Type="TECH_ECONOMICS" />
+    </Update>
+    <Update>
+      <Set GridY="2" />
+      <Where Type="TECH_INDUSTRIALIZATION" />
+    </Update>
+    <Update>
+      <Set GridY="9" />
+      <Where Type="TECH_RIFLING" />
+    </Update>
+    <Update>
+      <Set InternationalTradeRoutesChange="0" GridX="9" GridY="8" />
+      <Where Type="TECH_BIOLOGY" />
+    </Update>
+    <Update>
+      <Set GridY="9" />
+      <Where Type="TECH_DYNAMITE" />
+    </Update>
+    <Update>
+      <Set GridY="4" />
+      <Where Type="TECH_REFRIGERATION" />
+    </Update>
+    <Update>
+      <Set Description="TXT_KEY_TECH_REPLACEABLE_PARTS_DESC" Civilopedia="TXT_KEY_TECH_REPLACEABLE_PARTS_CIV" GridY="9" />
+      <Where Type="TECH_REPLACEABLE_PARTS" />
+    </Update>
+    <Update>
+      <Set Era="ERA_INDUSTRIAL" GridX="10" GridY="5" />
+      <Where Type="TECH_RAILROAD" />
+    </Update>
+    <Update>
+      <Set Era="ERA_POSTMODERN" GridX="13" GridY="9" />
+      <Where Type="TECH_PLASTIC" />
+    </Update>
+    <Update>
+      <Set Era="ERA_POSTMODERN" GridX="13" GridY="2" />
+      <Where Type="TECH_ELECTRONICS" />
+    </Update>
+    <Update>
+      <Set GridY="4" />
+      <Where Type="TECH_COMBUSTION" />
+    </Update>
+    <Update>
+      <Set Era="ERA_MODERN" InternationalTradeRoutesChange="0" GridX="12" GridY="8" />
+      <Where Type="TECH_PENICILIN" />
+    </Update>
+    <Update>
+      <Set GridY="4" />
+      <Where Type="TECH_ATOMIC_THEORY" />
+    </Update>
+    <Update>
+      <Set Era="ERA_MODERN" GridX="12" GridY="2" />
+      <Where Type="TECH_RADAR" />
+    </Update>
+    <Update>
+      <Set GridY="5" />
+      <Where Type="TECH_COMBINED_ARMS" />
+    </Update>
+    <Update>
+      <Set GridY="9" />
+      <Where Type="TECH_ECOLOGY" />
+    </Update>
+    <Update>
+      <Set GridY="4" />
+      <Where Type="TECH_NUCLEAR_FISSION" />
+    </Update>
+    <Update>
+      <Set GridY="2" />
+      <Where Type="TECH_COMPUTERS" />
+    </Update>
+    <Update>
+      <Set GridY="6" />
+      <Where Type="TECH_ADVANCED_BALLISTICS" />
+    </Update>
+    <Update>
+      <Set GridY="1" />
+      <Where Type="TECH_ROBOTICS" />
+    </Update>
+    <Update>
+      <Set InfluenceSpreadModifier="0" ExtraVotesPerDiplomat="1" GridX="15" GridY="2" />
+      <Where Type="TECH_INTERNET" />
+    </Update>
+    <Update>
+      <Set InfluenceSpreadModifier="100" ExtraVotesPerDiplomat="0" GridX="15" GridY="9" />
+      <Where Type="TECH_GLOBALIZATION" />
+    </Update>
+    <Update>
+      <Set GridY="4" />
+      <Where Type="TECH_NUCLEAR_FUSION" />
+    </Update>
+    <Update>
+      <Set GridY="8" />
+      <Where Type="TECH_NANOTECHNOLOGY" />
+    </Update>
+    <Update>
+      <Set GridY="5" />
+      <Where Type="TECH_STEALTH" />
+    </Update>
+    <Update>
+      <Set GridY="5" />
+      <Where Type="TECH_FUTURE_TECH" />
     </Update>
   </Technologies>
   <Technology_Flavors>
@@ -389,12 +700,44 @@
     <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_NAVAL" Flavor="5" />
     <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_SCIENCE" Flavor="5" />
     <Delete TechType="TECH_ASTRONOMY" FlavorType="FLAVOR_EXPANSION" Flavor="10" />
+    <Delete TechType="TECH_ACOUSTICS" FlavorType="FLAVOR_CULTURE" Flavor="8" />
+    <Delete TechType="TECH_ACOUSTICS" FlavorType="FLAVOR_WONDER" Flavor="4" />
     <Delete TechType="TECH_ARCHITECTURE" FlavorType="FLAVOR_WONDER" Flavor="12" />
     <Delete TechType="TECH_ARCHITECTURE" FlavorType="FLAVOR_SCIENCE" Flavor="12" />
     <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_OFFENSE" Flavor="4" />
     <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_MOBILE" Flavor="8" />
     <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_DEFENSE" Flavor="4" />
     <Delete TechType="TECH_METALLURGY" FlavorType="FLAVOR_CITY_DEFENSE" Flavor="3" />
+    <Delete TechType="TECH_ARCHAEOLOGY" FlavorType="FLAVOR_CULTURE" Flavor="25" />
+    <Delete TechType="TECH_ARCHAEOLOGY" FlavorType="FLAVOR_WONDER" Flavor="2" />
+    <Delete TechType="TECH_SCIENTIFIC_THEORY" FlavorType="FLAVOR_SCIENCE" Flavor="20" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_OFFENSE" Flavor="4" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_MILITARY_TRAINING" Flavor="5" />
+    <Delete TechType="TECH_MILITARY_SCIENCE" FlavorType="FLAVOR_WONDER" Flavor="1" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_GROWTH" Flavor="20" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_SCIENCE" Flavor="15" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_GOLD" Flavor="8" />
+    <Delete TechType="TECH_FERTILIZER" FlavorType="FLAVOR_GREAT_PEOPLE" Flavor="5" />
+    <Delete TechType="TECH_STEAM_POWER" FlavorType="FLAVOR_NAVAL" Flavor="15" />
+    <Delete TechType="TECH_TELECOM" FlavorType="FLAVOR_WONDER" Flavor="5" />
+    <Delete TechType="TECH_TELECOM" FlavorType="FLAVOR_DEFENSE" Flavor="5" />
+    <Delete TechType="TECH_LASERS" FlavorType="FLAVOR_OFFENSE" Flavor="5" />
+    <Delete TechType="TECH_LASERS" FlavorType="FLAVOR_MOBILE" Flavor="5" />
+    <Delete TechType="TECH_LASERS" FlavorType="FLAVOR_AIR" Flavor="5" />
+    <Delete TechType="TECH_MOBILE_TACTICS" FlavorType="FLAVOR_MOBILE" Flavor="10" />
+    <Delete TechType="TECH_MOBILE_TACTICS" FlavorType="FLAVOR_DEFENSE" Flavor="10" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" FlavorType="FLAVOR_SPACESHIP" Flavor="20" />
+    <Row>
+      <TechType>TECH_STEAM_BOAT</TechType>
+      <FlavorType>FLAVOR_NAVAL</FlavorType>
+      <Flavor>15</Flavor>
+    </Row>
+    <Row>
+      <TechType>TECH_AGRICULTURE</TechType>
+      <FlavorType>FLAVOR_SPACESHIP</FlavorType>
+      <Flavor>20</Flavor>
+    </Row>
     <Row>
       <TechType>TECH_UNIVERSITY_EDUCATION</TechType>
       <FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -560,12 +903,62 @@
     <Delete TechType="TECH_ARCHAEOLOGY" PrereqTech="TECH_ARCHITECTURE" />
     <Delete TechType="TECH_SCIENTIFIC_THEORY" PrereqTech="TECH_ECONOMICS" />
     <Delete TechType="TECH_SCIENTIFIC_THEORY" PrereqTech="TECH_ARCHITECTURE" />
-    <Delete TechType="TECH_INDUSTRIALIZATION" PrereqTech="TECH_ECONOMICS" />
     <Delete TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_CHEMISTRY" />
     <Delete TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_METALLURGY" />
     <Delete TechType="TECH_FERTILIZER" PrereqTech="TECH_CHEMISTRY" />
     <Delete TechType="TECH_RIFLING" PrereqTech="TECH_ECONOMICS" />
     <Delete TechType="TECH_RIFLING" PrereqTech="TECH_METALLURGY" />
+    <Delete TechType="TECH_BIOLOGY" PrereqTech="TECH_ARCHAEOLOGY" />
+    <Delete TechType="TECH_BIOLOGY" PrereqTech="TECH_SCIENTIFIC_THEORY" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_RIFLING" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_INDUSTRIALIZATION" />
+    <Delete TechType="TECH_STEAM_POWER" PrereqTech="TECH_SCIENTIFIC_THEORY" />
+    <Delete TechType="TECH_ELECTRICITY" PrereqTech="TECH_SCIENTIFIC_THEORY" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_REPLACEABLE_PARTS" PrereqTech="TECH_ELECTRICITY" />
+    <Delete TechType="TECH_RAILROAD" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_RAILROAD" PrereqTech="TECH_DYNAMITE" />
+    <Delete TechType="TECH_DYNAMITE" PrereqTech="TECH_FERTILIZER" />
+    <Delete TechType="TECH_DYNAMITE" PrereqTech="TECH_MILITARY_SCIENCE" />
+    <Delete TechType="TECH_REFRIGERATION" PrereqTech="TECH_BIOLOGY" />
+    <Delete TechType="TECH_FLIGHT" PrereqTech="TECH_STEAM_POWER" />
+    <Delete TechType="TECH_BALLISTICS" PrereqTech="TECH_RAILROAD" />
+    <Delete TechType="TECH_COMBUSTION" PrereqTech="TECH_RAILROAD" />
+    <Delete TechType="TECH_PLASTIC" PrereqTech="TECH_RADIO" />
+    <Delete TechType="TECH_PENICILIN" PrereqTech="TECH_REFRIGERATION" />
+    <Delete TechType="TECH_PENICILIN" PrereqTech="TECH_PLASTIC" />
+    <Delete TechType="TECH_ELECTRONICS" PrereqTech="TECH_REPLACEABLE_PARTS" />
+    <Delete TechType="TECH_ELECTRONICS" PrereqTech="TECH_FLIGHT" />
+    <Delete TechType="TECH_RADAR" PrereqTech="TECH_ELECTRONICS" />
+    <Delete TechType="TECH_RADAR" PrereqTech="TECH_BALLISTICS" />
+    <Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_PLASTIC" />
+    <Delete TechType="TECH_ATOMIC_THEORY" PrereqTech="TECH_ELECTRONICS" />
+    <Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_ATOMIC_THEORY" />
+    <Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_PENICILIN" />
+    <Delete TechType="TECH_NUCLEAR_FISSION" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_ROCKETRY" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_RADAR" />
+    <Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_COMBINED_ARMS" />
+    <Delete TechType="TECH_TELECOM" PrereqTech="TECH_ECOLOGY" />
+    <Delete TechType="TECH_MOBILE_TACTICS" PrereqTech="TECH_ECOLOGY" />
+    <Delete TechType="TECH_MOBILE_TACTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
+    <Delete TechType="TECH_ADVANCED_BALLISTICS" PrereqTech="TECH_NUCLEAR_FISSION" />
+    <Delete TechType="TECH_ROBOTICS" PrereqTech="TECH_ROCKETRY" />
+    <Delete TechType="TECH_LASERS" PrereqTech="TECH_COMPUTERS" />
+    <Delete TechType="TECH_INTERNET" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_GLOBALIZATION" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_TELECOM" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_MOBILE_TACTICS" />
+    <Delete TechType="TECH_PARTICLE_PHYSICS" PrereqTech="TECH_ADVANCED_BALLISTICS" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_ADVANCED_BALLISTICS" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_SATELLITES" />
+    <Delete TechType="TECH_NUCLEAR_FUSION" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_STEALTH" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_STEALTH" PrereqTech="TECH_LASERS" />
+    <Delete TechType="TECH_NANOTECHNOLOGY" PrereqTech="TECH_ROBOTICS" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_INTERNET" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_GLOBALIZATION" />
+    <Delete TechType="TECH_FUTURE_TECH" PrereqTech="TECH_PARTICLE_PHYSICS" />
     <Row>
       <TechType>TECH_MYTHOLOGY</TechType>
       <PrereqTech>TECH_POTTERY</PrereqTech>
@@ -761,6 +1154,206 @@
     <Row>
       <TechType>TECH_CHEMISTRY</TechType>
       <PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_INDUSTRIALIZATION</TechType>
+      <PrereqTech>TECH_LIBERALISM</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NATIONALISM</TechType>
+      <PrereqTech>TECH_ECONOMICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_INDUSTRIALIZATION</TechType>
+      <PrereqTech>TECH_PHYSICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BIOLOGY</TechType>
+      <PrereqTech>TECH_PHYSICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_GEOLOGY</TechType>
+      <PrereqTech>TECH_NAVAL_ARCHITECTURE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BIOLOGY</TechType>
+      <PrereqTech>TECH_CHEMISTRY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RIFLING</TechType>
+      <PrereqTech>TECH_CHEMISTRY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_MARXISM</TechType>
+      <PrereqTech>TECH_NATIONALISM</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ELECTRICITY</TechType>
+      <PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEAM_BOAT</TechType>
+      <PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RAILROAD</TechType>
+      <PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RAILROAD</TechType>
+      <PrereqTech>TECH_GEOLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_GENETICS</TechType>
+      <PrereqTech>TECH_GEOLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_GENETICS</TechType>
+      <PrereqTech>TECH_BIOLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_DYNAMITE</TechType>
+      <PrereqTech>TECH_RIFLING</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_REPLACEABLE_PARTS</TechType>
+      <PrereqTech>TECH_DYNAMITE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FASCISM</TechType>
+      <PrereqTech>TECH_GENETICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_REFRIGERATION</TechType>
+      <PrereqTech>TECH_STEAM_BOAT</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FLIGHT</TechType>
+      <PrereqTech>TECH_STEAM_BOAT</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FLIGHT</TechType>
+      <PrereqTech>TECH_RAILROAD</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_PENICILIN</TechType>
+      <PrereqTech>TECH_GENETICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RADAR</TechType>
+      <PrereqTech>TECH_RADIO</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_RADAR</TechType>
+      <PrereqTech>TECH_FLIGHT</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBUSTION</TechType>
+      <PrereqTech>TECH_REFRIGERATION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMBUSTION</TechType>
+      <PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_BIOTECHNOLOGY</TechType>
+      <PrereqTech>TECH_PESTICIDES</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ECOLOGY</TechType>
+      <PrereqTech>TECH_PESTICIDES</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ECOLOGY</TechType>
+      <PrereqTech>TECH_PLASTIC</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ROCKETRY</TechType>
+      <PrereqTech>TECH_ELECTRONICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_COMPUTERS</TechType>
+      <PrereqTech>TECH_ELECTRONICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ROCKETRY</TechType>
+      <PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ELECTRONICS</TechType>
+      <PrereqTech>TECH_RADAR</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ATOMIC_THEORY</TechType>
+      <PrereqTech>TECH_COMBUSTION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_PESTICIDES</TechType>
+      <PrereqTech>TECH_PENICILIN</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_PLASTIC</TechType>
+      <PrereqTech>TECH_PENICILIN</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ARTIFICIAL_INTELLIGENCE</TechType>
+      <PrereqTech>TECH_ROBOTICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ARTIFICIAL_INTELLIGENCE</TechType>
+      <PrereqTech>TECH_INTERNET</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NUCLEAR_FUSION</TechType>
+      <PrereqTech>TECH_ADVANCED_ENGINE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEALTH</TechType>
+      <PrereqTech>TECH_ADVANCED_ENGINE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEALTH</TechType>
+      <PrereqTech>TECH_SATELLITES</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_STEALTH</TechType>
+      <PrereqTech>TECH_ADVANCED_BALLISTICS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_FUTURE_TECH</TechType>
+      <PrereqTech>TECH_ARTIFICIAL_INTELLIGENCE</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_GLOBALIZATION</TechType>
+      <PrereqTech>TECH_ECOLOGY</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_INTERNET</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ADVANCED_ENGINE</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ADVANCED_BALLISTICS</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NANOTECHNOLOGY</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_ADVANCED_ENGINE</TechType>
+      <PrereqTech>TECH_NUCLEAR_FISSION</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_SATELLITES</TechType>
+      <PrereqTech>TECH_COMPUTERS</PrereqTech>
+    </Row>
+    <Row>
+      <TechType>TECH_NANOTECHNOLOGY</TechType>
+      <PrereqTech>TECH_BIOTECHNOLOGY</PrereqTech>
     </Row>
   </Technology_PrereqTechs>
 </GameData>

@@ -8,99 +8,133 @@
       <PassableTech>TECH_SCIENTIFIC_METHOD</PassableTech>
     </Row>
   </UnitPromotions_Terrains>
-  <UnitPromotions>
-    <Update>
-      <Set ID="199" />
-      <Where Type="PROMOTION_NAVAL_BONUS" />
-    </Update>
-    <Update>
-      <Set ID="200" />
-      <Where Type="PROMOTION_FEARED_ELEPHANT" />
-    </Update>
-    <Update>
-      <Set ID="201" />
-      <Where Type="PROMOTION_FLANK_ATTACK_BONUS" />
-    </Update>
-    <Update>
-      <Set ID="202" />
-      <Where Type="PROMOTION_DEFEND_NEAR_CAPITAL" />
-    </Update>
-    <Update>
-      <Set ID="203" />
-      <Where Type="PROMOTION_EMBARKED_SIGHT" />
-    </Update>
-    <Update>
-      <Set ID="204" />
-      <Where Type="PROMOTION_MOVEMENT_TO_GENERAL" />
-    </Update>
-    <Update>
-      <Set ID="205" />
-      <Where Type="PROMOTION_GENERAL_STACKING" />
-    </Update>
-    <Update>
-      <Set ID="206" />
-      <Where Type="PROMOTION_ONLY_ATTACKS_CITIES" />
-    </Update>
-    <Update>
-      <Set ID="207" />
-      <Where Type="PROMOTION_WAR_CANOES" />
-    </Update>
-    <Update>
-      <Set ID="208" />
-      <Where Type="PROMOTION_PRIZE_SHIPS" />
-    </Update>
-    <Update>
-      <Set ID="209" />
-      <Where Type="PROMOTION_GREAT_ADMIRAL" />
-    </Update>
-    <Update>
-      <Set ID="210" />
-      <Where Type="PROMOTION_UNWELCOME_EVANGELIST" />
-    </Update>
-    <Update>
-      <Set ID="211" />
-      <Where Type="PROMOTION_WITHDRAW_BEFORE_MELEE" />
-    </Update>
-    <Update>
-      <Set ID="212" />
-      <Where Type="PROMOTION_SKI_INFANTRY" />
-    </Update>
-    <Update>
-      <Set ID="213" />
-      <Where Type="PROMOTION_HAKA_WAR_DANCE" />
-    </Update>
-  </UnitPromotions>
   <Units>
     <Update>
-      <Set PrereqTech="TECH_CHIVALRY" />
-      <Where Type="UNIT_ZULU_IMPI" />
-    </Update>
-    <Update>
-      <Set PrereqTech="TECH_CHEMISTRY" />
+      <Set PrereqTech="TECH_PHYSICS" />
       <Where Type="UNIT_POLISH_WINGED_HUSSAR" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_NAVIGATION" />
+      <Set PrereqTech="TECH_GEOLOGY" />
+      <Where Type="UNIT_ARCHAEOLOGIST" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ROBOTICS" />
+      <Where Type="UNIT_BRAZILIAN_PRACINHA" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVIGATION" ObsoleteTech="TECH_STEAM_BOAT" />
       <Where Type="UNIT_PORTUGUESE_NAU" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_BERBER_CAVALRY" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_GENETICS" />
+      <Where Type="UNIT_SHOSHONE_PATHFINDER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_SHOSHONE_COMANCHE_RIDERS" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ROCKETRY" />
+      <Where Type="UNIT_BAZOOKA" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NUCLEAR_FUSION" />
+      <Where Type="UNIT_SS_ENGINE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ADVANCED_BALLISTICS" />
+      <Where Type="UNIT_MISSILE_CRUISER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ADVANCED_ENGINE" />
+      <Where Type="UNIT_NUCLEAR_SUBMARINE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_BALLISTICS" />
+      <Where Type="UNIT_CARRIER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMBUSTION" />
+      <Where Type="UNIT_BATTLESHIP" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ADVANCED_ENGINE" />
+      <Where Type="UNIT_SUBMARINE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_STEAM_BOAT" />
+      <Where Type="UNIT_IRONCLAD" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Where Type="UNIT_FRIGATE" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
       <Where Type="UNIT_ENGLISH_SHIPOFTHELINE" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_NAVIGATION" />
+      <Set PrereqTech="TECH_NAVIGATION" ObsoleteTech="TECH_STEAM_BOAT" />
       <Where Type="UNIT_CARAVEL" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_SCIENTIFIC_METHOD" />
+      <Set ObsoleteTech="TECH_NAVIGATION" />
       <Where Type="UNIT_TRIREME" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_CHEMISTRY" />
+      <Set PrereqTech="TECH_ARTIFICIAL_INTELLIGENCE" />
+      <Where Type="UNIT_MECH" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ADVANCED_ENGINE" />
+      <Where Type="UNIT_JET_FIGHTER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ADVANCED_ENGINE" />
+      <Where Type="UNIT_MODERN_ARMOR" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ROBOTICS" />
+      <Where Type="UNIT_MECHANIZED_INFANTRY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Where Type="UNIT_BOMBER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Where Type="UNIT_AMERICAN_B17" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Where Type="UNIT_FIGHTER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Where Type="UNIT_JAPANESE_ZERO" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ROBOTICS" />
+      <Where Type="UNIT_INFANTRY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_CAVALRY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_RUSSIAN_COSSACK" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_PHYSICS" />
       <Where Type="UNIT_LANCER" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_CHEMISTRY" />
+      <Set PrereqTech="TECH_PHYSICS" />
       <Where Type="UNIT_OTTOMAN_SIPAHI" />
     </Update>
     <Update>
@@ -112,12 +146,24 @@
       <Where Type="UNIT_TREBUCHET" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_CHIVALRY" ObsoleteTech="TECH_CHEMISTRY" />
-      <Where Type="UNIT_PIKEMAN" />
+      <Set ObsoleteTech="TECH_RIFLING" />
+      <Where Type="UNIT_KNIGHT" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_GUILDS" />
-      <Where Type="UNIT_GERMAN_LANDSKNECHT" />
+      <Set ObsoleteTech="TECH_RIFLING" />
+      <Where Type="UNIT_ARABIAN_CAMELARCHER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_RIFLING" />
+      <Where Type="UNIT_SIAMESE_WARELEPHANT" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_RIFLING" />
+      <Where Type="UNIT_SONGHAI_MUSLIMCAVALRY" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_CHEMISTRY" />
+      <Where Type="UNIT_PIKEMAN" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
@@ -132,12 +178,24 @@
       <Where Type="UNIT_ARCHER" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_CHEMISTRY" />
+      <Set ObsoleteTech="TECH_GENETICS" />
+      <Where Type="UNIT_SCOUT" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_STEEL" ObsoleteTech="TECH_RIFLING" />
       <Where Type="UNIT_DANISH_BERSERKER" />
     </Update>
     <Update>
       <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
       <Where Type="UNIT_INCAN_SLINGER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_AGRICULTURE" />
+      <Where Type="UNIT_SPANISH_CONQUISTADOR" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_INDUSTRIALIZATION" />
+      <Where Type="UNIT_MONGOLIAN_KESHIK" />
     </Update>
     <Update>
       <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
@@ -152,7 +210,7 @@
       <Where Type="UNIT_KOREAN_HWACHA" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set PrereqTech="TECH_ARCHERY" ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
       <Where Type="UNIT_MAYAN_ATLATLIST" />
     </Update>
     <Update>
@@ -160,76 +218,32 @@
       <Where Type="UNIT_BYZANTINE_DROMON" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_SCIENTIFIC_METHOD" />
+      <Set ObsoleteTech="TECH_NAVIGATION" />
       <Where Type="UNIT_CARTHAGINIAN_QUINQUEREME" />
     </Update>
     <Update>
-      <Set ID="131" />
-      <Where Type="UNIT_MISSIONARY" />
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="UNIT_AUSTRIAN_HUSSAR" />
     </Update>
     <Update>
-      <Set ID="132" PrereqTech="TECH_MATHEMATICS" />
+      <Set PrereqTech="TECH_MATHEMATICS" />
       <Where Type="UNIT_COMPOSITE_BOWMAN" />
     </Update>
     <Update>
-      <Set ID="133" />
-      <Where Type="UNIT_GALLEASS" />
-    </Update>
-    <Update>
-      <Set ID="134" />
-      <Where Type="UNIT_GREAT_WAR_INFANTRY" />
-    </Update>
-    <Update>
-      <Set ID="135" />
+      <Set PrereqTech="TECH_PESTICIDES" />
       <Where Type="UNIT_MARINE" />
     </Update>
     <Update>
-      <Set ID="136" />
-      <Where Type="UNIT_TRIPLANE" />
-    </Update>
-    <Update>
-      <Set ID="137" />
-      <Where Type="UNIT_WWI_BOMBER" />
-    </Update>
-    <Update>
-      <Set ID="138" />
-      <Where Type="UNIT_WWI_TANK" />
-    </Update>
-    <Update>
-      <Set ID="139" />
-      <Where Type="UNIT_MACHINE_GUN" />
-    </Update>
-    <Update>
-      <Set ID="140" />
-      <Where Type="UNIT_SWEDISH_CAROLEAN" />
-    </Update>
-    <Update>
-      <Set ID="141" PrereqTech="TECH_CHEMISTRY" />
+      <Set PrereqTech="TECH_PHYSICS" />
       <Where Type="UNIT_SWEDISH_HAKKAPELIITTA" />
     </Update>
     <Update>
-      <Set ID="142" />
-      <Where Type="UNIT_HUN_BATTERING_RAM" />
-    </Update>
-    <Update>
-      <Set ID="143" PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
       <Where Type="UNIT_PRIVATEER" />
     </Update>
     <Update>
-      <Set ID="144" PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
       <Where Type="UNIT_DUTCH_SEA_BEGGAR" />
-    </Update>
-    <Update>
-      <Set ID="145" />
-      <Where Type="UNIT_INQUISITOR" />
-    </Update>
-    <Update>
-      <Set ID="146" />
-      <Where Type="UNIT_GREAT_ADMIRAL" />
-    </Update>
-    <Update>
-      <Set ID="147" />
-      <Where Type="UNIT_GATLINGGUN" />
     </Update>
   </Units>
 </GameData>

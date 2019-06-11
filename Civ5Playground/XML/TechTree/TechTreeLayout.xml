@@ -18,5 +18,11 @@
 		<Row>
 			<PrereqTechType>TECH_GUILDS</PrereqTechType>
 		</Row>
+		<Row>
+			<PrereqTechType>TECH_FLIGHT</PrereqTechType>
+		</Row>
+		<Row>
+			<PrereqTechType>TECH_ROCKETRY</PrereqTechType>
+		</Row>
 	</TechTreeVerticalPipeConfig>
 </GameData>

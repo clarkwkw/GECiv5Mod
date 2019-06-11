@@ -1,12 +1,20 @@
 <GameData>
   <Builds>
     <Update>
+      <Set PrereqTech="TECH_GEOLOGY" />
+      <Where Type="BUILD_ARCHAEOLOGY_DIG" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
       <Where Type="BUILD_LUMBERMILL" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_ARCHERY" />
       <Where Type="BUILD_CAMP" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_DYNAMITE" />
+      <Where Type="BUILD_WELL" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_CALENDAR" />

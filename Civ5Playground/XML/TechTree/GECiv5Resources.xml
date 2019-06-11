@@ -5,12 +5,24 @@
       <Where Type="RESOURCE_TRUFFLES" />
     </Update>
     <Update>
+      <Set TechReveal="TECH_GEOLOGY" />
+      <Where Type="RESOURCE_ARTIFACTS" />
+    </Update>
+    <Update>
       <Set TechCityTrade="TECH_AGRICULTURE" />
       <Where Type="RESOURCE_BISON" />
     </Update>
     <Update>
       <Set TechReveal="TECH_IRON_WORKING" />
       <Where Type="RESOURCE_IRON" />
+    </Update>
+    <Update>
+      <Set TechReveal="TECH_GUNPOWDER" />
+      <Where Type="RESOURCE_COAL" />
+    </Update>
+    <Update>
+      <Set TechReveal="TECH_DYNAMITE" />
+      <Where Type="RESOURCE_OIL" />
     </Update>
     <Update>
       <Set TechCityTrade="TECH_AGRICULTURE" />

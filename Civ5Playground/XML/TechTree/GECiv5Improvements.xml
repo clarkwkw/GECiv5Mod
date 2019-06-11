@@ -1,6 +1,35 @@
 <GameData>
   <Improvement_TechYieldChanges>
+    <Delete ImprovementType="IMPROVEMENT_LUMBERMILL" TechType="TECH_SCIENTIFIC_THEORY" YieldType="YIELD_PRODUCTION" Yield="1" />
+    <Delete ImprovementType="IMPROVEMENT_PLANTATION" TechType="TECH_FERTILIZER" YieldType="YIELD_FOOD" Yield="1" />
+    <Delete ImprovementType="IMPROVEMENT_PASTURE" TechType="TECH_FERTILIZER" YieldType="YIELD_FOOD" Yield="1" />
+    <Delete ImprovementType="IMPROVEMENT_ACADEMY" TechType="TECH_SCIENTIFIC_THEORY" YieldType="YIELD_SCIENCE" Yield="2" />
     <Delete ImprovementType="IMPROVEMENT_MANUFACTORY" TechType="TECH_CHEMISTRY" YieldType="YIELD_PRODUCTION" Yield="1" />
+    <Delete ImprovementType="IMPROVEMENT_BRAZILWOOD_CAMP" TechType="TECH_ACOUSTICS" YieldType="YIELD_CULTURE" Yield="2" />
+    <Row>
+      <ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+      <TechType>TECH_NATIONALISM</TechType>
+      <YieldType>YIELD_PRODUCTION</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+      <TechType>TECH_BIOLOGY</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
+      <TechType>TECH_BIOLOGY</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+      <TechType>TECH_NATIONALISM</TechType>
+      <YieldType>YIELD_SCIENCE</YieldType>
+      <Yield>2</Yield>
+    </Row>
     <Row>
       <ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
       <TechType>TECH_PHYSICS</TechType>
@@ -13,7 +42,53 @@
       <YieldType>YIELD_CULTURE</YieldType>
       <Yield>2</Yield>
     </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_BRAZILWOOD_CAMP</ImprovementType>
+      <TechType>TECH_PRINTING_PRESS</TechType>
+      <YieldType>YIELD_CULTURE</YieldType>
+      <Yield>2</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+      <TechType>TECH_PESTICIDES</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+      <TechType>TECH_PESTICIDES</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
+      <TechType>TECH_BIOTECHNOLOGY</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+      <TechType>TECH_BIOTECHNOLOGY</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
   </Improvement_TechYieldChanges>
+  <Improvement_TechNoFreshWaterYieldChanges>
+    <Delete ImprovementType="IMPROVEMENT_FARM" TechType="TECH_FERTILIZER" YieldType="YIELD_FOOD" Yield="1" />
+    <Delete ImprovementType="IMPROVEMENT_TERRACE_FARM" TechType="TECH_FERTILIZER" YieldType="YIELD_FOOD" Yield="1" />
+    <Row>
+      <ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+      <TechType>TECH_BIOLOGY</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+    <Row>
+      <ImprovementType>IMPROVEMENT_TERRACE_FARM</ImprovementType>
+      <TechType>TECH_BIOLOGY</TechType>
+      <YieldType>YIELD_FOOD</YieldType>
+      <Yield>1</Yield>
+    </Row>
+  </Improvement_TechNoFreshWaterYieldChanges>
   <Improvements>
     <Update>
       <Set ID="28" />

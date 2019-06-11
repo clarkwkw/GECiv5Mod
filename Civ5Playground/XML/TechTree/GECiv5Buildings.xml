@@ -4,7 +4,7 @@
       <Set PrereqTech="TECH_LAW" />
       <Where Type="BUILDING_COURTHOUSE" />
     </Update>
-   <Update>
+    <Update>
       <Set PrereqTech="TECH_UNIVERSITY_EDUCATION" />
       <Where Type="BUILDING_WAT" />
     </Update>
@@ -45,20 +45,56 @@
       <Where Type="BUILDING_THEATRE" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_RADIO" />
+      <Where Type="BUILDING_STADIUM" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_POLITICAL_PHILOSOPHY" />
       <Where Type="BUILDING_TEMPLE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_LIBERALISM" />
+      <Where Type="BUILDING_OPERA_HOUSE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_GEOLOGY" />
+      <Where Type="BUILDING_MUSEUM" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="BUILDING_MILITARY_ACADEMY" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_CHEMISTRY" />
       <Where Type="BUILDING_ARSENAL" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_GENETICS" />
+      <Where Type="BUILDING_HOSPITAL" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_BIOTECHNOLOGY" />
+      <Where Type="BUILDING_MEDICAL_LAB" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_MACHINERY" />
       <Where Type="BUILDING_WORKSHOP" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_ECONOMICS" />
+      <Where Type="BUILDING_STOCK_EXCHANGE" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_UNIVERSITY_EDUCATION" />
       <Where Type="BUILDING_UNIVERSITY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NATIONALISM" />
+      <Where Type="BUILDING_PUBLIC_SCHOOL" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_PENICILIN" />
+      <Where Type="BUILDING_LABORATORY" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_DRAMA" />
@@ -85,7 +121,7 @@
       <Where Type="BUILDING_OXFORD_UNIVERSITY" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Set PrereqTech="TECH_LIBERALISM" />
       <Where Type="BUILDING_HERMITAGE" />
     </Update>
     <Update>
@@ -95,6 +131,10 @@
     <Update>
       <Set PrereqTech="TECH_MYTHOLOGY" />
       <Where Type="BUILDING_ORACLE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NATURAL_PHILOSOPHY" />
+      <Where Type="BUILDING_HANGING_GARDEN" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_ASSOCIATIVE_THINKING" />
@@ -117,12 +157,16 @@
       <Where Type="BUILDING_PORCELAIN_TOWER" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_CHIVALRY" />
+      <Set PrereqTech="TECH_HOLISTIC_WORLDIEW" />
       <Where Type="BUILDING_HIMEJI_CASTLE" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_RATIONALISM" />
       <Where Type="BUILDING_SISTINE_CHAPEL" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MARXISM" />
+      <Where Type="BUILDING_KREMLIN" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_HOLISTIC_WORLDIEW" />
@@ -133,12 +177,32 @@
       <Where Type="BUILDING_TAJ_MAHAL" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_GEOLOGY" />
+      <Where Type="BUILDING_LOUVRE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_RIFLING" />
+      <Where Type="BUILDING_BRANDENBURG_GATE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_STEAM_BOAT" />
+      <Where Type="BUILDING_STATUE_OF_LIBERTY" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_MINING" />
       <Where Type="BUILDING_STONE_WORKS" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
       <Where Type="BUILDING_STATUE_ZEUS" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_GLOBALIZATION" />
+      <Where Type="BUILDING_TOURIST_CENTER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NATURAL_PHILOSOPHY" />
+      <Where Type="BUILDING_CANDI" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_GUILDS" />
@@ -149,12 +213,20 @@
       <Where Type="BUILDING_MUSICIANS_GUILD" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_RAILROAD" />
+      <Where Type="BUILDING_HOTEL" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_RATIONALISM" />
       <Where Type="BUILDING_UFFIZI" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_GUNPOWDER" />
       <Where Type="BUILDING_RED_FORT" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_FASCISM" />
+      <Where Type="BUILDING_PRORA_RESORT" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_ASSOCIATIVE_THINKING" />
@@ -177,12 +249,52 @@
       <Where Type="BUILDING_SHRINE" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_NUCLEAR_FISSION" />
+      <Where Type="BUILDING_BOMB_SHELTER" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_FASCISM" />
+      <Where Type="BUILDING_POLICE_STATION" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MARXISM" />
+      <Where Type="BUILDING_INTELLIGENCE_AGENCY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_COMPUTERS" />
+      <Where Type="BUILDING_CN_TOWER" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_SCIENTIFIC_METHOD" />
       <Where Type="BUILDING_LEANING_TOWER" />
     </Update>
     <Update>
+      <Set PrereqTech="TECH_NATIONALISM" />
+      <Where Type="BUILDING_NEUSCHWANSTEIN" />
+    </Update>
+    <Update>
+      <Set EnhancedYieldTech="TECH_GEOLOGY" />
+      <Where Type="BUILDING_PETRA" />
+    </Update>
+    <Update>
       <Set PrereqTech="TECH_ASSOCIATIVE_THINKING" />
       <Where Type="BUILDING_TERRACOTTA_ARMY" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_INTERNET" />
+      <Where Type="BUILDING_GREAT_FIREWALL" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_LIBERALISM" />
+      <Where Type="BUILDING_CEILIDH_HALL" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_SCIENTIFIC_METHOD" />
+      <Where Type="BUILDING_COFFEE_HOUSE" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_MYTHOLOGY" />
+      <Where Type="BUILDING_MAYA_PYRAMID" />
     </Update>
     <Update>
       <Set PrereqTech="TECH_POLITICAL_PHILOSOPHY" />

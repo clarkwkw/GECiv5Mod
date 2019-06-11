@@ -328,9 +328,274 @@
       <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_NAVAL_ARCHITECTURE</Tag>
       <Text>EmbarkSpeed10</Text>
     </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_DEFENSIVEPACTTRADINGALLOWED_TECH_CIVIL_SERVICE</Tag>
+      <Text>DefPact</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_DESC</Tag>
+      <Text>Unnamed Tech 1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_DESC</Tag>
+      <Text>Nationalism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_DESC</Tag>
+      <Text>Geology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_CIV</Tag>
+      <Text>
+Archaeology is the study of the remnants of ancient people to learn about their culture, art, architecture, and history. Archaeologists study building ruins, burial mounds, trash heaps, ancient carvings hidden in caves, and long drowned ships on the bottom of the ocean.[NEWLINE][NEWLINE]Although people have no doubt been interested in the lives of those who came before them for as long as there have been people, archaeology as a science began in 15th century Renaissance Europe, when people began to study and emulate the art and architecture of Ancient Greece and Rome and the wealthy nobility of Italy - popes, merchants and heads of state - began to collect antiquities. As these became more scarce, they sponsored excavations to find more loot.[NEWLINE][NEWLINE]Archaeology was put on a more scientific basis in the 19th century through the efforts of German scholars like Heinrich Schliemann, who examined early Greek civilization in Troy and Mycenae.[NEWLINE][NEWLINE]Today archaeologists are studying every aspect of ancient humanity, from our earliest ancestor almost up to our great-great grandparents. Their tools are incredibly sophisticated, allowing ever more insight into the lives of our forebears.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Museum[ENDCOLOR], which provides a large boost to [ICON_CULTURE] Culture when built in a city. Also provides other bonuses relating to [ICON_CULTURE] Culture.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"Those who cannot remember the past are condemned to repeat it."[NEWLINE][TAB][TAB]  - George Santayana[NEWLINE][TAB][TAB][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_DESC</Tag>
+      <Text>Genetics</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_STEAM_POWER</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_DESC</Tag>
+      <Text>Marxism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_STEAM_BOAT</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_STEAM_BOAT</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_DESC</Tag>
+      <Text>Steam Boat</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_CIV</Tag>
+      <Text>When heated, water produces steam. Steam expands under pressure, and in a steam engine part of the heat energy is captured and used to raise and lower a piston or turn a rotor. The principles behind steam power were known by the ancient Greeks, but no one had figured out how to put it to practical use until the late 17th century, when Englishman Thomas Savery created a steam-powered pump designed to raise water from mines. In 1765 James Watt greatly improved the steam engine to the point that it could be used in a wide variety of applications. By 1802 steam engines were being installed in boats, and by 1825, steam railroads were in operation.[NEWLINE][NEWLINE]Steam power revolutionized industry and transportation across the world. Within a century the globe was crisscrossed by rail lines and steamship routes. Massive steam-powered factories were turning out tens of millions of tons of commercial goods (as well as military hardware). The industrialized countries enjoyed a huge increase in productivity and wealth (and pollution). Coal, the primary energy source used in steam engines, was being feverishly mined around the planet. A large portion of Great Britain's global military strategy centered upon protecting naval coaling stations at strategic locations across the world's oceans.[NEWLINE][NEWLINE]Eventually steam engines would be replaced by internal combustion engines, which were far more efficient and emitted less pollution. But before petroleum, steam was king, and the modern world would never have existed without it.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Ironclad[ENDCOLOR], a powerful warship especially suited to combat in coastal waters.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"The nations of the West hope that by means of steam communication all the world will become as one family."[NEWLINE][TAB][TAB]  - Townsend Harris[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_REPLACEABLE_PARTS_CIV</Tag>
+      <Text>Replaceable parts is a kind of manufacturing process by which many duplicate copies of an item are fabricated, each of them identical component parts. This process allows for a tremendous increase in the speed and profitability of manufacturing, which in turn helped fuel the Industrial Revolution of the 19th Century.[NEWLINE][NEWLINE]One of the major impetuses for replaceable parts was the desire to issue firearms to soldiers. Originally, muskets were created by craftsmen, and each might differ slightly from the next - one craftsman might make his rifle slightly longer, while another might give his a larger or smaller trigger. For the individual this was not necessarily a problem - if his musket broke he could return it to the craftsman who first made it for repairs. Of course this was not feasible for an army with a thousand muskets.[NEWLINE][NEWLINE]However, if all were identical then a part from a broken musket could be used to repair another. Further, a soldier who had trained with one musket could pick up another and expect it to perform in much the same fashion, without having to get used to a new weapon's particular design features.[NEWLINE][NEWLINE]Now, almost every manufactured good on the planet is constructed of replaceable parts. Craftsmen have become artists, their wares too expensive for most average consumers.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_DESC</Tag>
+      <Text>Fascism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ELECTRONICS_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_DESC</Tag>
+      <Text>Pesticides</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_ELECTRONICS</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_DESC</Tag>
+      <Text>Biotechnology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EXTRAVOTESPERDIPLOMAT_TECH_INTERNET</Tag>
+      <Text>ExtraVotesPerDiplomat1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_DESC</Tag>
+      <Text>Advanced Engine</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INFLUENCESPREADMODIFIER_TECH_GLOBALIZATION</Tag>
+      <Text>TourismBy100</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_DESC</Tag>
+      <Text>Artificial Intelligence</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSEMBARKING_TECH_ELECTRONICS</Tag>
+      <Text>Embark</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDALLWATERPASSAGE_TECH_ELECTRONICS</Tag>
+      <Text>OceanCross</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_MAPVISIBLE_TECH_ELECTRONICS</Tag>
+      <Text>RevealMap</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWEMBASSYTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>Embassy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_OPENBORDERSTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>OpenBorders</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_DEFENSIVEPACTTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>DefPact</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_RESEARCHAGREEMENTTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>ResearchAgreements</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_BRIDGEBUILDING_TECH_ELECTRONICS</Tag>
+      <Text>BridgesOnRivers</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSWORLDCONGRESS_TECH_ELECTRONICS</Tag>
+      <Text>WorldCongress</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_GENERIC_FUNCTIONALITY</Tag>
+      <Text>Custom Generic</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_GENERIC_FUNCTIONALITY_EFFECT</Tag>
+      <Text>Does something. Added by the Visual Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_INTERNET</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
     <Update>
       <Set Text="Architecture" />
       <Where Tag="TXT_KEY_TECH_ARCHITECTURE_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Added using Indie Stone Tech Tree Editor." />
+      <Where Tag="TXT_KEY_TECH_ELECTRONICS_HELP" />
     </Update>
     <Update>
       <Set Text="Astronomy" />
@@ -349,6 +614,14 @@
       <Where Tag="TXT_KEY_TECH_EDUCATION_DESC" />
     </Update>
     <Update>
+      <Set Text="Electronics" />
+      <Where Tag="TXT_KEY_TECH_ELECTRONICS_DESC" />
+    </Update>
+    <Update>
+      <Set Text="'Some Famous Quote' - Some Famous Person" />
+      <Where Tag="TXT_KEY_TECH_ELECTRONICS_QUOTE" />
+    </Update>
+    <Update>
       <Set Text="Gunpowder" />
       <Where Tag="TXT_KEY_TECH_GUNPOWDER_DESC" />
     </Update>
@@ -357,35 +630,20 @@
       <Where Tag="TXT_KEY_TECH_PRINTING_PRESS_DESC" />
     </Update>
     <Update>
+      <Set Text="Replaceable Parts" />
+      <Where Tag="TXT_KEY_TECH_REPLACEABLE_PARTS_DESC" />
+    </Update>
+    <Update>
       <Set Text="Sailing" />
       <Where Tag="TXT_KEY_TECH_SAILING_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Steam Power" />
+      <Where Tag="TXT_KEY_TECH_STEAM_POWER_DESC" />
     </Update>
     <Update>
       <Set Text="Theology" />
       <Where Tag="TXT_KEY_TECH_THEOLOGY_DESC" />
     </Update>
   </Language_en_US>
-  <!--<Languages>
-    <Row>
-      <ID>0</ID>
-      <Type>en_US</Type>
-      <Name>English</Name>
-      <TableName>Language_en_US</TableName>
-      <PluralRule>2</PluralRule>
-    </Row>
-    <Row>
-      <ID>2</ID>
-      <Type>en_US</Type>
-      <Name>English</Name>
-      <TableName>Language_en_US</TableName>
-      <PluralRule>2</PluralRule>
-    </Row>
-    <Row>
-      <ID>3</ID>
-      <Type>en_US</Type>
-      <Name>English</Name>
-      <TableName>Language_en_US</TableName>
-      <PluralRule>2</PluralRule>
-    </Row>
-  </Languages>-->
 </GameData>
