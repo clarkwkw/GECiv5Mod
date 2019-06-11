@@ -4,5 +4,5 @@ local ModVersion = Modding.GetLatestInstalledModVersion(ModID)
 modUserData = Modding.OpenUserData(ModID, ModVersion)
 
 function IsUGFNMap(filename)
-	return string.match(string.lower(filename), "ugfn") 
+	return string.match(string.lower(filename), "ugfn") or string.match(string.lower(filename), "ugfh")
 end
