@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Table name="PolicyBranchTechPrereq">
+    <Column name="ID" type="integer" primarykey="true" autoincrement="true"/>
+    <Column name="BranchType" type="text" unique="true" notnull="true" reference="PolicyBranchTypes(Type)"/>
+    <Column name="TechType" type="text" unique="true" notnull="true" reference="Technologies(Type)"/>
+  </Table>
+  <PolicyBranchTechPrereq>
+    <Row>
+      <BranchType>POLICY_BRANCH_PIETY</BranchType>
+      <TechType>TECH_MYTHOLOGY</TechType>
+    </Row>
+    <Row>
+      <BranchType>POLICY_BRANCH_HONOR</BranchType>
+      <TechType>TECH_ARCHERY</TechType>
+    </Row>
+    <Row>
+      <BranchType>POLICY_BRANCH_AESTHETICS</BranchType>
+      <TechType>TECH_DRAMA</TechType>
+    </Row>
+    <Row>
+      <BranchType>POLICY_BRANCH_PATRONAGE</BranchType>
+      <TechType>TECH_POLITICAL_PHILOSOPHY</TechType>
+    </Row>
+    <Row>
+      <BranchType>POLICY_BRANCH_RATIONALISM</BranchType>
+      <TechType>TECH_RATIONALISM</TechType>
+    </Row>
+    <Row>
+      <BranchType>POLICY_BRANCH_COMMERCE</BranchType>
+      <TechType>TECH_GUILDS</TechType>
+    </Row>
+    <Row>
+      <BranchType>POLICY_BRANCH_EXPLORATION</BranchType>
+      <TechType>TECH_COMPASS</TechType>
+    </Row>
+  </PolicyBranchTechPrereq>
+  <PolicyBranchTypes>
+     <Update>
+      <Set EraPrereq="NULL" />
+    </Update>
+  </PolicyBranchTypes>
+  <Policies>
+    <Update>
+      <Set TechPrereq="TECH_MYTHOLOGY" />
+      <Where PolicyBranchType="POLICY_BRANCH_PIETY" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_ARCHERY" />
+      <Where PolicyBranchType="POLICY_BRANCH_HONOR" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_DRAMA" />
+      <Where PolicyBranchType="POLICY_BRANCH_AESTHETICS" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_POLITICAL_PHILOSOPHY" />
+      <Where PolicyBranchType="POLICY_BRANCH_PATRONAGE" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_RATIONALISM" />
+      <Where PolicyBranchType="POLICY_BRANCH_RATIONALISM" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_GUILDS" />
+      <Where PolicyBranchType="POLICY_BRANCH_COMMERCE" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_COMPASS" />
+      <Where PolicyBranchType="POLICY_BRANCH_EXPLORATION" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_LIBERALISM" />
+      <Where PolicyBranchType="POLICY_BRANCH_FREEDOM" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_MARXISM" />
+      <Where PolicyBranchType="POLICY_BRANCH_ORDER" />
+    </Update>
+    <Update>
+      <Set TechPrereq="TECH_FASCISM" />
+      <Where PolicyBranchType="POLICY_BRANCH_AUTOCRACY" />
+    </Update>
+  </Policies>
+</GameData>

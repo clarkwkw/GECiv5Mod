@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK_TECH">
+			<Text>[COLOR_WARNING_TEXT]You need to research {1_TechString:textkey} before it can be adopted.[ENDCOLOR]</Text>
+		</Row>
+	</Language_en_US>
+	<Language_zh_Hant_HK>
+		<Row Tag="TXT_KEY_POLICY_BRANCH_CANNOT_UNLOCK_TECH">
+			<Text>[COLOR_WARNING_TEXT]你需要先研究 {1_TechString:textkey} 以解鎖分支。[ENDCOLOR]</Text>
+		</Row>
+	</Language_zh_Hant_HK>
+</GameData>
