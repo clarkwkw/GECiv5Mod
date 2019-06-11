@@ -47,6 +47,12 @@
         <Description>Check this to proceed to game setup screen.</Description>
         <FileName>Overrides/CustomGameSetupScreen.xml</FileName>
       </Content>
+      <Content>
+        <Type>Map</Type>
+        <Name>UGFH</Name>
+        <Description>Map for UGFH</Description>
+        <FileName>Maps/UGFH.Civ5Map</FileName>
+      </Content>
     </ModContent>
     <ModActions>
       <Action>
@@ -301,6 +307,10 @@
     <Content Include="Lua\UGFNUtils.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Maps\UGFH.Civ5Map">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Maps\UGFN Part 1.civ5map">
       <SubType>Lua</SubType>
