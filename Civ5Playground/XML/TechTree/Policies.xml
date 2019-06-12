@@ -24,7 +24,7 @@
     </Row>
     <Row>
       <BranchType>POLICY_BRANCH_PATRONAGE</BranchType>
-      <EntryPolicy>POLICY_HONOR</EntryPolicy>
+      <EntryPolicy>POLICY_PATRONAGE</EntryPolicy>
       <TechType>TECH_POLITICAL_PHILOSOPHY</TechType>
     </Row>
     <Row>
