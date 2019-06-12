@@ -55,4 +55,14 @@
       <TechType>TECH_FASCISM</TechType>
     </Row>
   </PolicyBranchTechPrereq>
+
+  <IconTextureAtlases>
+    <Row>
+      <Atlas>POLICY_ATLAS</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>SocialPolicies360.dds</Filename>
+      <IconsPerRow>8</IconsPerRow>
+      <IconsPerColumn>8</IconsPerColumn>
+    </Row>
+  </IconTextureAtlases>
 </GameData>

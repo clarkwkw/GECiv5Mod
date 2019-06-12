@@ -14,3 +14,26 @@ if #testers > 0 then
 	print("Adding tester bonus..")
 	ListenerManager.AddGlobalTurnStartListener("TESTER_BONUS", ListenerManager.TestBonusListenerFactory(testers))
 end
+
+
+local policyBranchPrereqs = {}
+for row in GameInfo.PolicyBranchTechPrereq() do
+	policyBranchPrereqs[row.BranchType] = row.TechType
+end
+
+function PlayerCanAdoptPolicyBranch(player, policyBranch)
+	print("player: ", player)
+	print("policy branch:", policyBranch)
+
+	local branch = GameInfo.PolicyBranchTypes[policyBranch]
+	local team = Teams[Players[player]:GetTeam()]
+	local techPrereq = policyBranchPrereqs[branch.Type]
+	print("techPrereq:", techPrereq)
+	if (team ~= nil and techPrereq ~= nil and not team:IsHasTech(GameInfoTypes[techPrereq])) then
+		print("cannot adopt")
+		return false
+	end
+	print("can adopt")
+	return true
+end
+GameEvents.PlayerCanAdoptPolicyBranch.Add(PlayerCanAdoptPolicyBranch)
