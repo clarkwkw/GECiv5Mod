@@ -1,0 +1,649 @@
+<GameData>
+  <Language_zh_Hant_HK>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_ENGINEERING</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_BRIDGEBUILDING_TECH_ENGINEERING</Tag>
+      <Text>BridgesOnRivers</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_BIOLOGY</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_STEAM_POWER</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_RAILROAD</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_RESEARCHAGREEMENTTRADINGALLOWED_TECH_EDUCATION</Tag>
+      <Text>ResearchAgreements</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_DEFENSIVEPACTTRADINGALLOWED_TECH_CHIVALRY</Tag>
+      <Text>DefPact</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_COMPASS</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_OPENBORDERSTRADINGALLOWED_TECH_CIVIL_SERVICE</Tag>
+      <Text>OpenBorders</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_ASTRONOMY</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDALLWATERPASSAGE_TECH_ASTRONOMY</Tag>
+      <Text>OceanCross</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSWORLDCONGRESS_TECH_PRINTING_PRESS</Tag>
+      <Text>WorldCongress</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_BANKING</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_PENICILIN</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSEMBARKING_TECH_OPTICS</Tag>
+      <Text>Embark</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWEMBASSYTRADINGALLOWED_TECH_WRITING</Tag>
+      <Text>Embassy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_ANIMAL_HUSBANDRY</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_SAILING</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_MAPVISIBLE_TECH_SATELLITES</Tag>
+      <Text>RevealMap</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EXTRAVOTESPERDIPLOMAT_TECH_GLOBALIZATION</Tag>
+      <Text>ExtraVotesPerDiplomat1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INFLUENCESPREADMODIFIER_TECH_INTERNET</Tag>
+      <Text>TourismBy100</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MYTHOLOGY_DESC</Tag>
+      <Text>Mythology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MYTHOLOGY_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MYTHOLOGY_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_SAILING_CIV</Tag>
+      <Text>Sailing is the art of harnessing the power of the wind to move a boat over the water. To be successful, sailing required the mastery of a number of diverse skills. First, the culture must be able to construct a seaworthy craft. Second, they must be able to construct some sort of sturdy sheets (sails) which can catch the wind and transmit its energy to the hull. Third they must be able to build the various ropes and cleats and pulleys used to control the ship's sails, and finally they must be able to successfully navigate the vessel from point to point without getting lost or capsizing or suffering some other misfortune.[NEWLINE][NEWLINE]The earliest recorded evidence of watercraft can be found in illustrations in Egypt which date from around 4,000 BC. As a riparian (river-based) civilization, the Egyptians were excellent sailors. Many of their vessels contained both oars and sails, the former being used when the winds weren't strong enough or weren't coming from a favorable direction.[NEWLINE][NEWLINE]By 3000 BC the Egyptians were venturing out into the Mediterranean Sea in their vessels, steering the lengthy journey across the open water to Crete and later Phoenicia. The Egyptians also sailed down the coast of Africa, looking for knowledge, trade and treasure.[NEWLINE][NEWLINE]The earliest warships - biremes and triremes and the like - were powered by oar and sail and possessed rams or beaks on their prows. During battle the helmsman would attempt to ram the enemy vessel at high speed, while avoiding the enemy's earnest attempts to do the same thing. Some vessels were equipped with archers to fire at enemy craft from longer distance, while others had soldiers aboard; these vessels sought to come alongside the enemy craft so that their soldiers could board the other ship and take it by storm.[NEWLINE][NEWLINE]The Greeks - especially the Athenians and the island colonies - were masters at naval warfare. One of the reasons that they were able to defeat their much larger and more powerful neighbor, Persia, was that the Athenian navy dominated the Aegean Sea and thus constantly threatened the Persians' increasingly lengthy supply chain.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_CIVIL_SERVICE_CIV</Tag>
+      <Text>The term "civil service" is generally used to describe the parts of a government in which individuals are employed on the basis of merit rather than because of political patronage or being born into a certain class or because the person is related to the current ruler. In the United States federal government, for instance, the highest posts in the bureaucracy are appointed by the president. They are "political appointments" and will likely change with each new administration. Ranks below the highest points are filled with permanent "civil servants," who generally hold their positions from administration to administration, no matter which party wins.[NEWLINE][NEWLINE]One of the earliest examples of a civil service can be found in the Qin Dynasty of China (ca. 210 BC), under which employment in the bureaucracy was merit-based. Over time this system gradually was corrupted and employment in the bureaucracy once again became based upon class rather than merit. Three hundred years later the merit system was reapplied (under the Sui and Tang Dynasties), and it remained in effect for some centuries.[NEWLINE][NEWLINE]Historically, many civilizations have followed a similar pattern to the Chinese: over time the bureaucracy becomes increasingly corrupt and inefficient until eventually stringent reforms are enacted to improve the government's efficiency. These make things better for a while until standards begin to be relaxed in favor of family or connections, and the cycle begins all over again.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LAW_DESC</Tag>
+      <Text>Law</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LAW_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LAW_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LAW_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWEMBASSYTRADINGALLOWED_TECH_LAW</Tag>
+      <Text>Embassy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_DESC</Tag>
+      <Text>Complex Construction</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_CIV</Tag>
+      <Text>Construction represents the advancement of the study of masonry, primarily by adding iron and other metals to the builder's toolbox. Although remarkably durable, stone and brick are also quite heavy and inflexible. It's impossible to construct very tall structures out of these materials - unless the structure in question is solid stone or brick and is pyramid-shaped - otherwise they will collapse under their own weight or in the face of a strong wind.[NEWLINE][NEWLINE]Metal structures, on the other hand, or masonry reinforced with metal - can be quite tall and beautiful, and structurally sound. Using metal one can create soaring bridges, deep tunnels, great skyscrapers and elevated roadways. Without construction none of the world's great cities could exist, nor could its most beautiful architecture.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Composite Bowman[ENDCOLOR], a powerful ranged unit, and the [COLOR_POSITIVE_TEXT]Colosseum[ENDCOLOR], which improves [ICON_HAPPINESS_1] Happiness in the empire, which in turn helps your city growth and makes [ICON_GOLDEN_AGE] Golden Ages more likely. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Lumbermills[ENDCOLOR] on forested map tiles, increasing their [ICON_PRODUCTION] Production.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"Three things are to be looked to in a building: that it stand on the right spot; that it be securely founded; that it be successfully executed."[NEWLINE][TAB][TAB]  - Johann Wolfgang von Goethe[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_CURRENCY_CIV</Tag>
+      <Text>Currency is a remarkable innovation by which pieces of paper or small discs represent a certain amount of wealth and can be traded to others in return for goods and services. The earliest currencies were metal coins; these were worth whatever was the current value of the metal out of which they were carved. Later on, the currency itself might have little or no intrinsic value - on a desert island, a dollar bill is nothing more than a small rectangular piece of paper - but the currency's issuer (usually a government) assigned it a value, and as long as the issuer remained solvent, the currency was as good as gold, so to speak.[NEWLINE][NEWLINE]In the 4th millennium BC, Ancient Egypt used gold bars of a set weight as currency; elsewhere in the Middle East copper ingots were similarly used. In many places in the world metal rings, bracelets and bangles (of gold, silver and jewels) served as both ornamentation and currency.[NEWLINE][NEWLINE]Throughout history, forgers have always sought to create bogus replicas of the currency at hand. Forgers might create duplicate coins of inferior and cheaper metal than the legal tender, or they might "shave" a bit of metal off of a coin made of precious material. When paper money became the norm for currency the forgers quickly learned how to duplicate the size, color and feel of the paper and copy the pictures and writing on the bills. Forgers are so proficient that most modern currency now comes complete with many advanced security measures, and the time is not far away when each bill will have its own computer chip embedded in the paper.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_CURRENCY</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_DESC</Tag>
+      <Text>Political Philosophy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_CIV</Tag>
+      <Text>Philosophy is the study of reality and man's place in it. The word comes from the Greek/Latin "philosophia," or love of wisdom. It is somewhat separate from religion, which seeks to define and understand some supernatural system - philosophy takes a step back and asks if that supernatural system even exists. Philosophy deals with logic, morality, observation, realism, happiness, life, death, and all of the other big questions.[NEWLINE][NEWLINE]The Greeks are generally credited with the invention of philosophy in western civilization. In the 6th century BC Thales of Miletus was the first man known to give a purely natural (non-religious) explanation for the origin of the world. He believed that everything came out of water; this theory was based upon his viewing of fossilized sea animals far inland. This explanation required no creative action by a supernatural being; it was a result of natural properties. Later philosophers would expand upon this most basic theory - except of course for those philosophers who chose to deny that anything exists at all, and those who decided that the world was but a reflection of some other place anyway, and so forth. The problem with examining reality is that the deeper one looks, the more confusing everything gets.[NEWLINE][NEWLINE]At its best, philosophy provides tools which one can use to observe and make judgments about the world around them, to think about things that haven't been considered before. Like any other tool it can be used for good or for evil, but philosophy at least seeks to provide the intellectual structure to help one decide which is which.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Temple[ENDCOLOR], which increases the [ICON_PEACE] Faith output of a city.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"There is only one good, knowledge, and one evil, ignorance."[NEWLINE][TAB][TAB]  - Socrates[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ASSOCIATIVE_THINKING_DESC</Tag>
+      <Text>Associative Thinking</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ASSOCIATIVE_THINKING_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ASSOCIATIVE_THINKING_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ASSOCIATIVE_THINKING_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATURAL_PHILOSOPHY_DESC</Tag>
+      <Text>Natural Philosophy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATURAL_PHILOSOPHY_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATURAL_PHILOSOPHY_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATURAL_PHILOSOPHY_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_THEOLOGY_CIV</Tag>
+      <Text>Theology is the study of religion. Theologians study religious traditions and beliefs. The practice goes at least as far back in history as the Classical Greeks, who had an extremely rich mythology and religious tradition to observe. In the first and second century AD, Jewish religious scholarship flourished. The Jerusalem Talmud, a collection of Rabbinic notes about Jewish Oral tradition, was published around 200 AD and added to and expanded upon over the next two centuries.[NEWLINE][NEWLINE]Theology is important. It has had an incredibly powerful effect upon world history. Countless millions have died over religious disputes, and they continue to do so today. The Romans killed Christians over their radical new theology which denied the existence of the Roman gods. Christians killed Jews and Muslims and Christians over religious disputes. Theologian and Christian revolutionary Martin Luther triggered hundreds of years of brutal religious conflict in Europe with his "95 Theses" questioning, among other things, the selling of papal indulgences (divine forgiveness of sins) to pay for the construction of St. Peter's Basilica. If it is ever to end, theology will be of critical importance in solving the current religious war between radical Muslims and the Western World.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_RESEARCHAGREEMENTTRADINGALLOWED_TECH_UNIVERSITY_EDUCATION</Tag>
+      <Text>ResearchAgreements</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_DESC</Tag>
+      <Text>University Education</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_CIV</Tag>
+      <Text>Education is the process by which people learn things. Obviously it has been around as long as man has. Throughout much of history, education has been an informal affair, parents teaching their children what they need to know to survive in between household chores and hunting expeditions and dodging tigers and so forth. As a tribe expanded and grew more prosperous, village elders and cripples might educate the children while the more healthy adults gathered food, built stuff or made war. Eventually a very wealthy tribe or village might have formal classes for the more important children, and once a civilization matured enough it might see the great value in education for everybody.[NEWLINE][NEWLINE]In ancient Egypt, the priestly class served as teachers for the children of nobility. In these Egyptian schools the children were taught reading, writing, religion, history, science, medicine, mathematics and other advanced topics. In competition with Egypt, Mesopotamia had a similar educational setup for its priests and scribes - who might be copyists, librarians, or teachers. The Mesopotamian students learned reading, writing, religion, law, medicine and astrology. Education first appeared in China some three thousand years ago. Reading, writing, civic responsibility, rituals, and music formed the core curriculum.[NEWLINE][NEWLINE]In Mayan culture, education was in the hands of the priests. The priestly class was the educated class, and they served as important advisors to the chiefs and other citizens. To become a priest a student received a rigorous education in history, writing, divination, medicine, and the calendar system.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]University[ENDCOLOR], which boosts [ICON_RESEARCH] Science. Also provides new [ICON_RESEARCH] Science-related abilities, like the [COLOR_POSITIVE_TEXT]Research Agreement[ENDCOLOR], which is a special deal that may be made with other players in the game.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"Education is the best provision for old age."[NEWLINE][TAB][TAB]  - Aristotle[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_HOLISTIC_WORLDIEW_DESC</Tag>
+      <Text>Holistic Worldiew</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_HOLISTIC_WORLDIEW_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_HOLISTIC_WORLDIEW_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_HOLISTIC_WORLDIEW_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_RATIONALISM_DESC</Tag>
+      <Text>Rationalism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_RATIONALISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_RATIONALISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_RATIONALISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_SCIENTIFIC_METHOD</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDALLWATERPASSAGE_TECH_SCIENTIFIC_METHOD</Tag>
+      <Text>OceanCross</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_DESC</Tag>
+      <Text>Scientific Method</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_CIV</Tag>
+      <Text>Astronomy is the study of objects in space - from space dust to asteroids to moons, planets, stars, and galaxies - as well as other more esoteric objects like black holes and wormholes. Astronomy is the oldest of the natural sciences, with its roots in the religious and astrological practices of pre-history.[NEWLINE][NEWLINE]Much of early astronomy is related to religion. Stars and other celestial objects were associated with gods, and it was believed that they had direct control over man and his physical universe. A certain star or cluster of stars might appear each year around harvest time, and eventually ancient man might decide that the star is the home of the god governing the harvest. Perhaps if one sacrifices a goat on the day that the star first appears, that god would bless the upcoming harvest. This kind of thinking lies at the root of ancient astronomical studies as well as ancient calendar-making, with which astronomy has been historically allied.[NEWLINE][NEWLINE]During the Renaissance astronomy shed much of its religious, astronomical trappings, becoming a pure science in its own right. In 1543 Nicolaus Copernicus published "De Revolutionibus Orbium Coelestium,"  which postulated that the sun was at the center of the universe, not the earth, and that the planets orbited the sun, and the moon orbited the earth. In addition to the triumph of scientific research over dogma, Copernicus' book also argued that the use of mathematics would greatly help mankind to understand the world around him. Although this work was deeply controversial in his day, today Copernicus is acknowledged as one of the great scientists of history, and one of the fathers of the Scientific Revolution.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Caravel[ENDCOLOR], the first Naval Unit capable of exploring the world's oceans, and the [COLOR_POSITIVE_TEXT]Observatory[ENDCOLOR], which provides a significant [ICON_RESEARCH] Science boost. Also allows embarked land units to cross ocean tiles.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered."[NEWLINE][TAB][TAB]  - Homer[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDALLWATERPASSAGE_TECH_NAVIGATION</Tag>
+      <Text>OceanCross</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PRINTING_PRESS_CIV</Tag>
+      <Text>While movable type was invented in China, as far as can be determined, the first mechanized printing press was invented in the mid-fifteenth century by German printer Johannes Gutenberg. The earliest printing presses were wooden machines, very similar in design to the wine and olive oil presses which had been used around the Mediterranean for centuries.[NEWLINE][NEWLINE]In the original presses, the type was laid out in reverse on a wooden "platen" which held it tightly in position. Ink was applied to the type on the platen, then the paper was placed atop the platen in the press. The craftsmen turned the screw to put pressure on the paper and bring it into contact with the inked type. The printer then removed the paper and reinked the type, and the process began once again. Gutenberg's press could turn out some 250 sheets per hour (printed on one side). His design remained unchanged for some three hundred years, until it was supplanted by metal machines. By the nineteenth century, presses were powered by steam, and capable of producing some 7500 sheets per hour.[NEWLINE][NEWLINE]The value of the printing press to human knowledge cannot be overstated. Before the press, few books were in print, and those that were might cost more than the average worker made in a year. Cambridge University Library had just over 100 books when the press was invented; within an astonishingly short time common folks could afford to have bibles and other books in their homes. Within 60 years the first printed "news book" (forerunner to the newspaper) appeared in England.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GUNPOWDER_CIV</Tag>
+      <Text>Gunpowder, also known as "black powder," was invented in China, possibly as far back as the 9th century AD, by alchemists looking for an elixir of immortality (which it isn't). A mixture of sulfur, charcoal, and potassium nitrate, gunpowder burns very rapidly when exposed to flame, producing a great quantity of gasses and solids which can be employed as a propellant in firearms and in fireworks. The Chinese used gunpowder in primitive bombs and rockets against the Mongol invaders, and once they conquered China, the Mongols used them against everybody else.[NEWLINE][NEWLINE]By the first half of the 12th century AD the Arabic world acquired knowledge of gunpowder. Some historical texts state that the Mamluks used the first cannon in history against the Mongols during the Battle of Ain Jalut in 1260 AD, but this is open to debate. The first "hand cannon" appears in an Arabic manuscript from the 14th century.[NEWLINE][NEWLINE]Europe too gained knowledge of gunpowder towards the middle of the 12th century. They improved the quality of the powder by "corning" it, adding liquid to the powder to create larger grains (corns), increasing the explosive's stability.[NEWLINE][NEWLINE]Gunpowder remained the explosive of choice in cannon and firearms until the creation of "smokeless" powder in the 19th century. The new product burned cleaner and produced far less smoke, making it superior to the old black powder.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LIBERALISM_DESC</Tag>
+      <Text>Liberalism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LIBERALISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LIBERALISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_LIBERALISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NAVAL_ARCHITECTURE_DESC</Tag>
+      <Text>Naval Architecture</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NAVAL_ARCHITECTURE_CIV</Tag>
+      <Text>Architecture can be considered both an art and a science. Encompassing everything from the initial planning and design of a structure, to the actual construction process, architecture has been a crucial element of the building process since ancient times. One of the earliest known discussions of architecture and its principles, "De Architectura," was written by the Roman architect Vitruvius in the first century BC. A ten volume set comprising all of the most intricate details of Roman construction methods, Vitruvius's work is widely recognized today as a crucial development in the evolution of the architectural design process.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NAVAL_ARCHITECTURE_HELP</Tag>
+      <Text>Allows you to construct multiple Wonders that can boost [ICON_CULTURE] Culture, [ICON_RESEARCH] Science and [ICON_HAPPINESS_1] Happiness.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NAVAL_ARCHITECTURE_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"Architecture begins where engineering ends."[NEWLINE] - Walter Gropius[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_NAVAL_ARCHITECTURE</Tag>
+      <Text>EmbarkSpeed10</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_DEFENSIVEPACTTRADINGALLOWED_TECH_CIVIL_SERVICE</Tag>
+      <Text>DefPact</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_DESC</Tag>
+      <Text>Unnamed Tech 1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_UNNAMED_TECH_1_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_DESC</Tag>
+      <Text>Nationalism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_NATIONALISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_DESC</Tag>
+      <Text>Geology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_CIV</Tag>
+      <Text>
+Archaeology is the study of the remnants of ancient people to learn about their culture, art, architecture, and history. Archaeologists study building ruins, burial mounds, trash heaps, ancient carvings hidden in caves, and long drowned ships on the bottom of the ocean.[NEWLINE][NEWLINE]Although people have no doubt been interested in the lives of those who came before them for as long as there have been people, archaeology as a science began in 15th century Renaissance Europe, when people began to study and emulate the art and architecture of Ancient Greece and Rome and the wealthy nobility of Italy - popes, merchants and heads of state - began to collect antiquities. As these became more scarce, they sponsored excavations to find more loot.[NEWLINE][NEWLINE]Archaeology was put on a more scientific basis in the 19th century through the efforts of German scholars like Heinrich Schliemann, who examined early Greek civilization in Troy and Mycenae.[NEWLINE][NEWLINE]Today archaeologists are studying every aspect of ancient humanity, from our earliest ancestor almost up to our great-great grandparents. Their tools are incredibly sophisticated, allowing ever more insight into the lives of our forebears.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Museum[ENDCOLOR], which provides a large boost to [ICON_CULTURE] Culture when built in a city. Also provides other bonuses relating to [ICON_CULTURE] Culture.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GEOLOGY_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"Those who cannot remember the past are condemned to repeat it."[NEWLINE][TAB][TAB]  - George Santayana[NEWLINE][TAB][TAB][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_DESC</Tag>
+      <Text>Genetics</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_GENETICS_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_STEAM_POWER</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_DESC</Tag>
+      <Text>Marxism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_MARXISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDMOVECHANGE_TECH_STEAM_BOAT</Tag>
+      <Text>EmbarkSpeed1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_STEAM_BOAT</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_DESC</Tag>
+      <Text>Steam Boat</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_CIV</Tag>
+      <Text>When heated, water produces steam. Steam expands under pressure, and in a steam engine part of the heat energy is captured and used to raise and lower a piston or turn a rotor. The principles behind steam power were known by the ancient Greeks, but no one had figured out how to put it to practical use until the late 17th century, when Englishman Thomas Savery created a steam-powered pump designed to raise water from mines. In 1765 James Watt greatly improved the steam engine to the point that it could be used in a wide variety of applications. By 1802 steam engines were being installed in boats, and by 1825, steam railroads were in operation.[NEWLINE][NEWLINE]Steam power revolutionized industry and transportation across the world. Within a century the globe was crisscrossed by rail lines and steamship routes. Massive steam-powered factories were turning out tens of millions of tons of commercial goods (as well as military hardware). The industrialized countries enjoyed a huge increase in productivity and wealth (and pollution). Coal, the primary energy source used in steam engines, was being feverishly mined around the planet. A large portion of Great Britain's global military strategy centered upon protecting naval coaling stations at strategic locations across the world's oceans.[NEWLINE][NEWLINE]Eventually steam engines would be replaced by internal combustion engines, which were far more efficient and emitted less pollution. But before petroleum, steam was king, and the modern world would never have existed without it.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_HELP</Tag>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Ironclad[ENDCOLOR], a powerful warship especially suited to combat in coastal waters.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_STEAM_BOAT_QUOTE</Tag>
+      <Text>[NEWLINE][TAB][TAB]"The nations of the West hope that by means of steam communication all the world will become as one family."[NEWLINE][TAB][TAB]  - Townsend Harris[NEWLINE][TAB]</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_REPLACEABLE_PARTS_CIV</Tag>
+      <Text>Replaceable parts is a kind of manufacturing process by which many duplicate copies of an item are fabricated, each of them identical component parts. This process allows for a tremendous increase in the speed and profitability of manufacturing, which in turn helped fuel the Industrial Revolution of the 19th Century.[NEWLINE][NEWLINE]One of the major impetuses for replaceable parts was the desire to issue firearms to soldiers. Originally, muskets were created by craftsmen, and each might differ slightly from the next - one craftsman might make his rifle slightly longer, while another might give his a larger or smaller trigger. For the individual this was not necessarily a problem - if his musket broke he could return it to the craftsman who first made it for repairs. Of course this was not feasible for an army with a thousand muskets.[NEWLINE][NEWLINE]However, if all were identical then a part from a broken musket could be used to repair another. Further, a soldier who had trained with one musket could pick up another and expect it to perform in much the same fashion, without having to get used to a new weapon's particular design features.[NEWLINE][NEWLINE]Now, almost every manufactured good on the planet is constructed of replaceable parts. Craftsmen have become artists, their wares too expensive for most average consumers.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_DESC</Tag>
+      <Text>Fascism</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_FASCISM_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ELECTRONICS_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_DESC</Tag>
+      <Text>Pesticides</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_PESTICIDES_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_ELECTRONICS</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_DESC</Tag>
+      <Text>Biotechnology</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EXTRAVOTESPERDIPLOMAT_TECH_INTERNET</Tag>
+      <Text>ExtraVotesPerDiplomat1</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_DESC</Tag>
+      <Text>Advanced Engine</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INFLUENCESPREADMODIFIER_TECH_GLOBALIZATION</Tag>
+      <Text>TourismBy100</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_DESC</Tag>
+      <Text>Artificial Intelligence</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_CIV</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_HELP</Tag>
+      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_QUOTE</Tag>
+      <Text>'Some Famous Quote' - Some Famous Person</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSEMBARKING_TECH_ELECTRONICS</Tag>
+      <Text>Embark</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_EMBARKEDALLWATERPASSAGE_TECH_ELECTRONICS</Tag>
+      <Text>OceanCross</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_MAPVISIBLE_TECH_ELECTRONICS</Tag>
+      <Text>RevealMap</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWEMBASSYTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>Embassy</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_OPENBORDERSTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>OpenBorders</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_DEFENSIVEPACTTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>DefPact</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_RESEARCHAGREEMENTTRADINGALLOWED_TECH_ELECTRONICS</Tag>
+      <Text>ResearchAgreements</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_BRIDGEBUILDING_TECH_ELECTRONICS</Tag>
+      <Text>BridgesOnRivers</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_ALLOWSWORLDCONGRESS_TECH_ELECTRONICS</Tag>
+      <Text>WorldCongress</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_GENERIC_FUNCTIONALITY</Tag>
+      <Text>Custom Generic</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_GENERIC_FUNCTIONALITY_EFFECT</Tag>
+      <Text>Does something. Added by the Visual Tech Tree Editor.</Text>
+    </Row>
+    <Row>
+      <Tag>TXT_KEY_FUNCTIONALITY_INTERNATIONALTRADEROUTESCHANGE_TECH_INTERNET</Tag>
+      <Text>TradeRoute1</Text>
+    </Row>
+    <Update>
+      <Set Text="Architecture" />
+      <Where Tag="TXT_KEY_TECH_ARCHITECTURE_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Added using Indie Stone Tech Tree Editor." />
+      <Where Tag="TXT_KEY_TECH_ELECTRONICS_HELP" />
+    </Update>
+    <Update>
+      <Set Text="Astronomy" />
+      <Where Tag="TXT_KEY_TECH_ASTRONOMY_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Civil Service" />
+      <Where Tag="TXT_KEY_TECH_CIVIL_SERVICE_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Currency" />
+      <Where Tag="TXT_KEY_TECH_CURRENCY_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Education" />
+      <Where Tag="TXT_KEY_TECH_EDUCATION_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Electronics" />
+      <Where Tag="TXT_KEY_TECH_ELECTRONICS_DESC" />
+    </Update>
+    <Update>
+      <Set Text="'Some Famous Quote' - Some Famous Person" />
+      <Where Tag="TXT_KEY_TECH_ELECTRONICS_QUOTE" />
+    </Update>
+    <Update>
+      <Set Text="Gunpowder" />
+      <Where Tag="TXT_KEY_TECH_GUNPOWDER_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Printing Press" />
+      <Where Tag="TXT_KEY_TECH_PRINTING_PRESS_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Replaceable Parts" />
+      <Where Tag="TXT_KEY_TECH_REPLACEABLE_PARTS_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Sailing" />
+      <Where Tag="TXT_KEY_TECH_SAILING_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Steam Power" />
+      <Where Tag="TXT_KEY_TECH_STEAM_POWER_DESC" />
+    </Update>
+    <Update>
+      <Set Text="Theology" />
+      <Where Tag="TXT_KEY_TECH_THEOLOGY_DESC" />
+    </Update>
+  </Language_zh_Hant_HK>
+</GameData>
