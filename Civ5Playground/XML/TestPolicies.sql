@@ -1,1 +1,0 @@
-DELETE FROM Policy_PrereqPolicies;
