@@ -263,7 +263,7 @@
     <Instance Name="EraBlockInstance" >
         <Box Anchor="C,C" Size="1650,890" Color="0,0,0,0" ID="EraBlock">
 
-            <Image Anchor="R,T" AnchorSide="I,I" Offset="-1,0" Color="White.32" Texture="Assets/UI/Art/Controls/9 Grids/Divider4.dds" Size="4,722" Hidden="0"/>
+            <Image Anchor="R,T" AnchorSide="I,I" Offset="-1,0" Color="White.32" Texture="Assets/UI/Art/Controls/9 Grids/Divider4.dds" Size="4,855" Hidden="0"/>
 
             <!-- Old Gold style-->
             <Grid Anchor="L,T" Offset="0,0" Color="White.32" Size="1650,722" Padding="0,0" Style="GridGlassGold16" Hidden="1" ID="OldBar">

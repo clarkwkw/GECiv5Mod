@@ -110,6 +110,7 @@ function registerConnection(tech, prereq, techPipes)
 	elseif tech.GridX - prereq.GridX == 1 then
 		if tech.GridY < prereq.GridY then
 			if prereqOffsetActivated then
+				techPipes[tech.Type].leftConnectionCenter = true;
 				techPipes[tech.Type].leftOffsetConnectionDown = true;
 			else
 				techPipes[tech.Type].leftConnectionDown = true;
@@ -117,6 +118,7 @@ function registerConnection(tech, prereq, techPipes)
 			techPipes[prereq.Type].rightConnectionUp = true;
 		elseif tech.GridY > prereq.GridY then
 			if prereqOffsetActivated then
+				techPipes[tech.Type].leftConnectionCenter = true;
 				techPipes[tech.Type].leftOffsetConnectionUp = true;
 			else
 				techPipes[tech.Type].leftConnectionUp = true;
@@ -124,6 +126,7 @@ function registerConnection(tech, prereq, techPipes)
 			techPipes[prereq.Type].rightConnectionDown = true;
 		else
 			if prereqOffsetActivated then
+				techPipes[tech.Type].leftConnectionCenter = true;
 				techPipes[tech.Type].leftOffsetConnectionCenter = true;
 			else
 				techPipes[tech.Type].leftConnectionCenter = true;
