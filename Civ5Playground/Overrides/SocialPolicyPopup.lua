@@ -469,7 +469,6 @@ function UpdateDisplay()
 	i = 0;
 	local policyInfo = GameInfo.Policies[i];
 	while policyInfo ~= nil do
-		
 		local iBranch = policyInfo.PolicyBranchType;
 		
 		-- If this is nil it means the Policy is a freebie handed out with the Branch, so don't display it
