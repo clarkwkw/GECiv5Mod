@@ -590,31 +590,27 @@ Archaeology is the study of the remnants of ancient people to learn about their 
       <Text>TradeRoute1</Text>
     </Row>
     <Update>
-      <Set Text="Architecture" />
+      <Set Text="建築學" />
       <Where Tag="TXT_KEY_TECH_ARCHITECTURE_DESC" />
     </Update>
     <Update>
-      <Set Text="Added using Indie Stone Tech Tree Editor." />
+      <Set Text="電子學的研究範疇便是電子在受控狀態下，在各種包括真空等各種介質中的行為模式。這門科學與電學科技並不相同，電學主要和電流的產生和輸送有關。電子學直到1950年代才從無線電學中獨立出來，成為一門學科。[NEWLINE][NEWLINE]電子電路主要被分為兩大類：類比電路和數位電路。類比電路通常由基礎電路排列組合而成，使用連續電壓，不過現今已經少用全為類比的電路了。數位電路為現代電腦和可程式邏輯控制器打下基礎，也是「邏輯代數」（即0與1）最常見的實質體現。[NEWLINE][NEWLINE]電子學的研究和發展和數學的發展緊密相關，擅長後者是學習前者的先決條件。無論是創造還是分析複雜的電路，都需要能夠解出帶有多項未知變數（比如某個特定位點的電壓和電流）的線性系統。因此，設計自動軟體套件可以大幅提升電路設計效率，這可是一件做起來相當微妙的工作。" />
       <Where Tag="TXT_KEY_TECH_ELECTRONICS_HELP" />
     </Update>
     <Update>
-      <Set Text="Astronomy" />
+      <Set Text="天文學" />
       <Where Tag="TXT_KEY_TECH_ASTRONOMY_DESC" />
     </Update>
     <Update>
-      <Set Text="Civil Service" />
+      <Set Text="行政事務" />
       <Where Tag="TXT_KEY_TECH_CIVIL_SERVICE_DESC" />
     </Update>
     <Update>
-      <Set Text="Currency" />
+      <Set Text="貨幣" />
       <Where Tag="TXT_KEY_TECH_CURRENCY_DESC" />
     </Update>
     <Update>
-      <Set Text="Education" />
-      <Where Tag="TXT_KEY_TECH_EDUCATION_DESC" />
-    </Update>
-    <Update>
-      <Set Text="Electronics" />
+      <Set Text="電子學" />
       <Where Tag="TXT_KEY_TECH_ELECTRONICS_DESC" />
     </Update>
     <Update>
@@ -622,27 +618,23 @@ Archaeology is the study of the remnants of ancient people to learn about their 
       <Where Tag="TXT_KEY_TECH_ELECTRONICS_QUOTE" />
     </Update>
     <Update>
-      <Set Text="Gunpowder" />
+      <Set Text="火藥" />
       <Where Tag="TXT_KEY_TECH_GUNPOWDER_DESC" />
     </Update>
     <Update>
-      <Set Text="Printing Press" />
+      <Set Text="印刷術" />
       <Where Tag="TXT_KEY_TECH_PRINTING_PRESS_DESC" />
     </Update>
     <Update>
-      <Set Text="Replaceable Parts" />
+      <Set Text="可替換部件" />
       <Where Tag="TXT_KEY_TECH_REPLACEABLE_PARTS_DESC" />
     </Update>
     <Update>
-      <Set Text="Sailing" />
+      <Set Text="航海" />
       <Where Tag="TXT_KEY_TECH_SAILING_DESC" />
     </Update>
     <Update>
-      <Set Text="Steam Power" />
-      <Where Tag="TXT_KEY_TECH_STEAM_POWER_DESC" />
-    </Update>
-    <Update>
-      <Set Text="Theology" />
+      <Set Text="神學" />
       <Where Tag="TXT_KEY_TECH_THEOLOGY_DESC" />
     </Update>
   </Language_zh_Hant_HK>

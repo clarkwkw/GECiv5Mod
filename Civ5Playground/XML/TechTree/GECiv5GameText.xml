@@ -610,10 +610,6 @@ Archaeology is the study of the remnants of ancient people to learn about their 
       <Where Tag="TXT_KEY_TECH_CURRENCY_DESC" />
     </Update>
     <Update>
-      <Set Text="Education" />
-      <Where Tag="TXT_KEY_TECH_EDUCATION_DESC" />
-    </Update>
-    <Update>
       <Set Text="Electronics" />
       <Where Tag="TXT_KEY_TECH_ELECTRONICS_DESC" />
     </Update>
@@ -636,10 +632,6 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     <Update>
       <Set Text="Sailing" />
       <Where Tag="TXT_KEY_TECH_SAILING_DESC" />
-    </Update>
-    <Update>
-      <Set Text="Steam Power" />
-      <Where Tag="TXT_KEY_TECH_STEAM_POWER_DESC" />
     </Update>
     <Update>
       <Set Text="Theology" />
