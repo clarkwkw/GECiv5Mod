@@ -23,7 +23,7 @@
       <Description>TXT_KEY_TECH_GEOLOGY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_GEOLOGY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_GEOLOGY_HELP</Help>
-      <Cost>1600</Cost>
+      <Cost>1400</Cost>
       <Era>ERA_INDUSTRIAL</Era>
       <Trade>true</Trade>
       <TriggersArchaeologicalSites>true</TriggersArchaeologicalSites>
@@ -41,7 +41,7 @@
       <Description>TXT_KEY_TECH_STEAM_BOAT_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_STEAM_BOAT_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_STEAM_BOAT_HELP</Help>
-      <Cost>2350</Cost>
+      <Cost>2000</Cost>
       <Era>ERA_INDUSTRIAL</Era>
       <EmbarkedMoveChange>1</EmbarkedMoveChange>
       <InternationalTradeRoutesChange>1</InternationalTradeRoutesChange>
@@ -60,7 +60,7 @@
       <Description>TXT_KEY_TECH_UNIVERSITY_EDUCATION_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_UNIVERSITY_EDUCATION_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_UNIVERSITY_EDUCATION_HELP</Help>
-      <Cost>485</Cost>
+      <Cost>590</Cost>
       <Era>ERA_MEDIEVAL</Era>
       <Trade>true</Trade>
       <ResearchAgreementTradingAllowed>true</ResearchAgreementTradingAllowed>
@@ -113,7 +113,7 @@
       <Description>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_HELP</Help>
-      <Cost>105</Cost>
+      <Cost>85</Cost>
       <Era>ERA_CLASSICAL</Era>
       <Trade>true</Trade>
       <GridX>3</GridX>
@@ -130,7 +130,7 @@
       <Description>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_HELP</Help>
-      <Cost>175</Cost>
+      <Cost>150</Cost>
       <Era>ERA_CLASSICAL</Era>
       <Trade>true</Trade>
       <GridX>4</GridX>
@@ -147,7 +147,7 @@
       <Description>TXT_KEY_TECH_MYTHOLOGY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_MYTHOLOGY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_MYTHOLOGY_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>55</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_ANCIENT</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -168,7 +168,7 @@
       <Description>TXT_KEY_TECH_LAW_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_LAW_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_LAW_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>85</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_CLASSICAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -190,7 +190,7 @@
       <Description>TXT_KEY_TECH_ASSOCIATIVE_THINKING_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_ASSOCIATIVE_THINKING_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_ASSOCIATIVE_THINKING_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>150</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_CLASSICAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -211,7 +211,7 @@
       <Description>TXT_KEY_TECH_NATURAL_PHILOSOPHY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_NATURAL_PHILOSOPHY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_NATURAL_PHILOSOPHY_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>150</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_CLASSICAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -232,7 +232,7 @@
       <Description>TXT_KEY_TECH_HOLISTIC_WORLDIEW_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_HOLISTIC_WORLDIEW_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_HOLISTIC_WORLDIEW_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>590</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_MEDIEVAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -253,7 +253,7 @@
       <Description>TXT_KEY_TECH_RATIONALISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_RATIONALISM_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_RATIONALISM_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>780</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_RENAISSANCE</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -274,7 +274,7 @@
       <Description>TXT_KEY_TECH_LIBERALISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_LIBERALISM_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_LIBERALISM_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>1150</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_RENAISSANCE</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -295,7 +295,7 @@
       <Description>TXT_KEY_TECH_NATIONALISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_NATIONALISM_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_NATIONALISM_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>1400</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_INDUSTRIAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -316,7 +316,7 @@
       <Description>TXT_KEY_TECH_GENETICS_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_GENETICS_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_GENETICS_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>2000</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_INDUSTRIAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -337,7 +337,7 @@
       <Description>TXT_KEY_TECH_MARXISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_MARXISM_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_MARXISM_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>2000</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_INDUSTRIAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -358,7 +358,7 @@
       <Description>TXT_KEY_TECH_FASCISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_FASCISM_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_FASCISM_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>3100</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_MODERN</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -379,7 +379,7 @@
       <Description>TXT_KEY_TECH_PESTICIDES_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_PESTICIDES_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_PESTICIDES_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>5100</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_POSTMODERN</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -400,7 +400,7 @@
       <Description>TXT_KEY_TECH_BIOTECHNOLOGY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_BIOTECHNOLOGY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_BIOTECHNOLOGY_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>6400</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_POSTMODERN</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -421,7 +421,7 @@
       <Description>TXT_KEY_TECH_ADVANCED_ENGINE_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_ADVANCED_ENGINE_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_ADVANCED_ENGINE_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>7700</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_FUTURE</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -442,7 +442,7 @@
       <Description>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_HELP</Help>
-      <Cost>20</Cost>
+      <Cost>8800</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_FUTURE</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -498,67 +498,67 @@
       <Where Type="TECH_BRONZE_WORKING" />
     </Update>
     <Update>
-      <Set GridX="4" GridY="5" />
+      <Set GridX="4" GridY="5" Cost="150" />
       <Where Type="TECH_OPTICS" />
     </Update>
     <Update>
-      <Set GridY="10" />
+      <Set Cost="85" GridY="10" />
       <Where Type="TECH_HORSEBACK_RIDING" />
     </Update>
     <Update>
-      <Set GridY="3" />
+      <Set Cost="85" GridY="3" />
       <Where Type="TECH_MATHEMATICS" />
     </Update>
     <Update>
-      <Set GridX="3" />
+      <Set Cost="85" GridX="3" />
       <Where Type="TECH_DRAMA" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_CURRENCY_DESC" Civilopedia="TXT_KEY_TECH_CURRENCY_CIV" InternationalTradeRoutesChange="1" GridX="3" GridY="8" />
+      <Set Description="TXT_KEY_TECH_CURRENCY_DESC" Civilopedia="TXT_KEY_TECH_CURRENCY_CIV" InternationalTradeRoutesChange="1" Cost="85" GridX="3" GridY="8" />
       <Where Type="TECH_CURRENCY" />
     </Update>
     <Update>
-      <Set InternationalTradeRoutesChange="0" GridY="6" />
+      <Set InternationalTradeRoutesChange="0" Cost="150" GridY="6" />
       <Where Type="TECH_ENGINEERING" />
     </Update>
     <Update>
-      <Set GridY="8" />
+      <Set Cost="150" GridY="8" />
       <Where Type="TECH_IRON_WORKING" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_THEOLOGY_DESC" Civilopedia="TXT_KEY_TECH_THEOLOGY_CIV" GridY="3" />
+      <Set Description="TXT_KEY_TECH_THEOLOGY_DESC" Civilopedia="TXT_KEY_TECH_THEOLOGY_CIV" Cost="190" GridY="3" />
       <Where Type="TECH_THEOLOGY" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_CIVIL_SERVICE_DESC" Civilopedia="TXT_KEY_TECH_CIVIL_SERVICE_CIV" DefensivePactTradingAllowed="true" GridY="1" />
+      <Set Description="TXT_KEY_TECH_CIVIL_SERVICE_DESC" Civilopedia="TXT_KEY_TECH_CIVIL_SERVICE_CIV" DefensivePactTradingAllowed="true" Cost="190" GridY="1" />
       <Where Type="TECH_CIVIL_SERVICE" />
     </Update>
     <Update>
-      <Set GridY="5" />
+      <Set Cost="190" GridY="5" />
       <Where Type="TECH_GUILDS" />
     </Update>
     <Update>
-      <Set GridY="5" />
+      <Set GridY="5" Cost="590" />
       <Where Type="TECH_COMPASS" />
     </Update>
     <Update>
-      <Set DefensivePactTradingAllowed="false" GridX="5" GridY="10" />
+      <Set DefensivePactTradingAllowed="false" GridX="5" GridY="10" Cost="190" />
       <Where Type="TECH_CHIVALRY" />
     </Update>
     <Update>
-      <Set GridX="5" GridY="6" />
+      <Set GridX="5" GridY="6" Cost="190" />
       <Where Type="TECH_MACHINERY" />
     </Update>
     <Update>
-      <Set Era="ERA_RENAISSANCE" GridX="8" GridY="3" />
+      <Set Era="ERA_RENAISSANCE" Cost="1150" GridX="8" GridY="3" />
       <Where Type="TECH_PHYSICS" />
     </Update>
     <Update>
-      <Set GridY="8" />
+      <Set Cost="590" GridY="8" />
       <Where Type="TECH_STEEL" />
     </Update>
     <Update>
-      <Set Era="ERA_MEDIEVAL" GridX="6" GridY="1" />
+      <Set Era="ERA_MEDIEVAL" Cost="590" GridX="6" GridY="1" />
       <Where Type="TECH_BANKING" />
     </Update>
     <Update>
@@ -570,7 +570,7 @@
       <Where Type="TECH_GUNPOWDER" />
     </Update>
     <Update>
-      <Set EmbarkedAllWaterPassage="true" GridX="7" GridY="5" />
+      <Set EmbarkedAllWaterPassage="true" Cost="780" GridX="7" GridY="5" />
       <Where Type="TECH_NAVIGATION" />
     </Update>
     <Update>
@@ -578,19 +578,19 @@
       <Where Type="TECH_ECONOMICS" />
     </Update>
     <Update>
-      <Set GridY="2" />
+      <Set Cost="1400" GridY="2" />
       <Where Type="TECH_INDUSTRIALIZATION" />
     </Update>
     <Update>
-      <Set GridY="9" />
+      <Set Cost="1400" GridY="9" />
       <Where Type="TECH_RIFLING" />
     </Update>
     <Update>
-      <Set InternationalTradeRoutesChange="0" GridX="9" GridY="8" />
+      <Set InternationalTradeRoutesChange="0" Cost="1400" GridX="9" GridY="8" />
       <Where Type="TECH_BIOLOGY" />
     </Update>
     <Update>
-      <Set GridY="9" />
+      <Set Cost="2000" GridY="9" />
       <Where Type="TECH_DYNAMITE" />
     </Update>
     <Update>
@@ -602,15 +602,15 @@
       <Where Type="TECH_REPLACEABLE_PARTS" />
     </Update>
     <Update>
-      <Set Era="ERA_INDUSTRIAL" GridX="10" GridY="5" />
+      <Set Era="ERA_INDUSTRIAL" Cost="2000" GridX="10" GridY="5" />
       <Where Type="TECH_RAILROAD" />
     </Update>
     <Update>
-      <Set Era="ERA_POSTMODERN" GridX="13" GridY="9" />
+      <Set Era="ERA_POSTMODERN" Cost="5100" GridX="13" GridY="9" />
       <Where Type="TECH_PLASTIC" />
     </Update>
     <Update>
-      <Set Era="ERA_POSTMODERN" GridX="13" GridY="2" InternationalTradeRoutesChange="1" />
+      <Set Era="ERA_POSTMODERN" Cost="5100" GridX="13" GridY="2" InternationalTradeRoutesChange="1" />
       <Where Type="TECH_ELECTRONICS" />
     </Update>
     <Update>
@@ -618,7 +618,7 @@
       <Where Type="TECH_COMBUSTION" />
     </Update>
     <Update>
-      <Set Era="ERA_MODERN" InternationalTradeRoutesChange="0" GridX="12" GridY="8" />
+      <Set Era="ERA_MODERN" InternationalTradeRoutesChange="0" Cost="4100" GridX="12" GridY="8" />
       <Where Type="TECH_PENICILIN" />
     </Update>
     <Update>
@@ -626,7 +626,7 @@
       <Where Type="TECH_ATOMIC_THEORY" />
     </Update>
     <Update>
-      <Set Era="ERA_MODERN" GridX="12" GridY="2" />
+      <Set Era="ERA_MODERN" Cost="4100" GridX="12" GridY="2" />
       <Where Type="TECH_RADAR" />
     </Update>
     <Update>
@@ -654,11 +654,11 @@
       <Where Type="TECH_ROBOTICS" />
     </Update>
     <Update>
-      <Set InfluenceSpreadModifier="0" ExtraVotesPerDiplomat="1" InternationalTradeRoutesChange="1" GridX="15" GridY="2" />
+      <Set InfluenceSpreadModifier="0" ExtraVotesPerDiplomat="1" InternationalTradeRoutesChange="1" Cost="7700" GridX="15" GridY="2" />
       <Where Type="TECH_INTERNET" />
     </Update>
     <Update>
-      <Set InfluenceSpreadModifier="100" ExtraVotesPerDiplomat="0" GridX="15" GridY="9" />
+      <Set InfluenceSpreadModifier="100" ExtraVotesPerDiplomat="0" Cost="7700" GridX="15" GridY="9" />
       <Where Type="TECH_GLOBALIZATION" />
     </Update>
     <Update>
@@ -676,6 +676,14 @@
     <Update>
       <Set GridY="5" />
       <Where Type="TECH_FUTURE_TECH" />
+    </Update>
+    <Update>
+      <Set Cost="190" />
+      <Where Type="TECH_METAL_CASTING" />
+    </Update>
+    <Update>
+      <Set Cost="2000" />
+      <Where Type="TECH_ELECTRICITY" />
     </Update>
   </Technologies>
   <Technology_Flavors>

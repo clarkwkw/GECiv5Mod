@@ -19,6 +19,9 @@
 			<PrereqTechType>TECH_GUILDS</PrereqTechType>
 		</Row>
 		<Row>
+			<PrereqTechType>TECH_NATIONALISM</PrereqTechType>
+		</Row>
+		<Row>
 			<PrereqTechType>TECH_FLIGHT</PrereqTechType>
 		</Row>
 		<Row>
