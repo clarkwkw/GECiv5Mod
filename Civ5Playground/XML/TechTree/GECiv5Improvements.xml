@@ -89,10 +89,4 @@
       <Yield>1</Yield>
     </Row>
   </Improvement_TechNoFreshWaterYieldChanges>
-  <Improvements>
-    <Update>
-      <Set ID="28" />
-      <Where Type="IMPROVEMENT_POLDER" />
-    </Update>
-  </Improvements>
 </GameData>
