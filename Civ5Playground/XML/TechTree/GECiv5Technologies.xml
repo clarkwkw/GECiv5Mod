@@ -610,7 +610,7 @@
       <Where Type="TECH_PLASTIC" />
     </Update>
     <Update>
-      <Set Era="ERA_POSTMODERN" GridX="13" GridY="2" />
+      <Set Era="ERA_POSTMODERN" GridX="13" GridY="2" InternationalTradeRoutesChange="1" />
       <Where Type="TECH_ELECTRONICS" />
     </Update>
     <Update>
@@ -654,7 +654,7 @@
       <Where Type="TECH_ROBOTICS" />
     </Update>
     <Update>
-      <Set InfluenceSpreadModifier="0" ExtraVotesPerDiplomat="1" GridX="15" GridY="2" />
+      <Set InfluenceSpreadModifier="0" ExtraVotesPerDiplomat="1" InternationalTradeRoutesChange="1" GridX="15" GridY="2" />
       <Where Type="TECH_INTERNET" />
     </Update>
     <Update>
@@ -1364,4 +1364,11 @@
       <PrereqTech>TECH_BIOTECHNOLOGY</PrereqTech>
     </Row>
   </Technology_PrereqTechs>
+  <Technology_TradeRouteDomainExtraRange>
+    <Row>
+      <TechType>TECH_COMPASS</TechType>
+      <DomainType>DOMAIN_SEA</DomainType>
+      <Range>10</Range>
+    </Row>
+  </Technology_TradeRouteDomainExtraRange>
 </GameData>
