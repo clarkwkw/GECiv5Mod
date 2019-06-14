@@ -289,7 +289,7 @@ function InitialSetup()
 				local hConnection = g_PipeManager:GetInstance();
 				hConnection.TechPipeIcon:SetOffsetVal(prereq.GridX*blockSpacingX + blockSizeX + 128 + xOffset, (tech.GridY-5)*blockSpacingY + 12 + extraYOffset);
 				hConnection.TechPipeIcon:SetTexture(hTexture);
-				local size = { x = (tech.GridX-prereq.GridX - 1)*blockSpacingX - 12 + xOffset; y = 42; };
+				local size = { x = (tech.GridX-prereq.GridX - 1)*blockSpacingX - 12 - xOffset; y = 42; };
 				hConnection.TechPipeIcon:SetSize(size);
 			end
 			
