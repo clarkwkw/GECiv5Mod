@@ -10,6 +10,15 @@
 		<Row Tag="TXT_KEY_IDEOLOGICAL_TENET_UNLOCK_TECH">
 			<Text>[COLOR_WARNING_TEXT](Research {1_TechString:textkey} to unlock)[ENDCOLOR]</Text>
 		</Row>
+		<Row Tag="TXT_KEY_SAVED_FREE_POLICY">
+			<Text>Previously saved free policies: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_SAVE_FREE_POLICY">
+			<Text>Save up</Text>
+		</Row>
+		<Row Tag="TXT_KEY_REGRANT_FREE_POLICY">
+			<Text>Withdraw</Text>
+		</Row>
 		<Update>
 	      <Set Text="The choice of ideology becomes available when you build your third factory or enter the Modern Era, whichever comes first. After that, the ideological tenets will be unlocked when you researched the required technologies." />
 	      <Where Tag="TXT_KEY_POLICYSCREEN_IDEOLOGY_NOT_STARTED" />
@@ -24,6 +33,15 @@
 		</Row>
 		<Row Tag="TXT_KEY_IDEOLOGICAL_TENET_UNLOCK_TECH">
 			<Text>[COLOR_WARNING_TEXT](需要研究 {1_TechString:textkey} )[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SAVED_FREE_POLICY">
+			<Text>先前儲存的免費政策: </Text>
+		</Row>
+		<Row Tag="TXT_KEY_SAVE_FREE_POLICY">
+			<Text>儲存</Text>
+		</Row>
+		<Row Tag="TXT_KEY_REGRANT_FREE_POLICY">
+			<Text>提取</Text>
 		</Row>
 		<Update>
 	      <Set Text="當您建造了第三座工廠或進入了現代（無論先後），便可選擇意識形態。 之後，當你研究出所需的科技，就能解鎖意識形態原則。" />

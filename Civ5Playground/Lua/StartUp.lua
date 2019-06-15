@@ -6,6 +6,7 @@ include("HistoricalEvent.lua")
 include("BerserkEnermy.lua")
 include("Disaster.lua")
 include("Achievement.lua")
+include("PolicyBank.lua")
 
 Utils.GenerateCheckString()
 HistoricalEventManager.InitEvents()

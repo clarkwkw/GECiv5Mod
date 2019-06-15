@@ -218,12 +218,33 @@ Events.SerialEventGameMessagePopup.Add( OnPopupMessage );
 
 -------------------------------------------------
 -------------------------------------------------
+
+function UpdateSavedFreePolicyValueLabel(numSavedPolicy)
+	Controls.SavedFreePolicyValueLabel:SetText(numSavedPolicy)
+end
+LuaEvents.OnRequestNumSavedFreePolicyCallback.Add(UpdateSavedFreePolicyValueLabel)
+
+function onSaveFreePolicyButtonClicked()
+	print("Calling saving policy")
+	LuaEvents.OnSaveCurrentFreePolicy()
+	UpdateDisplay()
+end
+Controls.ButtonSaveFreePolicy:RegisterCallback( Mouse.eLClick, onSaveFreePolicyButtonClicked );
+
+function onWithdrawFreePolicyButtonClicked()
+	LuaEvents.OnGrantSavedFreePolicy()
+	UpdateDisplay()
+end
+Controls.ButtonRegrantFreePolicy:RegisterCallback( Mouse.eLClick, onWithdrawFreePolicyButtonClicked );
+
 function UpdateDisplay()
 
     local player = Players[Game.GetActivePlayer()];
    	CivIconHookup( player:GetID(), 64, Controls.CivIcon, Controls.CivIconBG, Controls.CivIconShadow, false, true );
 
 	print ("In UpdateDisplay()");
+
+	LuaEvents.OnRequestNumSavedFreePolicy()
 
     local pTeam = Teams[player:GetTeam()];
     
@@ -268,7 +289,7 @@ function UpdateDisplay()
 		
 		local strText = Locale.ConvertTextKey(strTextKey, player:GetNameKey(), player:GetCivilizationShortDescriptionKey());
 		
-	    Controls.PlayerTitleLabel:SetHide(false);
+	    --Controls.PlayerTitleLabel:SetHide(false);
 	    Controls.PlayerTitleLabel:SetText(strText);
 	else
 	    Controls.PlayerTitleLabel:SetHide(true);

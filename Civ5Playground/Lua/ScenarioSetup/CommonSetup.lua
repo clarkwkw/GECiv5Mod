@@ -22,9 +22,6 @@ for row in GameInfo.PolicyBranchTechPrereq() do
 end
 
 function PlayerCanAdoptPolicyBranch(player, policyBranch)
-	print("player: ", player)
-	print("policy branch:", policyBranch)
-
 	local branch = GameInfo.PolicyBranchTypes[policyBranch]
 	local team = Teams[Players[player]:GetTeam()]
 	local techPrereq = policyBranchPrereqs[branch.Type]
