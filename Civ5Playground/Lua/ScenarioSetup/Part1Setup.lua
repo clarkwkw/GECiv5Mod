@@ -2,11 +2,9 @@ include("UGFNScenario.lua")
 
 part23Scenario = UGFNScenario:New({
 	building_class_id = GameInfo.BuildingClasses.BUILDINGCLASS_UNIVERSITY.ID, 
-	building_type = "BUILDING_UNIVERSITY",
-	building_txt_key = "TXT_KEY_BUILDING_UNIVERSITY",
+	building_type = "BUILDING_UNIVERSITY", -- just for displaying the building icon
 	n_building_required = 4,
-	prerequiste_tech = "TECH_EDUCATION",
-	prerequiste_tech_txt_key = "TXT_KEY_TECH_EDUCATION",
+	prerequiste_tech = "TECH_UNIVERSITY_EDUCATION",
 	require_victory = false
 })
 part23Scenario:configureRequirementPopup()

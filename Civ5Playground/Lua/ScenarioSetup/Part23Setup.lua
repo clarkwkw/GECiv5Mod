@@ -13,11 +13,9 @@ include("UGFNScenario.lua")
 
 part23Scenario = UGFNScenario:New({
 	building_class_id = GameInfo.BuildingClasses.BUILDINGCLASS_FACTORY.ID, 
-	building_type = "BUILDING_FACTORY",
-	building_txt_key = "TXT_KEY_BUILDING_FACTORY",
+	building_type = "BUILDING_FACTORY",  -- just for displaying the building icon
 	n_building_required = 4,
 	prerequiste_tech = "TECH_INDUSTRIALIZATION",
-	prerequiste_tech_txt_key = "TXT_KEY_TECH_INDUSTRIALIZATION",
 	require_victory = true
 })
 part23Scenario:configureRequirementPopup()

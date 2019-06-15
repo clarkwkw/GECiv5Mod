@@ -3,10 +3,8 @@ function UGFNScenario:New(o)
 	local required_fields = {
 		"building_class_id", 
 		"building_type",
-		"building_txt_key",
 		"n_building_required",
-		"prerequiste_tech",
-		"prerequiste_tech_txt_key"
+		"prerequiste_tech"
 	}
 
 	local boolean_or_optional_fields = {
@@ -21,6 +19,8 @@ function UGFNScenario:New(o)
 
 	setmetatable(o, self)
     self.__index = self
+    o["prerequiste_tech_txt_key"] = GameInfo.Technologies[GameInfoTypes[o["prerequiste_tech"]]].Description
+    o["building_txt_key"] = GameInfo.Buildings[GameInfoTypes[o["building_type"]]].Description
 
     local building_constrcuted = Utils.GetPlayerProperty(Game.GetActivePlayer(), "scenario_building_constructed")
     if building_constrcuted == nil then
