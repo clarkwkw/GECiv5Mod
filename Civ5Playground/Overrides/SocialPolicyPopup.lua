@@ -794,7 +794,6 @@ function TenetSelect(ideologyButtonNumber)
 	if ideologyButtonNumber == nil then
 		return;
 	end
-
 	local iLevel = math.floor(ideologyButtonNumber / 10);
 
     local player = Players[Game.GetActivePlayer()];   
@@ -805,18 +804,33 @@ function TenetSelect(ideologyButtonNumber)
 		Controls.BGBlock:SetHide(true);
 		
 		g_TenetInstanceManager:ResetInstances();
+
+
+		local ideologyBranch = player:GetLateGamePolicyTree();
+		local branchType = GameInfo.PolicyBranchTypes[ideologyBranch].Type;
+		local prereqInfo = GameInfo.PolicyBranchTechPrereq{BranchType=branchType}()
+		local prereqTechText = nil
+		if prereqInfo ~= nil then
+			prereqTechText = GameInfo.Technologies[GameInfoTypes[prereqInfo.TechType]].Description
+		end
 		 
 		local availableTenets = {};
 		for i,v in ipairs(player:GetAvailableTenets(iLevel)) do
 			local tenet = GameInfo.Policies[v];
 			if (tenet ~= nil) then
 				local entry = g_TenetInstanceManager:GetInstance();
+				local title = ""
 				if (tenet.Help ~= nil) then
-					entry.TenetLabel:LocalizeAndSetText(tenet.Help);
+					title = title .. Locale.ConvertTextKey(tenet.Help)
 				else
 					local szName = Locale.ConvertTextKey(tenet.Description);
-					entry.TenetLabel:SetText("[COLOR_POSITIVE_TEXT]" .. szName .. "[ENDCOLOR]");
+					title = title .. Locale.ConvertTextKey("[COLOR_POSITIVE_TEXT]" .. szName .. "[ENDCOLOR]")
 				end
+				if prereqTechText ~= nil then
+					title = title .. " " .. Locale.ConvertTextKey("TXT_KEY_IDEOLOGICAL_TENET_UNLOCK_TECH", prereqTechText);
+					entry.TenetButton:SetDisabled(true)
+				end
+				entry.TenetLabel:LocalizeAndSetText(title);				
 				
 				local tbW, tbH = entry.TenetButton:GetSizeVal();
 				local tlW, tlH = entry.TenetLabel:GetSizeVal();

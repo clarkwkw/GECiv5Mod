@@ -7,6 +7,9 @@
 		<Row Tag="TXT_KEY_UNLOCK_SOCIAL_POLICY_BRANCH">
 			<Text>Unlocks policy branch [COLOR_FONT_GREEN]{1_TechString:textkey}[ENDCOLOR].</Text>
 		</Row>
+		<Row Tag="TXT_KEY_IDEOLOGICAL_TENET_UNLOCK_TECH">
+			<Text>[COLOR_WARNING_TEXT](Research {1_TechString:textkey} to unlock)[ENDCOLOR]</Text>
+		</Row>
 		<Update>
 	      <Set Text="The choice of ideology becomes available when you build your third factory or enter the Modern Era, whichever comes first. After that, the ideological tenets will be unlocked when you researched the required technologies." />
 	      <Where Tag="TXT_KEY_POLICYSCREEN_IDEOLOGY_NOT_STARTED" />
@@ -18,6 +21,9 @@
 		</Row>
 		<Row Tag="TXT_KEY_UNLOCK_SOCIAL_POLICY_BRANCH">
 			<Text>解鎖政策分支 [COLOR_FONT_GREEN]{1_TechString:textkey}[ENDCOLOR] 。</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IDEOLOGICAL_TENET_UNLOCK_TECH">
+			<Text>[COLOR_WARNING_TEXT](需要研究 {1_TechString:textkey} )[ENDCOLOR]</Text>
 		</Row>
 		<Update>
 	      <Set Text="當您建造了第三座工廠或進入了現代（無論先後），便可選擇意識形態。 之後，當你研究出所需的科技，就能解鎖意識形態原則。" />
