@@ -91,7 +91,13 @@ ListenerManager.TestBonusListenerFactory = function(players)
 				EventName = "Testing Bonus",
 				Leaders = {},
 				OccurYear = -1,
-				Compensation = {["tech"] = 80, ["culture"] = 100000, ["gold"] = 200000, ["UNIT_WORKER"] = 6,  ["UNIT_SETTLER"] = 5}
+				Compensation = {
+					["tech"] = 0,
+					["policy"] = 10,
+					["gold"] = 200000,
+					["UNIT_WORKER"] = 6,
+					["UNIT_SETTLER"] = 5
+				}
 			})
 			event:Trigger(true, players)
 			bonus_last_dispensed = curTurn

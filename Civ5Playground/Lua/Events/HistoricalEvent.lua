@@ -134,29 +134,33 @@ function HistoricalEvent:Trigger(skipSave, playersOverride)
 			local capitalPlot = capitalCity:Plot()
 
 			for unitTypeID, count in pairs(self.Compensation) do
-				if GameInfo.Units[unitTypeID] ~= nil then
-					print(self.EventID..": Granting "..count.." "..unitTypeID.." to player "..player:GetID())
-					Utils.AddFreeUnits(
-						player,
-						GameInfo.Units[unitTypeID].ID,
-						capitalPlot:GetX(),
-						capitalPlot:GetY(), 
-						count
-					)
-				elseif unitTypeID:lower() == "gold" then
-					player:ChangeGold(count)
-				elseif unitTypeID:lower() == "tech" then
-					if player:IsHuman() then
-						player:SetNumFreeTechs(player:GetNumFreeTechs() + count)
-						player:AddNotification(NotificationTypes.NOTIFICATION_FREE_TECH,  Locale.Lookup("TXT_KEY_UGFN_FREETECH"), Locale.Lookup(self.EventName))
-					else
-						local freeTechGranted = capitalCity:GetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"])
-						capitalCity:SetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"], freeTechGranted + count)
+				if count ~= 0 then
+					if GameInfo.Units[unitTypeID] ~= nil then
+						print(self.EventID..": Granting "..count.." "..unitTypeID.." to player "..player:GetID())
+						Utils.AddFreeUnits(
+							player,
+							GameInfo.Units[unitTypeID].ID,
+							capitalPlot:GetX(),
+							capitalPlot:GetY(), 
+							count
+						)
+					elseif unitTypeID:lower() == "gold" then
+						player:ChangeGold(count)
+					elseif unitTypeID:lower() == "tech" then
+						if player:IsHuman() then
+							player:SetNumFreeTechs(player:GetNumFreeTechs() + count)
+							player:AddNotification(NotificationTypes.NOTIFICATION_FREE_TECH,  Locale.Lookup("TXT_KEY_UGFN_FREETECH"), Locale.Lookup(self.EventName))
+						else
+							local freeTechGranted = capitalCity:GetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"])
+							capitalCity:SetNumRealBuilding(GameInfoTypes["BUILDING_DUMFREETECH"], freeTechGranted + count)
+						end
+					elseif unitTypeID:lower() == "policy" then
+						player:ChangeNumFreePolicies(count)
+					elseif unitTypeID:lower() == "culture" then
+						player:ChangeJONSCulture(count)
+					elseif unitTypeID:lower() == "faith" then
+						player:ChangeFaith(count)
 					end
-				elseif unitTypeID:lower() == "culture" then
-					player:ChangeJONSCulture(count)
-				elseif unitTypeID:lower() == "faith" then
-					player:ChangeFaith(count)
 				end
 			end
 			if player:IsHuman() and isShowAdvisor then
