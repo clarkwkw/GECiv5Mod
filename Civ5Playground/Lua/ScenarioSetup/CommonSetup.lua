@@ -25,12 +25,9 @@ function PlayerCanAdoptPolicyBranch(player, policyBranch)
 	local branch = GameInfo.PolicyBranchTypes[policyBranch]
 	local team = Teams[Players[player]:GetTeam()]
 	local techPrereq = policyBranchPrereqs[branch.Type]
-	print("techPrereq:", techPrereq)
 	if (team ~= nil and techPrereq ~= nil and not team:IsHasTech(GameInfoTypes[techPrereq])) then
-		print("cannot adopt")
 		return false
 	end
-	print("can adopt")
 	return true
 end
 GameEvents.PlayerCanAdoptPolicyBranch.Add(PlayerCanAdoptPolicyBranch)
