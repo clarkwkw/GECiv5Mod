@@ -225,7 +225,6 @@ end
 LuaEvents.OnRequestNumSavedFreePolicyCallback.Add(UpdateSavedFreePolicyValueLabel)
 
 function onSaveFreePolicyButtonClicked()
-	print("Calling saving policy")
 	LuaEvents.OnSaveCurrentFreePolicy()
 	UpdateDisplay()
 end
@@ -237,6 +236,23 @@ function onWithdrawFreePolicyButtonClicked()
 end
 Controls.ButtonRegrantFreePolicy:RegisterCallback( Mouse.eLClick, onWithdrawFreePolicyButtonClicked );
 
+function UpdateSavedFreeTenetValueLabel(numSavedTenet)
+	Controls.SavedFreeTenetValueLabel:SetText(numSavedTenet)
+end
+LuaEvents.OnRequestNumSavedFreeTenetCallback.Add(UpdateSavedFreeTenetValueLabel)
+
+function onSaveFreeTenetButtonClicked()
+	LuaEvents.OnSaveCurrentFreeTenet()
+	UpdateDisplay()
+end
+Controls.ButtonSaveFreeTenet:RegisterCallback( Mouse.eLClick, onSaveFreeTenetButtonClicked );
+
+function onWithdrawFreeTenetButtonClicked()
+	LuaEvents.OnGrantSavedFreeTenet()
+	UpdateDisplay()
+end
+Controls.ButtonRegrantFreeTenet:RegisterCallback( Mouse.eLClick, onWithdrawFreeTenetButtonClicked );
+
 function UpdateDisplay()
 
     local player = Players[Game.GetActivePlayer()];
@@ -245,6 +261,7 @@ function UpdateDisplay()
 	print ("In UpdateDisplay()");
 
 	LuaEvents.OnRequestNumSavedFreePolicy()
+	LuaEvents.OnRequestNumSavedFreeTenet()
 
     local pTeam = Teams[player:GetTeam()];
     

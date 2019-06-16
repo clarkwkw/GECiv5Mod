@@ -13,6 +13,9 @@
 		<Row Tag="TXT_KEY_SAVED_FREE_POLICY">
 			<Text>Previously saved free policies: </Text>
 		</Row>
+		<Row Tag="TXT_KEY_SAVED_FREE_TENET">
+			<Text>Previously saved free tenets: </Text>
+		</Row>
 		<Row Tag="TXT_KEY_SAVE_FREE_POLICY">
 			<Text>Save up</Text>
 		</Row>
@@ -36,6 +39,10 @@
 		</Row>
 		<Row Tag="TXT_KEY_SAVED_FREE_POLICY">
 			<Text>先前儲存的免費政策: </Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_SAVED_FREE_TENET">
+			<Text>先前儲存的免費意識形態原則: </Text>
 		</Row>
 		<Row Tag="TXT_KEY_SAVE_FREE_POLICY">
 			<Text>儲存</Text>
