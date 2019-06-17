@@ -1,7 +1,4 @@
 <GameData>
-    <Table name="TechTreeVerticalPipeConfig">
-		<Column name="PrereqTechType" type="text" notnull="true" unique="true"/>
-	</Table>
 	<TechTreeVerticalPipeConfig>
 		<Row>
 			<PrereqTechType>TECH_MYTHOLOGY</PrereqTechType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Table name="PolicyBranchTechPrereq">
+    <Column name="ID" type="integer" primarykey="true" autoincrement="true"/>
+    <Column name="BranchType" type="text" unique="true" notnull="true" reference="PolicyBranchTypes(Type)"/>
+    <Column name="EntryPolicy" type="text" default="NULL" reference="Policies(Type)" />
+    <Column name="TechType" type="text" unique="true" notnull="true" reference="Technologies(Type)"/>
+  </Table>
+  <Table name="TechTreeVerticalPipeConfig">
+    <Column name="PrereqTechType" type="text" notnull="true" unique="true"/>
+  </Table>
+</GameData>
