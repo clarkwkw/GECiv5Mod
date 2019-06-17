@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_en_US>
+  	<Update>
+      <Set Text="Shuyuan" />
+      <Where Tag="TXT_KEY_BUILDING_PAPER_MAKER_DESC" />
+	</Update>
+  </Language_en_US>
+  <Language_zh_Hant_HK>
+  	<Update>
+      <Set Text="書院" />
+      <Where Tag="TXT_KEY_BUILDING_PAPER_MAKER_DESC" />
+	</Update>
+  </Language_zh_Hant_HK>
+</GameData>
