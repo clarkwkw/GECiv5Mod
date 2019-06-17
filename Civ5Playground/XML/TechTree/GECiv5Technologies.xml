@@ -526,15 +526,15 @@
       <Where Type="TECH_IRON_WORKING" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_THEOLOGY_DESC" Civilopedia="TXT_KEY_TECH_THEOLOGY_CIV" Cost="190" GridY="3" />
+      <Set Description="TXT_KEY_TECH_THEOLOGY_DESC" Civilopedia="TXT_KEY_TECH_THEOLOGY_CIV" Cost="380" GridY="3" />
       <Where Type="TECH_THEOLOGY" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_CIVIL_SERVICE_DESC" Civilopedia="TXT_KEY_TECH_CIVIL_SERVICE_CIV" DefensivePactTradingAllowed="true" Cost="190" GridY="1" />
+      <Set Description="TXT_KEY_TECH_CIVIL_SERVICE_DESC" Civilopedia="TXT_KEY_TECH_CIVIL_SERVICE_CIV" DefensivePactTradingAllowed="true" Cost="380" GridY="1" />
       <Where Type="TECH_CIVIL_SERVICE" />
     </Update>
     <Update>
-      <Set Cost="285" GridY="5" />
+      <Set Cost="380" GridY="5" />
       <Where Type="TECH_GUILDS" />
     </Update>
     <Update>
@@ -542,11 +542,11 @@
       <Where Type="TECH_COMPASS" />
     </Update>
     <Update>
-      <Set DefensivePactTradingAllowed="false" GridX="5" GridY="10" Cost="190" />
+      <Set DefensivePactTradingAllowed="false" GridX="5" GridY="10" Cost="380" />
       <Where Type="TECH_CHIVALRY" />
     </Update>
     <Update>
-      <Set GridX="5" GridY="6" Cost="190" />
+      <Set GridX="5" GridY="6" Cost="380" />
       <Where Type="TECH_MACHINERY" />
     </Update>
     <Update>
@@ -642,7 +642,7 @@
       <Where Type="TECH_NUCLEAR_FISSION" />
     </Update>
     <Update>
-      <Set Cost="9600" GridY="2" />
+      <Set Cost="7100" GridY="2" />
       <Where Type="TECH_COMPUTERS" />
     </Update>
     <Update>
@@ -678,7 +678,7 @@
       <Where Type="TECH_FUTURE_TECH" />
     </Update>
     <Update>
-      <Set Cost="190" />
+      <Set Cost="380" />
       <Where Type="TECH_METAL_CASTING" />
     </Update>
     <Update>
