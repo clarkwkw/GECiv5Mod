@@ -25,11 +25,11 @@
       <Where Type="BUILDING_CIRCUS" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_SCIENTIFIC_METHOD" />
+      <Set PrereqTech="TECH_PHYSICS" />
       <Where Type="BUILDING_WINDMILL" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_PHYSICS" />
+      <Set PrereqTech="TECH_SCIENTIFIC_METHOD" />
       <Where Type="BUILDING_OBSERVATORY" />
     </Update>
     <Update>
