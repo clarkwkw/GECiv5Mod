@@ -60,7 +60,7 @@
       <Description>TXT_KEY_TECH_UNIVERSITY_EDUCATION_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_UNIVERSITY_EDUCATION_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_UNIVERSITY_EDUCATION_HELP</Help>
-      <Cost>590</Cost>
+      <Cost>885</Cost>
       <Era>ERA_MEDIEVAL</Era>
       <Trade>true</Trade>
       <ResearchAgreementTradingAllowed>true</ResearchAgreementTradingAllowed>
@@ -78,7 +78,7 @@
       <Description>TXT_KEY_TECH_SCIENTIFIC_METHOD_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_SCIENTIFIC_METHOD_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_SCIENTIFIC_METHOD_HELP</Help>
-      <Cost>780</Cost>
+      <Cost>1170</Cost>
       <Era>ERA_RENAISSANCE</Era>
       <Trade>true</Trade>
       <GridX>7</GridX>
@@ -147,7 +147,7 @@
       <Description>TXT_KEY_TECH_MYTHOLOGY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_MYTHOLOGY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_MYTHOLOGY_HELP</Help>
-      <Cost>55</Cost>
+      <Cost>85</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_ANCIENT</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -211,7 +211,7 @@
       <Description>TXT_KEY_TECH_NATURAL_PHILOSOPHY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_NATURAL_PHILOSOPHY_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_NATURAL_PHILOSOPHY_HELP</Help>
-      <Cost>150</Cost>
+      <Cost>225</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_CLASSICAL</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -253,7 +253,7 @@
       <Description>TXT_KEY_TECH_RATIONALISM_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_RATIONALISM_CIV</Civilopedia>
       <Help>TXT_KEY_TECH_RATIONALISM_HELP</Help>
-      <Cost>780</Cost>
+      <Cost>1170</Cost>
       <AdvancedStartCost>0</AdvancedStartCost>
       <Era>ERA_RENAISSANCE</Era>
       <FirstFreeUnitClass>0</FirstFreeUnitClass>
@@ -458,7 +458,7 @@
       <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
     </Row>
     <Update>
-      <Set GridY="2" />
+      <Set Cost="55" GridY="2" />
       <Where Type="TECH_POTTERY" />
     </Update>
     <Update>
@@ -482,7 +482,7 @@
       <Where Type="TECH_CALENDAR" />
     </Update>
     <Update>
-      <Set AllowEmbassyTradingAllowed="false" GridY="1" />
+      <Set Cost="85" AllowEmbassyTradingAllowed="false" GridY="1" />
       <Where Type="TECH_WRITING" />
     </Update>
     <Update>
@@ -494,7 +494,7 @@
       <Where Type="TECH_MASONRY" />
     </Update>
     <Update>
-      <Set GridY="8" />
+      <Set Cost="85" GridY="8" />
       <Where Type="TECH_BRONZE_WORKING" />
     </Update>
     <Update>
@@ -506,11 +506,11 @@
       <Where Type="TECH_HORSEBACK_RIDING" />
     </Update>
     <Update>
-      <Set Cost="85" GridY="3" />
+      <Set Cost="130" GridY="3" />
       <Where Type="TECH_MATHEMATICS" />
     </Update>
     <Update>
-      <Set Cost="85" GridX="3" />
+      <Set Cost="130" GridX="3" />
       <Where Type="TECH_DRAMA" />
     </Update>
     <Update>
@@ -518,7 +518,7 @@
       <Where Type="TECH_CURRENCY" />
     </Update>
     <Update>
-      <Set InternationalTradeRoutesChange="0" Cost="150" GridY="6" />
+      <Set InternationalTradeRoutesChange="0" Cost="225" GridY="6" />
       <Where Type="TECH_ENGINEERING" />
     </Update>
     <Update>
@@ -534,7 +534,7 @@
       <Where Type="TECH_CIVIL_SERVICE" />
     </Update>
     <Update>
-      <Set Cost="190" GridY="5" />
+      <Set Cost="285" GridY="5" />
       <Where Type="TECH_GUILDS" />
     </Update>
     <Update>
@@ -562,7 +562,7 @@
       <Where Type="TECH_BANKING" />
     </Update>
     <Update>
-      <Set Description="TXT_KEY_TECH_PRINTING_PRESS_DESC" Civilopedia="TXT_KEY_TECH_PRINTING_PRESS_CIV" GridY="6" />
+      <Set Description="TXT_KEY_TECH_PRINTING_PRESS_DESC" Civilopedia="TXT_KEY_TECH_PRINTING_PRESS_CIV" Cost="1170" GridY="6" />
       <Where Type="TECH_PRINTING_PRESS" />
     </Update>
     <Update>
@@ -578,7 +578,7 @@
       <Where Type="TECH_ECONOMICS" />
     </Update>
     <Update>
-      <Set Cost="1400" GridY="2" />
+      <Set Cost="2100" GridY="2" />
       <Where Type="TECH_INDUSTRIALIZATION" />
     </Update>
     <Update>
@@ -642,7 +642,7 @@
       <Where Type="TECH_NUCLEAR_FISSION" />
     </Update>
     <Update>
-      <Set GridY="2" />
+      <Set Cost="9600" GridY="2" />
       <Where Type="TECH_COMPUTERS" />
     </Update>
     <Update>
