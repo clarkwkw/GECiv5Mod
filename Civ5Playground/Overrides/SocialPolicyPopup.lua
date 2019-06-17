@@ -834,10 +834,11 @@ function TenetSelect(ideologyButtonNumber)
 	end
 	local iLevel = math.floor(ideologyButtonNumber / 10);
 
-    local player = Players[Game.GetActivePlayer()];   
+    local player = Players[Game.GetActivePlayer()];
     if player == nil then
 		return;
 	else
+    	local pTeam = Teams[player:GetTeam()]; 
 		Controls.ChooseTenet:SetHide(false);
 		Controls.BGBlock:SetHide(true);
 		
@@ -848,7 +849,9 @@ function TenetSelect(ideologyButtonNumber)
 		local branchType = GameInfo.PolicyBranchTypes[ideologyBranch].Type;
 		local prereqInfo = GameInfo.PolicyBranchTechPrereq{BranchType=branchType}()
 		local prereqTechText = nil
-		if prereqInfo ~= nil then
+		local prereqTechResearched = true
+		if prereqInfo ~= nil and not pTeam:IsHasTech(GameInfoTypes[prereqInfo.TechType]) then
+			prereqTechResearched = false
 			prereqTechText = GameInfo.Technologies[GameInfoTypes[prereqInfo.TechType]].Description
 		end
 		 
@@ -864,7 +867,7 @@ function TenetSelect(ideologyButtonNumber)
 					local szName = Locale.ConvertTextKey(tenet.Description);
 					title = title .. Locale.ConvertTextKey("[COLOR_POSITIVE_TEXT]" .. szName .. "[ENDCOLOR]")
 				end
-				if prereqTechText ~= nil then
+				if not prereqTechResearched then
 					title = title .. " " .. Locale.ConvertTextKey("TXT_KEY_IDEOLOGICAL_TENET_UNLOCK_TECH", prereqTechText);
 					entry.TenetButton:SetDisabled(true)
 				end
