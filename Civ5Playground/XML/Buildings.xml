@@ -27,4 +27,15 @@
 			<Description>TXT_KEY_UGFN_BUILDING_DUMFREETECH</Description>
 		</Row>
 	</Buildings>
+	<Building_YieldModifiers>
+		<Update>
+	      <Set Yield="25" />
+	      <Where BuildingType="BUILDING_NATIONAL_COLLEGE" YieldType="YIELD_SCIENCE" />
+	    </Update>
+	    <Row>
+			<BuildingType>BUILDING_OXFORD_UNIVERSITY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>25</Yield>
+		</Row>
+	</Building_YieldModifiers>
 </GameData>
