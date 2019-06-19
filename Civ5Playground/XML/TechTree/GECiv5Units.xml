@@ -1,13 +1,21 @@
 <GameData>
   <UnitPromotions_Terrains>
-    <Delete PromotionType="PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY" TerrainType="TERRAIN_OCEAN" Attack="0" Defense="0" DoubleMove="false" Impassable="true" PassableTech="TECH_ASTRONOMY" PediaType="" />
-    <Row>
-      <PromotionType>PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY</PromotionType>
-      <TerrainType>TERRAIN_OCEAN</TerrainType>
-      <Impassable>true</Impassable>
-      <PassableTech>TECH_SCIENTIFIC_METHOD</PassableTech>
-    </Row>
+    <Update>
+      <Set PassableTech="TECH_SCIENTIFIC_METHOD" />
+      <Where PromotionType="PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY" />
+    </Update>
   </UnitPromotions_Terrains>
+  <Unit_ClassUpgrades>
+    <Update>
+      <Set UnitClassType="UNITCLASS_DESTROYER" />
+      <Where UnitType="UNIT_FRIGATE" />
+    </Update>
+    <Update>
+      <Set UnitClassType="UNITCLASS_DESTROYER" />
+      <Where UnitType="UNIT_ENGLISH_SHIPOFTHELINE" />
+    </Update>
+    <Delete UnitType="UNIT_MODERN_ARMOR"/>
+  </Unit_ClassUpgrades>
   <Units>
     <Update>
       <Set PrereqTech="TECH_PHYSICS" />
@@ -70,11 +78,11 @@
       <Where Type="UNIT_IRONCLAD" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" ObsoleteTech="TECH_COMBUSTION" />
       <Where Type="UNIT_FRIGATE" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" />
+      <Set PrereqTech="TECH_NAVAL_ARCHITECTURE" ObsoleteTech="TECH_COMBUSTION" />
       <Where Type="UNIT_ENGLISH_SHIPOFTHELINE" />
     </Update>
     <Update>
@@ -94,7 +102,7 @@
       <Where Type="UNIT_JET_FIGHTER" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_ADVANCED_ENGINE" />
+      <Set PrereqTech="TECH_ADVANCED_ENGINE" ObsoleteTech="NULL"/>
       <Where Type="UNIT_MODERN_ARMOR" />
     </Update>
     <Update>
@@ -102,20 +110,44 @@
       <Where Type="UNIT_MECHANIZED_INFANTRY" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Set PrereqTech="TECH_ELECTRONICS" ObsoleteTech="TECH_STEALTH" />
       <Where Type="UNIT_BOMBER" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Set PrereqTech="TECH_ELECTRONICS" ObsoleteTech="TECH_STEALTH" />
       <Where Type="UNIT_AMERICAN_B17" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Set PrereqTech="TECH_ELECTRONICS" ObsoleteTech="TECH_ADVANCED_ENGINE" />
       <Where Type="UNIT_FIGHTER" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_ELECTRONICS" />
+      <Set PrereqTech="TECH_ELECTRONICS" ObsoleteTech="TECH_ADVANCED_ENGINE" />
       <Where Type="UNIT_JAPANESE_ZERO" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_NANOTECHNOLOGY" />
+      <Where Type="UNIT_PARATROOPER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ADVANCED_ENGINE" />
+      <Where Type="UNIT_TANK" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ROCKETRY" />
+      <Where Type="UNIT_ARTILLERY" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ADVANCED_ENGINE" />
+      <Where Type="UNIT_GERMAN_PANZER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ROCKETRY" />
+      <Where Type="UNIT_ARTILLERY" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_COMPUTERS" />
+      <Where Type="UNIT_ANTI_TANK_GUN" />
     </Update>
     <Update>
       <Set ObsoleteTech="TECH_ROBOTICS" />
@@ -142,7 +174,7 @@
       <Where Type="UNIT_CANNON" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_MACHINERY" />
+      <Set PrereqTech="TECH_MACHINERY" ObsoleteTech="TECH_GUNPOWDER" />
       <Where Type="UNIT_TREBUCHET" />
     </Update>
     <Update>
@@ -162,19 +194,31 @@
       <Where Type="UNIT_SONGHAI_MUSLIMCAVALRY" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_CHEMISTRY" />
+      <Set ObsoleteTech="TECH_PHYSICS" />
       <Where Type="UNIT_PIKEMAN" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set ObsoleteTech="TECH_PHYSICS" />
+      <Where Type="UNIT_GERMAN_LANDSKNECHT" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_MACHINERY" />
       <Where Type="UNIT_CATAPULT" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set PrereqTech="TECH_COMPLEX_CONSTRUCTION" ObsoleteTech="TECH_MACHINERY" />
       <Where Type="UNIT_ROMAN_BALLISTA" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set  ObsoleteTech="TECH_STEEL" />
+      <Where Type="UNIT_IROQUOIAN_MOHAWKWARRIOR" />
+    </Update>
+    <Update>
+      <Set  ObsoleteTech="TECH_STEEL" />
+      <Where Type="UNIT_ROMAN_LEGION" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_MATHEMATICS" />
       <Where Type="UNIT_ARCHER" />
     </Update>
     <Update>
@@ -182,40 +226,100 @@
       <Where Type="UNIT_SCOUT" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_STEEL" ObsoleteTech="TECH_RIFLING" />
+      <Set ObsoleteTech="TECH_IRON_WORKING" />
+      <Where Type="UNIT_WARRIOR" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_IRON_WORKING" />
+      <Where Type="UNIT_AZTEC_JAGUAR" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_IRON_WORKING" />
+      <Where Type="UNIT_BARBARIAN_WARRIOR" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_SAILING" />
+      <Where Type="UNIT_GALLEY" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_MATHEMATICS" />
+      <Where Type="UNIT_BARBARIAN_ARCHER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_STEEL" />
+      <Where Type="UNIT_BARBARIAN_SWORDSMAN" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_STEEL" ObsoleteTech="TECH_GUNPOWDER" />
       <Where Type="UNIT_DANISH_BERSERKER" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set ObsoleteTech="TECH_MATHEMATICS" />
       <Where Type="UNIT_INCAN_SLINGER" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_AGRICULTURE" />
+      <Set ObsoleteTech="TECH_RIFLING" />
       <Where Type="UNIT_SPANISH_CONQUISTADOR" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_INDUSTRIALIZATION" />
+      <Set ObsoleteTech="TECH_IRON_WORKING" />
+      <Where Type="UNIT_POLYNESIAN_MAORI_WARRIOR" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_RIFLING"/>
       <Where Type="UNIT_MONGOLIAN_KESHIK" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set ObsoleteTech="TECH_MATHEMATICS" />
       <Where Type="UNIT_BABYLONIAN_BOWMAN" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_NAVIGATION" />
+      <Set ObsoleteTech="TECH_CIVIL_SERVICE" />
+      <Where Type="UNIT_CELT_PICTISH_WARRIOR" />
+    </Update>
+    <Update>
+      <Set PrereqTech="TECH_NAVIGATION" ObsoleteTech="TECH_STEAM_BOAT" />
       <Where Type="UNIT_KOREAN_TURTLE_SHIP" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_MACHINERY" />
+      <Set PrereqTech="TECH_MACHINERY" ObsoleteTech="TECH_GUNPOWDER" />
       <Where Type="UNIT_KOREAN_HWACHA" />
     </Update>
     <Update>
-      <Set PrereqTech="TECH_ARCHERY" ObsoleteTech="TECH_COMPLEX_CONSTRUCTION" />
+      <Set PrereqTech="TECH_ARCHERY" ObsoleteTech="TECH_MATHEMATICS" />
       <Where Type="UNIT_MAYAN_ATLATLIST" />
     </Update>
     <Update>
-      <Set ObsoleteTech="TECH_SCIENTIFIC_METHOD" />
+      <Set ObsoleteTech="TECH_COMPASS" />
       <Where Type="UNIT_BYZANTINE_DROMON" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_MACHINERY" />
+      <Where Type="UNIT_HUN_BATTERING_RAM" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_NAVAL_ARCHITECTURE" />
+      <Where Type="UNIT_GALLEASS" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ELECTRONICS" />
+      <Where Type="UNIT_TRIPLANE" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ELECTRONICS" />
+      <Where Type="UNIT_WWI_BOMBER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_ROCKETRY" />
+      <Where Type="UNIT_MACHINE_GUN" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_MACHINERY" />
+      <Where Type="UNIT_ASSYRIAN_SIEGE_TOWER" />
+    </Update>
+    <Update>
+      <Set ObsoleteTech="TECH_NAVAL_ARCHITECTURE" />
+      <Where Type="UNIT_VENETIAN_GALLEASS" />
     </Update>
     <Update>
       <Set ObsoleteTech="TECH_NAVIGATION" />
