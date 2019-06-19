@@ -1,5 +1,8 @@
 <GameData>
   <Resolutions>
-    <Delete Type="RESOLUTION_HISTORICAL_LANDMARKS" />
+    <Update>
+      <Set TechPrereqAnyMember="TECH_GEOLOGY" />
+      <Where Type="RESOLUTION_HISTORICAL_LANDMARKS" />
+  </Update>
   </Resolutions>
 </GameData>
