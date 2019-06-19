@@ -11,9 +11,9 @@ This mod is implemented for the students who study the General Education Foundat
 
 **Note**: 
 1. If you want to check the debugging message / lua console log, launch FireTuner before launching the game in Steam.
+2. For debugging xml, enable further logging by following these [instructions](https://forums.civfanatics.com/threads/how-to-enable-logging.487482/).
 
-## Installation
-Please follow the instructions at https://github.com/clarkwkw/GECiv5Mod/releases/tag/v0.0.
-
-## Known Issues
-1. `Events.ActivePlayerTurnStart` does not trigger any listener in the first turn of every player.
+## Use of existing work / mods
+In this project we have adapted some existing work and mods, including
+- [Artificial Unintelligence](https://forums.civfanatics.com/threads/artificial-unintelligence.536193/) by Delnar_Ersike
+- [Smarter TechTree Pipes](https://steamcommunity.com/sharedfiles/filedetails/?id=164419403) by Morlark
