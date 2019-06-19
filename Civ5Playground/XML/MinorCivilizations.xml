@@ -999,37 +999,37 @@
 			<Flavor>7</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_EXPANSION</FlavorType>
 			<Flavor>0</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_NUKE</FlavorType>
 			<Flavor>0</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
 			<Flavor>7</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_DEFENSE</FlavorType>
 			<Flavor>7</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_OFFENSE</FlavorType>
 			<Flavor>7</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_WONDER</FlavorType>
 			<Flavor>0</Flavor>
 		</Row>
 		<Row>
-			<MinorCivType>MINOR_AZTEC</MinorCivType>
+			<MinorCivType>MINOR_CIV_AZTEC</MinorCivType>
 			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
 			<Flavor>7</Flavor>
 		</Row>
