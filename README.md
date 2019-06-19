@@ -1,5 +1,5 @@
-# GECiv5Mod
-Creating a Mod for Civilization V for general education.
+# CUHK GEF World History
+This mod is implemented for the students who study the General Education Foundation Course in the Chinese University of Hong Kong. We hope this mod could motivate students to further think about the [Needham Question]( https://en.wikipedia.org/wiki/Joseph_Needham#Needham_Question).
 
 ## Development
 1. Clone the repository.
