@@ -12,10 +12,10 @@ end
 include("UGFNScenario.lua")
 
 part23Scenario = UGFNScenario:New({
-	building_class_id = GameInfo.BuildingClasses.BUILDINGCLASS_FACTORY.ID, 
-	building_type = "BUILDING_FACTORY",  -- just for displaying the building icon
+	building_class_id = GameInfo.BuildingClasses.BUILDINGCLASS_LABORATORY.ID, 
+	building_type = "BUILDING_LABORATORY",  -- just for displaying the building icon
 	n_building_required = 4,
-	prerequiste_tech = "TECH_INDUSTRIALIZATION",
+	prerequiste_tech = "TECH_PENICILIN",
 	require_victory = true
 })
 part23Scenario:configureRequirementPopup()
