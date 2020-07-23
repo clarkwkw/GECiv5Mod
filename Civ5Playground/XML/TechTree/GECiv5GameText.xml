@@ -90,15 +90,22 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_CIV</Tag>
-      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+      <Text>
+		  Mythology is the attempt to explain natural phenomena by imagination and stories originated from different civilizations. These stories concern the origin and the nature of the world, as well as the lives and activities of deities, heroes and mythological creatures and the origins and significance of the cult and ritual practices. In an era which the writing system was not mature, mythologies were particularly told by oral practices, propagated in an oral-poetic tradition.
+		  [NEWLINE][NEWLINE]The word ‘Mythology’ originates from the word ‘myth’, which comes from the Greek ‘mythos’. Ancient Greek mythology refers to stories originated from Greece describing a period around the 18th century B.C. The heroes in the mythology usually had superpower. The myths of the heroes of the Trojan war had become part of the tradition of Homer’s epic poems, including the Iliad and the Odyssey, which tell about the battles and events during the weeks of a quarrel between king Agamenon and the warrior Achilles.
+		  [NEWLINE][NEWLINE]Aside from the narrative deposit in ancient Greek Literature, pictorial representations of gods, deities, heroes and mythic episodes featured in ancient vase paintings and the decoration of many other artifacts. Greek mythology has had an extensive influence on the culture, arts, and literature of Western civilization and remains part of Western heritage and language.
+	  </Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_HELP</Tag>
-      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Shrine[ENDCOLOR], the first [ICON_PEACE] Faith producing building in the game.</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Tag>
-      <Text>'Some Famous Quote' - Some Famous Person</Text>
+      <Text>
+		  “Men are so quick to blame the gods: they say that we devise their misery. But they themselves- in their depravity- design grief greater than the griefs that fate assigns.”
+		  [NEWLINE]- Homer, The Odyssey
+	  </Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_SAILING_CIV</Tag>
@@ -134,7 +141,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_CIV</Tag>
-      <Text>Construction represents the advancement of the study of masonry, primarily by adding iron and other metals to the builder's toolbox. Although remarkably durable, stone and brick are also quite heavy and inflexible. It's impossible to construct very tall structures out of these materials - unless the structure in question is solid stone or brick and is pyramid-shaped - otherwise they will collapse under their own weight or in the face of a strong wind.[NEWLINE][NEWLINE]Metal structures, on the other hand, or masonry reinforced with metal - can be quite tall and beautiful, and structurally sound. Using metal one can create soaring bridges, deep tunnels, great skyscrapers and elevated roadways. Without construction none of the world's great cities could exist, nor could its most beautiful architecture.</Text>
+      <Text>Complex construction represents the advancement of the study of masonry, primarily by adding iron and other metals to the builder's toolbox. Although remarkably durable, stone and brick are also quite heavy and inflexible. It's impossible to construct very tall structures out of these materials - unless the structure in question is solid stone or brick and is pyramid-shaped - otherwise they will collapse under their own weight or in the face of a strong wind.[NEWLINE][NEWLINE]Metal structures, on the other hand, or masonry reinforced with metal - can be quite tall and beautiful, and structurally sound. Using metal one can create soaring bridges, deep tunnels, great skyscrapers and elevated roadways. Without construction none of the world's great cities could exist, nor could its most beautiful architecture.</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_HELP</Tag>
@@ -270,7 +277,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_CIV</Tag>
-      <Text>Astronomy is the study of objects in space - from space dust to asteroids to moons, planets, stars, and galaxies - as well as other more esoteric objects like black holes and wormholes. Astronomy is the oldest of the natural sciences, with its roots in the religious and astrological practices of pre-history.[NEWLINE][NEWLINE]Much of early astronomy is related to religion. Stars and other celestial objects were associated with gods, and it was believed that they had direct control over man and his physical universe. A certain star or cluster of stars might appear each year around harvest time, and eventually ancient man might decide that the star is the home of the god governing the harvest. Perhaps if one sacrifices a goat on the day that the star first appears, that god would bless the upcoming harvest. This kind of thinking lies at the root of ancient astronomical studies as well as ancient calendar-making, with which astronomy has been historically allied.[NEWLINE][NEWLINE]During the Renaissance astronomy shed much of its religious, astronomical trappings, becoming a pure science in its own right. In 1543 Nicolaus Copernicus published "De Revolutionibus Orbium Coelestium,"  which postulated that the sun was at the center of the universe, not the earth, and that the planets orbited the sun, and the moon orbited the earth. In addition to the triumph of scientific research over dogma, Copernicus' book also argued that the use of mathematics would greatly help mankind to understand the world around him. Although this work was deeply controversial in his day, today Copernicus is acknowledged as one of the great scientists of history, and one of the fathers of the Scientific Revolution.</Text>
+      <Text>Scientific method is a way to study the world and even the entire universe. Through careful observation and experiments a scientist creates a theory to explain some phenomenon. If other scientists can through experimentation confirm the scientist's theory, it is then accepted as "empirical" (experimental) law (at least until some new observation or experimentation successfully challenges it). If a scientist's experiments cannot be duplicated by others, then his or her theories must be regarded with deep skepticism. [NEWLINE][NEWLINE]Although prevalent in most advanced countries in the world today, scientific theory is not the only way that people look at the world. Some people look to divine revelation - as written down in a holy book, say - to explain the universe. If observation or experimentation conflicts with the revelation, then the observation or experimentation must have been flawed or corrupted. These two different methods of seeing the world have been in tension for centuries, and will probably continue to be so for years to come.</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_HELP</Tag>
@@ -463,7 +470,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ELECTRONICS_CIV</Tag>
-      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+      <Text>Electronics covers the branch of technology which studies the controlled motion of electrons through various forms of media, including vacuums.  This is not the same as Electrical Technology, which is concerned with the generation and distribution of power.  Electronics wasn't recognized as its own field of study until 1950, when it was split off from radio technology.[NEWLINE][NEWLINE]Electronic circuits can be classified into two distinct groups, analog or digital.  Analog circuits are generally simple combinations of basic circuits, utilizing a continuous range of voltage; most modern circuits are rarely ever entirely analog in nature anymore. Digital circuits form the basis of modern computers and programmable logic controllers, as they are the most common physical representation of Boolean algebra (0's and 1's anyone?).[NEWLINE][NEWLINE]The study and development of electronics is deeply tied to that of mathematics, and proficiency in the latter is necessary for the former.  Creating and analyzing complex circuits involves solving linear systems of multiple unknown variables (like voltage and current at given locations), which is why much of today's circuit design is augmented by design automation software packages, a rather "meta" practice if you get right down to it.</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_PESTICIDES_DESC</Tag>
@@ -636,6 +643,18 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     <Update>
       <Set Text="Theology" />
       <Where Tag="TXT_KEY_TECH_THEOLOGY_DESC" />
-    </Update>
+    </Update>  
+	<Update>	  
+	  <Set Text="Allows your cities to build the [COLOR_POSITIVE_TEXT]Granary[ENDCOLOR], which provides [ICON_FOOD] Food, helping your cities grow larger. " />
+	  <Where Tag="TXT_KEY_TECH_POTTERY_HELP" />
+	</Update>
+	<Update>
+	  <Set Text="Allows your Workers to [COLOR_POSITIVE_TEXT]Chop Jungle[ENDCOLOR], clearing the map tile so other improvements can be constructed. Also allows you to build the [COLOR_POSITIVE_TEXT]Spearman[ENDCOLOR], a military unit strong against mounted enemies." />
+	  <Where Tag="TXT_KEY_TECH_BRONZE_WORKING_HELP" />
+	</Update>
+	<Update>
+	  <Set Text="Reveals [ICON_RES_IRON] [COLOR_POSITIVE_TEXT]Iron[ENDCOLOR] and allows you to build the [COLOR_POSITIVE_TEXT]Swordsman[ENDCOLOR], an extremely powerful melee unit which requires it." />
+	  <Where Tag="TXT_KEY_TECH_IRON_WORKING_HELP" />
+	</Update>
   </Language_en_US>
 </GameData>

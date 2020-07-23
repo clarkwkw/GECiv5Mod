@@ -86,21 +86,28 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_DESC</Tag>
-      <Text>Mythology</Text>
+      <Text>神話</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_CIV</Tag>
-      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+      <Text>
+		  Mythology is the attempt to explain natural phenomena by imagination and stories originated from different civilizations. These stories concern the origin and the nature of the world, as well as the lives and activities of deities, heroes and mythological creatures and the origins and significance of the cult and ritual practices. In an era which the writing system was not mature, mythologies were particularly told by oral practices, propagated in an oral-poetic tradition.
+		  [NEWLINE][NEWLINE]The word ‘Mythology’ originates from the word ‘myth’, which comes from the Greek ‘mythos’. Ancient Greek mythology refers to stories originated from Greece describing a period around the 18th century B.C. The heroes in the mythology usually had superpower. The myths of the heroes of the Trojan war had become part of the tradition of Homer’s epic poems, including the Iliad and the Odyssey, which tell about the battles and events during the weeks of a quarrel between king Agamenon and the warrior Achilles.
+		  [NEWLINE][NEWLINE]Aside from the narrative deposit in ancient Greek Literature, pictorial representations of gods, deities, heroes and mythic episodes featured in ancient vase paintings and the decoration of many other artifacts. Greek mythology has had an extensive influence on the culture, arts, and literature of Western civilization and remains part of Western heritage and language.
+	  </Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_HELP</Tag>
-      <Text>Added using Indie Stone Tech Tree Editor.</Text>
-    </Row>
+	  <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Shrine[ENDCOLOR], the first [ICON_PEACE] Faith producing building in the game.</Text>
+	</Row>
     <Row>
       <Tag>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Tag>
-      <Text>'Some Famous Quote' - Some Famous Person</Text>
+      <Text>
+		  “Men are so quick to blame the gods: they say that we devise their misery. But they themselves- in their depravity- design grief greater than the griefs that fate assigns.”
+		  [NEWLINE]- Homer, The Odyssey
+	  </Text>
     </Row>
-    <Row>
+	<Row>
       <Tag>TXT_KEY_TECH_SAILING_CIV</Tag>
       <Text>Sailing is the art of harnessing the power of the wind to move a boat over the water. To be successful, sailing required the mastery of a number of diverse skills. First, the culture must be able to construct a seaworthy craft. Second, they must be able to construct some sort of sturdy sheets (sails) which can catch the wind and transmit its energy to the hull. Third they must be able to build the various ropes and cleats and pulleys used to control the ship's sails, and finally they must be able to successfully navigate the vessel from point to point without getting lost or capsizing or suffering some other misfortune.[NEWLINE][NEWLINE]The earliest recorded evidence of watercraft can be found in illustrations in Egypt which date from around 4,000 BC. As a riparian (river-based) civilization, the Egyptians were excellent sailors. Many of their vessels contained both oars and sails, the former being used when the winds weren't strong enough or weren't coming from a favorable direction.[NEWLINE][NEWLINE]By 3000 BC the Egyptians were venturing out into the Mediterranean Sea in their vessels, steering the lengthy journey across the open water to Crete and later Phoenicia. The Egyptians also sailed down the coast of Africa, looking for knowledge, trade and treasure.[NEWLINE][NEWLINE]The earliest warships - biremes and triremes and the like - were powered by oar and sail and possessed rams or beaks on their prows. During battle the helmsman would attempt to ram the enemy vessel at high speed, while avoiding the enemy's earnest attempts to do the same thing. Some vessels were equipped with archers to fire at enemy craft from longer distance, while others had soldiers aboard; these vessels sought to come alongside the enemy craft so that their soldiers could board the other ship and take it by storm.[NEWLINE][NEWLINE]The Greeks - especially the Athenians and the island colonies - were masters at naval warfare. One of the reasons that they were able to defeat their much larger and more powerful neighbor, Persia, was that the Athenian navy dominated the Aegean Sea and thus constantly threatened the Persians' increasingly lengthy supply chain.</Text>
     </Row>
@@ -110,7 +117,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_LAW_DESC</Tag>
-      <Text>Law</Text>
+      <Text>法律</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_LAW_CIV</Tag>
@@ -130,19 +137,19 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_DESC</Tag>
-      <Text>Complex Construction</Text>
+      <Text>建築構造學</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_CIV</Tag>
-      <Text>Construction represents the advancement of the study of masonry, primarily by adding iron and other metals to the builder's toolbox. Although remarkably durable, stone and brick are also quite heavy and inflexible. It's impossible to construct very tall structures out of these materials - unless the structure in question is solid stone or brick and is pyramid-shaped - otherwise they will collapse under their own weight or in the face of a strong wind.[NEWLINE][NEWLINE]Metal structures, on the other hand, or masonry reinforced with metal - can be quite tall and beautiful, and structurally sound. Using metal one can create soaring bridges, deep tunnels, great skyscrapers and elevated roadways. Without construction none of the world's great cities could exist, nor could its most beautiful architecture.</Text>
+      <Text>建築構造學其實就是更精良的砌造術，主要是將鐵和其他金屬加入建築材料的行列。石頭和磚塊經久耐用，但也沉重且限制重重。僅憑磚石無法建造非常高大的建築結構的，建築只能是實心而且要建成金字塔形，否則就會因為無法承受自身重量或是強風而倒塌。[NEWLINE][NEWLINE]相較之下，金屬結構或者與金屬共構的磚石結構，就可以造出高大美觀、結構穩固的建築。採用金屬材料之後，人們就可以建造大跨度橋樑、地下隧道、摩天大樓以及高架道路。沒有建築構造學，世界上那些偉大的城市和美麗的建築都不會存在。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_HELP</Tag>
-      <Text>Allows you to build the [COLOR_POSITIVE_TEXT]Composite Bowman[ENDCOLOR], a powerful ranged unit, and the [COLOR_POSITIVE_TEXT]Colosseum[ENDCOLOR], which improves [ICON_HAPPINESS_1] Happiness in the empire, which in turn helps your city growth and makes [ICON_GOLDEN_AGE] Golden Ages more likely. Also allows Workers to construct [COLOR_POSITIVE_TEXT]Lumbermills[ENDCOLOR] on forested map tiles, increasing their [ICON_PRODUCTION] Production.</Text>
+      <Text>允許工人在森林單元格建造[COLOR_POSITIVE_TEXT]鋸木廠[ENDCOLOR]，提高該單元格的[ICON_PRODUCTION]生產力。還能讓您建造[COLOR_POSITIVE_TEXT]競技場[ENDCOLOR]，可提昇帝國[ICON_HAPPINESS_1]的幸福度、幫助城市發展和加快[ICON_GOLDEN_AGE]黃金時代的到來。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_QUOTE</Tag>
-      <Text>[NEWLINE][TAB][TAB]"Three things are to be looked to in a building: that it stand on the right spot; that it be securely founded; that it be successfully executed."[NEWLINE][TAB][TAB]  - Johann Wolfgang von Goethe[NEWLINE][TAB]</Text>
+      <Text>[NEWLINE][TAB][TAB]「看一幢建築要看三樣東西--建造地點是否正確；地基是否牢固；建造是否成功。」[NEWLINE][TAB][TAB--約翰·沃爾夫岡·馮·歌德[NEWLINE][TAB]</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_CURRENCY_CIV</Tag>
@@ -154,7 +161,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_DESC</Tag>
-      <Text>Political Philosophy</Text>
+      <Text>政治哲學</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_CIV</Tag>
@@ -170,7 +177,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ASSOCIATIVE_THINKING_DESC</Tag>
-      <Text>Associative Thinking</Text>
+      <Text>聯想思維</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ASSOCIATIVE_THINKING_CIV</Tag>
@@ -186,7 +193,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_NATURAL_PHILOSOPHY_DESC</Tag>
-      <Text>Natural Philosophy</Text>
+      <Text>自然哲學</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_NATURAL_PHILOSOPHY_CIV</Tag>
@@ -202,7 +209,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_THEOLOGY_CIV</Tag>
-      <Text>Theology is the study of religion. Theologians study religious traditions and beliefs. The practice goes at least as far back in history as the Classical Greeks, who had an extremely rich mythology and religious tradition to observe. In the first and second century AD, Jewish religious scholarship flourished. The Jerusalem Talmud, a collection of Rabbinic notes about Jewish Oral tradition, was published around 200 AD and added to and expanded upon over the next two centuries.[NEWLINE][NEWLINE]Theology is important. It has had an incredibly powerful effect upon world history. Countless millions have died over religious disputes, and they continue to do so today. The Romans killed Christians over their radical new theology which denied the existence of the Roman gods. Christians killed Jews and Muslims and Christians over religious disputes. Theologian and Christian revolutionary Martin Luther triggered hundreds of years of brutal religious conflict in Europe with his "95 Theses" questioning, among other things, the selling of papal indulgences (divine forgiveness of sins) to pay for the construction of St. Peter's Basilica. If it is ever to end, theology will be of critical importance in solving the current religious war between radical Muslims and the Western World.</Text>
+      <Text>神學是對宗教的研究，神學家研究宗教的傳統和教義。神學最早可以追溯到古典的希臘人，他們擁有著極度豐富的神話傳說和宗教傳統。在西元一、二世紀時，猶太教的宗教學術最為昌盛。在西元200年，耶路撒冷塔木德經開始流傳開來，這是一本記載猶太人口耳相傳的傳統的書，並在接下來的兩個世紀裡不斷被補充修正。[NEWLINE][NEWLINE]神學是很重要的，它在人類歷史上有著舉足輕重的地位。因為宗教衝突而死去的人不計其數，一直到今天仍然未曾間斷。羅馬人因為基督教徒的激進宗教不承認羅馬人的神而屠殺他們，基督教徒又因為宗教衝突屠殺猶太人和穆斯林甚至自己人。神學家和基督教改革家馬丁·路德的《九十五條論綱》中，質疑為籌措資金建造聖彼得大教堂而販賣贖罪券等問題引發了歐洲數百年來殘酷的宗教衝突。如果要解決當今世界激進的穆斯林和西方世界之間的宗教戰爭，神學將是至關重要的一環。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_FUNCTIONALITY_RESEARCHAGREEMENTTRADINGALLOWED_TECH_UNIVERSITY_EDUCATION</Tag>
@@ -210,11 +217,11 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_DESC</Tag>
-      <Text>University Education</Text>
+      <Text>大學教育</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_CIV</Tag>
-      <Text>Education is the process by which people learn things. Obviously it has been around as long as man has. Throughout much of history, education has been an informal affair, parents teaching their children what they need to know to survive in between household chores and hunting expeditions and dodging tigers and so forth. As a tribe expanded and grew more prosperous, village elders and cripples might educate the children while the more healthy adults gathered food, built stuff or made war. Eventually a very wealthy tribe or village might have formal classes for the more important children, and once a civilization matured enough it might see the great value in education for everybody.[NEWLINE][NEWLINE]In ancient Egypt, the priestly class served as teachers for the children of nobility. In these Egyptian schools the children were taught reading, writing, religion, history, science, medicine, mathematics and other advanced topics. In competition with Egypt, Mesopotamia had a similar educational setup for its priests and scribes - who might be copyists, librarians, or teachers. The Mesopotamian students learned reading, writing, religion, law, medicine and astrology. Education first appeared in China some three thousand years ago. Reading, writing, civic responsibility, rituals, and music formed the core curriculum.[NEWLINE][NEWLINE]In Mayan culture, education was in the hands of the priests. The priestly class was the educated class, and they served as important advisors to the chiefs and other citizens. To become a priest a student received a rigorous education in history, writing, divination, medicine, and the calendar system.</Text>
+      <Text>所謂教育就是人類學習的過程。很顯然的從有人類以來就有教育。早期的教育多半是非正式的，父母將生活知識口頭傳授給孩子們，包括如何處理家務、外出打獵、躲避老虎襲擊等等。當部落擴張繁榮起來之後，村裡的老人和殘疾人主要負責教導孩子們這些知識，而較健康的成年男子則主要負責採集糧食、製造器物或是作戰。最後非常富裕的部落便可能出現專為權貴之子設計的正式課程。而當文明夠成熟了，就會開始體認到全民教育的重要性。[NEWLINE][NEWLINE]古埃及時代，祭司們負責教導貴族子弟。這些孩子在埃及的學校中學習閱讀、寫作、宗教、歷史、科學、醫學、數學以及其他進階課程。埃及的競爭對手美索不達米亞地區，也有十分相似的教育系統。其教育目的主要是培育祭司和書記（可能是抄寫員、圖書館員或講師）。學生們學習的課程也包括閱讀、寫作、宗教、法律、醫學和占星學。在中國，教育最早出現在約3000年前。閱讀、寫作、公民責任、禮儀和音樂是古代中國學生的核心課程。[NEWLINE][NEWLINE]在馬雅文化中，教育同樣掌握在祭司手中。受過良好教育的祭司階層擔任部落酋長和其他市民的重要顧問。為了成為祭司，學生們同樣需要努力學習歷史、寫作、神學、醫學和曆法系統。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_UNIVERSITY_EDUCATION_HELP</Tag>
@@ -226,7 +233,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_HOLISTIC_WORLDIEW_DESC</Tag>
-      <Text>Holistic Worldiew</Text>
+      <Text>整體世界觀</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_HOLISTIC_WORLDIEW_CIV</Tag>
@@ -242,7 +249,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_RATIONALISM_DESC</Tag>
-      <Text>Rationalism</Text>
+      <Text>理性主義</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_RATIONALISM_CIV</Tag>
@@ -266,11 +273,11 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_DESC</Tag>
-      <Text>Scientific Method</Text>
+      <Text>科學方法</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_CIV</Tag>
-      <Text>Astronomy is the study of objects in space - from space dust to asteroids to moons, planets, stars, and galaxies - as well as other more esoteric objects like black holes and wormholes. Astronomy is the oldest of the natural sciences, with its roots in the religious and astrological practices of pre-history.[NEWLINE][NEWLINE]Much of early astronomy is related to religion. Stars and other celestial objects were associated with gods, and it was believed that they had direct control over man and his physical universe. A certain star or cluster of stars might appear each year around harvest time, and eventually ancient man might decide that the star is the home of the god governing the harvest. Perhaps if one sacrifices a goat on the day that the star first appears, that god would bless the upcoming harvest. This kind of thinking lies at the root of ancient astronomical studies as well as ancient calendar-making, with which astronomy has been historically allied.[NEWLINE][NEWLINE]During the Renaissance astronomy shed much of its religious, astronomical trappings, becoming a pure science in its own right. In 1543 Nicolaus Copernicus published "De Revolutionibus Orbium Coelestium,"  which postulated that the sun was at the center of the universe, not the earth, and that the planets orbited the sun, and the moon orbited the earth. In addition to the triumph of scientific research over dogma, Copernicus' book also argued that the use of mathematics would greatly help mankind to understand the world around him. Although this work was deeply controversial in his day, today Copernicus is acknowledged as one of the great scientists of history, and one of the fathers of the Scientific Revolution.</Text>
+      <Text>科學方法是一種理解世界乃至整個宇宙的方法。透過細心的觀察和試驗，科學家創造理論來解釋某種現象。如果其他的科學家能夠通過試驗來確認此理論，則此理論被接受為「經驗」（試驗的）定律（至少在有新的觀測或者試驗事實能反對這一切之前是的）。如果某個科學家的試驗是無法被別人複製的，那麼他的理論是該被質疑的。[NEWLINE][NEWLINE]儘管在當今世界的發達國家中，科學理論是主流，但是科學理論並不是唯一的方法。一些人還是相信神的天啟—比如說某種聖書—能夠解釋宇宙的一切的。如果觀測或試驗事實有違天啟，那麼他們認為在觀測或試驗中肯定存在缺陷甚至造假的地方。這兩種觀察世界的方法已經互相爭鬥了無數個世紀，而且也將繼續爭鬥下去。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD_HELP</Tag>
@@ -286,15 +293,15 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_PRINTING_PRESS_CIV</Tag>
-      <Text>While movable type was invented in China, as far as can be determined, the first mechanized printing press was invented in the mid-fifteenth century by German printer Johannes Gutenberg. The earliest printing presses were wooden machines, very similar in design to the wine and olive oil presses which had been used around the Mediterranean for centuries.[NEWLINE][NEWLINE]In the original presses, the type was laid out in reverse on a wooden "platen" which held it tightly in position. Ink was applied to the type on the platen, then the paper was placed atop the platen in the press. The craftsmen turned the screw to put pressure on the paper and bring it into contact with the inked type. The printer then removed the paper and reinked the type, and the process began once again. Gutenberg's press could turn out some 250 sheets per hour (printed on one side). His design remained unchanged for some three hundred years, until it was supplanted by metal machines. By the nineteenth century, presses were powered by steam, and capable of producing some 7500 sheets per hour.[NEWLINE][NEWLINE]The value of the printing press to human knowledge cannot be overstated. Before the press, few books were in print, and those that were might cost more than the average worker made in a year. Cambridge University Library had just over 100 books when the press was invented; within an astonishingly short time common folks could afford to have bibles and other books in their homes. Within 60 years the first printed "news book" (forerunner to the newspaper) appeared in England.</Text>
+      <Text>雖然活字印刷術是中國發明的；就所知，第一座機械化印刷機則是十五世紀中葉由德國的約翰尼斯·古騰堡所發明。最早期的印刷機是木製的，在設計上和地中海地區幾個世紀以來用以壓搾葡萄酒和橄欖油的機器非常相似。[NEWLINE][NEWLINE]最早的印刷機將活字反向排列且緊密地固定在一個木製的「壓盤」上。先在活字上塗一層油墨，然後再放上紙張。技工給壓盤上緊螺絲加壓，使紙張接觸帶有油墨的活字。然後技工取下紙張並給活字重新上墨，如此反覆操作。古騰堡的印刷機每小時可以印250頁（單面印刷）。這樣的設計持地續使用了三百多年，直到金屬印刷機的出現。十九世紀時，印刷機開始使用蒸汽作為動力，印刷速度可以達到每小時7500張。[NEWLINE][NEWLINE]印刷對人類知識的傳承不容忽視，在印刷機出現以前，印製的書數量極為稀少，每一本書的價格超過一個普通工人一年的工資。印刷機發明時，劍橋大學圖書館只藏有100多本書；但在極短的一段時間後，人們就普遍能夠購買聖經及其他書籍了。不到60年，第一本印刷的「新聞書」（報紙的前身）便在英格蘭問世。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_GUNPOWDER_CIV</Tag>
-      <Text>Gunpowder, also known as "black powder," was invented in China, possibly as far back as the 9th century AD, by alchemists looking for an elixir of immortality (which it isn't). A mixture of sulfur, charcoal, and potassium nitrate, gunpowder burns very rapidly when exposed to flame, producing a great quantity of gasses and solids which can be employed as a propellant in firearms and in fireworks. The Chinese used gunpowder in primitive bombs and rockets against the Mongol invaders, and once they conquered China, the Mongols used them against everybody else.[NEWLINE][NEWLINE]By the first half of the 12th century AD the Arabic world acquired knowledge of gunpowder. Some historical texts state that the Mamluks used the first cannon in history against the Mongols during the Battle of Ain Jalut in 1260 AD, but this is open to debate. The first "hand cannon" appears in an Arabic manuscript from the 14th century.[NEWLINE][NEWLINE]Europe too gained knowledge of gunpowder towards the middle of the 12th century. They improved the quality of the powder by "corning" it, adding liquid to the powder to create larger grains (corns), increasing the explosive's stability.[NEWLINE][NEWLINE]Gunpowder remained the explosive of choice in cannon and firearms until the creation of "smokeless" powder in the 19th century. The new product burned cleaner and produced far less smoke, making it superior to the old black powder.</Text>
+      <Text>火藥又有「黑火藥」之名，起源於中國。其歷史可以上溯到西元9世紀，是中國方士們在煉製長生不老藥（雖然事實上正好相反）的過程中偶然發現的產物。火藥是硫磺、木炭和硝酸鉀的混合物，遇火即能迅速猛烈的燃燒，並且產生大量的煙塵，因此可用來作為火器的推進燃料，並且製作煙火。中國人用火藥製作了簡單的炸彈和火箭以抵禦蒙古侵略者。蒙古人征服了中國以後，這些火器便被蒙古人用來對付其他人。[NEWLINE][NEWLINE]到了12世紀上半葉，阿拉伯世界已經學會了火藥的相關知識。部分歷史文獻指稱馬木留克於西元1260年的阿音札魯特戰役中首次使用加農炮對抗蒙古人，但此說法仍有爭議。第一個關於「手銃」的記載出現在14世紀的阿拉伯文手稿中。[NEWLINE][NEWLINE]歐洲則在12世紀中葉左右獲得了關於火藥的知識。他們利用「濕製法」提高了火藥的品質，在火藥粉末中加入液體讓火藥結成更大的顆粒（像玉米粒），提高火藥的穩定性。[NEWLINE][NEWLINE]此後一直到19世紀「無煙」火藥發明前，火藥一直用於槍炮等火器。這種新產品燃燒較完全，產生的煙塵更少，進而取代了舊式的黑火藥。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_LIBERALISM_DESC</Tag>
-      <Text>Liberalism</Text>
+      <Text>自由主義</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_LIBERALISM_CIV</Tag>
@@ -310,7 +317,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_NAVAL_ARCHITECTURE_DESC</Tag>
-      <Text>Naval Architecture</Text>
+      <Text>船舶工程學</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_NAVAL_ARCHITECTURE_CIV</Tag>
@@ -350,7 +357,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_NATIONALISM_DESC</Tag>
-      <Text>Nationalism</Text>
+      <Text>民族主義</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_NATIONALISM_CIV</Tag>
@@ -366,7 +373,7 @@
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_GEOLOGY_DESC</Tag>
-      <Text>Geology</Text>
+      <Text>地質學</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_GEOLOGY_CIV</Tag>
@@ -383,7 +390,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_GENETICS_DESC</Tag>
-      <Text>Genetics</Text>
+      <Text>遺傳學</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_GENETICS_CIV</Tag>
@@ -403,7 +410,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MARXISM_DESC</Tag>
-      <Text>Marxism</Text>
+      <Text>馬克思主義</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_MARXISM_CIV</Tag>
@@ -427,11 +434,11 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_STEAM_BOAT_DESC</Tag>
-      <Text>Steam Boat</Text>
+      <Text>蒸汽船</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_STEAM_BOAT_CIV</Tag>
-      <Text>When heated, water produces steam. Steam expands under pressure, and in a steam engine part of the heat energy is captured and used to raise and lower a piston or turn a rotor. The principles behind steam power were known by the ancient Greeks, but no one had figured out how to put it to practical use until the late 17th century, when Englishman Thomas Savery created a steam-powered pump designed to raise water from mines. In 1765 James Watt greatly improved the steam engine to the point that it could be used in a wide variety of applications. By 1802 steam engines were being installed in boats, and by 1825, steam railroads were in operation.[NEWLINE][NEWLINE]Steam power revolutionized industry and transportation across the world. Within a century the globe was crisscrossed by rail lines and steamship routes. Massive steam-powered factories were turning out tens of millions of tons of commercial goods (as well as military hardware). The industrialized countries enjoyed a huge increase in productivity and wealth (and pollution). Coal, the primary energy source used in steam engines, was being feverishly mined around the planet. A large portion of Great Britain's global military strategy centered upon protecting naval coaling stations at strategic locations across the world's oceans.[NEWLINE][NEWLINE]Eventually steam engines would be replaced by internal combustion engines, which were far more efficient and emitted less pollution. But before petroleum, steam was king, and the modern world would never have existed without it.</Text>
+      <Text>水加熱會產生蒸汽。蒸氣膨脹產生壓力，蒸汽機可以使用部分的能量來推動活塞或轉子。蒸汽力量的原理早在古代希臘就被人所知曉，但當時的人類還不知道如何有效地運用；直到17世紀末時英國人湯瑪斯·塞維利製造了一臺蒸汽驅動的泵，可以將水從礦坑裡打上來。而在1765年詹姆斯·瓦特大幅地增強了蒸汽機的效能，使其可以運用在更多的地方。1802年蒸汽機開始被安裝在船隻上，而1825年蒸汽鐵路開始正式運行。[NEWLINE][NEWLINE]蒸汽機對世界的工業和交通發展是一次徹底的革命。在一個世紀之內，地球上就被縱橫交錯的鐵軌與蒸汽船航線網所覆蓋。大型蒸汽動力的工廠開始數以百萬計的製造各式商品，當然也包括軍用品。工業化國家享受到了蒸汽機帶來的龐大生產力與財富及污染。蒸汽機的主要燃料，煤礦，在各地被瘋狂地開採。英國的全球戰略部署就主要是保護全球海洋戰略位置上的煤礦補給站的安全。[NEWLINE][NEWLINE]蒸汽機終究被更有效率更少污染的內燃機所取代。但是在石油之前，蒸汽是王者，沒有蒸汽動力就沒有現代的世界。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_STEAM_BOAT_HELP</Tag>
@@ -443,11 +450,11 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_REPLACEABLE_PARTS_CIV</Tag>
-      <Text>Replaceable parts is a kind of manufacturing process by which many duplicate copies of an item are fabricated, each of them identical component parts. This process allows for a tremendous increase in the speed and profitability of manufacturing, which in turn helped fuel the Industrial Revolution of the 19th Century.[NEWLINE][NEWLINE]One of the major impetuses for replaceable parts was the desire to issue firearms to soldiers. Originally, muskets were created by craftsmen, and each might differ slightly from the next - one craftsman might make his rifle slightly longer, while another might give his a larger or smaller trigger. For the individual this was not necessarily a problem - if his musket broke he could return it to the craftsman who first made it for repairs. Of course this was not feasible for an army with a thousand muskets.[NEWLINE][NEWLINE]However, if all were identical then a part from a broken musket could be used to repair another. Further, a soldier who had trained with one musket could pick up another and expect it to perform in much the same fashion, without having to get used to a new weapon's particular design features.[NEWLINE][NEWLINE]Now, almost every manufactured good on the planet is constructed of replaceable parts. Craftsmen have become artists, their wares too expensive for most average consumers.</Text>
+      <Text>可互換部件是在生產過程中製造大量相同的物件，最終成為可交互替換的部件。這種製程有利於提高生產速度和獲利空間，而且還推進了19世紀的工業革命。[NEWLINE][NEWLINE]推動可互換部件發展的一個主要原因是將槍枝大量分配給士兵的想法。最初，火槍是由工匠製造的，每一把火槍彼此間都會有略微的不同，就好像有的工匠喜歡製作長一點的槍枝，而有的則喜歡稍微大一點或者小一點的扳機。對個人來說，這不算是個問題，因為如果他的火槍壞了，他可以將槍交還給製造這把槍的工匠來修理。但是對於一把有上千枝火槍的軍隊來說，這種方法就行不通了。[NEWLINE][NEWLINE]然而，如果所有的火槍都有統一規格，一把故障火槍上的部件就可以用於修理其他的火槍。再說，一位士兵只要學會使用其中一把槍就可以使用其他相同的槍，而不需要再重新訓練了。[NEWLINE][NEWLINE]如今，幾乎世界上所有的工業產品都是用可互換部件製造的。過去的工匠業則成了藝術家，他們製造的物品對於大眾消費者來說是過於昂貴了。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_FASCISM_DESC</Tag>
-      <Text>Fascism</Text>
+      <Text>法西斯主義</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_FASCISM_CIV</Tag>
@@ -463,11 +470,11 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ELECTRONICS_CIV</Tag>
-      <Text>Added using Indie Stone Tech Tree Editor.</Text>
+      <Text>電子學的研究範疇便是電子在受控狀態下，在各種包括真空等各種介質中的行為模式。這門科學與電學科技並不相同，電學主要和電流的產生和輸送有關。電子學直到1950年代才從無線電學中獨立出來，成為一門學科。[NEWLINE][NEWLINE]電子電路主要被分為兩大類：類比電路和數位電路。類比電路通常由基礎電路排列組合而成，使用連續電壓，不過現今已經少用全為類比的電路了。數位電路為現代電腦和可程式邏輯控制器打下基礎，也是「邏輯代數」（即0與1）最常見的實質體現。[NEWLINE][NEWLINE]電子學的研究和發展和數學的發展緊密相關，擅長後者是學習前者的先決條件。無論是創造還是分析複雜的電路，都需要能夠解出帶有多項未知變數（比如某個特定位點的電壓和電流）的線性系統。因此，設計自動軟體套件可以大幅提升電路設計效率，這可是一件做起來相當微妙的工作。</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_PESTICIDES_DESC</Tag>
-      <Text>Pesticides</Text>
+      <Text>農藥</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_PESTICIDES_CIV</Tag>
@@ -487,7 +494,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_DESC</Tag>
-      <Text>Biotechnology</Text>
+      <Text>生物技術</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_BIOTECHNOLOGY_CIV</Tag>
@@ -507,7 +514,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_DESC</Tag>
-      <Text>Advanced Engine</Text>
+      <Text>先進引擎</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ADVANCED_ENGINE_CIV</Tag>
@@ -527,7 +534,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_DESC</Tag>
-      <Text>Artificial Intelligence</Text>
+      <Text>人工智能</Text>
     </Row>
     <Row>
       <Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_CIV</Tag>
@@ -614,7 +621,7 @@ Archaeology is the study of the remnants of ancient people to learn about their 
       <Where Tag="TXT_KEY_TECH_ELECTRONICS_DESC" />
     </Update>
     <Update>
-      <Set Text="'Some Famous Quote' - Some Famous Person" />
+      <Set Text="[NEWLINE][TAB][TAB]「消費類電子產品有一個基本法則--它的功能越來越強，它的價格越來越低。」[NEWLINE][TAB][TAB]--崔普·霍金斯[NEWLINE][TAB][TAB][TAB]" />
       <Where Tag="TXT_KEY_TECH_ELECTRONICS_QUOTE" />
     </Update>
     <Update>
@@ -637,5 +644,17 @@ Archaeology is the study of the remnants of ancient people to learn about their 
       <Set Text="神學" />
       <Where Tag="TXT_KEY_TECH_THEOLOGY_DESC" />
     </Update>
+	<Update>
+	  <Set Text="允許您建造提供[ICON_FOOD]食物的[COLOR_POSITIVE_TEXT]穀倉[ENDCOLOR]以幫助您的城市繁榮發展。" />
+	  <Where Tag="TXT_KEY_TECH_POTTERY_HELP" />
+	</Update>
+	<Update>
+	  <Set Text="允許您的工人[COLOR_POSITIVE_TEXT]砍伐叢林[ENDCOLOR]，清理地圖單元格以建造其它改良設施。還能讓您生產可以抵抗敵方騎乘單位的[COLOR_POSITIVE_TEXT]長矛兵[ENDCOLOR]。" />
+	  <Where Tag="TXT_KEY_TECH_BRONZE_WORKING_HELP" />
+	</Update>
+	<Update>
+	  <Set Text="探明[ICON_RES_IRON][COLOR_POSITIVE_TEXT]鐵礦[ENDCOLOR]，並允許您生產[COLOR_POSITIVE_TEXT]劍士[ENDCOLOR]，一種需要鐵礦且極其強力的近戰單位。" />
+	  <Where Tag="TXT_KEY_TECH_IRON_WORKING_HELP" />
+	</Update>	  
   </Language_zh_Hant_HK>
 </GameData>

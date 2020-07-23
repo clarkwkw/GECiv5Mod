@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>42BE3F07-762B-4449-A334-A4EF1966BD22</ProjectGuid>
-    <Name>CUHK GEF World History</Name>
+    <Name>CUHK GEF World History Testing</Name>
     <Guid>17c0bfe1-11af-4921-9198-5db1ea0e4b10</Guid>
-    <ModVersion>2</ModVersion>
-    <Stability>Stable</Stability>
+    <ModVersion>3</ModVersion>
+    <Stability>Alpha</Stability>
     <Teaser>
     </Teaser>
     <Description>This mod is implemented for the students who study the General Education Foundation Course in the Chinese University of Hong Kong. Currently, the mod consist of a blank world map of 4000BC with accurate civ starting position (UGFN part 1 - 4000BC) and a world history scenarios of 1500AD (UGFN part 2 &amp; 3 - 1500AD).</Description>
@@ -45,12 +45,6 @@
         <Name>Setup Game</Name>
         <Description>Check this to proceed to game setup screen.</Description>
         <FileName>Overrides/CustomGameSetupScreen.xml</FileName>
-      </Content>
-      <Content>
-        <Type>Map</Type>
-        <Name>UGFH</Name>
-        <Description>Map for UGFH</Description>
-        <FileName>Maps/UGFH.Civ5Map</FileName>
       </Content>
     </ModContent>
     <ModActions>

@@ -22,14 +22,14 @@
       <Type>TECH_GEOLOGY</Type>
       <Description>TXT_KEY_TECH_GEOLOGY_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_GEOLOGY_CIV</Civilopedia>
-      <Help>TXT_KEY_TECH_GEOLOGY_HELP</Help>
+      <Help>TXT_KEY_TECH_ARCHAEOLOGY_HELP</Help>
       <Cost>1400</Cost>
       <Era>ERA_INDUSTRIAL</Era>
       <Trade>true</Trade>
       <TriggersArchaeologicalSites>true</TriggersArchaeologicalSites>
       <GridX>9</GridX>
       <GridY>5</GridY>
-      <Quote>TXT_KEY_TECH_GEOLOGY_QUOTE</Quote>
+      <Quote>TXT_KEY_TECH_ARCHAEOLOGY_QUOTE</Quote>
       <PortraitIndex>43</PortraitIndex>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
       <AudioIntro>AS2D_TECH_ARCHAEOLOGY</AudioIntro>
@@ -40,7 +40,7 @@
       <Type>TECH_STEAM_BOAT</Type>
       <Description>TXT_KEY_TECH_STEAM_BOAT_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_STEAM_BOAT_CIV</Civilopedia>
-      <Help>TXT_KEY_TECH_STEAM_BOAT_HELP</Help>
+      <Help>TXT_KEY_TECH_STEAM_POWER_HELP</Help>
       <Cost>2000</Cost>
       <Era>ERA_INDUSTRIAL</Era>
       <EmbarkedMoveChange>1</EmbarkedMoveChange>
@@ -48,7 +48,7 @@
       <Trade>true</Trade>
       <GridX>10</GridX>
       <GridY>4</GridY>
-      <Quote>TXT_KEY_TECH_STEAM_BOAT_QUOTE</Quote>
+      <Quote>TXT_KEY_TECH_STEAM_POWER_QUOTE</Quote>
       <PortraitIndex>42</PortraitIndex>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
       <AudioIntro>AS2D_TECH_STEAM_POWER</AudioIntro>
@@ -59,14 +59,14 @@
       <Type>TECH_UNIVERSITY_EDUCATION</Type>
       <Description>TXT_KEY_TECH_UNIVERSITY_EDUCATION_DESC</Description>
       <Civilopedia>TXT_KEY_TECH_UNIVERSITY_EDUCATION_CIV</Civilopedia>
-      <Help>TXT_KEY_TECH_UNIVERSITY_EDUCATION_HELP</Help>
+      <Help>TXT_KEY_TECH_EDUCATION_HELP</Help>
       <Cost>885</Cost>
       <Era>ERA_MEDIEVAL</Era>
       <Trade>true</Trade>
       <ResearchAgreementTradingAllowed>true</ResearchAgreementTradingAllowed>
       <GridX>6</GridX>
       <GridY>3</GridY>
-      <Quote>TXT_KEY_TECH_UNIVERSITY_EDUCATION_QUOTE</Quote>
+      <Quote>TXT_KEY_TECH_EDUCATION_QUOTE</Quote>
       <PortraitIndex>25</PortraitIndex>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
       <AudioIntro>AS2D_TECH_EDUCATION</AudioIntro>
@@ -83,11 +83,11 @@
       <Trade>true</Trade>
       <GridX>7</GridX>
       <GridY>3</GridY>
-      <Quote>TXT_KEY_TECH_SCIENTIFIC_METHOD_QUOTE</Quote>
+      <Quote>TXT_KEY_TECH_SCIENTIFIC_THEORY_QUOTE</Quote>
       <PortraitIndex>34</PortraitIndex>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_ASTRONOMY</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_ASTRONOMY</AudioIntroHeader>
+      <AudioIntro>AS2D_TECH_SCIENTIFIC_THEORY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_SCIENTIFIC_THEORY</AudioIntroHeader>
     </Row>
     <Row>
       <ID>85</ID>
@@ -101,9 +101,9 @@
       <Trade>true</Trade>
       <GridX>8</GridX>
       <GridY>5</GridY>
-      <Quote>TXT_KEY_TECH_NAVAL_ARCHITECTURE_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
-      <IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+      <Quote>TXT_KEY_TECH_ARCHITECTURE_QUOTE</Quote>
+      <PortraitIndex>3</PortraitIndex>
+      <IconAtlas>EXPANSION_SCEN_TECH_ATLAS</IconAtlas>
       <AudioIntro>AS2D_TECH_ARCHITECTURE</AudioIntro>
       <AudioIntroHeader>AS2D_HEADING_TECH_ARCHITECTURE</AudioIntroHeader>
     </Row>
@@ -118,7 +118,7 @@
       <Trade>true</Trade>
       <GridX>3</GridX>
       <GridY>6</GridY>
-      <Quote>TXT_KEY_TECH_COMPLEX_CONSTRUCTION_QUOTE</Quote>
+      <Quote>TXT_KEY_TECH_CONSTRUCTION_QUOTE</Quote>
       <PortraitIndex>15</PortraitIndex>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
       <AudioIntro>AS2D_TECH_CONSTRUCTION</AudioIntro>
@@ -135,7 +135,7 @@
       <Trade>true</Trade>
       <GridX>4</GridX>
       <GridY>1</GridY>
-      <Quote>TXT_KEY_TECH_POLITICAL_PHILOSOPHY_QUOTE</Quote>
+      <Quote>TXT_KEY_TECH_PHILOSOPHY_QUOTE</Quote>
       <PortraitIndex>16</PortraitIndex>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
       <AudioIntro>AS2D_TECH_PHILOSOPHY</AudioIntro>
@@ -156,11 +156,11 @@
       <GridX>2</GridX>
       <GridY>2</GridY>
       <Quote>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>4</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>89</ID>
@@ -178,11 +178,11 @@
       <GridX>3</GridX>
       <GridY>1</GridY>
       <Quote>TXT_KEY_TECH_LAW_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>2</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
-      <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <IconAtlas>EXPANSION_SCEN_TECH_ATLAS</IconAtlas>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>90</ID>
@@ -199,11 +199,11 @@
       <GridX>4</GridX>
       <GridY>2</GridY>
       <Quote>TXT_KEY_TECH_ASSOCIATIVE_THINKING_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>9</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>91</ID>
@@ -219,12 +219,12 @@
       <GoodyTech>1</GoodyTech>
       <GridX>4</GridX>
       <GridY>3</GridY>
-      <Quote>TXT_KEY_TECH_NATURAL_PHILOSOPHY_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <Quote>TXT_KEY_TECH_PHILOSOPHY_QUOTE</Quote>
+      <PortraitIndex>16</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro>AS2D_TECH_PHILOSOPHY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_PHILOSOPHY</AudioIntroHeader>
     </Row>
     <Row>
       <ID>92</ID>
@@ -241,11 +241,11 @@
       <GridX>6</GridX>
       <GridY>2</GridY>
       <Quote>TXT_KEY_TECH_HOLISTIC_WORLDIEW_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>4</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
-      <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <IconAtlas>TECH_ATLAS_2</IconAtlas>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>93</ID>
@@ -261,12 +261,12 @@
       <GoodyTech>1</GoodyTech>
       <GridX>7</GridX>
       <GridY>2</GridY>
-      <Quote>TXT_KEY_TECH_RATIONALISM_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <Quote>TXT_KEY_TECH_ACOUSTICS_QUOTE</Quote>
+      <PortraitIndex>14</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
-      <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <IconAtlas>TECH_ATLAS_2</IconAtlas>
+      <AudioIntro>AS2D_TECH_ACOUSTICS</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_ACOUSTICS</AudioIntroHeader>
     </Row>
     <Row>
       <ID>94</ID>
@@ -283,11 +283,11 @@
       <GridX>8</GridX>
       <GridY>2</GridY>
       <Quote>TXT_KEY_TECH_LIBERALISM_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>21</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>95</ID>
@@ -303,12 +303,12 @@
       <GoodyTech>1</GoodyTech>
       <GridX>9</GridX>
       <GridY>1</GridY>
-      <Quote>TXT_KEY_TECH_NATIONALISM_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <Quote>TXT_KEY_TECH_METALLURGY_QUOTE</Quote>
+      <PortraitIndex>33</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro>AS2D_TECH_METALLURGY</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_METALLURGY</AudioIntroHeader>
     </Row>
     <Row>
       <ID>96</ID>
@@ -328,8 +328,8 @@
       <PortraitIndex>39</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>97</ID>
@@ -346,11 +346,11 @@
       <GridX>10</GridX>
       <GridY>1</GridY>
       <Quote>TXT_KEY_TECH_MARXISM_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>30</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>98</ID>
@@ -366,12 +366,12 @@
       <GoodyTech>1</GoodyTech>
       <GridX>11</GridX>
       <GridY>7</GridY>
-      <Quote>TXT_KEY_TECH_FASCISM_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <Quote>TXT_KEY_TECH_MILITARY_SCIENCE_QUOTE</Quote>
+      <PortraitIndex>36</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro>AS2D_TECH_MILITARY_SCIENCE</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_MILITARY_SCIENCE</AudioIntroHeader>
     </Row>
     <Row>
       <ID>99</ID>
@@ -387,12 +387,12 @@
       <GoodyTech>1</GoodyTech>
       <GridX>13</GridX>
       <GridY>8</GridY>
-      <Quote>TXT_KEY_TECH_PESTICIDES_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <Quote>TXT_KEY_TECH_FERTILIZER_QUOTE</Quote>
+      <PortraitIndex>41</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
       <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <AudioIntro>AS2D_TECH_FERTILIZER</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_FERTILIZER</AudioIntroHeader>
     </Row>
     <Row>
       <ID>100</ID>
@@ -409,11 +409,11 @@
       <GridX>14</GridX>
       <GridY>8</GridY>
       <Quote>TXT_KEY_TECH_BIOTECHNOLOGY_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>7</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
-      <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <IconAtlas>TECH_ATLAS_2</IconAtlas>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Row>
       <ID>101</ID>
@@ -429,12 +429,12 @@
       <GoodyTech>1</GoodyTech>
       <GridX>15</GridX>
       <GridY>4</GridY>
-      <Quote>TXT_KEY_TECH_ADVANCED_ENGINE_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <Quote>TXT_KEY_TECH_MOBILE_TACTICS_QUOTE</Quote>
+      <PortraitIndex>6</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
-      <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <IconAtlas>EXPANSION_TECH_ATLAS_1</IconAtlas>
+      <AudioIntro>AS2D_TECH_MOBILE_TACTICS</AudioIntro>
+      <AudioIntroHeader>AS2D_HEADING_TECH_MOBILE_TACTICS</AudioIntroHeader>
     </Row>
     <Row>
       <ID>102</ID>
@@ -451,11 +451,11 @@
       <GridX>16</GridX>
       <GridY>2</GridY>
       <Quote>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_QUOTE</Quote>
-      <PortraitIndex>0</PortraitIndex>
+      <PortraitIndex>10</PortraitIndex>
       <ScenarioTechButton>0</ScenarioTechButton>
-      <IconAtlas>TECH_ATLAS_1</IconAtlas>
-      <AudioIntro>AS2D_TECH_AGRICULTURE</AudioIntro>
-      <AudioIntroHeader>AS2D_HEADING_TECH_AGRICULTURE</AudioIntroHeader>
+      <IconAtlas>TECH_ATLAS_2</IconAtlas>
+      <AudioIntro></AudioIntro>
+      <AudioIntroHeader></AudioIntroHeader>
     </Row>
     <Update>
       <Set Cost="55" GridY="2" />
